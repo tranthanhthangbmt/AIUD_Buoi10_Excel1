@@ -1,0 +1,373 @@
+﻿HƯỚNG DẪN THỰC HÀNH EXCEL CƠ BẢN - BÀI 1
+Mục tiêu: Giúp sinh viên biết cách nhập dữ liệu sạch, đặt tên để dễ quản lý và chặn lỗi nhập sai điểm số.
+PHẦN 1: CHUẨN BỊ DỮ LIỆU (Yêu cầu 1)
+Mục đích: Tạo khung sườn cho bảng tính.
+1. Nhập dữ liệu: Sinh viên nhập chính xác nội dung như hình mẫu vào các ô từ A1 đến E8.
+o Lưu ý: Cột “Điểm” (Cột D) để trống để lát nữa nhập thử nghiệm.
+o Dữ liệu mẫu:
+• A3: 1 | B3: Nguyễn Thục Anh | C3: NU18A1A | E3: 10000000
+• …nhập tiếp tục đến hết dòng 8.
+2. Kẻ khung:
+o Bôi đen từ A2 đến E9.
+o Vào thẻ Home → chọn biểu tượng Borders (hình ô vuông) → chọn All Borders.
+
+PHẦN 2: ĐẶT TÊN VÙNG DỮ LIỆU (Yêu cầu 2)
+Mục đích: Thay vì nhớ địa chỉ ô phức tạp (ví dụ: E3:E8), ta đặt tên là “HocPhi” để dễ tính toán. Giống như gán nhãn cho một hộp phụ tùng.
+Thao tác mẫu cho cột Học phí:
+1. Bước 1: Bôi đen vùng dữ liệu chứa tiền học phí (từ ô E3 đến E8).
+2. Bước 2: Click chuột phải vào vùng vừa bôi đen, chọn Define Name….
+3. Bước 3: Hộp thoại New Name hiện ra:
+o Tại ô Name: Nhập chính xác chữ _hocphi (viết liền, không dấu, có gạch dưới theo yêu cầu đề bài).
+o Tại ô Scope: Để nguyên là Workbook.
+o Nhấn OK.
+Thực hiện tương tự cho các cột còn lại:
+• Bôi đen B3:B8 (Họ tên) → Đặt tên: _hoten.
+• Bôi đen C3:C8 (Mã lớp) → Đặt tên: _malop.
+• Bôi đen D3:D8 (Điểm) → Đặt tên: _diem.
+
+PHẦN 3: TẠO “CHỐT CHẶN” NHẬP LIỆU (Yêu cầu 3)
+Mục đích: Ngăn không cho nhập điểm bậy (ví dụ nhập 11 điểm hoặc nhập chữ). Giống như lắp van giới hạn áp suất.
+1. Bước 1: Bôi đen vùng cần nhập điểm (từ ô D3 đến D8).
+2. Bước 2: Trên thanh công cụ, chọn thẻ Data → bấm vào nút Data Validation.
+3. Bước 3: Tại thẻ Settings (Cài đặt):
+o Mục Allow: Chọn Whole number (Số nguyên).
+o Mục Data: Chọn between (Nằm trong khoảng).
+o Mục Minimum: Gõ số 0.
+o Mục Maximum: Gõ số 10.
+4. Bước 4: Chuyển sang thẻ Error Alert (Cảnh báo lỗi):
+o Mục Style: Chọn Stop (Dấu X đỏ).
+o Mục Title (Tiêu đề): Gõ dòng chữ Dữ liệu không hợp lệ.
+o Mục Error message (Nội dung): Gõ dòng chữ Nhập điểm nằm trong phạm vi từ 0 đến 10.
+o Nhấn OK.
+👉 Thử nghiệm: Hãy yêu cầu sinh viên nhập thử số 15 vào cột điểm. Nếu Excel hiện bảng báo lỗi như đã cài đặt là Thành công.
+
+PHẦN 4: TÍNH TỔNG DÙNG TÊN VÙNG (Yêu cầu 4)
+Mục đích: Tính toán nhanh bằng tên gợi nhớ.
+1. Bước 1: Click chuột vào ô cần tính tổng (ô E9 - cạnh chữ “Tổng tiền học phí”).
+2. Bước 2: Gõ công thức sau: =SUM(_hocphi)
+3. Bước 3: Nhấn Enter.
+o Giải thích cho sinh viên: Excel sẽ tự động tìm vùng có tên _hocphi (là E3:E8 đã làm ở Phần 2) để cộng lại.
+
+Mẹo nhỏ:
+• Lỗi thường gặp của sinh viên:
+o Quên gõ dấu bằng (=) trước công thức.
+o Đặt tên vùng có dấu tiếng Việt hoặc khoảng trắng (Ví dụ: “Học phí” → Sai, phải là _hocphi).
+o Khi làm Data Validation xong, nhập sai nhưng không thấy lỗi → Do chưa bôi đen đúng vùng D3:D8 trước khi cài đặt.
+• Cách kiểm tra nhanh: Thầy chỉ cần click vào ô E9, nếu thấy công thức =SUM(_hocphi) là đạt. Nếu thấy =SUM(E3:E8) là chưa đạt yêu cầu về đặt tên vùng.
+
+HƯỚNG DẪN THỰC HÀNH EXCEL CƠ BẢN - BÀI 2
+Mục tiêu: Giúp sinh viên biết cách “bóc tách” thông tin từ một chuỗi ký tự (Ví dụ: Từ mã NU18A1A phải máy phải tự hiểu là ngành Điều Dưỡng, khóa 18).
+PHẦN 1: CHUẨN BỊ DỮ LIỆU (Yêu cầu 1)
+Mục đích: Có dữ liệu chuẩn để hàm chạy đúng.
+1. Nhập dữ liệu: Nhập bảng tính từ ô A1 đến F8 theo mẫu trong đề bài.
+o Lưu ý quan trọng: Cột “Mã lớp” (Cột C) phải nhập chính xác, không thừa dấu cách.
+o Dữ liệu mẫu:
+• C3: NU18A1A
+• C4: IT19A1A
+• …
+2. Định dạng: Kẻ khung (All Borders) cho bảng tính đẹp mắt.
+
+PHẦN 2: XÁC ĐỊNH NGÀNH HỌC (Yêu cầu 2)
+Mục đích: Dạy máy tính “Nếu thấy 2 chữ đầu là IT thì điền Công nghệ thông tin”.
+Phân tích logic:
+• Ta cần lấy 2 ký tự đầu của Mã lớp → dùng hàm LEFT.
+• Ta cần so sánh 2 ký tự đó với quy ước (NU, IT, EL,…) → dùng hàm IF lồng nhau.
+Thao tác:
+1. Click vào ô D3 (Cột Ngành học, dòng đầu tiên của danh sách).
+2. Nhập công thức sau (Lưu ý sinh viên phải gõ chính xác dấu ngoặc và dấu nháy kép "):
+=IF(LEFT(C3,2)="NU", "Điều Dưỡng", IF(LEFT(C3,2)="IT", "Công nghệ thông tin", IF(LEFT(C3,2)="EL", "Ngôn ngữ Anh", IF(LEFT(C3,2)="LE", "Luật", IF(LEFT(C3,2)="CE", "Xây dựng", "Quản trị kinh doanh")))))
+3. Giải thích cho sinh viên:
+o LEFT(C3,2): Cắt lấy 2 chữ cái bên trái của ô Mã lớp.
+o "NU", "IT"...: Các mã cần so sánh (phải để trong ngoặc kép).
+o IF(...): Nếu đúng mã này thì trả về tên ngành kia, nếu sai thì xét mã tiếp theo.
+4. Nhấn Enter và kéo tay nắm điền (fill handle) xuống các ô còn lại.
+
+PHẦN 3: XÁC ĐỊNH KHÓA HỌC (Yêu cầu 3)
+Mục đích: Lấy con số nằm ở giữa mã lớp (Ví dụ: Lấy số 18 từ NU18A1A).
+Phân tích logic:
+• Số 18 nằm ở vị trí thứ 3 và lấy 2 ký tự → dùng hàm MID.
+• Kết quả cắt ra là văn bản “18”, muốn tính toán được phải chuyển thành số → dùng hàm VALUE.
+Thao tác:
+1. Click vào ô E3 (Cột Khóa).
+2. Nhập công thức:
+=VALUE(MID(C3,3,2))
+3. Giải thích cho sinh viên:
+o C3: Ô chứa mã lớp.
+o 3: Bắt đầu cắt từ ký tự thứ 3.
+o 2: Cắt lấy 2 ký tự.
+o VALUE(...): Biến kết quả thành con số để sau này có thể cộng trừ nhân chia.
+
+PHẦN 4: TÁCH TÊN SINH VIÊN (Yêu cầu 4) - Phần khó nhất
+Mục đích: Lấy phần tên cuối cùng trong họ tên (Ví dụ: “Nguyễn Thục Anh” → lấy “Anh”).
+Phân tích logic (dành cho giảng viên): Công thức trong giáo trình sử dụng phương pháp “vét cạn” thủ công: Kiểm tra từng ký tự từ phải sang trái, nếu gặp khoảng trắng (dấu cách) thì cắt chuỗi từ đó trở về sau.
+Thao tác cho sinh viên: Đây là công thức rất dài, dễ sai sót. Thầy nên yêu cầu sinh viên nhập thật chậm hoặc copy mẫu nếu học trên phòng máy.
+1. Click vào ô F3 (Cột Tên sinh viên).
+2. Nhập công thức:
+=IF(MID(B3,LEN(B3)-1,1)=" ", RIGHT(B3,1), IF(MID(B3,LEN(B3)-2,1)=" ", RIGHT(B3,2), IF(MID(B3,LEN(B3)-3,1)=" ", RIGHT(B3,3), IF(MID(B3,LEN(B3)-4,1)=" ", RIGHT(B3,4), RIGHT(B3,5)))))
+(Lưu ý: Công thức trên đã được tôi rút gọn một chút so với bản gốc để giảm độ dài nhưng vẫn đảm bảo đúng với đa số tên người Việt có độ dài tên từ 1-5 ký tự).
+Nếu muốn dùng chính xác 100% công thức trong tài liệu gốc (dài hơn):
+=IF(MID(B3,LEN(B3)-1,1)=" ", RIGHT(B3,1), IF(MID(B3,LEN(B3)-2,1)=" ", RIGHT(B3,2), IF(MID(B3,LEN(B3)-3,1)=" ", RIGHT(B3,3), IF(MID(B3,LEN(B3)-4,1)=" ", RIGHT(B3,4), IF(MID(B3,LEN(B3)-5,1)=" ", RIGHT(B3,5), RIGHT(B3,6))))))
+3. Mẹo giải thích đơn giản: “Công thức này giống như đi dò ngược từ cuối tên lên, bao giờ gặp dấu cách thì dừng lại và cắt lấy cái tên ra.”
+
+Mẹo hỗ trợ:
+1. Lỗi dấu phẩy/chấm phẩy:
+o Máy tính ở trường có thể cài đặt dấu ngăn cách là dấu chấm phẩy ; thay vì dấu phẩy ,.
+o Dấu hiệu nhận biết: Khi sinh viên gõ xong ấn Enter thì Excel báo lỗi There's a problem with this formula....
+o Khắc phục: Bảo sinh viên đổi toàn bộ dấu , trong công thức thành ;.
+2. Lỗi #NAME?:
+o Sinh viên gõ sai tên hàm (Ví dụ: LEF thay vì LEFT, VALU thay vì VALUE).
+3. Lỗi #VALUE! ở câu Khóa học:
+o Do ở cột Mã lớp (C3), sinh viên gõ thiếu ký tự hoặc có dấu cách lạ, khiến hàm MID cắt trúng chữ cái thay vì số, nên hàm VALUE không đổi ra số được.
+4. Lời khuyên sư phạm:
+o Với câu 4 (Tách tên), đây là câu phân loại giỏi/khá. Với sinh viên yếu, Thầy có thể cho phép sinh viên chỉ cần làm được câu 2 (Ngành học) và câu 3 (Khóa học) là đạt yêu cầu cơ bản.
+
+HƯỚNG DẪN THỰC HÀNH EXCEL CƠ BẢN - BÀI 3
+Mục tiêu: Biết cách tra cứu đơn giá từ bảng phụ (VLOOKUP) và làm báo cáo thống kê đơn giản.
+PHẦN 1: CHUẨN BỊ DỮ LIỆU (Yêu cầu 1)
+Mục đích: Xây dựng bảng chính và bảng phụ chính xác từng ô.
+1. Nhập dữ liệu Bảng chính (Hàng 1 đến Hàng 8):
+o Nhập tiêu đề cột từ A2 đến H2 (STT, Họ tên, Mã ngành…).
+o Nhập dữ liệu mẫu từ dòng 3 đến dòng 8.
+o Lưu ý: Cột Ngày sinh (D) nhập theo định dạng ngày/tháng/năm. Nếu máy tính hiển thị sai (ví dụ tháng trước ngày sau), hãy dặn sinh viên tạm thời chấp nhận, chỉnh sửa sau.
+2. Nhập dữ liệu Bảng 1 (Bảng đơn giá):
+o Nhập tại vùng G12:H16.
+o G13: IT - H13: 480000
+o G14: EL - H14: 450000
+o … (nhập hết đến BA).
+3. Nhập dữ liệu Bảng Thống kê:
+o Nhập tại vùng B12:E16.
+o Cột B chứa tên ngành (IT, EL, NU, BA) để làm điều kiện thống kê.
+
+PHẦN 2: TÍNH THỨ TRONG TUẦN (Yêu cầu 2)
+Mục đích: Đổi ngày sinh sang thứ (Thứ 2, Thứ 3…). Đây là câu khó do công thức dài. Nếu sinh viên quá yếu, Thầy có thể cho phép bỏ qua hoặc chỉ yêu cầu làm hàm WEEKDAY đơn giản.
+1. Bước 1: Click vào ô E3 (Cột Thứ trong tuần).
+2. Bước 2: Nhập công thức (khuyên sinh viên gõ thật chậm hoặc copy):
+  =IF(WEEKDAY(D3,1)=1,"Chủ nhật", IF(WEEKDAY(D3,1)=2,"Thứ 2", IF(WEEKDAY(D3,1)=3,"Thứ 3", IF(WEEKDAY(D3,1)=4,"Thứ 4", IF(WEEKDAY(D3,1)=5,"Thứ 5", IF(WEEKDAY(D3,1)=6,"Thứ 6", "Thứ 7"))))))
+3. Bước 3: Enter và kéo công thức xuống.
+
+PHẦN 3: TRA CỨU ĐƠN GIÁ (Yêu cầu 3) - Trọng tâm
+Mục đích: Máy tự dò “Mã ngành” ở bảng chính, so sánh với “Bảng 1” để lấy giá tiền tương ứng.
+1. Bước 1: Click vào ô G3 (Cột Đơn giá).
+2. Bước 2: Gõ công thức: =VLOOKUP(
+3. Bước 3: Chọn các thành phần:
+o Giá trị dò: Click vào ô Mã ngành của người đó (C3). Gõ dấu phẩy ,
+o Bảng dò: Quét chọn Bảng 1 (từ G13 đến H16).
+• CỰC KỲ QUAN TRỌNG: Ngay sau khi quét xong, nhấn phím F4 trên bàn phím 1 lần. Địa chỉ sẽ biến thành $G$13:$H$16.
+• Giải thích: “Em bấm F4 để khóa chặt cái bảng giá lại, không cho nó chạy lung tung khi copy công thức.”
+o Gõ dấu phẩy ,
+o Cột lấy dữ liệu: Gõ số 2 (vì giá tiền nằm ở cột thứ 2 của bảng vừa quét). Gõ dấu phẩy ,
+o Kiểu dò: Gõ số 0 (dò chính xác).
+o Đóng ngoặc ).
+o Công thức hoàn chỉnh: =VLOOKUP(C3, $G$13:$H$16, 2, 0)
+4. Bước 4: Enter và kéo công thức xuống.
+
+PHẦN 4: TÍNH THÀNH TIỀN (Yêu cầu 4)
+Mục đích: Phép nhân cơ bản.
+1. Bước 1: Click vào ô H3.
+2. Bước 2: Gõ =F3*G3 (Số tín chỉ nhân Đơn giá).
+3. Bước 3: Enter và kéo xuống.
+
+PHẦN 5: LẬP BẢNG THỐNG KÊ (Yêu cầu 5)
+Mục đích: Đếm xem mỗi ngành có bao nhiêu sinh viên và tổng tiền là bao nhiêu.
+a. Đếm số sinh viên (Hàm COUNTIF):
+1. Click vào ô C13 (Cột Số sinh viên, dòng ngành IT).
+2. Gõ: =COUNTIF($C$3:$C$8, B13)
+o _ C 3: C 8_: Là cột Mã ngành ở bảng chính (Nhớ nhấn F4 để khóa).
+o B13: Là ô chứa chữ “IT” ngay bên cạnh để làm điều kiện đếm.
+b. Tính tổng tiền (Hàm SUMIF):
+1. Click vào ô D13 (Cột Tổng tiền Sumif).
+2. Gõ: =SUMIF($C$3:$C$8, B13, $H$3:$H$8)
+o _ C 3: C 8_: Vùng chứa mã ngành để xét điều kiện (Nhớ F4).
+o B13: Điều kiện “IT”.
+o _ H 3: H 8_: Vùng chứa Thành tiền cần cộng (Nhớ F4).
+(Phần SUMPRODUCT trong đề bài là phần nâng cao, với sinh viên yếu có thể tạm bỏ qua để tập trung làm tốt SUMIF trước).
+
+Mẹo hỗ trợ:
+1. Vấn đề phím F4:
+o Nhiều laptop đời mới phải bấm tổ hợp Fn + F4 mới nhận lệnh khóa tuyệt đối ($).
+o Nếu sinh viên bấm F4 mà thấy tắt âm thanh, tăng độ sáng màn hình… nghĩa là chưa bấm Fn.
+o Khắc phục thủ công: Nếu không bấm được F4, bảo sinh viên tự gõ dấu $ bằng tay (Shift + số 4) vào trước chữ cái và số (ví dụ: $G$13).
+2. Lỗi dò tìm #N/A:
+o Nguyên nhân: Mã ngành ở bảng chính gõ thừa dấu cách (Ví dụ “IT” khác với “IT”).
+o Khắc phục: Kiểm tra lại dữ liệu nhập ở cột C và bảng phụ xem có sạch không.
+3. Định dạng ngày tháng:
+o Nếu nhập 20/03/2002 mà máy căn lề trái (hiểu là văn bản) → Máy đang hiểu sai định dạng.
+o Mẹo chữa cháy: Bảo sinh viên nhập theo chuẩn máy tính đang hiển thị (thường là Tháng/Ngày/Năm) để làm bài cho ra kết quả đúng trước.
+
+HƯỚNG DẪN THỰC HÀNH EXCEL CƠ BẢN - BÀI 4 (NÂNG CAO)
+Mục tiêu: Tính toán doanh thu phức tạp và làm báo cáo thống kê sử dụng hàm “D” (Database functions: DSUM, DCOUNT).
+PHẦN 1: CHUẨN BỊ DỮ LIỆU (Yêu cầu 1)
+1. Nhập Bảng Chính (Dòng 1-14):
+o Nhập từ A2 đến H14.
+o Lưu ý cột Ngày bán (D): Nhập đúng định dạng ngày/tháng/năm.
+o Lưu ý cột Mã hàng (B): Nhập chính xác, không thừa dấu cách (VD: KM1-RE).
+2. Nhập Bảng Phụ:
+o Bảng 1 (Đơn giá): Vùng A18:E21.
+o Bảng 2 (Nhãn hiệu): Vùng G18:H20.
+3. Nhập các Bảng Thống Kê và Điều Kiện:
+o Nhập chính xác các bảng nhỏ ở phía dưới (từ dòng 23 trở xuống và dòng 48 trở xuống như trong đề).
+o Mẹo: Tiêu đề của bảng điều kiện (ví dụ chữ “Nhãn hiệu”, “Tên SP”) phải giống y hệt tiêu đề của bảng chính. Tốt nhất là copy tiêu đề ở dòng 2 dán xuống để tránh sai chính tả.
+
+PHẦN 2: TÊN SẢN PHẨM & NHÃN HIỆU (Yêu cầu 2 & 3)
+Mục đích: Luyện tập kỹ năng cắt chuỗi kết hợp tra cứu.
+1. Tên sản phẩm (Cột E):
+• Lấy ký tự đầu tiên của Mã hàng tra vào Bảng 1.
+• Công thức tại E3:
+  =VLOOKUP(LEFT(B3,1), $A$19:$E$21, 2, 0)
+  (Dịch: Cắt chữ cái đầu ô Mã hàng, đem dò trong bảng A19:E21, lấy cột số 2).
+2. Nhãn hiệu (Cột F):
+• Lấy 2 ký tự cuối của Mã hàng tra vào Bảng 2.
+• Công thức tại F3:
+  =VLOOKUP(RIGHT(B3,2), $G$18:$H$20, 2, 0)
+  (Dịch: Cắt 2 chữ cái cuối ô Mã hàng, đem dò trong bảng G18:H20, lấy cột số 2).
+
+PHẦN 3: ĐƠN GIÁ (Yêu cầu 4) - Câu khó nhất bài
+Mục đích: Tra cứu động. Cột lấy giá trị sẽ thay đổi tùy theo nhãn hiệu (Revon lấy cột 3, Debon lấy cột 4…)
+Phân tích cho sinh viên: Bình thường ta gõ số cột cố định (ví dụ số 2). Nhưng ở đây, giá của Revon nằm cột 3, Debon cột 4, Maybeline cột 5. Nên ta phải nhét hàm IF vào chỗ số cột.
+Thao tác:
+1. Click ô G3.
+2. Nhập công thức (khuyên sinh viên làm từ từ):
+  =VLOOKUP(LEFT(B3,1), $A$19:$E$21, IF(F3="Revon", 3, IF(F3="Debon", 4, 5)), 0)
+3. Giải thích: “Tìm tên hàng như cũ, nhưng đoạn lấy cột nào thì máy tự xem: Nếu là Revon thì lấy cột 3, nếu là Debon lấy cột 4, còn lại lấy cột 5.”
+
+PHẦN 4: THÀNH TIỀN CÓ GIẢM GIÁ (Yêu cầu 5)
+Mục đích: Tính toán với điều kiện kép (Hàm AND).
+Logic: Giá x Số lượng. Nhưng nếu (Hiệu là Debon VÀ Ngày bán nhỏ hơn 10) thì chỉ tính 90% tiền (giảm 10%).
+Thao tác tại ô H3:
+=C3 * G3 * IF(AND(F3="Debon", DAY(D3)<10), 90%, 1)
+• C3*G3: Số lượng nhân Đơn giá.
+• AND(...): Kiểm tra xem có thỏa mãn cả 2 điều kiện không.
+• 90%: Nếu thỏa mãn thì nhân 90%.
+• 1: Nếu không thỏa mãn thì giữ nguyên (nhân với 1).
+
+PHẦN 5: THỐNG KÊ DSUM, DCOUNT (Yêu cầu 6, 7, 8)
+Mục đích: Sử dụng hàm cơ sở dữ liệu. Đây là phần dễ sai nhất do sinh viên không biết tạo vùng điều kiện.
+Quy tắc “Thần chú” cho hàm D: =DSUM(Bảng_Lớn_Chứa_Tiêu_Đề, "Tên_Cột_Cần_Tính", Vùng_Điều_Kiện_Nhỏ)
+Bước 1: Tạo vùng điều kiện (Criteria) Thầy hướng dẫn sinh viên nhập các bảng điều kiện nhỏ ở một chỗ trống (ví dụ dòng 48-55 như đề bài ):
+• Ví dụ điều kiện Revon: Ô trên ghi Nhãn hiệu, ô dưới ghi Revon.
+• Ví dụ điều kiện Tháng 2: Ô trên ghi Tháng, ô dưới ghi công thức =MONTH(D3)=2 (Lưu ý: Tiêu đề ô này không được trùng tên cột trong bảng chính, hoặc để trống tiêu đề). Tuy nhiên, đề bài gợi ý cách khác đơn giản hơn ở, ta sẽ theo cách đề bài.
+Bước 2: Viết hàm (Ví dụ Yêu cầu 6 - Bảng thống kê Revon) Tại ô B25 (Tổng số lượng hàng Revon):
+=DSUM($A$2:$H$14, "Số lượng", C48:C49)
+• $A$2:$H$14: Quét toàn bộ bảng chính (cả tiêu đề). Nhấn F4.
+• "Số lượng": Tiêu đề của cột cần cộng tổng.
+• C48:C49: Quét vùng điều kiện nhỏ (Gồm 2 ô: Tiêu đề “Nhãn hiệu” và chữ “Revon” ở dưới).
+Làm tương tự cho các ô còn lại:
+• Tổng thành tiền Revon: Thay “Số lượng” bằng “Thành tiền”.
+• Đếm số đơn hàng (DCOUNT): Thay hàm DSUM bằng DCOUNT, cột đếm có thể chọn “Mã hàng”.
+
+Mẹo hỗ trợ:
+1. Vùng Điều Kiện (Criteria Range) là chìa khóa:
+o Sinh viên hay quét sai vùng điều kiện (quét thiếu tiêu đề hoặc quét dư ô trắng).
+o Mẹo: Bảo sinh viên tô màu nền vàng cho các vùng điều kiện nhỏ để dễ nhìn và quét chính xác.
+2. Tiêu đề phải khớp 100%:
+o Nếu bảng chính ghi là Nhãn hiệu mà bảng điều kiện ghi là Nhãn Hiệu (viết hoa H) hoặc Nhãn hiệu (thừa dấu cách) thì hàm DSUM sẽ trả về 0.
+o Khắc phục: Copy tiêu đề từ dòng 2 dán xuống vùng điều kiện.
+3. Đơn giản hóa yêu cầu 4 (Đơn giá):
+o Nếu thấy công thức VLOOKUP lồng IF quá khó với lớp AE25M, thầy có thể cho phép sinh viên tạo thêm 3 cột phụ đơn giá cho 3 hãng rồi dùng hàm IF đơn giản, sau đó mới nhân. Tuy nhiên, nếu muốn dạy đúng chuẩn thì cứ giữ nguyên công thức trên nhưng giải thích chậm.
+4. Kiểm tra nhanh:
+o Với hàm DSUM/DCOUNT, nếu kết quả ra số liệu tổng của toàn bộ bảng (số rất to) → Sai vùng điều kiện (thường là để trống điều kiện).
+o Nếu kết quả ra 0 → Sai tên tiêu đề hoặc sai chính tả trong điều kiện.
+
+BÀI TẬP VỀ NHÀ - PHẦN 1
+Chủ đề: Quản lý kho phụ tùng & Mã vật tư (Yêu cầu sinh viên tạo một file Excel mới và làm 2 bài tập sau trên 2 Sheet khác nhau)
+BÀI 1: NHẬP LIỆU VÀ KIỂM SOÁT (Mức độ: Dễ)
+Mục tiêu: Luyện tập thao tác nhập thô, kẻ bảng, đặt tên vùng (Name Range) và Ràng buộc dữ liệu (Data Validation).
+1. Tạo dữ liệu: Nhập bảng tính sau vào Sheet 1 (từ ô A1):
+STTTên Phụ TùngMã KhoSố LượngĐơn GiáThành Tiền1Lốp xe MichelinKHO A25000002Nhớt CastrolKHO B4500003Lọc gió điều hòaKHO A1500004Má phanh trướcKHO C8000005Bugi đánh lửaKHO B120000(Để trống cột Số Lượng và Thành Tiền)
+2. Yêu cầu thực hiện:
+• Câu 1: Đặt tên vùng (Define Name) cho cột Đơn Giá (D2:D6) là _dongia.
+• Câu 2: Thiết lập Ràng buộc dữ liệu (Data Validation) cho cột Số Lượng (C2:C6):
+o Chỉ cho phép nhập Số nguyên (Whole number).
+o Giá trị từ 1 đến 100.
+o Nếu nhập sai, hiện thông báo lỗi tiếng Việt: “Lỗi rồi! Chỉ nhập số lượng từ 1 đến 100”.
+• Câu 3: Nhập thử số liệu vào cột Số Lượng (nhập cả số đúng và thử nhập số 101 để kiểm tra lỗi).
+• Câu 4: Tính Thành Tiền = Số Lượng * _dongia (Bắt buộc dùng tên vùng vừa đặt, không dùng địa chỉ ô D2).
+
+BÀI 2: GIẢI MÃ MÃ VẬT TƯ (Mức độ: Trung bình)
+Mục tiêu: Luyện tập hàm LEFT, RIGHT, MID kết hợp IF lồng nhau (tương tự bài xác định Ngành học và Khóa học).
+1. Tạo dữ liệu: Nhập bảng tính sau vào Sheet 2:
+STTMã Vật TưHãng XeNăm SXLoại Phụ Tùng1TO-2023-L2HO-2022-N3MA-2024-K4TO-2021-N5KI-2023-L2. Yêu cầu thực hiện:
+• Câu 1: Xác định Hãng Xe (Dựa vào 2 ký tự đầu)
+o Dùng hàm LEFT lấy 2 ký tự đầu của Mã Vật Tư.
+o Dùng hàm IF lồng nhau để điền tên hãng:
+• Nếu là TO → ghi “Toyota”
+• Nếu là HO → ghi “Honda”
+• Nếu là MA → ghi “Mazda”
+• Còn lại → ghi “Kia”
+o Gợi ý công thức: =IF(LEFT(B2,2)="TO", "Toyota", IF(LEFT(B2,2)="HO", "Honda", ...))
+• Câu 2: Xác định Năm Sản Xuất (Lấy 4 ký tự ở giữa)
+o Các con số năm (2023, 2022…) nằm từ vị trí thứ 4 và lấy 4 ký tự.
+o Dùng hàm MID kết hợp VALUE để lấy số năm.
+o Gợi ý công thức: =VALUE(MID(B2, 4, 4))
+• Câu 3: Xác định Loại Phụ Tùng (Dựa vào 1 ký tự cuối)
+o Dùng hàm RIGHT lấy 1 ký tự cuối.
+o Dùng hàm IF:
+• Nếu là L → ghi “Lốp xe”
+• Nếu là N → ghi “Nhớt máy”
+• Nếu là K → ghi “Kính xe”
+o Gợi ý công thức: =IF(RIGHT(B2,1)="L", "Lốp xe", IF(RIGHT(B2,1)="N", "Nhớt máy", "Kính xe"))
+
+HƯỚNG DẪN CHẤM/KIỂM TRA NHANH CHO GIẢNG VIÊN
+Để hỗ trợ thầy Thắng kiểm tra nhanh bài làm của sinh viên yếu:
+1. Bài 1 (Cột Thành tiền): Click vào ô Thành tiền bất kỳ.
+o ✅ Đúng: Thấy công thức =C2*_dongia (hoặc tên tương tự).
+o ❌ Sai: Thấy công thức =C2*D2 (Sinh viên chưa biết dùng Name Range).
+2. Bài 1 (Validation): Nhập số 0 hoặc 200 vào cột Số lượng.
+o ✅ Đúng: Excel hiện bảng báo lỗi có tiếng Việt.
+o ❌ Sai: Excel cho phép nhập hoặc hiện báo lỗi tiếng Anh mặc định.
+3. Bài 2 (Hãng xe): Kiểm tra các dấu ngoặc đóng ))) ở cuối hàm IF. Sinh viên thường thiếu dấu ngoặc này dẫn đến lỗi công thức.
+
+BÀI TẬP VỀ NHÀ - PHẦN 2 (NÂNG CAO)
+Chủ đề: Tính toán hóa đơn dịch vụ & Báo cáo doanh thu (Yêu cầu sinh viên làm tiếp trên file Excel cũ hoặc tạo file mới)
+BÀI 3: HÓA ĐƠN DỊCH VỤ (Mức độ: Quan trọng)
+Mục tiêu: Luyện tập hàm VLOOKUP để tự động điền giá tiền và hàm SUMIF để tính doanh số của từng thợ.
+1. Tạo dữ liệu: Nhập Bảng Tra Cứu (Bảng Giá) vào một góc nhỏ (ví dụ từ ô A15 đến C18):
+Mã DVTên Dịch VụĐơn GiáDNĐổi nhớt máy150000RXRửa xe bọt tuyết50000BDBảo dưỡng phanh200000Nhập Bảng Chính (Nhật ký sửa chữa) từ ô A1:
+STTBiển SốMã DVTên Dịch VụSố LượngĐơn GiáThành Tiền147A-12345DN1251H-99999BD4329C-56789RX1447A-12345BD2551H-99999DN12. Yêu cầu thực hiện:
+• Câu 1: Điền Tên Dịch Vụ (Dùng VLOOKUP)
+o Dựa vào Mã DV ở bảng chính để tìm tên trong Bảng Tra Cứu.
+o Lưu ý: Khi quét bảng tra cứu (A16:C18), BẮT BUỘC PHẢI NHẤN F4 để khóa vùng (thành $A$16:$C$18).
+o Công thức gợi ý: =VLOOKUP(C2, $A$16:$C$18, 2, 0)
+• Câu 2: Điền Đơn Giá (Dùng VLOOKUP)
+o Tương tự câu 1, nhưng lấy cột số 3 (vì cột giá nằm thứ 3 trong bảng tra cứu).
+o Công thức gợi ý: =VLOOKUP(C2, $A$16:$C$18, 3, 0).
+• Câu 3: Tính Thành Tiền
+o Công thức: = Số Lượng * Đơn Giá.
+• Câu 4: Thống kê nhanh (Dùng COUNTIF, SUMIF)
+o Đếm xem có bao nhiêu xe làm dịch vụ “Bảo dưỡng phanh” (Mã BD).
+o Tính tổng doanh thu của riêng dịch vụ “Đổi nhớt máy” (Mã DN).
+o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền).
+
+BÀI 4: BÁO CÁO DOANH THU THÁNG (Mức độ: Khó - Dành cho SV Khá/Giỏi)
+Mục tiêu: Luyện tập tạo “Vùng điều kiện” và hàm cơ sở dữ liệu DSUM, DCOUNT (Giống Bài 4 trong tài liệu gốc).
+1. Tạo dữ liệu: Sử dụng lại bảng dữ liệu đã tính xong ở Bài 3. Giả sử bảng này nằm từ A1:G6.
+2. Tạo Vùng Điều Kiện (Criteria Range) - “Phiếu Yêu Cầu”: Sinh viên cần tạo ra 2 vùng điều kiện nhỏ ở bên dưới bảng chính:
+• Vùng điều kiện 1 (Tìm xe biển 47):
+o Ô trên ghi: Biển Số (Phải gõ y hệt tiêu đề cột B).
+o Ô dưới ghi: 47A-12345.
+• Vùng điều kiện 2 (Tìm dịch vụ giá cao > 100000):
+o Ô trên ghi: Đơn Giá (Phải gõ y hệt tiêu đề cột F).
+o Ô dưới ghi: >100000.
+3. Yêu cầu thực hiện:
+• Câu 1: Tính tổng tiền của xe biển số 47A-12345
+o Dùng hàm DSUM.
+o Công thức: =DSUM(Bảng_Lớn_A1_G6, "Thành Tiền", Vùng_DK_1).
+• Câu 2: Đếm số lượng đơn dịch vụ có giá trên 100.000đ
+o Dùng hàm DCOUNT.
+o Công thức: =DCOUNT(Bảng_Lớn_A1_G6, "Mã DV", Vùng_DK_2).
+
+GÓC “CỨU HỘ” (HƯỚNG DẪN CHẤM)
+Những lỗi sinh viên thường gặp ở phần này:
+1. Lỗi #N/A ở bài VLOOKUP:
+o Nguyên nhân: Sinh viên quên nhấn F4 khi chọn bảng tra cứu. Khi kéo công thức xuống, khung tìm kiếm bị trượt đi mất.
+o Cách chỉ dẫn: “Em click vào công thức bị lỗi, xem cái khung màu đỏ/xanh nó có đang bao quanh đúng cái Bảng Giá không hay bị chạy xuống dưới rồi?”
+2. Lỗi kết quả bằng 0 ở bài DSUM:
+o Nguyên nhân: Tiêu đề ở Vùng điều kiện không giống 100% với tiêu đề bảng chính (ví dụ dư dấu cách: “Biển Số” khác “Biển Số”).
+o Cách chỉ dẫn: “Em copy cái tiêu đề ‘Biển Số’ ở dòng 1 rồi dán đè xuống vùng điều kiện xem nó có nhảy số không.”
+3. Lỗi #NAME?:
+o Sinh viên gõ sai tên hàm (VLOOK thay vì VLOOKUP, SUM thay vì DSUM).
+Kết luận: Bộ bài tập này đã bao phủ đủ 4 kỹ năng cốt lõi của giáo trình:
+1. Nhập liệu & Validation (Bài 1).
+2. Xử lý chuỗi IF/LEFT/MID (Bài 2).
+3. Tra cứu VLOOKUP (Bài 3).
+4. Thống kê nâng cao DSUM (Bài 4).
