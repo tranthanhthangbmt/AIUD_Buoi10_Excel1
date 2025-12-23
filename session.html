@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Buổi Học</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="background-glob"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Quay lại Tổng quan</a>
+        <div class="lesson-meta-header">
+            <span id="session-number">Buổi X</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 id="session-title">Loading...</h1>
+                <p id="session-desc" class="description"></p>
+            </div>
+        </header>
+
+        <section id="lesson-grid" class="lesson-grid">
+            <!-- Lessons will be injected here by JS -->
+        </section>
+
+        <!-- <footer>
+            <p>&copy; 2024 Khoa CNTT - Đại Học Đông Á. Designed for Students.</p>
+        </footer> -->
+    </div>
+
+    <script src="data/lessons.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
