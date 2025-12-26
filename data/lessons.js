@@ -651,29 +651,37 @@ Nếu bán trước ngày 10 và hiệu Debon được giảm 10% đơn giá.
             {
                 id: 105,
                 sessionId: 10,
-                title: "BTVN Phần 1: Quản lý kho & Mã vật tư",
-                description: "Luyện tập nhập liệu, Validation và các hàm xử lý chuỗi (LEFT, RIGHT, MID, IF).",
-                image: "images/Buổi_10/Bài_1/pic1.png",
+                title: "BTVN Phần 1: Hóa đơn dịch vụ & Báo cáo",
+                description: "Luyện tập VLOOKUP, SUMIF, COUNTIF thông qua bài toán thực tế về hóa đơn dịch vụ.",
+                image: "images/Buổi_10/BTVN_1/2. Bảng Chính (Nhật ký sửa chữa).PNG",
                 video: "",
                 tasks: [],
                 docs: [
                     { name: "Đề bài chi tiết (PDF)", file: "Buổi 10_Bài 1-2-3-4 [Excel].pdf" }
                 ],
+                requirements: `<div style="margin-bottom: 20px;">
+    <strong>Bảng Tra Cứu (Tham khảo):</strong><br/>
+    <img src="images/Buổi_10/BTVN_1/1. Bảng Tra Cứu (Bảng Giá).PNG" style="max-width: 100%; border-radius: 8px; margin-top: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+</div>
+Yêu cầu thực hiện:
+• Câu 1: Điền Tên Dịch Vụ (Dùng VLOOKUP)
+o Dựa vào Mã DV ở bảng chính để tìm tên trong Bảng Tra Cứu.
+o Lưu ý: Khi quét bảng tra cứu (A16:C18), BẮT BUỘC PHẢI NHẤN F4 để khóa vùng (thành $A$16:$C$18).
+o Công thức gợi ý: =VLOOKUP(C2, $A$16:$C$18, 2, 0)
+• Câu 2: Điền Đơn Giá (Dùng VLOOKUP)
+o Tương tự câu 1, nhưng lấy cột số 3 (vì cột giá nằm thứ 3 trong bảng tra cứu).
+o Công thức gợi ý: =VLOOKUP(C2, $A$16:$C$18, 3, 0).
+• Câu 3: Tính Thành Tiền
+o Công thức: = Số Lượng * Đơn Giá.
+• Câu 4: Thống kê nhanh (Dùng COUNTIF, SUMIF)
+o Đếm xem có bao nhiêu xe làm dịch vụ “Bảo dưỡng phanh” (Mã BD).
+o Tính tổng doanh thu của riêng dịch vụ “Đổi nhớt máy” (Mã DN).
+o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 steps: [
                     {
-                        title: "BÀI 1: NHẬP LIỆU VÀ KIỂM SOÁT (Mức độ: Dễ)",
-                        content: "**Mục tiêu:** Luyện tập thao tác nhập thô, kẻ bảng, đặt tên vùng (Name Range) và Ràng buộc dữ liệu (Data Validation).\n\n**1. Tạo dữ liệu:**\n- Nhập bảng tính vào Sheet 1 (từ ô A1).\n- Cột số liệu: STT | Tên Phụ Tùng | Mã Kho (KHO A/B/C) | Số Lượng (Trống) | Đơn Giá | Thành Tiền (Trống).\n\n**2. Yêu cầu thực hiện:**\n- **Câu 1:** Đặt tên vùng (Define Name) cho cột Đơn Giá (D2:D6) là `_dongia`.\n- **Câu 2:** Thiết lập Data Validation cho cột Số Lượng (C2:C6):\n  + Allow: Whole number (Số nguyên).\n  + Between: 1 đến 100.\n  + Error Message: “Lỗi rồi! Chỉ nhập số lượng từ 1 đến 100”.\n- **Câu 3:** Nhập thử số liệu 101 để kiểm tra lỗi.\n- **Câu 4:** Tính Thành Tiền = Số Lượng * _dongia (Dùng tên vùng).",
-                        icon: "fa-edit"
-                    },
-                    {
-                        title: "BÀI 2: GIẢI MÃ MÃ VẬT TƯ (Mức độ: Trung bình)",
-                        content: "**Mục tiêu:** Luyện tập hàm LEFT, RIGHT, MID kết hợp IF lồng nhau.\n\n**1. Chuẩn bị:**\n- Nhập bảng tính vào Sheet 2.\n- Mã Vật Tư mẫu: TO-2023-L, HO-2022-N, MA-2024-K...\n\n**2. Yêu cầu:**\n- **Câu 1: Xác định Hãng Xe** (2 ký tự đầu - LEFT):\n  + TO -> Toyota, HO -> Honda, MA -> Mazda, còn lại -> Kia.\n  + Công thức: `=IF(LEFT(B2,2)=\"TO\", \"Toyota\", ...)`\n\n- **Câu 2: Năm Sản Xuất** (4 ký tự giữa - MID):\n  + Lấy từ vị trí số 4, lấy 4 ký tự.\n  + Công thức: `=VALUE(MID(B2, 4, 4))`\n\n- **Câu 3: Loại Phụ Tùng** (1 ký tự cuối - RIGHT):\n  + L -> Lốp xe, N -> Nhớt máy, còn lại -> Kính xe.",
-                        icon: "fa-code"
-                    },
-                    {
-                        title: "Hướng dẫn tự chấm nhanh",
-                        content: "**Bài 1 (Thành tiền):** Click ô Thành tiền, phải thấy `=C2*_dongia`. Nếu thấy `=C2*D2` là sai.\n**Bài 1 (Validation):** Nhập 200 phải báo lỗi tiếng Việt.\n**Bài 2 (Hãng xe):** Đếm đủ số dấu đóng ngoặc `)))`. Thiếu dấu ngoặc là lỗi phổ biến nhất.",
-                        icon: "fa-check-double"
+                        title: "Hướng dẫn thực hiện",
+                        content: "**Gợi ý các bước làm bài:**\n\n1. **Chuẩn bị dữ liệu:** Nhập thông tin 'Bảng chính' và 'Bảng tra cứu' vào Excel như hình minh họa.\n2. **Tên Dịch Vụ:** Sử dụng hàm VLOOKUP dò theo Mã DV. Nhớ F4 để cố định bảng giá.\n3. **Đơn Giá:** Vẫn dùng VLOOKUP nhưng lấy cột số 3.\n4. **Thành Tiền:** Nhân số lượng với đơn giá.\n5. **Thống Kê:** Dùng COUNTIF để đếm số lần xuất hiện mã 'BD'. Dùng SUMIF để tính tổng cột 'Thành Tiền' cho mã 'DN'.",
+                        icon: "fa-calculator"
                     }
                 ]
             },
@@ -682,18 +690,26 @@ Nếu bán trước ngày 10 và hiệu Debon được giảm 10% đơn giá.
                 sessionId: 10,
                 title: "BTVN Phần 2: Hóa đơn & Báo cáo (Nâng cao)",
                 description: "Tính toán hóa đơn dịch vụ với VLOOKUP và làm báo cáo thống kê với DSUM, DCOUNT.",
-                image: "images/Buổi_10/Bài_3/pic1.png",
+                image: "images/Buổi_10/BTVN_1/2. Bảng Chính (Nhật ký sửa chữa).PNG",
                 video: "",
                 tasks: [],
                 docs: [
                     { name: "Đề bài chi tiết (PDF)", file: "Buổi 10_Bài 1-2-3-4 [Excel].pdf" }
                 ],
+                requirements: `<div style="margin-bottom: 20px;">
+    <strong>Bảng Tra Cứu (Tham khảo):</strong><br/>
+    <img src="images/Buổi_10/BTVN_1/1. Bảng Tra Cứu (Bảng Giá).PNG" style="max-width: 100%; border-radius: 8px; margin-top: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+</div>
+<strong>Mục tiêu:</strong> Tạo Vùng điều kiện và dùng hàm DSUM/DCOUNT.
+
+1. <strong>Tạo Vùng Điều Kiện (Criteria):</strong>
+   - Vùng 1: Tiêu đề 'Biển Số' + Giá trị '47A-12345'.
+   - Vùng 2: Tiêu đề 'Đơn Giá' + Giá trị '>100000'.
+
+2. <strong>Yêu cầu:</strong>
+   - <strong>Tổng tiền xe biển 47:</strong> =DSUM(Bảng_Lớn, "Thành Tiền", Vùng_DK_1).
+   - <strong>Đếm đơn giá > 100k:</strong> =DCOUNT(Bảng_Lớn, "Mã DV", Vùng_DK_2).`,
                 steps: [
-                    {
-                        title: "BÀI 3: HÓA ĐƠN DỊCH VỤ (Quan trọng)",
-                        content: "**Mục tiêu:** Luyện VLOOKUP và SUMIF.\n\n**1. Chuẩn bị:**\n- Bảng Giá (A15:C18): Mã DV (DN, RX, BD) | Tên DV | Đơn Giá.\n- Bảng Nhật Ký (A1): Biển Số | Mã DV | Số Lượng...\n\n**2. Yêu cầu:**\n- **Điền Tên Dịch Vụ:** `=VLOOKUP(C2, $A$16:$C$18, 2, 0)` (Nhớ F4 khóa bảng).\n- **Điền Đơn Giá:** Tương tự, lấy cột 3.\n- **Thành Tiền:** = Số Lượng * Đơn Giá.\n- **Thống Kê:** Tổng doanh thu dịch vụ 'DN' bằng `=SUMIF(...)`.",
-                        icon: "fa-file-invoice-dollar"
-                    },
                     {
                         title: "BÀI 4: BÁO CÁO DOANH THU (Dành cho SV Khá)",
                         content: "**Mục tiêu:** Tạo Vùng điều kiện và dùng hàm DSUM/DCOUNT.\n\n**1. Tạo Vùng Điều Kiện (Criteria):**\n- Vùng 1: Tiêu đề 'Biển Số' + Giá trị '47A-12345'.\n- Vùng 2: Tiêu đề 'Đơn Giá' + Giá trị '>100000'.\n\n**2. Yêu cầu:**\n- **Tổng tiền xe biển 47:** `=DSUM(Bảng_Lớn, \"Thành Tiền\", Vùng_DK_1)`.\n- **Đếm đơn giá > 100k:** `=DCOUNT(Bảng_Lớn, \"Mã DV\", Vùng_DK_2)`.",
