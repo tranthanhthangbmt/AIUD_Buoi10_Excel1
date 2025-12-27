@@ -740,14 +740,14 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 "tasks": [
                     {
                         "name": "File thực hành",
-                        "file": "Buổi 11_Bài 5-6-7-8.xlsx"
+                        "file": "Bài 5-6-7-8.xlsx"
                     }
                 ],
                 "requirements": "1. Nhập liệu và định dạng bảng tính.\n2. Xác định cột tên hàng dựa vào mã hàng và bảng 1.\n3. Xác định cột thành tiền. Biết: Thành tiền bằng số lượng nhân với đơn giá (Giá sỉ nếu ký tự thứ 2 là 's', ngược lại là giá lẻ).\n4. Xác định cột chuyên chở. Biết: Chuyên chở bằng thành tiền nhân với phần trăm chuyên chở (tra trong bảng 2).\n5. Xác định cột phải trả: Phải trả = Thành tiền + Chuyên chở.\n6. Thống kê tổng cộng cho các cột thông qua tên vùng (Name Range).",
                 "docs": [
                     {
-                        "name": "Bài giảng buổi 11 (PDF)",
-                        "file": "Bài giảng buổi 11.pdf"
+                        "name": "Bài 5-6-7-8 [Excel] (PDF)",
+                        "file": "../DeBaiThucHanh/Bài 5-6-7-8 [Excel].pdf"
                     }
                 ],
                 "steps": [
@@ -774,7 +774,7 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                     },
                     {
                         "title": "Yêu cầu 3: Tính Thành tiền (VLOOKUP kết hợp IF/MID)",
-                        "content": "**Phân tích:**\n- Thành tiền = Số lượng * Đơn giá.\n- Đơn giá nằm trong Bảng 1 (_bang1).\n- Cột đơn giá thay đổi: Nếu ký tự thứ 2 là 's' (Giá sỉ) lấy cột 3, ngược lại (Giá lẻ) lấy cột 4.\n\n**Công thức tại ô E3:**\n`=D3 * VLOOKUP(LEFT(B3,1), bang1, IF(MID(B3,2,1)=\"s\", 3, 4), 0)`\n\n**Giải thích:**\n- `D3`: Số lượng.\n- `MID(B3,2,1)`: Lấy 1 ký tự bắt đầu từ vị trí số 2 của Mã hàng.\n- `IF(..., 3, 4)`: Nếu ký tự đó là \"s\" thì trả về số 3 (cột Giá sỉ), ngược lại trả về số 4 (cột Giá lẻ).",
+                        "content": "**Phân tích:**\n- Thành tiền = Số lượng * Đơn giá.\n- Đơn giá nằm trong Bảng 1 (_bang1).\n- Cột đơn giá thay đổi: Nếu ký tự thứ 2 là 's' (Giá sỉ) lấy cột 3, ngược lại (Giá lẻ) lấy cột 4.\n\n**Công thức tại ô E3:**\n`=D3 * VLOOKUP(LEFT(B3,1), _bang1, IF(MID(B3,2,1)=\"S\", 3, 4), 0)`\n\n**Giải thích:**\n- `D3`: Số lượng.\n- `MID(B3,2,1)`: Lấy 1 ký tự bắt đầu từ vị trí số 2 của Mã hàng.\n- `IF(..., 3, 4)`: Nếu ký tự đó là \"s\" thì trả về số 3 (cột Giá sỉ), ngược lại trả về số 4 (cột Giá lẻ).",
                         "icon": "fa-calculator",
                         "slideImage": "images/Buổi_11/Bài_5/5.3.png",
                         "videoUrl": "https://drive.google.com/file/d/1ojyfmvjxy5Ykee2pkewgSp9mXPNKvt1-/preview"
@@ -805,20 +805,20 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 "tasks": [
                     {
                         "name": "File thực hành",
-                        "file": "Buổi 11_Bài 5-6-7-8.xlsx"
+                        "file": "Bài 5-6-7-8.xlsx"
                     }
                 ],
                 "requirements": "1. Sắp xếp bảng tính: Khu vực (A-Z), Sản phẩm (A-Z), Mùa (Spring -> Summer -> Fall).\n2. Copy bảng sang sheet 'Bài 6_Filter'.\n3. Lọc: Fruit, Spring, Doanh số > $45,000.\n4. Lọc: Vegetables, Fall, Riverside Park.\n5. Lọc: Mã 10, Summer, Doanh số >= $15,000.\n6. Lọc nâng cao: (Downtown HOẶC Westlake) VÀ Doanh số > $100,000.",
                 "docs": [
                     {
-                        "name": "Bài giảng buổi 11 (PDF)",
-                        "file": "Bài giảng buổi 11.pdf"
+                        "name": "Bài 5-6-7-8 [Excel] (PDF)",
+                        "file": "../DeBaiThucHanh/Bài 5-6-7-8 [Excel].pdf"
                     }
                 ],
                 "steps": [
                     {
                         "title": "Lý thuyết cơ bản: Sắp xếp & Lọc dữ liệu",
-                        "content": "**Sắp xếp (Sort):** Sắp xếp dữ liệu theo một hoặc nhiều cột để dễ dàng phân tích và tìm kiếm. Có thể sắp xếp theo thứ tự tăng dần (A-Z, 0-9) hoặc giảm dần (Z-A, 9-0). Có thể sử dụng Custom List để sắp xếp theo thứ tự tùy chỉnh.\n\n**Lọc dữ liệu (Filter):** Trích xuất các bản ghi thỏa mãn điều kiện nhất định để phân tích. Có thể lọc theo giá trị cụ thể, điều kiện số học (lớn hơn, nhỏ hơn), hoặc điều kiện văn bản (chứa, bắt đầu với). Có thể áp dụng nhiều điều kiện cùng lúc (AND, OR) để tinh chỉnh kết quả lọc.",
+                        "content": "**1. Sắp xếp (Sort):**\nGiúp tổ chức dữ liệu để dễ dàng phân tích và tìm kiếm.\n\n- **Sắp xếp đơn giản:** Tăng dần (A-Z, 0-9) hoặc Giảm dần (Z-A, 9-0).\n- **Sắp xếp nhiều cấp (Multi-level Sort):** Khi cột đầu tiên có dữ liệu trùng nhau, Excel sẽ xét tiếp đến cột thứ 2. Ví dụ: Sắp xếp theo Tên (A-Z), nếu trùng tên thì sắp xếp theo Ngày sinh (Cũ -> Mới).\n- **Custom List:** Sắp xếp theo thứ tự tùy chỉnh không theo bảng chữ cái. Ví dụ: Thứ 2, Thứ 3... Chủ nhật; hoặc BGĐ, Trưởng phòng, Nhân viên.\n\n**2. Lọc dữ liệu (Filter):**\nTrích xuất các dòng thỏa mãn điều kiện để phân tích.\n\n- **Text Filters (Lọc văn bản):** Chứa từ (Contains), Bắt đầu bằng (Begins with), Kết thúc bằng (Ends with)...\n- **Number Filters (Lọc số):** Lớn hơn (Greater Than), Nhỏ hơn (Less Than), Top 10 giá trị cao nhất/thấp nhất, Trên trung bình (Above Average)...\n- **Logic lọc:**\n  + **VÀ (AND):** Khi lọc trên cùng 1 dòng dữ liệu (thỏa mãn tất cả điều kiện).\n  + **HOẶC (OR):** Khi chọn nhiều mục trong danh sách lọc (checkbox) hoặc dùng Advanced Filter.",
                         "icon": "fa-info-circle",
                     },
                     {
@@ -875,20 +875,20 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 "tasks": [
                     {
                         "name": "File thực hành (dùng dữ liệu Bài 6)",
-                        "file": "Buổi 11_Bài 5-6-7-8.xlsx"
+                        "file": "Bài 5-6-7-8.xlsx"
                     }
                 ],
                 "requirements": "1-3. Thống kê doanh số theo Khu vực, Mùa, Sản phẩm dùng Subtotal.\n4. Thống kê dùng Consolidate (ít dùng).\n5-7. Tạo báo cáo PivotTable:\n   - Cột: Mã, Dòng: Sản phẩm, Giá trị: Doanh số.\n   - Cột: Mùa, Dòng: Sản phẩm, Giá trị: Doanh số.\n   - Cột: Khu vực, Dòng: Sản phẩm, Giá trị: Doanh số.",
                 "docs": [
                     {
-                        "name": "Bài giảng buổi 11 (PDF)",
-                        "file": "Bài giảng buổi 11.pdf"
+                        "name": "Bài 5-6-7-8 [Excel] (PDF)",
+                        "file": "../DeBaiThucHanh/Bài 5-6-7-8 [Excel].pdf"
                     }
                 ],
                 "steps": [
                     {
                         "title": "Lý thuyết cơ bản: Subtotal & PivotTable",
-                        "content": "**Subtotal:** Công cụ tự động tính toán các tổng phụ (như tổng, đếm, trung bình) cho các nhóm dữ liệu dựa trên cột phân loại. Thường dùng để tạo báo cáo phân cấp và dễ dàng mở rộng/thu gọn các nhóm dữ liệu.\n\n**PivotTable:** Công cụ mạnh mẽ để tóm tắt, phân tích và trình bày dữ liệu. Cho phép người dùng kéo thả các trường dữ liệu vào các khu vực khác nhau (Rows, Columns, Values, Filters) để tạo ra các báo cáo ma trận linh hoạt và trực quan.",
+                        "content": "**1. Subtotal (Tổng phụ):**\nCông cụ tạo báo cáo phân nhóm và tính tổng tự động.\n- **Điều kiện bắt buộc:** Dữ liệu phải được **SẮP XẾP (SORT)** theo cột cần gom nhóm trước.\n- **Cấu trúc Subtotal:**\n  + **At each change in:** Chọn cột phân loại (Ví dụ: Khu vực).\n  + **Use function:** Chọn hàm thống kê (Sum, Count, Average...).\n  + **Add subtotal to:** Chọn cột cần tính toán (Ví dụ: Doanh số).\n- **Phân cấp (Outline):** Excel tạo ra các cấp độ 1, 2, 3 bên trái màn hình để mở rộng hoặc thu gọn dữ liệu.\n\n**2. PivotTable (Bảng tổng hợp):**\nCông cụ phân tích dữ liệu đa chiều mạnh mẽ nhất Excel.\n- **Ưu điểm:** Không làm thay đổi dữ liệu gốc, linh hoạt kéo thả, tự động cập nhật báo cáo.\n- **4 Vùng thao tác:**\n  + **Rows:** Các tiêu đề dòng (Ví dụ: Tên sản phẩm).\n  + **Columns:** Các tiêu đề cột (Ví dụ: Khu vực).\n  + **Values:** Dữ liệu số liệu cần tính toán (Ví dụ: Tổng doanh số).\n  + **Filters:** Bộ lọc tổng quát cho toàn báo cáo (Ví dụ: Năm).",
                         "icon": "fa-info-circle",
                     },
                     {
@@ -921,20 +921,20 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 "tasks": [
                     {
                         "name": "File thực hành",
-                        "file": "Buổi 11_Bài 5-6-7-8.xlsx"
+                        "file": "Bài 5-6-7-8.xlsx"
                     }
                 ],
                 "requirements": "1. Định dạng cột doanh số: Gradient Fill Orange Data Bar.\n2. Chuyển vùng A2:E86 thành Table.\n3. Thao tác Table: Total Row, Banded Rows.\n4. Xóa dữ liệu trùng (Remove Duplicates) theo Khu vực và Sản phẩm.",
                 "docs": [
                     {
-                        "name": "Bài giảng buổi 11 (PDF)",
-                        "file": "Bài giảng buổi 11.pdf"
+                        "name": "Bài 5-6-7-8 [Excel] (PDF)",
+                        "file": "../DeBaiThucHanh/Bài 5-6-7-8 [Excel].pdf"
                     }
                 ],
                 "steps": [
                     {
                         "title": "Lý thuyết cơ bản: Conditional Formatting & Table",
-                        "content": "**Conditional Formatting:** Công cụ cho phép định dạng ô dựa trên các điều kiện nhất định (ví dụ: giá trị lớn hơn, nhỏ hơn, nằm trong top/bottom). Giúp trực quan hóa dữ liệu, làm nổi bật các giá trị quan trọng hoặc xu hướng trong bảng tính.\n\n**Table trong Excel:** Là một vùng dữ liệu được định dạng đặc biệt với các tính năng như lọc tự động, sắp xếp, và công thức tham chiếu thông minh. Table giúp quản lý và phân tích dữ liệu dễ dàng hơn, đồng thời tự động mở rộng khi thêm dữ liệu mới.",
+                        "content": "**1. Conditional Formatting (Định dạng có điều kiện):**\nTự động thay đổi màu sắc ô dựa trên giá trị của nó.\n- **Highlight Cells Rules:** Tô màu ô lớn hơn/nhỏ hơn giá trị X, chứa văn bản Y, hoặc trùng lặp (Duplicate Values).\n- **Top/Bottom Rules:** Tô màu 10 giá trị cao nhất, top 10%, hoặc giá trị trên trung bình.\n- **Data Bars:** Vẽ biểu đồ thanh ngay trong ô (thanh càng dài giá trị càng lớn).\n- **Color Scales:** Tô màu dạng bản đồ nhiệt (Xanh - Vàng - Đỏ).\n- **Icon Sets:** Hiển thị biểu tượng (Mũi tên, Cờ, Đèn giao thông) bên cạnh số liệu.\n\n**2. Table (Bảng số liệu chuẩn):**\nBiến vùng dữ liệu thường thành bảng thông minh (Ctrl + T).\n- **Tính năng đặc biệt:**\n  + **Auto-Filter:** Tự động có nút lọc ở tiêu đề.\n  + **Total Row:** Dòng tổng cộng cuối bảng với menu chọn hàm nhanh (Sum, Average...).\n  + **Auto-Expand:** Tự động mở rộng định dạng và công thức khi thêm dòng mới.\n  + **Structured Reference:** Công thức dùng tên cột (VD: `=[@Đơn giá]*[@Số lượng]`) thay vì địa chỉ ô, giúp dễ đọc và ít sai sót.",
                         "icon": "fa-info-circle",
                     },
                     {
