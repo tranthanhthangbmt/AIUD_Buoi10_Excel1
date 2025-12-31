@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2>${session.title}</h2>
                 <p>${session.description}</p>
                 <div class="card-footer">
-                    <span><i class="fas fa-book-open"></i> ${session.totalLessons} bài học</span>
+                    <span><i class="fas fa-book-open"></i> ${session.lessons.length} bài học</span>
                     <span><i class="fas fa-arrow-right"></i> Xem chi tiết</span>
                 </div>
             </a>
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
 
         const docsHtml = lesson.docs.map(d => `
-            <a href="TaiLieuHuongDan/${d.file}" class="resource-item" target="_blank">
+            <a href="${d.file.startsWith('http') ? d.file : 'TaiLieuHuongDan/' + d.file}" class="resource-item" target="_blank">
                 <i class="fas fa-file-pdf"></i>
                 <span>${d.name}</span>
             </a>
