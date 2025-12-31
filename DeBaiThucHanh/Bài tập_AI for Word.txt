@@ -1,0 +1,167 @@
+﻿HƯỚNG DẪN THỰC HÀNH AI FOR WORD
+Tên bài học: Tăng tốc Ôn tập & Sáng tạo Nội dung với bộ đôi NotebookLM & Gemini
+Thời lượng: 3 tiết (135 phút) Mục tiêu:
+1. Hiểu và ứng dụng được công thức prompt PTCF.
+2. Sử dụng NotebookLM để tổng hợp kiến thức từ 6 module tài liệu môn học.
+3. Sử dụng Gemini (trong Docs hoặc bản web) để soạn thảo đề cương ôn tập.
+
+PHẦN 1: HƯỚNG DẪN & TƯ DUY (45 phút)
+Giảng viên làm mẫu (Demo) và truyền đạt tư duy cốt lõi.
+1. Khởi động: Tư duy mới về AI (5 phút)
+• Chuyển dịch từ “người thực hiện” sang “người ra lệnh và biên tập”.
+• Giới thiệu công thức PTCF (Persona - Task - Context - Format) để ra lệnh hiệu quả.
+2. Demo NotebookLM: “Trợ lý nghiên cứu” (20 phút)
+• Thao tác: Giảng viên upload file PDF của 6 module Kỹ năng số lên NotebookLM.
+• Phân tích: Chỉ cho sinh viên thấy tính năng “Source Guide” (Hướng dẫn nguồn) tự động tạo tóm tắt và câu hỏi gợi ý ngay khi upload.
+• Thực hành Chat: Demo hỏi tài liệu: “Dựa trên 6 module, hãy liệt kê các kỹ năng quan trọng nhất cần có của một công dân số” -> Nhấn mạnh vào việc kiểm tra trích dẫn (citations) để đảm bảo độ chính xác.
+3. Demo Gemini & Prompting: “Trợ lý viết lách” (20 phút)
+• Kịch bản: Từ ý chính rút ra ở NotebookLM, dùng Gemini để viết đề cương.
+• Áp dụng PTCF:
+o Ví dụ Prompt: “[P] Bạn là giảng viên môn Kỹ năng số. [T] Hãy viết đề cương ôn tập. [C] Dựa trên các ý chính về an toàn dữ liệu. [F] Trình bày dạng bảng so sánh ưu nhược điểm”.
+• Xử lý tình huống không có Gemini Pro: Hướng dẫn sinh viên dùng bản web (gemini.google.com), copy prompt vào, sau đó copy kết quả dán về Google Docs. Dùng tính năng định dạng thủ công hoặc công cụ có sẵn của Docs để tinh chỉnh.
+
+PHẦN 2: THỰC HÀNH TỔNG HỢP KIẾN THỨC (45 phút)
+Sinh viên thực hành cá nhân trên NotebookLM với mục tiêu ôn thi.
+Bài tập 1: Xây dựng “Kho tri thức ôn thi” (20 phút)
+• Yêu cầu: Sinh viên truy cập NotebookLM, tạo Notebook mới tên “Ôn thi Giữa kỳ Kỹ năng số”.
+• Hành động: Upload toàn bộ 6 module tài liệu môn học vào Notebook này.
+• Đầu ra: Sinh viên xem “Source Guide” để nắm nhanh cấu trúc của 6 module.
+Bài tập 2: Truy vấn dữ liệu & Tạo Flashcards (25 phút)
+• Yêu cầu: Sử dụng khung chat của NotebookLM để tìm ra các lỗ hổng kiến thức.
+• Prompt mẫu: “Tìm trong tài liệu các định nghĩa về [Khái niệm khó nhất trong module]. Giải thích nó cho một sinh viên năm nhất dễ hiểu.”
+• Tính năng nâng cao: Yêu cầu NotebookLM tạo Flashcards hoặc Quiz (Câu hỏi trắc nghiệm) từ 6 module để tự kiểm tra kiến thức tại chỗ.
+o Lợi ích: Giúp sinh viên ôn bài ngay tại lớp mà không chán.
+
+PHẦN 3: THỰC HÀNH SÁNG TẠO & TINH CHỈNH (45 phút)
+Sinh viên chuyển hóa kiến thức thành tài liệu ôn tập cá nhân trên Google Docs.
+Bài tập 3: Soạn thảo “Bí kíp ôn thi” (30 phút)
+• Yêu cầu: Mở Google Docs. Sử dụng Gemini (tích hợp hoặc copy-paste) để viết một tài liệu tóm tắt dài khoảng 1-2 trang về 3 chủ đề mà sinh viên thấy khó nhất trong 6 module.
+• Áp dụng PTCF: Bắt buộc prompt phải đủ 4 yếu tố.
+o P: Bạn là sinh viên xuất sắc.
+o T: Viết tóm tắt các bước bảo mật thông tin.
+o C: Dựa trên nội dung Module 4 về An toàn số.
+o F: Dạng danh sách (bullet points) ngắn gọn.
+Bài tập 4: Kỹ thuật Tinh chỉnh (Refine) (15 phút)
+• Yêu cầu: Sử dụng các tính năng tinh chỉnh của Gemini (hoặc prompt lại trên bản web) để sửa bản nháp vừa tạo:
+o Thử lệnh “Shorten” (Rút gọn) để làm “phao thi” (cheat sheet).
+o Thử lệnh “Change Tone” (Thay đổi giọng văn) sang hài hước/dễ nhớ để dễ học thuộc.
+o Sử dụng nút “Insert” để chèn kết quả ưng ý vào bài làm cuối cùng.
+
+PHẦN 4: BÀI TẬP VỀ NHÀ (TỐI ƯU THỜI GIAN)
+Mục tiêu: Hoàn thiện tài liệu ôn thi (Một công đôi việc).
+• Nhiệm vụ: Tiếp tục sử dụng Notebook đã tạo trên lớp. Yêu cầu NotebookLM tạo ra một bộ 10 câu hỏi trắc nghiệm ôn tập bao quát cả 6 module.
+• Đầu ra: Xuất bộ câu hỏi đó ra Google Docs, dùng Gemini định dạng lại thành file đề thi thử và tự làm bài.
+• Lợi ích: Sinh viên có ngay bộ đề cương và đề thi thử để ôn giữa kỳ mà không mất thời gian “làm bài tập” theo kiểu truyền thống.
+
+Chi tiết hướng dẫn và Bài tập
+THỰC HÀNH PHẦN 1: XÂY DỰNG “KHO TRI THỨC” ÔN THI GIỮA KỲ VỚI AI
+1. MỤC TIÊU BÀI HỌC
+Trong tiết thực hành này, các em sẽ học cách biến AI thành một “trợ lý học tập” đắc lực để chuẩn bị cho kỳ thi giữa kỳ môn Kỹ năng số. Cụ thể:
+• Sử dụng NotebookLM để tổng hợp và truy vấn nhanh kiến thức từ 6 Module tài liệu môn học.
+• Ứng dụng kỹ thuật Prompt PTCF (Persona - Task - Context - Format) trên Gemini để lập đề cương ôn tập tự động.
+2. CHUẨN BỊ
+• Tải về máy tính 06 file PDF tài liệu môn học Kỹ năng số (đã có trong mục Tài liệu học tập trên Canvas).
+• Đăng nhập sẵn tài khoản Google cá nhân.
+• Truy cập sẵn 2 công cụ:
+o NotebookLM: notebooklm.google.com
+o Gemini: gemini.google.com (hoặc mở Google Docs nếu đã có tích hợp Gemini).
+
+3. HƯỚNG DẪN THỰC HIỆN (STEP-BY-STEP)
+Bước 1: Xây dựng kho dữ liệu với NotebookLM
+1. Tại giao diện NotebookLM, chọn “New Notebook” và đặt tên là: On thi Giua ky KNS - [Tên của em].
+2. Nhấn “Add sources” (Thêm nguồn) -> Chọn PDF hoặc Google Drive -> Upload toàn bộ 06 file PDF tài liệu môn học lên.
+3. Chờ AI xử lý và xem phần “Notebook Guide” (hoặc Source Guide) hiện ra.
+4. Thử nghiệm: Tại khung chat, hãy hỏi một câu bất kỳ để kiểm tra kiến thức (Ví dụ: “Các nguy cơ an ninh mạng chính được đề cập trong Module 4 là gì?”).
+5. Chụp ảnh màn hình 1: Chụp lại giao diện NotebookLM đã upload đủ 6 nguồn và có câu trả lời của AI.
+Bước 2: Lập đề cương với Gemini & Công thức PTCF
+Sử dụng Gemini (trên web hoặc trong Google Docs) để soạn thảo đề cương dựa trên kiến thức em vừa nắm được. Áp dụng công thức prompt PTCF sau đây:
+• P (Persona - Vai trò): Bạn là một sinh viên xuất sắc môn Kỹ năng số.
+• T (Task - Nhiệm vụ): Hãy lập một đề cương ôn tập chi tiết cho kỳ thi giữa kỳ sắp tới.
+• C (Context - Bối cảnh): Tập trung vào 3 chủ đề khó nhất là: [Chọn 3 chủ đề em thấy khó trong 6 module, ví dụ: Bảo mật dữ liệu, Xử lý tin giả, Bản quyền số].
+• F (Format - Định dạng): Trình bày dưới dạng bảng gồm 3 cột: Tên chủ đề, Các khái niệm cốt lõi cần nhớ, và Ví dụ thực tế.
+Câu lệnh mẫu để copy vào Gemini: “Đóng vai một sinh viên xuất sắc môn Kỹ năng số. Hãy giúp tôi lập đề cương ôn tập giữa kỳ tập trung vào 3 module: An toàn thông tin, Tìm kiếm thông tin và Bản quyền. Dựa trên các kiến thức chuẩn, hãy trình bày kết quả dưới dạng bảng gồm 3 cột: Nội dung chính, Từ khóa quan trọng, và Lưu ý khi làm bài thi.”
+Bước 3: Tinh chỉnh kết quả
+• Đọc lại kết quả Gemini tạo ra.
+• Nếu chưa hài lòng, hãy yêu cầu sửa lại (Ví dụ: “Hãy giải thích rõ hơn cột Từ khóa quan trọng” hoặc “Thêm ví dụ minh họa cho phần Bản quyền”).
+• Xuất kết quả: Copy nội dung vào Google Docs hoặc Word.
+
+4. YÊU CẦU NỘP BÀI (Evidence)
+Các em hãy nộp sản phẩm lên Canvas bao gồm:
+1. Gửi đường link vào phần nộp bài: Giao diện NotebookLM của em (thể hiện đã upload tài liệu).
+2. File Đề cương ôn tập: File PDF hoặc Word chứa bảng đề cương mà em đã tạo cùng Gemini ở Bước 3.
+
+THỰC HÀNH PHẦN 2: TRUY VẤN SÂU & TỰ TẠO BỘ CÔNG CỤ ÔN THI (FLASHCARDS/QUIZ)
+1. MỤC TIÊU BÀI HỌC
+Kết thúc tiết thực hành này, sinh viên sẽ có khả năng:
+• Khai thác tính năng “Chat with your sources” (Trò chuyện với nguồn tin) của NotebookLM để tìm kiếm thông tin chính xác kèm trích dẫn (citations).
+• Sử dụng AI để tự động tạo ra bộ câu hỏi trắc nghiệm (Quiz) hoặc thẻ ghi nhớ (Flashcards) từ 6 module tài liệu môn học.
+• Phối hợp giữa NotebookLM và Gemini để định dạng lại tài liệu ôn thi một cách chuyên nghiệp.
+2. HƯỚNG DẪN THỰC HIỆN (STEP-BY-STEP)
+Bước 1: Truy vấn kiến thức & Kiểm chứng trích dẫn (15 phút)
+• Thao tác: Mở lại Notebook “On thi Giua ky KNS” mà các em đã tạo ở Tiết 1.
+• Nhiệm vụ: Chọn ra 2 Module mà em cảm thấy khó hiểu nhất trong 6 module. Sử dụng khung chat để yêu cầu NotebookLM giải thích lại các khái niệm khó.
+• Lưu ý quan trọng: Khi NotebookLM trả lời, các em sẽ thấy các số nhỏ (ví dụ [1], [2]). Hãy nhấp vào các số đó để xem AI lấy thông tin từ đoạn nào trong tài liệu gốc. Đây là bước kiểm chứng thông tin (Verify).
+Câu lệnh mẫu (Prompt): “Dựa trên tài liệu Module 3 và Module 4, hãy giải thích khái niệm ‘Bản quyền số’ và ‘Dữ liệu cá nhân’. Cho ví dụ minh họa cụ thể từ tài liệu. Hãy chỉ rõ thông tin này nằm ở trang nào.”
+Bước 2: Tạo bộ công cụ ôn thi tự động (20 phút)
+Thay vì ngồi đọc thuộc lòng, hãy yêu cầu AI biến tài liệu thành công cụ kiểm tra.
+• Cách 1: Tạo Flashcards (Thẻ ghi nhớ)
+o Prompt: “Hãy tạo danh sách 10 thuật ngữ quan trọng nhất trong 6 module này kèm theo định nghĩa ngắn gọn để tôi làm Flashcards học bài.”
+• Cách 2: Tạo Quiz (Đề thi thử)
+o Prompt: “Hãy đóng vai giảng viên, tạo cho tôi một bài kiểm tra trắc nghiệm gồm 10 câu hỏi (có 4 đáp án A,B,C,D và đáp án đúng) bao quát kiến thức của cả 6 module. Tập trung vào các lỗi sai thường gặp của sinh viên.”
+Bước 3: Định dạng & Xuất bản với Gemini (10 phút)
+NotebookLM rất giỏi về nội dung nhưng định dạng còn đơn giản. Hãy dùng Gemini để làm đẹp sản phẩm.
+• Thao tác:
+1. Copy toàn bộ nội dung Quiz hoặc Flashcards mà NotebookLM vừa tạo.
+2. Chuyển sang Gemini (hoặc dùng Gemini ngay trong Google Docs).
+3. Dán nội dung vào và dùng lệnh để định dạng lại.
+Câu lệnh mẫu cho Gemini:
+“Tôi có một bộ câu hỏi thô dưới đây. Hãy giúp tôi trình bày lại thành một ‘Phiếu bài tập’ đẹp mắt trên Google Docs. Định dạng câu hỏi in đậm, các đáp án nằm trên từng dòng riêng biệt, và tạo một bảng ‘Đáp án gợi ý’ (Answer Key) riêng ở cuối trang.”
+
+3. MẸO HAY (BONUS)
+• Nghe tài liệu (Audio Overview): Nếu em mỏi mắt không muốn đọc, hãy thử tính năng “Audio Overview” trong NotebookLM để nghe hai AI thảo luận về nội dung bài học của em như một bản Podcast (hiện hỗ trợ tốt nhất tiếng Anh, em có thể thử để luyện nghe tiếng Anh chuyên ngành).
+
+4. YÊU CẦU NỘP BÀI (EVIDENCE)
+Các em hãy nộp sản phẩm lên Canvas gồm:
+1. Chia sẻ và nộp đường link: Chia sẻ và nộp đường link NotebookLM.
+2. File sản phẩm: Tải lên file (Word/PDF) chứa “Bộ 10 câu hỏi trắc nghiệm ôn thi giữa kỳ” (hoặc bộ Flashcards) đã được định dạng đẹp mắt ở Bước 3.
+
+THỰC HÀNH PHẦN 3: TINH CHỈNH & HOÀN THIỆN “BÍ KÍP” ÔN THI (CHEAT SHEET)
+1. MỤC TIÊU BÀI HỌC
+Kết thúc tiết này, sinh viên sẽ thành thạo:
+• Kỹ năng “Refining” (Tinh chỉnh): Sử dụng AI để viết lại (Rewrite), rút gọn (Shorten) hoặc mở rộng (Elaborate) nội dung.
+• Tạo ra một “Cheat Sheet” (Tài liệu tóm tắt): Một tài liệu ôn thi gói gọn kiến thức trọng tâm của môn Kỹ năng số trong 1-2 trang A4, trình bày khoa học, dễ nhớ.
+2. HƯỚNG DẪN THỰC HIỆN (STEP-BY-STEP)
+Bước 1: Tổng hợp bản nháp (15 phút)
+• Thao tác: Mở một file Google Docs mới, đặt tên: Bi_kip_on_thi_KNS_[Ten_SV].
+• Nhiệm vụ:
+o Copy những nội dung quan trọng nhất mà em đã lọc ra từ NotebookLM (ở Tiết 2) dán vào đây.
+o Hoặc sử dụng tính năng “Help me write” (Giúp tôi viết) trong Docs với câu lệnh: > “Đóng vai trợ lý học tập, hãy viết tổng hợp các quy tắc an toàn số quan trọng nhất cho sinh viên năm nhất, dựa trên các từ khóa: Phishing, Malware, Mật khẩu mạnh.”
+Bước 2: Tinh chỉnh & “Mài giũa” nội dung (Quan trọng - 20 phút)
+Đây là bước biến văn bản thô thành “bí kíp” dễ học. Hãy thực hành các kỹ thuật sau:
+1. Rút gọn để dễ nhớ (Shorten):
+o Bôi đen một đoạn văn dài dòng về lý thuyết.
+o Chọn tính năng Refine (Tinh chỉnh) -> Shorten (Rút ngắn) để AI cô đọng lại ý chính.
+2. Biến văn bản thành danh sách (Bulletize):
+o Chọn một đoạn liệt kê các bước (ví dụ: Các bước bảo mật 2 lớp).
+o Yêu cầu Gemini: “Hãy trình bày đoạn này dưới dạng danh sách gạch đầu dòng (Bullet points) cho dễ nhìn”.
+3. Thay đổi giọng văn (Change Tone):
+o Thử chuyển một đoạn văn khô khan sang giọng văn Casual (Thân mật/Dễ hiểu) để việc học bớt căng thẳng.
+Bước 3: Trang trí & Hoàn thiện (10 phút)
+• Sử dụng các công cụ định dạng của Google Docs để làm nổi bật các từ khóa (Bôi đậm, Tô màu).
+• Thêm một phần “Mẹo làm bài thi” ở cuối trang. Hãy hỏi Gemini: “Dựa trên kiến thức môn này, hãy cho tôi 5 mẹo để làm bài thi trắc nghiệm đạt điểm cao”.
+• Xuất file: Vào Tệp (File) -> Tải xuống (Download) -> PDF.
+
+3. BÀI TẬP VỀ NHÀ
+Để chuẩn bị tốt nhất cho kỳ thi mà không mất quá nhiều thời gian, các em hãy thực hiện các bước sau tại nhà:
+1. Hoàn thiện bộ đề cương: Áp dụng quy trình đã học hôm nay để làm nốt đề cương cho các Module còn lại (mà trên lớp chưa kịp làm).
+2. Thử thách “Mô phỏng phòng thi”:
+o Mở lại bộ Quiz (trắc nghiệm) đã tạo ở Tiết 2.
+o Tự bấm giờ và làm bài nghiêm túc trong 15 phút.
+o Check lại đáp án với NotebookLM để xem mình sai ở đâu và tại sao sai.
+3. Chia sẻ: (Khuyến khích) Chia sẻ file “Bí kíp ôn thi” của em lên diễn đàn lớp học để cùng tham khảo với các bạn.
+4. YÊU CẦU NỘP BÀI (EVIDENCE)
+Các em nộp duy nhất 01 file PDF “Bí kíp ôn thi giữa kỳ” lên Canvas.
+Yêu cầu của file:
+• Độ dài: Tối đa 02 trang A4.
+• Nội dung: Phải chứa kiến thức tóm tắt của ít nhất 3 Module.
+• Hình thức: Có sử dụng gạch đầu dòng, bôi đậm từ khóa (thể hiện đã qua tinh chỉnh).
