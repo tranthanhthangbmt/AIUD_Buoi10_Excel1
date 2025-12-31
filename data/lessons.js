@@ -318,8 +318,8 @@ const sessionsData = [
             {
                 id: 8,
                 sessionId: 3,
-                title: "Bài 8: SmartArt & Charts",
-                description: "Tạo sơ đồ, biểu đồ minh họa với SmartArt và Charts.",
+                title: "Tạo bảng với chat AI",
+                description: "Tạo bảng với chat AI.",
                 video: "https://drive.google.com/file/d/1SjenMmbmJWvOBIY9RlZW4qx8xkxJUims/preview",
                 tasks: [
                     { name: "Bài 8.2.1", file: "Lớp-Họ và tên-Bài 8.2.1.docx" }
@@ -329,40 +329,29 @@ const sessionsData = [
                 ],
                 steps: [
                     {
-                        title: "Bước 1: Chèn SmartArt",
-                        content: "Vào Insert -> SmartArt -> Chọn loại sơ đồ phù hợp.",
-                        icon: "fa-project-diagram"
+                        title: "Bước 1: Thêm chat AI vào Word",
+                        content: "Vào Home -> Add-ins -> Tìm kiếm từ khóa **\"ChatGPT\"** -> Chọn ChatGPT for MS Word-> Add -> Chấp nhận các điều khoản để thêm ChatGPT vào Word.",
+                        icon: "fa-robot",
+                        slideImage: "images/Buổi_9/9.1.png"
                     },
                     {
-                        title: "Bước 2: Tùy chỉnh SmartArt",
-                        content: "Thêm/xóa hình, thay đổi màu sắc và kiểu dáng.",
-                        icon: "fa-palette"
-                    }
-                ]
-            },
-            {
-                id: 9,
-                sessionId: 3,
-                title: "Bài 9: Page Layout & Design",
-                description: "Thiết lập trang, margins, orientation và themes cho tài liệu.",
-                video: "https://drive.google.com/file/d/1T94HCZQpXxvXvQINcn1p49ePkvisV20C/preview",
-                tasks: [
-                    { name: "Bài 9.2.1", file: "Lớp-Họ và tên-Bài 9.2.1.docx" }
-                ],
-                docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 9_LAYOUT.pdf" }
-                ],
-                steps: [
-                    {
-                        title: "Bước 1: Thiết lập Page Setup",
-                        content: "Vào Layout -> Page Setup để chỉnh margins, orientation, size.",
-                        icon: "fa-file-alt"
+                        title: "Bước 2: Ra lệnh cho chat AI tạo bảng",
+                        content: "Tại thẻ Home -> Chọn biểu tượng ChatGPT for MS Word -> Đăng nhập tài khoản OpenAI. \nNhập lệnh tạo bảng vào ô chat, ví dụ: **\"Tạo bảng so sánh các ngôn ngữ lập trình phổ biến hiện nay với các tiêu chí: Tên ngôn ngữ, Năm ra mắt, Mục đích sử dụng, Ưu điểm, Nhược điểm. Yêu cầu bảng đẹp mắt và thân thiện.\"**\nNhấn **CREATE TEXT** để gửi lệnh và chờ chat AI tạo bảng.",
+                        icon: "fa-keyboard",
+                        slideImage: "images/Buổi_9/9.2.png"
                     },
                     {
-                        title: "Bước 2: Áp dụng Theme",
-                        content: "Vào Design -> Themes để chọn theme phù hợp.",
-                        icon: "fa-swatchbook"
-                    }
+                        title: "Bước 3: Nhận kết quả và tùy chỉnh bảng",
+                        content: "Chat AI sẽ trả về bảng theo yêu cầu. Người dùng có thể tùy chỉnh định dạng bảng như thay đổi màu sắc, kiểu dáng, và bố cục để phù hợp với tài liệu.",
+                        icon: "fa-table",
+                        slideImage: "images/Buổi_9/9.3.png"
+                    },
+                    {
+                        title: "Tùy chọn: Chọn chat AI khác",
+                        content: "Ngoài ChatGPT for MS Word, người dùng có thể thử các chat AI khác như **YouChat** hoặc **Perplexity AI** bằng cách tìm kiếm và thêm chúng vào Word tương tự như bước 1. Các chat AI này cũng hỗ trợ tạo bảng và các nội dung khác theo yêu cầu.",
+                        icon: "fa-robot",
+                        slideImage: "images/Buổi_9/9.4.png"
+                    },
                 ]
             }
         ]
@@ -967,21 +956,125 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
     },
     {
         id: 12,
-        title: "Buổi 12: Ứng dụng AI trong Excel",
-        description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
-        totalLessons: 2,
-        lessons: []
+        title: "Buổi 12: AI for Office (AI cho Văn phòng)",
+        description: "Ứng dụng Gemini để tối ưu hóa công việc văn phòng: Soạn thảo văn bản (Word), Xử lý bảng tính (Excel) và Thiết kế slide (PowerPoint).",
+        totalLessons: 3,
+        lessons: [
+            {
+                id: 121,
+                sessionId: 12,
+                title: "Bài 1: Ôn tập & Sáng tạo với NotebookLM & Gemini",
+                description: "Tăng tốc ôn tập và sáng tạo nội dung: Từ tổng hợp kiến thức với NotebookLM đến soạn thảo 'Bí kíp ôn thi' với phần mở rộng Gemini trong Word/Docs.",
+                tasks: [
+                    { name: "Bài tập thực hành (PDF)", file: "../DeBaiThucHanh/Bài tập_AI for Word.pdf" },
+                    { name: "Bài tập thực hành (DOCX)", file: "../DeBaiThucHanh/Bài tập_AI for Word.docx" }
+                ],
+                docs: [
+                    { name: "Slide bài giảng (Full)", file: "Gemini for Word_full.pdf" },
+                    { name: "Hướng dẫn thực hành (TXT)", file: "../DeBaiThucHanh/Bài tập_AI for Word.txt" },
+                    { name: "Tài liệu 6 Module (PDF)", file: "https://drive.google.com/file/d/1edPV-QAhEDF4giIcHpPgMQylI1nD6ih7/view?usp=sharing" }
+                ],
+                steps: [
+                    {
+                        title: "1. Khởi động: Tư duy mới về AI",
+                        content: "**Chuyển dịch tư duy:**\n- Từ “người thực hiện” -> “người ra lệnh và biên tập”.\n\n**Công thức Prompt PTCF:**\n- **P (Persona):** Vai trò (Bạn là giảng viên, chuyên gia...)\n- **T (Task):** Nhiệm vụ (Viết đề cương, tóm tắt...)\n- **C (Context):** Bối cảnh (Dựa trên tài liệu module 4...)\n- **F (Format):** Định dạng (Bảng, danh sách...)",
+                        icon: "fa-brain"
+                    },
+                    {
+                        title: "2. Demo NotebookLM: 'Trợ lý nghiên cứu'",
+                        content: "**Thao tác:**\n1. Upload file **'Tài liệu AI Ứng dụng 6 module đầu.pdf'** (trong mục Tài liệu) lên NotebookLM.\n2. **Source Guide:** Xem tóm tắt và câu hỏi gợi ý.\n\n**Bài tập thực hành Chat:**\n- \"Dựa trên file 6 module vừa upload, hãy liệt kê các kỹ năng quan trọng nhất cần có của một công dân số.\"\n- *Lưu ý:* Kiểm tra trích dẫn (citations) để đảm bảo độ chính xác.",
+                        icon: "fa-database"
+                    },
+                    {
+                        title: "3. Demo Gemini & Prompting: 'Trợ lý viết lách'",
+                        content: "**Kịch bản:** Từ ý chính rút ra ở NotebookLM, dùng Gemini để viết đề cương.\n\n**Áp dụng PTCF:**\n- `[P]`: Bạn là giảng viên môn Kỹ năng số.\n- `[T]`: Hãy viết đề cương ôn tập.\n- `[C]`: Dựa trên các ý chính về an toàn dữ liệu.\n- `[F]`: Trình bày dạng bảng so sánh ưu nhược điểm.\n\n**Tình huống không có Gemini Pro:** Dùng bản web (gemini.google.com), copy prompt vào, sau đó copy kết quả dán về Google Docs.",
+                        icon: "fa-pen-nib"
+                    },
+                    {
+                        title: "4. Thực hành tổng hợp kiến thức",
+                        content: "**Bài tập 1: Xây dựng 'Kho tri thức ôn thi'**\n- Tạo Notebook \"Ôn thi Giữa kỳ\" -> Upload 6 module -> Xem Source Guide.\n\n**Bài tập 2: Truy vấn & Tạo Flashcards**\n- Prompt: \"Tìm trong tài liệu các định nghĩa về [Khái niệm khó]. Giải thích cho sinh viên năm nhất.\"\n- Yêu cầu tạo Flashcards/Quiz để tự kiểm tra.",
+                        icon: "fa-tasks"
+                    },
+                    {
+                        title: "5. Thực hành Sáng tạo & Tinh chỉnh",
+                        content: "**Bài tập 3: Soạn thảo 'Bí kíp ôn thi'**\n- Dùng Gemini viết tài liệu tóm tắt 1-2 trang.\n- Áp dụng PTCF đầy đủ 4 yếu tố.\n\n**Bài tập 4: Kỹ thuật Tinh chỉnh**\n- Dùng lệnh **Shorten** (Rút gọn) để làm 'phao thi'.\n- Dùng lệnh **Change Tone** (Đổi giọng) sang hài hước.",
+                        icon: "fa-magic"
+                    }
+                ]
+            },
+            {
+                id: 122,
+                sessionId: 12,
+                title: "Bài 2: AI cho Excel (Xử lý bảng tính)",
+                description: "Sử dụng Gemini để viết công thức phức tạp, giải thích hàm và phân tích dữ liệu tự động.",
+                tasks: [],
+                docs: [
+                    { name: "Hướng dẫn Google Sheet/Excel", file: "Hướng dẫn dùng Gemini for GoogleSheet.docx" },
+                    { name: "Slide bài giảng (Full)", file: "Gemini for Excel_full.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. AI - Trợ lý công thức Excel",
+                        content: "**Không cần nhớ công thức phức tạp:**\nThay vì phải nhớ cú pháp `VLOOKUP`, `INDEX-MATCH`, hay `IF` lồng nhau, bạn hãy mô tả yêu cầu cho AI.\n\n**Ví dụ Prompt:**\n\"Tôi có cột A là Mã sản phẩm, cột B là Đơn giá. Viết cho tôi công thức Excel để tìm đơn giá của mã sản phẩm 'SP01' nằm trong sheet 'Gia'.\"\n\n-> AI sẽ trả về công thức chính xác để bạn Copy-Paste.",
+                        icon: "fa-table",
+                        slideImage: "images/Gemini for Office/Gemini for Excel/Viết prompt trong Gemini for GoogleSheet.png"
+                    },
+                    {
+                        title: "2. Giải thích công thức có sẵn",
+                        content: "Gặp một file Excel của người khác với công thức dài ngoằng không hiểu? Hãy copy công thức đó và hỏi AI:\n\"Giải thích cho tôi công thức này đang tính cái gì: [Dán công thức vào]\"",
+                        icon: "fa-question-circle",
+                        slideImage: "images/Gemini for Office/Gemini for Excel/Gemini hỗ trợ.png"
+                    },
+                    {
+                        title: "3. Phân tích dữ liệu và Xu hướng",
+                        content: "Copy một vùng dữ liệu (bảng số liệu) và dán vào Gemini, sau đó yêu cầu:\n- \"Hãy nhận xét xu hướng tăng trưởng của doanh thu qua các tháng.\"\n- \"Tìm ra 3 mặt hàng bán chạy nhất và lý do.\"\nAI hoạt động như một chuyên viên phân tích dữ liệu sơ cấp.",
+                        icon: "fa-chart-line",
+                        slideImage: "images/Gemini for Office/Gemini for Excel/Chèn công thức kết quả vào.png"
+                    },
+                    {
+                        title: "4. Thực hành",
+                        content: "Đọc tài liệu **'Hướng dẫn dùng Gemini for GoogleSheet.docx'** để nắm chi tiết các bước thao tác và áp dụng vào bài tập dữ liệu thực tế.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 123,
+                sessionId: 12,
+                title: "Bài 3: AI cho PowerPoint (Thiết kế Slide)",
+                description: "Tự động hóa quy trình làm slide: Từ lên ý tưởng, dàn ý đến nội dung chi tiết.",
+                tasks: [],
+                docs: [
+                    { name: "Slide bài giảng (Full)", file: "Gemini for PowerPoint_full.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Quy trình tạo Slide với AI",
+                        content: "Quy trình 3 bước:\n1. **Brainstorm:** Dùng AI tìm ý tưởng chủ đề, tên đề tài hấp dẫn.\n2. **Outline (Dàn ý):** Yêu cầu AI lập cấu trúc bài thuyết trình (Bao nhiêu slide? Mỗi slide nói gì?).\n3. **Content (Nội dung):** Yêu cầu AI viết chi tiết nội dung cho từng slide theo dàn ý đã duyệt.",
+                        icon: "fa-project-diagram"
+                    },
+                    {
+                        title: "2. Prompt mẫu lập dàn ý",
+                        content: "\"Tôi cần làm một bài thuyết trình 10 slide về chủ đề 'Ứng dụng AI trong giáo dục'. Đối tượng người nghe là sinh viên đại học. Hãy đề xuất cho tôi một dàn ý chi tiết, bao gồm tiêu đề và ý chính cho từng slide.\"",
+                        icon: "fa-list-ol"
+                    },
+                    {
+                        title: "3. Tối ưu hóa nội dung Slide",
+                        content: "**Nguyên tắc 1-6-6:** Mỗi slide chỉ nên có 1 ý chính, tối đa 6 dòng, mỗi dòng 6 từ.\n\nSử dụng AI để rút gọn văn bản: \"Hãy tóm tắt đoạn văn sau thành 3 gạch đầu dòng ngắn gọn để đưa lên slide.\"",
+                        icon: "fa-compress-arrows-alt"
+                    },
+                    {
+                        title: "4. Gợi ý hình ảnh minh họa",
+                        content: "AI có thể gợi ý ý tưởng hình ảnh: \"Với slide nói về 'Tương lai của AI', hãy gợi ý cho tôi nên dùng hình ảnh minh họa gì cho ấn tượng?\"",
+                        icon: "fa-image"
+                    }
+                ]
+            }
+        ]
     },
     {
         id: 13,
         title: "Buổi 13: Soạn thảo slide trình chiếu",
-        description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
-        totalLessons: 2,
-        lessons: []
-    },
-    {
-        id: 14,
-        title: "Buổi 14: Ứng dụng AI trong PowerPoint",
         description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
         totalLessons: 2,
         lessons: []
