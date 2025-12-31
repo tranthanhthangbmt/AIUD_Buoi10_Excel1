@@ -1017,19 +1017,19 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         title: "1. AI - Trợ lý công thức Excel",
                         content: "**Không cần nhớ công thức phức tạp:**\nThay vì phải nhớ cú pháp `VLOOKUP`, `INDEX-MATCH`, hay `IF` lồng nhau, bạn hãy mô tả yêu cầu cho AI.\n\n**Ví dụ Prompt:**\n\"Tôi có cột A là Mã sản phẩm, cột B là Đơn giá. Viết cho tôi công thức Excel để tìm đơn giá của mã sản phẩm 'SP01' nằm trong sheet 'Gia'.\"\n\n-> AI sẽ trả về công thức chính xác để bạn Copy-Paste.",
                         icon: "fa-table",
-                        slideImage: "images/Gemini for Office/Gemini for Excel/Viết prompt trong Gemini for GoogleSheet.png"
+                        slideImage: "images/Gemini for Excel/Viết prompt trong Gemini for GoogleSheet.png"
                     },
                     {
                         title: "2. Giải thích công thức có sẵn",
                         content: "Gặp một file Excel của người khác với công thức dài ngoằng không hiểu? Hãy copy công thức đó và hỏi AI:\n\"Giải thích cho tôi công thức này đang tính cái gì: [Dán công thức vào]\"",
                         icon: "fa-question-circle",
-                        slideImage: "images/Gemini for Office/Gemini for Excel/Gemini hỗ trợ.png"
+                        slideImage: "images/Gemini for Excel/Gemini hỗ trợ.png"
                     },
                     {
                         title: "3. Phân tích dữ liệu và Xu hướng",
                         content: "Copy một vùng dữ liệu (bảng số liệu) và dán vào Gemini, sau đó yêu cầu:\n- \"Hãy nhận xét xu hướng tăng trưởng của doanh thu qua các tháng.\"\n- \"Tìm ra 3 mặt hàng bán chạy nhất và lý do.\"\nAI hoạt động như một chuyên viên phân tích dữ liệu sơ cấp.",
                         icon: "fa-chart-line",
-                        slideImage: "images/Gemini for Office/Gemini for Excel/Chèn công thức kết quả vào.png"
+                        slideImage: "images/Gemini for Excel/Chèn công thức kết quả vào.png"
                     },
                     {
                         title: "4. Thực hành",
