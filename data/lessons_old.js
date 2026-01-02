@@ -956,316 +956,73 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
     },
     {
         id: 12,
-        title: "Buổi 12: AI for Office (AI cho Văn phòng)",
-        description: "Ứng dụng Gemini để tối ưu hóa công việc văn phòng: Soạn thảo văn bản (Word), Xử lý bảng tính (Excel) và Thiết kế slide (PowerPoint).",
-        totalLessons: 3,
-        lessons: [
-            {
-                id: 121,
-                sessionId: 12,
-                title: "Bài 1: Ôn tập & Sáng tạo với NotebookLM & Gemini",
-                description: "Tăng tốc ôn tập và sáng tạo nội dung: Từ tổng hợp kiến thức với NotebookLM đến soạn thảo 'Bí kíp ôn thi' với phần mở rộng Gemini trong Word/Docs.",
-                tasks: [
-                    { name: "Bài tập thực hành (PDF)", file: "../DeBaiThucHanh/Bài tập_AI for Word.pdf" },
-                    { name: "Bài tập thực hành (DOCX)", file: "../DeBaiThucHanh/Bài tập_AI for Word.docx" }
-                ],
-                docs: [
-                    { name: "Slide bài giảng (Full)", file: "Gemini for Word_full.pdf" },
-                    { name: "Hướng dẫn thực hành (TXT)", file: "../DeBaiThucHanh/Bài tập_AI for Word.txt" },
-                    { name: "Tài liệu 6 Module (PDF)", file: "https://drive.google.com/file/d/1edPV-QAhEDF4giIcHpPgMQylI1nD6ih7/view?usp=sharing" }
-                ],
-                steps: [
-                    {
-                        title: "1. Khởi động: Tư duy mới về AI",
-                        content: "**Chuyển dịch tư duy:**\n- Từ “người thực hiện” -> “người ra lệnh và biên tập”.\n\n**Công thức Prompt PTCF:**\n- **P (Persona):** Vai trò (Bạn là giảng viên, chuyên gia...)\n- **T (Task):** Nhiệm vụ (Viết đề cương, tóm tắt...)\n- **C (Context):** Bối cảnh (Dựa trên tài liệu module 4...)\n- **F (Format):** Định dạng (Bảng, danh sách...)",
-                        icon: "fa-brain"
-                    },
-                    {
-                        title: "2. Demo NotebookLM: 'Trợ lý nghiên cứu'",
-                        content: "**Thao tác:**\n1. Upload file **'Tài liệu AI Ứng dụng 6 module đầu.pdf'** (trong mục Tài liệu) lên NotebookLM.\n2. **Source Guide:** Xem tóm tắt và câu hỏi gợi ý.\n\n**Bài tập thực hành Chat:**\n- \"Dựa trên file 6 module vừa upload, hãy liệt kê các kỹ năng quan trọng nhất cần có của một công dân số.\"\n- *Lưu ý:* Kiểm tra trích dẫn (citations) để đảm bảo độ chính xác.",
-                        icon: "fa-database"
-                    },
-                    {
-                        title: "3. Demo Gemini & Prompting: 'Trợ lý viết lách'",
-                        content: "**Kịch bản:** Từ ý chính rút ra ở NotebookLM, dùng Gemini để viết đề cương.\n\n**Áp dụng PTCF:**\n- `[P]`: Bạn là giảng viên môn Kỹ năng số.\n- `[T]`: Hãy viết đề cương ôn tập.\n- `[C]`: Dựa trên các ý chính về an toàn dữ liệu.\n- `[F]`: Trình bày dạng bảng so sánh ưu nhược điểm.\n\n**Tình huống không có Gemini Pro:** Dùng bản web (gemini.google.com), copy prompt vào, sau đó copy kết quả dán về Google Docs.",
-                        icon: "fa-pen-nib"
-                    },
-                    {
-                        title: "4. Thực hành tổng hợp kiến thức",
-                        content: "**Bài tập 1: Xây dựng 'Kho tri thức ôn thi'**\n- Tạo Notebook \"Ôn thi Giữa kỳ\" -> Upload 6 module -> Xem Source Guide.\n\n**Bài tập 2: Truy vấn & Tạo Flashcards**\n- Prompt: \"Tìm trong tài liệu các định nghĩa về [Khái niệm khó]. Giải thích cho sinh viên năm nhất.\"\n- Yêu cầu tạo Flashcards/Quiz để tự kiểm tra.",
-                        icon: "fa-tasks"
-                    },
-                    {
-                        title: "5. Thực hành Sáng tạo & Tinh chỉnh",
-                        content: "**Bài tập 3: Soạn thảo 'Bí kíp ôn thi'**\n- Dùng Gemini viết tài liệu tóm tắt 1-2 trang.\n- Áp dụng PTCF đầy đủ 4 yếu tố.\n\n**Bài tập 4: Kỹ thuật Tinh chỉnh**\n- Dùng lệnh **Shorten** (Rút gọn) để làm 'phao thi'.\n- Dùng lệnh **Change Tone** (Đổi giọng) sang hài hước.",
-                        icon: "fa-magic"
-                    }
-                ]
-            },
-            {
-                id: 122,
-                sessionId: 12,
-                title: "Bài 2: AI cho Excel (Xử lý bảng tính)",
-                description: "Sử dụng Gemini để viết công thức phức tạp, giải thích hàm và phân tích dữ liệu tự động.",
-                tasks: [],
-                docs: [
-                    { name: "Hướng dẫn Google Sheet/Excel", file: "Hướng dẫn dùng Gemini for GoogleSheet.docx" },
-                    { name: "Slide bài giảng (Full)", file: "Gemini for Excel_full.pdf" }
-                ],
-                steps: [
-                    {
-                        title: "1. AI - Trợ lý công thức Excel",
-                        content: "**Không cần nhớ công thức phức tạp:**\nThay vì phải nhớ cú pháp `VLOOKUP`, `INDEX-MATCH`, hay `IF` lồng nhau, bạn hãy mô tả yêu cầu cho AI.\n\n**Ví dụ Prompt:**\n\"Tôi có cột A là Mã sản phẩm, cột B là Đơn giá. Viết cho tôi công thức Excel để tìm đơn giá của mã sản phẩm 'SP01' nằm trong sheet 'Gia'.\"\n\n-> AI sẽ trả về công thức chính xác để bạn Copy-Paste.",
-                        icon: "fa-table",
-                        slideImage: "images/Gemini for Excel/Viết prompt trong Gemini for GoogleSheet.png"
-                    },
-                    {
-                        title: "2. Giải thích công thức có sẵn",
-                        content: "Gặp một file Excel của người khác với công thức dài ngoằng không hiểu? Hãy copy công thức đó và hỏi AI:\n\"Giải thích cho tôi công thức này đang tính cái gì: [Dán công thức vào]\"",
-                        icon: "fa-question-circle",
-                        slideImage: "images/Gemini for Excel/Gemini hỗ trợ.png"
-                    },
-                    {
-                        title: "3. Phân tích dữ liệu và Xu hướng",
-                        content: "Copy một vùng dữ liệu (bảng số liệu) và dán vào Gemini, sau đó yêu cầu:\n- \"Hãy nhận xét xu hướng tăng trưởng của doanh thu qua các tháng.\"\n- \"Tìm ra 3 mặt hàng bán chạy nhất và lý do.\"\nAI hoạt động như một chuyên viên phân tích dữ liệu sơ cấp.",
-                        icon: "fa-chart-line",
-                        slideImage: "images/Gemini for Excel/Chèn công thức kết quả vào.png"
-                    },
-                    {
-                        title: "4. Thực hành",
-                        content: "Đọc tài liệu **'Hướng dẫn dùng Gemini for GoogleSheet.docx'** để nắm chi tiết các bước thao tác và áp dụng vào bài tập dữ liệu thực tế.",
-                        icon: "fa-file-excel"
-                    }
-                ]
-            },
-            {
-                id: 123,
-                sessionId: 12,
-                title: "Bài 3: AI cho PowerPoint (Thiết kế Slide)",
-                description: "Tự động hóa quy trình làm slide: Từ lên ý tưởng, dàn ý đến nội dung chi tiết.",
-                tasks: [],
-                docs: [
-                    { name: "Slide bài giảng (Full)", file: "Gemini for PowerPoint_full.pdf" }
-                ],
-                steps: [
-                    {
-                        title: "1. Quy trình tạo Slide với AI",
-                        content: "Quy trình 3 bước:\n1. **Brainstorm:** Dùng AI tìm ý tưởng chủ đề, tên đề tài hấp dẫn.\n2. **Outline (Dàn ý):** Yêu cầu AI lập cấu trúc bài thuyết trình (Bao nhiêu slide? Mỗi slide nói gì?).\n3. **Content (Nội dung):** Yêu cầu AI viết chi tiết nội dung cho từng slide theo dàn ý đã duyệt.",
-                        icon: "fa-project-diagram"
-                    },
-                    {
-                        title: "2. Prompt mẫu lập dàn ý",
-                        content: "\"Tôi cần làm một bài thuyết trình 10 slide về chủ đề 'Ứng dụng AI trong giáo dục'. Đối tượng người nghe là sinh viên đại học. Hãy đề xuất cho tôi một dàn ý chi tiết, bao gồm tiêu đề và ý chính cho từng slide.\"",
-                        icon: "fa-list-ol"
-                    },
-                    {
-                        title: "3. Tối ưu hóa nội dung Slide",
-                        content: "**Nguyên tắc 1-6-6:** Mỗi slide chỉ nên có 1 ý chính, tối đa 6 dòng, mỗi dòng 6 từ.\n\nSử dụng AI để rút gọn văn bản: \"Hãy tóm tắt đoạn văn sau thành 3 gạch đầu dòng ngắn gọn để đưa lên slide.\"",
-                        icon: "fa-compress-arrows-alt"
-                    },
-                    {
-                        title: "4. Gợi ý hình ảnh minh họa",
-                        content: "AI có thể gợi ý ý tưởng hình ảnh: \"Với slide nói về 'Tương lai của AI', hãy gợi ý cho tôi nên dùng hình ảnh minh họa gì cho ấn tượng?\"",
-                        icon: "fa-image"
-                    }
-                ]
-            }
-        ]
+        title: "Buổi 12: Ứng dụng AI trong Excel",
+        description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
+        totalLessons: 2,
+        lessons: []
     },
     {
         id: 13,
         title: "Buổi 13: Soạn thảo slide trình chiếu",
         description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
-        totalLessons: 6,
+        totalLessons: 2,
+        lessons: []
+    },
+    {
+        id: 14,
+        title: "Buổi 14: Ứng dụng AI trong PowerPoint",
+        description: "Chat AI hỗ trợ tạo slide trình chiếu nhanh chóng và chuyên nghiệp.",
+        totalLessons: 2,
         lessons: [
             {
-                id: 131,
-                sessionId: 13,
-                title: "Bài 1: Thiết kế Slide Master",
-                description: "Thiết kế Slide Master giúp định dạng mẫu chung cho toàn bộ bài thuyết trình (Logo, Font chữ, Màu sắc).",
-                video: "https://drive.google.com/file/d/1q2-ddBGQ2_1eFA79XneF7afwuLEW_1WT/preview",
-                requirements: "Yêu cầu: Thiết kế Slide Master với 2 mẫu chính (Title Slide và Content Slide) có Logo, màu nền và font chữ chuẩn.",
+                id: 101,
+                sessionId: 10,
+                title: "Ứng dụng AI trong PowerPoint",
+                description: "Sử dụng chat AI để tạo slide trình chiếu nhanh chóng và chuyên nghiệp.",
+                // image: "images/Buổi_10/Bài_1/pic1.png",
                 tasks: [
-                    { name: "Logo trường (Copy về máy)", file: "images/Buổi%2013/logo_small.png" }
+                    { name: "File thực hành", file: "Buổi 14_Bài 1-2-3-4.xlsx" }
+                ],
+                docs: [
+                    { name: "Hướng dẫn chi tiết (PDF)", file: "Buổi 14_Bài 1-2-3-4 [PowerPoint].pdf" }
                 ],
                 steps: [
                     {
-                        title: "1. Khởi động và chuẩn bị",
-                        content: "- Mở PowerPoint.\n- Vào menu **View** -> chọn **Slide Master**.\n- Thanh công cụ Slide Master sẽ hiện ra.",
-                        icon: "fa-folder-open",
-                        slideImage: "images/Buổi%2013/Slide%20Master%20Bước%201.png",
-                        videoUrl: "https://drive.google.com/file/d/1q2-ddBGQ2_1eFA79XneF7afwuLEW_1WT/preview"
+                        title: "Bước 1: Thêm chat AI vào PowerPoint",
+                        content: "Vào Home -> Add-ins -> Tìm kiếm từ khóa **\"ChatGPT\"** -> Chọn ChatGPT for MS PowerPoint-> Add -> Chấp nhận các điều khoản để thêm ChatGPT vào PowerPoint.",
+                        icon: "fa-robot",
+                        slideImage: "images/Buổi_14/1.png"
                     },
                     {
-                        title: "2. Vẽ khung trang trí (Bước 2)",
-                        content: "- Chọn Slide Master chính (Slide to nhất ở trên cùng bên trái).\n- Vào menu **Insert** -> **Shapes** -> Chọn **Rectangle**.\n- Vẽ một hình chữ nhật dài ở cạnh trái hoặc chân trang tùy mẫu.",
-                        icon: "fa-vector-square",
-                        slideImage: "images/Buổi%2013/Slide%20Master%20Bước%202.png"
+                        title: "Bước 2: Tạo slide trình chiếu với chat AI",
+                        content: "Tại thẻ Home -> Chọn biểu tượng ChatGPT for MS PowerPoint -> chọn **Create from Topic** ",
+                        icon: "fa-robot",
+                        slideImage: "images/Buổi_14/2.png"
                     },
                     {
-                        title: "3. Tô màu cho khung (Bước 3)",
-                        content: "- Chọn hình chữ nhật vừa vẽ.\n- Vào tab **Format** (Drawing Tools).\n- Chọn **Shape Fill** -> Chọn màu xanh đậm (hoặc màu theo mẫu).\n- Chọn **Shape Outline** -> **No Outline** (Bỏ viền).",
-                        icon: "fa-fill-drip",
-                        slideImage: "images/Buổi%2013/Slide%20Master%20Bước%203.png"
+                        title: "Bước 3: Nhập lệnh cho chat AI",
+                        content: "**Tại Instruction:**\n1. Nhập chủ đề slide vào ô **Topic** (ví dụ: \"Tạo slide giới thiệu dự án khởi nghiệp đổi mới sáng tạo\").\n2. Chọn số lượng slide cần tạo (ví dụ: 5 slides).\n3. Chọn ngôn ngữ.\n4. Chọn **Content**: **Detailed** (Chi tiết) hoặc **Short** (Ngắn gọn)\n5. Chọn **Image Source** mong muốn.\n6. Chọn **Tone and Style** (Tông giọng và Phong cách) (ví dụ: Professional).\n7. Chọn **Presentaion Type** (Kiểu trình bày)\n8. Nhấn **CONTINUE**",
+                        icon: "fa-keyboard",
+                        slideImage: "images/Buổi_14/3.png"
                     },
                     {
-                        title: "4. Chèn Logo (Bước 4)",
-                        content: "- Vào **Insert** -> **Pictures** -> Chọn file Logo (tải ở mục Tài nguyên).\n- Đặt Logo vào vị trí góc trên hoặc góc dưới slide.\n- **Lưu ý:** Chèn ở Slide Master chính thì tất cả slide con đều sẽ có logo này.",
-                        icon: "fa-image",
-                        slideImage: "images/Buổi%2013/Slide%20Master%20Bước%204.png"
+                        title: "Bước 4: Review, chỉnh sửa Tiêu đề và mô tả",
+                        content: "**Tại Outline:**\n1. Xem trước tiêu đề và mô tả các slide do chat AI tạo ra.\n2. Chỉnh sửa tiêu đề và mô tả nếu cần thiết.\n3. Nhấn **CONTINUE** để tiếp tục.",
+                        icon: "fa-edit",
+                        slideImage: "images/Buổi_14/4.png"
                     },
                     {
-                        title: "5. Định dạng Slide Tiêu đề (Bước 5)",
-                        content: "- Chọn kiểu slide **Title Slide Layout** (thường là slide con thứ nhất).\n- Chỉnh Font chữ Tiêu đề: **Times New Roman**, **32pt**, **Đậm**, Màu **Đỏ/Đen**.\n- Vẽ thêm các họa tiết trang trí riêng cho trang bìa nếu cần.",
-                        icon: "fa-font",
-                        slideImage: "images/Buổi%2013/Slide%20Master%20Bước%205.png"
+                        title: "Bước 5: Tùy chọn Template và Color Scheme",
+                        content: "**Tại Template:**\n1. Chọn mẫu Template (giao diện) slide mong muốn từ danh sách có sẵn.\n2. Chọn **REVIEW & CUSTOMIZE**\n3. Chọn Style để tùy chỉnh màu phù hợp.\n3. Chọn **Font style** (Kiểu chữ) mong muốn.\n4. Nhấn **CONTINUE** để hoàn tất.",
+                        icon: "fa-palette",
+                        slideImage: "images/Buổi_14/5.png"
                     },
                     {
-                        title: "6. Định dạng Slide Nội dung (Bước 6)",
-                        content: "- Chọn kiểu slide **Title and Content Layout** (thường là slide con thứ hai).\n- Chỉnh Tiêu đề trang: **Arial**, **24pt**, Màu **Xanh dương**.\n- Chỉnh Nội dung bên dưới: **Calibri**, **18pt**.\n- Chèn số trang: **Insert** -> **Header & Footer** -> Tích vào **Slide number**.",
-                        icon: "fa-list-alt",
-                        slideImage: "images/Buổi%2013/Slide%20Master%20Bước%206.png"
+                        title: "Tùy chọn: Chọn chat AI khác",
+                        content: "Ngoài ChatGPT for MS PowerPoint, bạn có thể thử các chat AI khác như **GPT Lab for PowerPoint** hoặc **GPT-3 PowerPoint Add-in** với các bước tương tự.",
+                        icon: "fa-robot",
+                        slideImage: "images/Buổi_14/6.png"
                     },
-                    {
-                        title: "7. Hoàn tất",
-                        content: "- Sau khi thiết kế xong, vào tab **Slide Master** -> chọn **Close Master View**.\n- Ra ngoài màn hình soạn thảo, thêm slide mới (**New Slide**) kiểm tra xem các mẫu vừa tạo đã được áp dụng chưa.",
-                        icon: "fa-check-double",
-                        videoUrl: "https://drive.google.com/file/d/1v9M21zWLDxggNPlWV9nFjED3KUIFya9p/preview"
-                    }
-                ]
-            },
-            {
-                id: 132,
-                sessionId: 13,
-                title: "Bài 2: Liên kết (Hyperlink)",
-                description: "Tạo các liên kết nội bộ giữa các slide và nút điều hướng.",
-                video: "https://drive.google.com/file/d/1LsFdspyVq37AJvKrINb469EwyZ1JH3-B/preview",
-                tasks: [
-                    { name: "Dữ liệu mẫu (Copy/Paste)", file: "TaiLieuHuongDan/Buổi 13/Bài 2_Slide content.txt" }
-                ],
-                steps: [
-                    {
-                        title: "Yêu cầu bài toán",
-                        content: "- Tại slide 'Nội dung trình bày', khi click vào mục '1. Lý do chọn đề tài' -> Chuyển đến slide 'Lý do chọn đề tài'.\n- Tại slide con, vẽ một nút (mũi tên), khi click vào nút đó -> Quay lại slide 'Nội dung trình bày'.",
-                        icon: "fa-bullseye",
-                        slideImage: "images/Buổi%2013/Bai%202_Liên%20kết.png"
-                    },
-                    {
-                        title: "Bước 1: Tạo liên kết đi",
-                        content: "1. Bôi đen dòng chữ '1. Lý do chọn đề tài'.\n2. Vào **Insert** -> **Link** (hoặc Hyperlink).\n3. Chọn **Place in This Document**.\n4. Chọn tên slide đích ('Lý do chọn đề tài') -> Nhấn **OK**.",
-                        icon: "fa-link",
-                        slideImage: "images/Buổi 13/Bài 2_Bước 1.png"
-                    },
-                    {
-                        title: "Bước 2: Tạo liên kết về (Nút Quay lại)",
-                        content: "1. Tại slide 'Lý do chọn đề tài', vẽ hình mũi tên (**Insert** -> **Shapes**).\n2. Chuột phải vào hình mũi tên -> chọn **Link**.\n3. Chọn **Place in This Document** -> Chọn slide 'Nội dung trình bày' -> Nhấn **OK**.",
-                        icon: "fa-undo",
-                        slideImage: "images/Buổi 13/Bài 2_Bước 2.png"
-                    },
-                    {
-                        title: "Bước 3: Copy cho các mục khác",
-                        content: "Làm tương tự cho các mục 'Phát biểu bài toán' và 'Phân tích thiết kế hệ thống'.\n\n*Mẹo:* Bạn có thể Copy nút mũi tên đã làm ở Bước 2 và dán sang các slide khác, liên kết sẽ được giữ nguyên, không cần làm lại.",
-                        icon: "fa-copy"
-                    }
-                ]
-            },
-            {
-                id: 133,
-                sessionId: 13,
-                title: "Bài 3: Tạo hiệu ứng (Animations)",
-                description: "Thêm hiệu ứng hoạt hình cho đối tượng (Animation) và hiệu ứng chuyển cảnh (Transition).",
-                video: "https://drive.google.com/file/d/12zoZ8FPDKIf9kX9TVQzI6yySL4lOi_9e/preview",
-                tasks: [],
-                steps: [
-                    {
-                        title: "1. Hiệu ứng cho đối tượng (Animations)",
-                        content: "**Yêu cầu:** Chữ '1. Lý do chọn đề tài' bay từ trái sang.\n\n**Thực hiện:**\n1. Chọn đối tượng chữ.\n2. Vào tab **Animations** -> Chọn hiệu ứng **Fly In**.\n3. Chọn **Effect Options** -> **From Left** (Từ trái sang).",
-                        icon: "fa-running",
-                        slideImage: "images/Buổi 13/Bài 3_Hiệu ứng_Câu 4_Hình_1.png"
-                    },
-                    {
-                        title: "2. Hiệu ứng chuyển slide (Transitions)",
-                        content: "**Yêu cầu:** Các slide chuyển cảnh mượt mà (Fade, Push...).\n\n**Thực hiện:**\n1. Chọn tab **Transitions**.\n2. Chọn một hiệu ứng (ví dụ: **Fade**).\n3. Bấm **Apply To All** nếu muốn áp dụng cho toàn bộ bài thuyết trình.",
-                        icon: "fa-file-video",
-                        slideImage: "images/Buổi 13/Bài 3_Hiệu ứng_Câu 4_Hình_2.png"
-                    },
-                    {
-                        title: "Lưu ý về Animation Pane",
-                        content: "Để quản lý thứ tự xuất hiện, hãy bật **Animation Pane** (trong tab Animations).\n- Sắp xếp ai ra trước, ai ra sau.\n- Chỉnh thời gian (Duration).\n- Chỉnh cách kích hoạt (On Click - Kích chuột, With Previous - Cùng lúc, After Previous - Sau cái trước).",
-                        icon: "fa-list-ol"
-                    }
-                ]
-            },
-            {
-                id: 134,
-                sessionId: 13,
-                title: "Bài 4: Trình chiếu (Slide Show)",
-                description: "Các kỹ thuật trình chiếu chuyên nghiệp và thiết lập chế độ Loop.",
-                video: "https://drive.google.com/file/d/1NUNMhTkD9gGalqw-N_yrKXXuI8_wErSP/preview",
-                tasks: [],
-                steps: [
-                    {
-                        title: "Các phím tắt trình chiếu",
-                        content: "- **F5**: Trình chiếu từ slide đầu tiên.\n- **Shift + F5**: Trình chiếu từ slide hiện tại đang sửa.\n- **ESC**: Thoát trình chiếu.",
-                        icon: "fa-keyboard"
-                    },
-                    {
-                        title: "Thiết lập vòng lặp (Loop)",
-                        content: "**Yêu cầu:** Slide chạy liên tục, hết slide cuối tự quay lại slide đầu, chỉ dừng khi nhấn ESC.\n\n**Thực hiện:**\n1. Vào tab **Slide Show** -> **Set Up Slide Show**.\n2. Tích chọn **Loop continuously until 'Esc'**.\n3. Nhấn OK.",
-                        icon: "fa-sync",
-                        slideImage: "images/Buổi 13/Bài 4_1_Setup slide show.png"
-                    },
-                    {
-                        title: "Trình chiếu không hiệu ứng (Show without animation)",
-                        content: "Nếu máy chiếu yếu hoặc muốn báo cáo nhanh, bạn có thể tắt toàn bộ hiệu ứng động mà không cần xóa chúng.\n\n**Thực hiện:**\n1. Tại hộp thoại **Set Up Slide Show**.\n2. Tích chọn **Show without animation**.",
-                        icon: "fa-ban",
-                        slideImage: "images/Buổi 13/Bài 4_3_show without animation.png"
-                    }
-                ]
-            },
-            {
-                id: 135,
-                sessionId: 13,
-                title: "Bài 5: Tạo Trigger (Trắc nghiệm)",
-                description: "Tạo trò chơi trắc nghiệm: Chọn đúng kêu ting ting, chọn sai kêu tèng tèng.",
-                video: "https://drive.google.com/file/d/1ToC_xnO24c4JzwRkkdVYqWczicEePmCn/preview",
-                tasks: [],
-                steps: [
-                    {
-                        title: "Bước 1: Chuẩn bị Slide câu hỏi",
-                        content: "**Yêu cầu:** Tạo 4 slide, mỗi slide chứa 1 câu hỏi và 4 đáp án (A, B, C, D).\n\n**Thực hiện:**\n1. Nhập nội dung câu hỏi.\n2. Tạo 4 hộp văn bản (Text Box) hoặc hình khối (Shape) cho 4 đáp án A, B, C, D.",
-                        icon: "fa-layer-group"
-                    },
-                    {
-                        title: "Bước 2: Tạo Trigger cho đáp án ĐÚNG",
-                        content: "**Mục tiêu:** Khi click vào đáp án đúng (ví dụ A), nó sẽ hiện hiệu ứng và âm thanh vỗ tay.\n\n**Thực hiện:**\n1. Chọn đối tượng đáp án đúng (A).\n2. Vào tab **Animations** -> Chọn hiệu ứng (ví dụ: **Fly In**).\n3. Mở **Animation Pane**.\n4. Chuột phải vào hiệu ứng vừa tạo -> **Timing** -> **Triggers**.\n5. Chọn **Start effect on click of** -> Chọn tên đối tượng (Đáp án A).\n6. Chuyển sang tab **Effect** -> Mục **Sound** chọn âm thanh 'Applause' -> OK.",
-                        icon: "fa-check-circle"
-                    },
-                    {
-                        title: "Bước 3: Tạo Trigger cho đáp án SAI",
-                        content: "**Mục tiêu:** Khi click vào đáp án sai (ví dụ B), nó sẽ hiện hiệu ứng và âm thanh báo lỗi.\n\n**Thực hiện:**\n1. Chọn đối tượng đáp án sai (B).\n2. Vào tab **Animations** -> Chọn hiệu ứng (ví dụ: **Wipe** hoặc **Disappear**).\n3. Mở **Animation Pane** -> Chuột phải vào hiệu ứng -> **Timing** -> **Triggers**.\n4. Chọn **Start effect on click of** -> Chọn tên đối tượng (Đáp án B).\n5. Chuyển sang tab **Effect** -> Mục **Sound** chọn âm thanh 'Bomb' hoặc 'Hammer' -> OK.\n6. Lặp lại cho các đáp án sai còn lại (C, D).",
-                        icon: "fa-times-circle"
-                    },
-                    {
-                        title: "Bước 4: Kiểm tra và hoàn thiện",
-                        content: "1. Nhấn **F5** để trình chiếu.\n2. Click thử vào đáp án Đúng -> Nghe tiếng vỗ tay.\n3. Click thử vào đáp án Sai -> Nghe tiếng bom nổ.\n\n**Lưu ý:** Trigger giúp tạo trò chơi tương tác, bạn có thể áp dụng để làm game 'Ai là triệu phú'.",
-                        icon: "fa-gamepad"
-                    }
-                ]
-            },
-            {
-                id: 136,
-                sessionId: 13,
-                title: "Bài 6: Xây dựng slide theo chủ đề",
-                description: "Quy trình trọn gói xây dựng một bài thuyết trình hoàn chỉnh từ A-Z.",
-                video: "https://drive.google.com/file/d/1UbTXfoR-0Cc99FpCDxKQDWswEcK8wIXn/preview",
-                tasks: [],
-                steps: [
-                    {
-                        title: "Quy trình chuẩn 6 bước",
-                        content: "1. **Chọn chủ đề & Nội dung:** Lên dàn ý (Outline) trước khi đụng vào PowerPoint.\n2. **Slide Master:** Thiết kế khung xương chung (Logo, Font, Màu sắc).\n3. **Nhập nội dung:** Đưa text vào từng slide (Quy tắc 6x6: Không quá 6 dòng, mỗi dòng 6 chữ).\n4. **Hình ảnh:** Chèn ảnh minh họa phù hợp.\n5. **Hiệu ứng:** Thêm Animation và Transition vừa phải, không lòe loẹt.\n6. **Liên kết:** Tạo Menu để nhảy đến các phần (nếu bài dài).",
-                        icon: "fa-clipboard-list"
-                    }
                 ]
             }
         ]
