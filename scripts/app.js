@@ -87,138 +87,167 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderLessonDetail(lesson, session) {
-        // Metadata
-        document.title = `${lesson.title} - ${session.title} - Thực Hành Word`;
+        try {
+            // Metadata
+            document.title = `${lesson.title} - ${session.title} - Thực Hành Word`;
 
-        const lessonNumber = document.getElementById('lesson-number');
-        const lessonTitle = document.getElementById('lesson-title');
-        const lessonDesc = document.getElementById('lesson-desc');
+            const lessonNumber = document.getElementById('lesson-number');
+            const lessonTitle = document.getElementById('lesson-title');
+            const lessonDesc = document.getElementById('lesson-desc');
 
-        if (lessonNumber) lessonNumber.textContent = lesson.title.split(':')[0];
-        if (lessonTitle) lessonTitle.textContent = lesson.title;
-        if (lessonDesc) lessonDesc.textContent = lesson.description;
+            if (lessonNumber) lessonNumber.textContent = lesson.title.split(':')[0];
+            if (lessonTitle) lessonTitle.textContent = lesson.title;
+            if (lessonDesc) lessonDesc.textContent = lesson.description;
 
-        // Update back link to go to session page
-        const backLink = document.querySelector('.back-link');
-        if (backLink) {
-            backLink.href = `session.html?id=${session.id}`;
-            backLink.innerHTML = `<i class="fas fa-arrow-left"></i> Quay lại ${session.title.split(':')[0]}`;
-        }
-
-        // Featured Image
-        const featuredImage = document.getElementById('lesson-featured-image');
-        const videoContainer = document.getElementById('video-container');
-        const videoFrame = document.getElementById('lesson-video');
-
-        if (lesson.image && featuredImage) {
-            featuredImage.src = lesson.image;
-            featuredImage.style.display = 'block';
-        } else if (featuredImage) {
-            featuredImage.style.display = 'none';
-        }
-
-        // Video
-        if (videoFrame && videoContainer) {
-            if (lesson.video) {
-                videoFrame.src = lesson.video;
-                videoContainer.style.display = 'block';
-            } else {
-                videoContainer.style.display = 'none';
+            // Update back link to go to session page
+            const backLink = document.querySelector('.back-link');
+            if (backLink) {
+                backLink.href = `session.html?id=${session.id}`;
+                backLink.innerHTML = `<i class="fas fa-arrow-left"></i> Quay lại ${session.title.split(':')[0]}`;
             }
-        }
 
-        // Resources
-        const resourceList = document.getElementById('resource-list');
-        if (!resourceList) return;
+            // Featured Image
+            const featuredImage = document.getElementById('lesson-featured-image');
+            const videoContainer = document.getElementById('video-container');
+            const videoFrame = document.getElementById('lesson-video');
 
-        const tasksHtml = lesson.tasks.map(t => `
-            <a href="DeBaiThucHanh/${t.file}" class="resource-item" download>
-                <i class="fas fa-file-word"></i> 
-                <span>${t.name}</span>
-            </a>
-        `).join('');
-
-        const docsHtml = lesson.docs.map(d => `
-            <a href="${d.file.startsWith('http') ? d.file : 'TaiLieuHuongDan/' + d.file}" class="resource-item" target="_blank">
-                <i class="fas fa-file-pdf"></i>
-                <span>${d.name}</span>
-            </a>
-        `).join('');
-
-        resourceList.innerHTML = tasksHtml + docsHtml;
-
-        // Requirements (Added below Featured Image/Video)
-        const lessonLeft = document.querySelector('.lesson-left');
-        const existingReq = document.getElementById('lesson-requirements');
-        if (existingReq) existingReq.remove(); // Clear previous requirements if any
-
-        if (lesson.requirements) {
-            const reqDiv = document.createElement('div');
-            reqDiv.id = 'lesson-requirements';
-            reqDiv.className = 'lesson-requirements';
-            reqDiv.style.marginTop = '0';
-            reqDiv.style.padding = '1.5rem';
-            reqDiv.style.background = 'rgba(255, 255, 255, 0.05)';
-            reqDiv.style.borderRadius = '1rem';
-            reqDiv.style.border = 'var(--glass-border)';
-            reqDiv.innerHTML = `
-                <h3 style="color: var(--accent-color); margin-bottom: 1rem;"><i class="fas fa-tasks"></i> Các yêu cầu của bài:</h3>
-                <div style="white-space: pre-line; line-height: 1.8; color: var(--text-secondary);">
-                    ${lesson.requirements}
-                </div>
-            `;
-            // Append after video wrapper
-            const videoWrapper = document.querySelector('.video-wrapper');
-            if (videoWrapper && lessonLeft) {
-                videoWrapper.after(reqDiv);
-            } else if (lessonLeft) {
-                lessonLeft.appendChild(reqDiv);
+            if (lesson.image && featuredImage) {
+                featuredImage.src = lesson.image;
+                featuredImage.style.display = 'block';
+            } else if (featuredImage) {
+                featuredImage.style.display = 'none';
             }
-        }
 
-        // Steps
-        const stepList = document.getElementById('step-list');
-        if (!stepList) return;
+            // Video
+            if (videoFrame && videoContainer) {
+                if (lesson.video) {
+                    videoFrame.src = lesson.video;
+                    videoContainer.style.display = 'block';
+                } else {
+                    videoContainer.style.display = 'none';
+                }
+            }
 
-        stepList.innerHTML = lesson.steps.map((step, index) => `
-            <div class="step-item">
-                <div class="step-header">
-                    <div class="step-title-wrapper">
-                        ${step.icon ? `<i class="fas ${step.icon} step-icon-visual"></i>` : ''}
-                        <span>${step.title}</span>
+            // Resources
+            const resourceList = document.getElementById('resource-list');
+            if (resourceList) {
+                const tasks = lesson.tasks || [];
+                const docs = lesson.docs || [];
+
+                const tasksHtml = tasks.map(t => {
+                    let href = t.file;
+                    if (!href.startsWith('http') && !href.startsWith('images/') && !href.startsWith('TaiLieuHuongDan/') && !href.includes('/')) {
+                        href = 'DeBaiThucHanh/' + href;
+                    } else if (href.includes('..')) {
+                        href = href.replace('DeBaiThucHanh/', '');
+                    }
+                    return `
+                <a href="${href}" class="resource-item" target="_blank">
+                    <i class="fas fa-file-word"></i> 
+                    <span>${t.name}</span>
+                </a>
+            `}).join('');
+
+                const docsHtml = docs.map(d => `
+                    <a href="${d.file.startsWith('http') ? d.file : 'TaiLieuHuongDan/' + d.file}" class="resource-item" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>${d.name}</span>
+                    </a>
+                `).join('');
+
+                resourceList.innerHTML = tasksHtml + docsHtml;
+            }
+
+            // Requirements
+            const lessonLeft = document.querySelector('.lesson-left');
+            const existingReq = document.getElementById('lesson-requirements');
+            if (existingReq) existingReq.remove();
+
+            if (lesson.requirements) {
+                const reqDiv = document.createElement('div');
+                reqDiv.id = 'lesson-requirements';
+                reqDiv.className = 'lesson-requirements';
+                reqDiv.style.marginTop = '0';
+                reqDiv.style.padding = '1.5rem';
+                reqDiv.style.background = 'rgba(255, 255, 255, 0.05)';
+                reqDiv.style.borderRadius = '1rem';
+                reqDiv.style.border = 'var(--glass-border)';
+                reqDiv.innerHTML = `
+                    <h3 style="color: var(--accent-color); margin-bottom: 1rem;"><i class="fas fa-tasks"></i> Các yêu cầu của bài:</h3>
+                    <div style="white-space: pre-line; line-height: 1.8; color: var(--text-secondary);">
+                        ${lesson.requirements}
                     </div>
-                    <i class="fas fa-chevron-down step-toggle-icon"></i>
-                </div>
-                <div class="step-content">
-                    <div class="step-text">${formatContent(step.content)}</div>
-                    ${step.slideImage ? `
-                        <div class="step-slide-container">
-                            <span class="slide-label"><i class="fas fa-image"></i> Minh họa (Nhấn để phóng to):</span>
-                            <img src="${step.slideImage}" alt="${step.title}" class="step-slide-img" loading="lazy">
-                        </div>
-                    ` : ''}
-                    ${step.videoUrl ? `
-                        <div class="step-video-container" style="margin-top: 1rem;">
-                            <span class="slide-label"><i class="fas fa-video"></i> Video hướng dẫn:</span>
-                            <div class="video-wrapper" style="margin: 0.5rem 0;">
-                                <iframe src="${step.videoUrl}" allow="autoplay" allowfullscreen></iframe>
+                `;
+                const videoWrapper = document.querySelector('.video-wrapper');
+                if (videoWrapper && lessonLeft) {
+                    videoWrapper.after(reqDiv);
+                } else if (lessonLeft) {
+                    lessonLeft.appendChild(reqDiv);
+                }
+            }
+
+            // Steps
+            const stepList = document.getElementById('step-list');
+            if (stepList) {
+                if (!lesson.steps || lesson.steps.length === 0) {
+                    stepList.innerHTML = `
+                    <div class="step-item active">
+                        <div class="step-header">
+                            <div class="step-title-wrapper">
+                                <i class="fas fa-info-circle step-icon-visual"></i>
+                                <span>Thông báo</span>
                             </div>
                         </div>
-                    ` : ''}
-                </div>
-            </div>
-        `).join('');
-
-        // Accordion functionality
-        const stepHeaders = document.querySelectorAll('.step-header');
-        stepHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const item = header.parentElement;
-                if (item) {
-                    item.classList.toggle('active');
+                        <div class="step-content" style="max-height: 100px;">
+                            <div class="step-text">Chưa có hướng dẫn chi tiết cho bài học này.</div>
+                        </div>
+                    </div>`;
+                } else {
+                    stepList.innerHTML = lesson.steps.map((step, index) => `
+                        <div class="step-item">
+                            <div class="step-header">
+                                <div class="step-title-wrapper">
+                                    ${step.icon ? `<i class="fas ${step.icon} step-icon-visual"></i>` : '<i class="fas fa-circle step-icon-visual" style="font-size: 0.5rem;"></i>'}
+                                    <span>${step.title}</span>
+                                </div>
+                                <i class="fas fa-chevron-down step-toggle-icon"></i>
+                            </div>
+                            <div class="step-content">
+                                <div class="step-text">${formatContent(step.content)}</div>
+                                ${step.slideImage ? `
+                                    <div class="step-slide-container">
+                                        <span class="slide-label"><i class="fas fa-image"></i> Minh họa (Nhấn để phóng to):</span>
+                                        <img src="${step.slideImage}" alt="${step.title}" class="step-slide-img" loading="lazy">
+                                    </div>
+                                ` : ''}
+                                ${step.videoUrl ? `
+                                    <div class="step-video-container" style="margin-top: 1rem;">
+                                        <span class="slide-label"><i class="fas fa-video"></i> Video hướng dẫn:</span>
+                                        <div class="video-wrapper" style="margin: 0.5rem 0;">
+                                            <iframe src="${step.videoUrl}" allow="autoplay" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `).join('');
                 }
-            });
-        });
+
+                // Accordion functionality
+                const stepHeaders = document.querySelectorAll('.step-header');
+                stepHeaders.forEach(header => {
+                    header.addEventListener('click', () => {
+                        const item = header.parentElement;
+                        if (item) {
+                            item.classList.toggle('active');
+                        }
+                    });
+                });
+            }
+        } catch (error) {
+            console.error("Error rendering lesson:", error);
+            alert("Lỗi hiển thị bài học: " + error.message);
+        }
     }
 
     function formatContent(text) {
@@ -228,7 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let html = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
         // 2. Handle Lists with indentation
-        // Split by newlines to handle each line's indentation
         const lines = html.split('\n');
 
         const formattedLines = lines.map(line => {
