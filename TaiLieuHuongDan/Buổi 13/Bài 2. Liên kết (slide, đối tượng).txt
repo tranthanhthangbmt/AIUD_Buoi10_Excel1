@@ -1,0 +1,85 @@
+﻿BÀI 2. LIÊN KẾT (SLIDE, ĐỐI TƯỢNG)
+Sau khi hoàn thành Câu 2 của bài Thiết kế slide, slide master hãy thực hiện thêm yêu cầu: 
+Câu 3. Hãy thực hiện liên kết theo yêu cầu sau:
+ a. Tại slide “Nội dung trình bày” (slide 2) kích chuột vào mục “1. Lý do chọn đề tài” sẽ chuyển đến slide chứa nội dung “Lý do chọn đề tài”. Sau đó tại slide “Lý do chọn đề tài” tạo đối tượng bất kỳ, và  thực hiện liên kết để khi kích chuột vào đối tượng này sẽ chuyển lại slide “Nôi dung trình bày”. 
+ b. Tại slide “Nội dung trình bày” kích chuột vào mục “2. Phát biểu bài toán”, yêu cầu tương tự như câu a. 
+ c. Tại slide “Nội dung trình bày”  kích chuột vào mục “3. Phân tích thiết kế hệ thống”, yêu cầu tương tự như câu a.
+
+
+
+
+
+Hướng dẫn thực hiện:
+a.
+Bước 1: Chọn “1. Lý do chọn đề tài”→ vào menu Insert →Link
+  
+Xuất hiện hộp thoại như sau:
+
+Bước 2:  Chọn mục Place in this Document → Chọn slide LÝ DO CHỌN ĐỀ TÀI →chọn OK
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Trình chiếu Slide để xem kết quả (nhấn  F5 để trình chiếu từ đầu hoặc nhấn Shift + F5 để trình chiếu slide hiện tại)
+    
+      Sau đó kích chuột vào  “1. Lý do chọn đề tài” sẽ chuyển đến nội dung của slide “Lý do chọn đề tài”.
+Bước 3: Tại slide nội dung của “Lý do chọn đề tài”, tạo đối tượng bất kỳ (trong ví dụ này ta tạo dấu mũi tên) và tạo liên kết đến Nội dung trình bày (slide 2)
+Tạo dấu mũi tên:
+         Vào menu Insert → Shapes → chọn biểu tượng dấu mũi tên, sau đó vẽ lên slide:
+    
+	
+
+
+
+
+
+
+Kết quả:
+
+
+Kết quả:
+
+
+      Sau đó chọn dấu mũi tên vừa vẽ, vào menu Insert → Link, để liên kết đến slide “NỘI DUNG TRÌNH BÀY” (slide 2).
+
+Trình chiếu slide và kích vào dấu mũi tên để xem kết quả.
+
+Thực hiện tương tự cho các yêu cầu tiếp theo ( câu b và câu c) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

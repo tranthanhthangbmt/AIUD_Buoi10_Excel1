@@ -1,0 +1,124 @@
+﻿BÀI 1.THIẾT KẾ SLIDE, SLIDE MASTER
+    Slide Master trong PowerPoint là tính năng hỗ trợ trong việc định dạng mẫu chung toàn bộ các slide. Slide master giúp chúng ta không tốn thời gian để định dạng lại cho từng slide.
+    Câu 1: Thiết kế slide master sau:
+Slide 1
+
+Slide 2 (mẫu slide cho các slide tiếp theo)
+
+
+Cho logo như hình bên:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hướng dẫn thực hiện:
+ Bước 1. Vào menu View→ Slide Master
+
+
+2. Thiết kế  như sau:
+Bước 2: Vào menu Insert → Shapes → Rectangle, vẽ lên slide 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bước 3: Đổi màu cho đối tượng Rectange vừa tạo giống màu của mẫu slide đã cho.
+- Vào chọn đối tượng (Rectange vừa vẽ)
+- Vào menu Format → Shape Fill → chọn màu sắc  (theo màu của mẫu slide)
+
+Bước 4. Copy Logo và paste  vào Slide master và chỉnh sửa lại như sau:
+
+
+
+
+Bước 5.Chỉnh sửa lại cho các slide để được cấu như sau:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bước 6. Kích vào menu Slide Master → Close Master View Close
+    
+
+
+
+
+
+Câu 2:
+Yêu cầu: Soạn slide trình chiếu như sau, sử dụng slide master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Hướng dẫn thực hiện:
+

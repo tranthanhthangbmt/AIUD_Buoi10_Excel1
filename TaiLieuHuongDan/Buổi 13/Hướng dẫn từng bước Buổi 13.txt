@@ -1,0 +1,608 @@
+BÀI 1_CÂU 1: THIẾT KẾ SLIDE MASTER
+
+Slide Master trong PowerPoint là tính năng hỗ trợ trong việc định dạng mẫu chung cho
+toàn bộ các slide. Slide Master giúp tiết kiệm thời gian bằng cách định dạng mẫu cho
+từng slide.
+
+Hướng Dẫn Thiết Kế Slide Master
+Câu 1: Thiết kế Slide Master sau:
+
+1. Slide 1:
+
+o Tiêu đề chính của bài thuyết trình.
+
+o Thiết kế bố cục cho slide đầu tiên.
+
+2. Slide 2:
+
+o Mẫu slide cho các slide tiếp theo.
+
+o Định dạng chung: Font chữ, màu sắc, kích thước chữ, vị trí logo, định
+dạng tiêu đề và nội dung.
+
+Hướng dẫn chi tiết:
+
+1. Bước 1: Mở Slide Master
+
+o Vào tab View, chọn Slide Master.
+
+o Chọn slide master chính để chỉnh sửa.
+
+2. Bước 2: Thiết kế Slide Master
+
+o Slide 1:
+
+▪  Thêm logo: Vào tab Insert, chọn Pictures, thêm logo từ máy tính.
+
+▪  Định dạng tiêu đề và bố cục: Chọn Insert, chọn Text Box để thêm
+tiêu đề và nội dung.
+
+o Slide 2:
+
+▪  Tạo một mẫu slide cho các slide tiếp theo: Tương tự bước trên,
+thêm tiêu đề, nội dung và các yếu tố định dạng khác.
+
+3. Bước 3: Áp dụng Slide Master
+
+o Sau khi thiết kế xong, chọn Close Master View để áp dụng các thay đổi
+cho tất cả các slide.
+
+Ví dụ minh họa về Slide Master:
+
+
+BÀI 1: CÂU 2: YÊU CẦU: SOẠN SLIDE TRÌNH CHIẾU NHƯ SAU, SỬ DỤNG
+SLIDE MASTER
+
+Hướng Dẫn Soạn Slide Trình Chiếu Sử Dụng Slide Master
+Bước 1: Mở Slide Master
+
+•  Vào tab View, chọn Slide Master.
+
+Bước 2: Thiết kế Slide Master
+
+1. Slide 1:
+
+o Tiêu đề: Nhập tiêu đề chính của bài thuyết trình.
+
+o Định dạng:
+
+▪  Font chữ: Times New Roman
+
+▪  Cỡ chữ: 32pt
+
+▪  Màu chữ: Đen
+
+o Thêm logo: Vào tab Insert, chọn Pictures, thêm logo từ máy tính và đặt
+nó ở góc dưới cùng bên phải.
+
+2. Slide 2 (Mẫu Slide Cho Các Slide Tiếp Theo):
+
+o Tiêu đề: Định dạng tiêu đề:
+
+▪  Font chữ: Arial
+
+▪  Cỡ chữ: 24pt
+
+▪  Màu chữ: Xanh dương
+
+o Nội dung:
+
+▪  Font chữ: Calibri
+
+▪  Cỡ chữ: 18pt
+
+▪  Màu chữ: Đen
+
+o Thêm số trang: Vào tab Insert, chọn Slide Number, thêm số trang vào
+góc dưới cùng bên phải.
+
+o Thêm logo: Sao chép logo từ Slide 1 và dán vào vị trí tương tự trên Slide
+2.
+
+Bước 3: Áp Dụng Slide Master
+
+•  Sau khi thiết kế xong, chọn Close Master View để áp dụng các thay đổi cho tất
+cả các slide.
+
+•  Ví Dụ Minh Họa
+
+
+Slide 1:
+
+Slide 2:
+
+•  Câu 2: Soạn Slide Trình Chiếu
+
+Sử dụng Slide Master đã thiết kế để soạn các slide trình chiếu sau:
+
+1. Slide 1: Tiêu đề Chính
+
+o Tiêu đề: Giới Thiệu Học Phần
+
+2. Slide 2: Nội dung
+
+o Tiêu đề: Tổng Quan Lập Trình Hướng Đối Tượng
+
+o Nội dung:
+
+▪  Phương pháp lập trình truyền thống
+
+▪  Phương pháp lập trình hướng đối tượng
+
+▪  So sánh hai phương pháp
+
+▪  Xu hướng phát triển lập trình hướng đối tượng
+
+3. Slide 3: Thực hành
+
+o Tiêu đề: Thực Hành
+
+o Nội dung:
+
+▪  Bài tập lập trình cơ bản
+
+▪  Cú pháp Java và môi trường lập trình
+
+▪  Thực hành các từ khóa và phạm vi truy cập trong lập trình hướng
+đối tượng
+
+BÀI 2: HƯỚNG DẪN THỰC HIỆN LIÊN KẾT (SLIDE, ĐỐI TƯỢNG)
+
+a. Liên kết "1. Lý do chọn đề tài" đến slide "Lý do chọn đề tài" và quay lại "Nội
+dung trình bày":
+
+1. Tạo liên kết từ "Nội dung trình bày" đến "Lý do chọn đề tài":
+
+o Chọn mục "1. Lý do chọn đề tài" trên slide "Nội dung trình bày".
+
+o Vào tab Insert, chọn Link.
+
+o Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+o Chọn slide "Lý do chọn đề tài".
+
+o Nhấn OK.
+
+
+2. Tạo đối tượng trên slide "Lý do chọn đề tài" và liên kết quay lại "Nội dung
+trình bày":
+
+o Trên slide "Lý do chọn đề tài", tạo đối tượng bất kỳ (ví dụ: một hình mũi
+tên).
+
+o Vào tab Insert, chọn Shapes, chọn biểu tượng mũi tên và vẽ lên slide.
+
+o Chọn đối tượng vừa tạo, vào tab Insert, chọn Link.
+
+o Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+o Chọn slide "Nội dung trình bày".
+
+o Nhấn OK.
+
+b. Liên kết "2. Phát biểu bài toán" đến slide "Phát biểu bài toán" và quay lại "Nội
+dung trình bày":
+
+1. Tạo liên kết từ "Nội dung trình bày" đến "Phát biểu bài toán":
+
+o Chọn mục "2. Phát biểu bài toán" trên slide "Nội dung trình bày".
+
+o Vào tab Insert, chọn Link.
+
+o Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+o Chọn slide "Phát biểu bài toán".
+
+o Nhấn OK.
+
+2. Tạo đối tượng trên slide "Phát biểu bài toán" và liên kết quay lại "Nội dung
+trình bày":
+
+o Trên slide "Phát biểu bài toán", tạo đối tượng bất kỳ (ví dụ: một hình mũi
+tên).
+
+o Vào tab Insert, chọn Shapes, chọn biểu tượng mũi tên và vẽ lên slide.
+
+o Chọn đối tượng vừa tạo, vào tab Insert, chọn Link.
+
+o Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+o Chọn slide "Nội dung trình bày".
+
+o Nhấn OK.
+
+c. Liên kết "3. Phân tích thiết kế hệ thống" đến slide "Phân tích thiết kế hệ thống"
+và quay lại "Nội dung trình bày":
+
+1. Tạo liên kết từ "Nội dung trình bày" đến "Phân tích thiết kế hệ thống":
+
+o Chọn mục "3. Phân tích thiết kế hệ thống" trên slide "Nội dung trình bày".
+
+o Vào tab Insert, chọn Link.
+
+
+o Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+o Chọn slide "Phân tích thiết kế hệ thống".
+
+o Nhấn OK.
+
+2. Tạo đối tượng trên slide "Phân tích thiết kế hệ thống" và liên kết quay lại
+"Nội dung trình bày":
+
+o Trên slide "Phân tích thiết kế hệ thống", tạo đối tượng bất kỳ (ví dụ: một
+hình mũi tên).
+
+o Vào tab Insert, chọn Shapes, chọn biểu tượng mũi tên và vẽ lên slide.
+
+o Chọn đối tượng vừa tạo, vào tab Insert, chọn Link.
+
+o Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+o Chọn slide "Nội dung trình bày".
+
+o Nhấn OK.
+
+BÀI 3: HƯỚNG DẪN TẠO HIỆU ỨNG CHO ĐỐI TƯỢNG VÀ HIỆU ỨNG
+CHUYỂN TIẾP
+
+Yêu cầu 1: Tạo hiệu ứng cho đối tượng "1. Lý do chọn đề tài", kiểu hiệu ứng Fly
+in
+
+Thực hiện:
+
+1. Chọn đối tượng "1. Lý do chọn đề tài".
+
+2. Vào menu Animations.
+
+3. Chọn kiểu hiệu ứng Fly In.
+
+Minh họa:
+
+•  Sau khi chọn kiểu hiệu ứng Fly In, bạn có thể xem trước hiệu ứng bằng cách
+nhấn nút Preview trong tab Animations.
+
+Tương tự, thực hiện cho các đối tượng còn lại:
+
+•  Chọn đối tượng mà bạn muốn áp dụng hiệu ứng.
+
+•  Vào menu Animations.
+
+•  Chọn kiểu hiệu ứng phù hợp.
+
+Giải thích các thành phần liên quan đến Animation:
+
+•  Effect Options: Chọn hướng di chuyển của hiệu ứng vừa tạo (ví dụ: từ trái, từ
+phải, từ trên, từ dưới).
+
+•  Add Animation: Thêm mới hiệu ứng cho đối tượng.
+
+
+•  Animation Pane: Quản lý hiệu ứng của các đối tượng đã tạo (cho phép chỉnh
+sửa, sắp xếp thứ tự và thời gian chạy các hiệu ứng).
+
+Yêu cầu 2: Tạo hiệu ứng chuyển tiếp cho các slide
+Thực hiện:
+
+1. Vào menu Transitions.
+
+2. Chọn hiệu ứng chuyển tiếp cho slide (ví dụ: Fade, Push, Wipe...).
+
+Giải thích các thành phần liên quan đến Timing:
+
+•  Sound: Chọn âm thanh xuất hiện khi trình chiếu slide.
+
+•  Duration: Thời gian hiệu ứng hiển thị (tính bằng giây).
+
+•  Apply To All: Áp dụng hiệu ứng chuyển tiếp này cho tất cả các slide.
+
+•  On Mouse Click: Nếu được chọn, slide mới sẽ chuyển tiếp khi kích chuột.
+
+•  After: Thiết lập thời gian tự động chuyển tiếp slide (tính bằng giây).
+
+•  Ví Dụ Minh Họa
+
+Tạo hiệu ứng Fly In cho đối tượng "1. Lý do chọn đề tài":
+
+1. Chọn đối tượng "1. Lý do chọn đề tài".
+
+2. Vào menu Animations.
+
+3. Chọn kiểu hiệu ứng Fly In.
+
+4. Trong Effect Options, chọn hướng hiệu ứng (ví dụ: từ trái).
+
+Tạo hiệu ứng chuyển tiếp cho các slide:
+
+1. Vào menu Transitions.
+
+2. Chọn hiệu ứng chuyển tiếp (ví dụ: Fade).
+
+3. Chọn Apply To All để áp dụng cho tất cả các slide.
+
+4. Chỉnh Duration để thiết lập thời gian hiển thị hiệu ứng.
+
+5. Chọn On Mouse Click hoặc After để thiết lập cách chuyển tiếp giữa các slide.
+
+BÀI 4: HƯỚNG DẪN TRÌNH CHIẾU TRONG POWERPOINT
+
+1. Trình Chiếu Từ Đầu
+
+•  Nhấn phím F5.
+
+2. Trình Chiếu Slide Hiện Tại
+
+•  Nhấn Shift + F5.
+
+
+3. Trình Chiếu Slide Chạy Lặp Lại (Đến Khi Nhấn ESC Thì Dừng)
+
+1. Vào menu Slide Show.
+
+2. Chọn Set up Slide Show.
+
+3. Trong hộp thoại xuất hiện, chọn Loop continuously until 'ESC'.
+
+4. Cách Vô Hiệu Hóa Hiệu Ứng Động Khi Trình Chiếu
+
+1. Vào menu Slide Show.
+
+2. Chọn Set up Slide Show.
+
+3. Trong hộp thoại xuất hiện, chọn Show without animation.
+
+5. Cách Xóa Hiệu Ứng Động
+
+1. Nhấn vào slide có biểu tượng ngôi sao muốn xóa hiệu ứng chuyển động.
+
+2. Nhấn vào tab Animations.
+
+3. Chọn đối tượng trong slide muốn xóa hiệu ứng chuyển động.
+
+4. Nhấn None.
+
+BÀI 5: HƯỚNG DẪN TẠO TRIGGER CHO SLIDE CÂU HỎI TRẮC NGHIỆM
+
+Yêu Cầu:
+
+•  Tạo 4 slide, mỗi câu có 4 đáp án để lựa chọn.
+
+•  Câu đúng sẽ xuất hiện kèm âm thanh khi được chọn.
+
+•  Câu sai sẽ xuất hiện kèm âm thanh khi được chọn.
+
+Bước 1: Soạn 4 Slide Theo Yêu Cầu:
+
+1. Slide 1: Câu Hỏi 1
+
+o Nội dung câu hỏi và 4 đáp án (A, B, C, D).
+
+2. Slide 2: Câu Hỏi 2
+
+o Nội dung câu hỏi và 4 đáp án (A, B, C, D).
+
+3. Slide 3: Câu Hỏi 3
+
+o Nội dung câu hỏi và 4 đáp án (A, B, C, D).
+
+4. Slide 4: Câu Hỏi 4
+
+o Nội dung câu hỏi và 4 đáp án (A, B, C, D).
+
+Bước 2: Tạo Trigger Khi Kích Vào Đáp Án Đúng:
+
+1. Chọn Đáp Án Đúng:
+
+
+o Ví dụ: Đáp án A.
+
+2. Chọn Hiệu Ứng:
+
+o Chọn đáp án đúng, vào menu Animations, chọn kiểu hiệu ứng Fly In.
+
+3. Mở Animation Pane:
+
+o Vào menu Animations, chọn Animation Pane.
+
+4. Chỉnh Trigger:
+
+o Trong Animation Pane, kích chuột phải vào hiệu ứng của đáp án đúng.
+
+o Chọn Timing, sau đó chọn Triggers.
+
+o Chọn Start effect on click of, sau đó chọn đối tượng đáp án đúng (ví dụ:
+Picture 1).
+
+5. Chỉnh Âm Thanh:
+
+o Trong hộp thoại Effect Options, chọn tab Effect.
+
+o Chọn Sound, chọn âm thanh phù hợp (ví dụ: Correct.wav).
+
+o Nhấn OK.
+
+Bước 3: Tạo Trigger Khi Kích Vào Các Đáp Án Sai:
+
+1. Chọn Đáp Án Sai:
+
+o Chọn từng đáp án sai (B, C, D).
+
+2. Chọn Hiệu Ứng:
+
+o Chọn đáp án sai, vào menu Animations, chọn kiểu hiệu ứng Fly In hoặc
+bất kỳ hiệu ứng nào khác.
+
+3. Mở Animation Pane:
+
+o Vào menu Animations, chọn Animation Pane.
+
+4. Chỉnh Trigger:
+
+o Trong Animation Pane, kích chuột phải vào hiệu ứng của đáp án sai.
+
+o Chọn Timing, sau đó chọn Triggers.
+
+o Chọn Start effect on click of, sau đó chọn đối tượng đáp án sai.
+
+5. Chỉnh Âm Thanh:
+
+o Trong hộp thoại Effect Options, chọn tab Effect.
+
+o Chọn Sound, chọn âm thanh phù hợp (ví dụ: Wrong Buzzer.wav).
+
+
+o Nhấn OK.
+
+•  Ví Dụ Minh Họa:
+
+1. Tạo Hiệu Ứng Đúng Cho Đáp Án A:
+
+o Chọn đáp án A.
+
+o Vào menu Animations, chọn kiểu hiệu ứng Fly In.
+
+o Mở Animation Pane, kích chuột phải vào hiệu ứng Fly In, chọn Timing.
+
+o Chọn tab Triggers, chọn Start effect on click of và chọn đối tượng đáp án
+A.
+
+o Chọn tab Effect, chọn Sound, chọn âm thanh Correct.wav.
+
+o Nhấn OK.
+
+2. Tạo Hiệu Ứng Sai Cho Đáp Án B:
+
+o Chọn đáp án B.
+
+o Vào menu Animations, chọn kiểu hiệu ứng Fly In.
+
+o Mở Animation Pane, kích chuột phải vào hiệu ứng Fly In, chọn Timing.
+
+o Chọn tab Triggers, chọn Start effect on click of và chọn đối tượng đáp án
+B.
+
+o Chọn tab Effect, chọn Sound, chọn âm thanh Wrong Buzzer.wav.
+
+o Nhấn OK.
+
+•  Kết Quả
+
+•  Khi trình chiếu slide (nhấn F5), nếu kích vào đáp án đúng thì sẽ xuất hiện hiệu
+ứng và âm thanh Correct.wav.
+
+•  Nếu kích vào đáp án sai thì sẽ xuất hiện hiệu ứng và âm thanh Wrong Buzzer.wav.
+
+BÀI 6: HƯỚNG DẪN XÂY DỰNG SLIDE TRÌNH CHIẾU THEO CHỦ ĐỀ CỤ
+THỂ
+
+1. Chọn Chủ Đề:
+
+•  Môn học: Ví dụ như Lập trình hướng đối tượng, Tin học văn phòng, Quản trị
+kinh doanh...
+
+•  Cuộc sống: Ví dụ như Du lịch, Môi trường, Sức khỏe, Văn hóa...
+
+2. Thiết Kế Slide:
+
+•  Sử dụng Slide Master:
+
+
+1. Vào tab View, chọn Slide Master.
+
+2. Thiết kế Slide Master chính: thêm logo, tiêu đề, định dạng font, màu sắc
+cho toàn bộ các slide.
+
+3. Chọn Close Master View để áp dụng Slide Master cho tất cả các slide.
+
+•  Tạo 8-12 Slide:
+
+1. Slide 1: Tiêu đề Chính
+
+▪  Ví dụ: "Lập Trình Hướng Đối Tượng"
+
+2. Slide 2: Giới Thiệu Chung
+
+▪  Ví dụ: Giới thiệu tổng quan về chủ đề.
+
+3. Slide 3-7: Nội Dung Chính
+
+▪  Phân chia nội dung thành các phần nhỏ để dễ trình bày.
+
+▪  Ví dụ: Khái niệm cơ bản, các đặc trưng của lập trình hướng đối
+tượng, ứng dụng...
+
+4. Slide 8: Thực Hành
+
+▪  Ví dụ: Cung cấp bài tập thực hành, ví dụ minh họa.
+
+5. Slide 9: Kết Luận
+
+▪  Tổng kết lại nội dung đã trình bày.
+
+6. Slide 10-12: Phụ Lục, Tài Liệu Tham Khảo (nếu cần)
+
+•  Tạo Hiệu Ứng Chuyển Tiếp Slide:
+
+1. Vào tab Transitions.
+
+2. Chọn hiệu ứng chuyển tiếp phù hợp cho từng slide.
+
+3. Chỉnh Duration để thiết lập thời gian hiển thị hiệu ứng.
+
+4. Chọn Apply To All nếu muốn áp dụng hiệu ứng cho tất cả các slide.
+
+•  Tạo Hiệu Ứng Cho Từng Đối Tượng:
+
+1. Chọn đối tượng cần tạo hiệu ứng (văn bản, hình ảnh, biểu đồ...).
+
+2. Vào tab Animations.
+
+3. Chọn kiểu hiệu ứng phù hợp (ví dụ: Fly In, Fade, Zoom...).
+
+4. Sử dụng Animation Pane để quản lý các hiệu ứng, sắp xếp thứ tự và thời
+gian chạy.
+
+•  Tạo Liên Kết Giữa Các Slide:
+
+
+1. Chọn văn bản hoặc đối tượng cần tạo liên kết.
+
+2. Vào tab Insert, chọn Link.
+
+3. Trong hộp thoại Insert Hyperlink, chọn Place in This Document.
+
+4. Chọn slide cần liên kết đến và nhấn OK.
+
+•  Phối Hợp Màu Sắc Đẹp, Ấn Tượng:
+
+1. Sử dụng màu sắc hài hòa, phù hợp với chủ đề.
+
+2. Chọn font chữ dễ đọc, kích thước chữ phù hợp.
+
+3. Sử dụng hình ảnh, biểu đồ, biểu tượng để minh họa và tạo sự sinh động
+cho slide.
+
+•  Ví Dụ Minh Họa:
+
+•  Chủ đề: "Lập Trình Hướng Đối Tượng"
+
+•  Slide 1: Tiêu đề Chính - "Lập Trình Hướng Đối Tượng"
+
+•  Slide 2: Giới Thiệu Chung
+
+•  Slide 3: Khái Niệm Cơ Bản
+
+•  Slide 4: Đặc Trưng Của Lập Trình Hướng Đối Tượng
+
+•  Slide 5: Các Tính Chất Cơ Bản: Đóng Gói, Kế Thừa, Đa Hình
+
+•  Slide 6: Ứng Dụng Của Lập Trình Hướng Đối Tượng
+
+•  Slide 7: Ví Dụ Minh Họa
+
+•  Slide 8: Thực Hành
+
+•  Slide 9: Kết Luận
+
+•  Slide 10: Tài Liệu Tham Khảo
+

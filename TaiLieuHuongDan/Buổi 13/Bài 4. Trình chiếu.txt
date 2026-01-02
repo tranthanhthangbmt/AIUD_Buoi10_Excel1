@@ -1,0 +1,52 @@
+﻿BÀI 4. TRÌNH CHIẾU
+1. Trình chiếu từ đầu
+Nhấn phím F5
+2. Trình chiếu slide hiện tại:
+Nhấn Shift + F5
+3. Trình chiếu slide chạy lặp lại khi nào nhấn ESC thì dừng.
+Vào menu Slide Show→ Set up Slide show 
+
+
+Xuất hiện hộp thoại:
+
+Kích chuột chọn Loop continuously until ‘ESC’
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Cách vô hiệu hóa ứng dụng động khi trình chiếu:
+Vào menu Slide Show→ Set up Slide show 
+
+  4. Cách vô hiệu hóa hiệu ứng động khi trình chiếu
+Vào menu Slide Show→ Set up Slide show 
+        Xuất hiện hộp thoại và chọn Show without animation
+
+
+   5. Cách xóa hiệu ứng động
+   Nhấn vào slide có biểu tượng ngôi sao muốn xóa hiệu ứng chuyển động -> Nhấn vào tab Animations > Chọn vào đối tượng trong slide muốn xóa hiệu ứng chuyển động  -> Nhấn vào None.

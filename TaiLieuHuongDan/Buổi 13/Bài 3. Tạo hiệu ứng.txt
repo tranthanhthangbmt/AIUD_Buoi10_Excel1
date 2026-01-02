@@ -1,0 +1,32 @@
+﻿BÀI 3. TẠO HIỆU ỨNG
+  Sử dụng lại câu 3 của bài trước, hãy tạo hiệu ứng cho từng đối tượng, và hiệu ứng chuyển tiếp một cách hợp lý.
+Câu 4:
+Yêu cầu 1:  Tạo hiệu hướng cho đối tượng: “1. Lý do chọn đề tài”, kiểu hiệu ứng Fly in
+Ta thực hiện:
+ Chọn đối tượng “1. Lý do chọn đề tài” → vào menu Animation → Chọn kiểu Fly in
+Minh họa:
+    
+    Tương tự cho các đối tượng còn lại, sinh viên tự chọn hiệu ứng cho hợp lý.
+    
+    Giải thích các thành phần liên quan đến Amination
+    
+    
+    Effect Options: các hướng duy chuyển của hiệu ứng vừa tạo
+    Add Amination: thêm mới hiệu ứng cho đối tượng
+    Amination Pane: quản lý hiệu ứng của đối tượng được tạo
+    
+    
+    
+    
+   Yêu cầu 2:   Tạo hiệu ứng chuyển tiếp cho các slide
+      Ta thực hiện tại menu Transations → chọn hiệu ứng chuyển tiếp cho slide
+   
+    Giải thích các thành phần liên quan đến Timming
+    
+    Sound: âm thanh xuất hiện khi trình chiếu slide
+    Duration: là số giây mà muốn hiệu ứng hiển thị
+    Apply To All:  chấp nhận hiệu ứng chuyển tiếp này cho các slide
+    On Mouse Click: nếu được chọn thì kích chuột slide mới chuyển tiếp
+    After: thời gian tự động chuyển tiếp slide
+
+

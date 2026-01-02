@@ -1,0 +1,38 @@
+KHOA CÔNG NGHỆ THÔNG TIN
+
+BÁO CÁO BÀI TẬP NHÓM
+Tên đề tài: XÂY DỰNG PHẦN MỀM QUẢN LÝ NHÂN SỰ - TIỀN LƯƠNG
+Nhóm sinh viên thực hiện:
+Giảng viên hướng dẫn:
+
+Địa điểm, ngày ... tháng ... năm ...
+
+NỘI DUNG TRÌNH BÀY
+Lý do chọn đề tài
+Phát biểu bài toán
+Phân tích và thiết kế hệ thống
+I. LÝ DO CHỌN ĐỀ TÀI
+Hiện tại, nhiều doanh nghiệp vẫn quản lý nhân sự - tiền lương theo cách thủ công.
+Việc cập nhật hồ sơ, tìm kiếm thông tin nhân viên, tính lương, thưởng rất phức tạp và tốn nhiều thời gian.
+Báo cáo thống kê yêu cầu nhiều công sức và dễ xảy ra sai sót.
+Vì vậy, cần có một phần mềm để giải quyết các vấn đề trên một cách hiệu quả.
+II. PHÁT BIỂU BÀI TOÁN
+Xây dựng một hệ thống quản lý nhân sự và tiền lương với các chức năng chính sau:
+
+1. Phân hệ quản lý nhân sự
+Giúp người quản lý cập nhật, tìm kiếm, lưu trữ thông tin nhân viên.
+Hỗ trợ công tác hành chính, thống kê, báo cáo.
+2. Phân hệ quản lý tiền lương
+Tính lương, phụ cấp.
+Quản lý các khoản giảm trừ, tạm ứng, chi trả ngoài giờ.
+Quản lý tiền thưởng, chế độ bảo hiểm.
+III. PHÂN TÍCH VÀ THIẾT KẾ HỆ THỐNG
+1. Quản trị hệ thống (Admin)
+Quản lý toàn bộ hệ thống, Phân quyền người dùng, Quản lý nhân sự, trình độ, chức vụ, bộ phận, đơn vị, lương, thuế, kỷ luật, khen thưởng,...
+2. Trưởng bộ phận
+Tạo tài khoản người dùng, quản lý thông tin người dùng (trừ phần phân quyền), Cập nhật hồ sơ nhân viên, thông tin đào tạo, quá trình làm việc, hợp đồng lao động,...
+3. Nhân viên nhân sự
+	Tham gia hệ thống với công việc cập nhật: Hồ sơ nhân viên, thông tin đào tạo, quá trình làm việc, cập nhật hợp đồng, nhân thân,...
+3. Kế toán
+Tính lương hàng tháng cho nhân viên, Thêm, sửa, xóa các thông tin liên quan đến thuế, bảo hiểm cá nhân,...
+XIN CẢM ƠN THẦY CÔ VÀ CÁC BẠN!
