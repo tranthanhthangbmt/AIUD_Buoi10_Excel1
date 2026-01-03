@@ -1,0 +1,314 @@
+﻿PHẦN 1: CẤU TRÚC ĐỀ THI VÀ ĐỀ MẪU SỐ 01
+I. CẤU TRÚC ĐỀ THI CHUẨN ĐẦU RA TIN HỌC
+Thông tin chung:
+• Trường: Đại học Đông Á - Khoa Công nghệ Thông tin.
+• Học phần: Tin học văn phòng.
+• Hình thức thi: Thực hành trên máy tính.
+• Thời gian: 90 phút.
+• Quy định: Không được sử dụng tài liệu khi làm bài.
+Bảng chi tiết chuẩn đầu ra (CLO) và phân bố điểm:
+Ký hiệu CĐRNội dung CĐRHình thứcSố lượng câuĐiểm tối thiểuĐiểm tối đaCLO4Sử dụng thành thạo Microsoft WordThực hành máy tính61.753.5CLO5Sử dụng thành thạo Microsoft ExcelThực hành máy tính72.04.0CLO6Sử dụng thành thạo Microsoft PowerpointThực hành máy tính31.252.5Tổng5.010.0
+II. NGÂN HÀNG CÂU HỎI THI (ĐỀ SỐ 1)
+Câu 1: Phần Microsoft Word (3.5 điểm)
+1. Tạo và lưu file: Tạo và lưu file theo cấu trúc: IDSV Họ và tên Lớp Mã đề.docx (0.25 điểm).
+2. Định dạng trang: Soạn thảo nội dung, định dạng lề, khổ giấy và nội dung theo thể thức, kỹ thuật trình bày văn bản (1.25 điểm).
+3. Bảng biểu: Hãy soạn thảo, định dạng bảng. Sao chép thành một bảng mới và chuyển bảng vừa sao chép thành văn bản (0.5 điểm).
+o Nội dung bảng mẫu: BÀI THI CĐR TIN HỌC (STT, Phần, Trọng số: Word 35%, Excel 40%, Powerpoint 25%).
+4. Soạn thảo văn bản: Hãy soạn thảo và định dạng nội dung văn bản sau (0.75 điểm).
+o Nội dung văn bản: > “1. Văn hóa đọc 2. Ứng xử đọc 3. Chuẩn mực đọc Văn hoá đọc là ứng xử đọc, giá trị đọc và chuẩn mực đọc của mỗi cá nhân, của cộng đồng xã hội và của các nhà quản lý và cơ quan quản lý nhà nước. Ứng xử, giá trị và chuẩn mực này cũng gồm ba thành phần: thói quen đọc, sở thích đọc và kỹ năng đọc.”.
+5. Mục lục: Hãy thiết lập mục lục có dạng như sau (sử dụng hình ảnh, bảng tùy ý) (0.5 điểm).
+o Cấu trúc: CÂU 1. PHẦN WORD (1.1, 1.2), CÂU 2. PHẦN EXCEL (2.1, 2.2, 2.3), CÂU 3. PHẦN POWERPOINT (3.1, 3.2, 3.3). Bao gồm cả Danh mục bảng và Danh mục hình.
+6. Header & Footer: Tạo Header & Footer chứa thông tin họ tên đầy đủ của sinh viên – tên lớp nằm bên trái và đánh số trang nằm bên phải (tất cả đặt ở chân trang) (0.25 điểm).
+Câu 2: Phần Microsoft Excel (4.0 điểm)
+1. Tạo và lưu file: Theo cấu trúc IDSV Họ và tên Lớp Mã đề.xlsx (0.25 điểm).
+2. Nhập liệu: Nhập và định dạng các bảng (Bảng 1, 2, 3) (0.25 điểm).
+o Bảng 1: Gồm các cột: TT, Niên khóa (?), Chuyên cần, Thường xuyên, Giữa kỳ, Tên lớp, Thi, Họ lót, Tên, Điểm TB (?), Xếp loại (?).
+o Bảng 2: Tham chiếu cho Niên khóa (2020-2024, 2018-2022, 2019-2023).
+o Bảng 3: Thống kê (Điểm TB cao nhất, thấp nhất, Số SV có điểm thi >= 5).
+3. Công thức Niên khóa: Lập công thức điền thông tin cho cột Niên khóa dựa vào Tên lớp và BẢNG 2 (1.0 điểm).
+4. Công thức Xếp loại: Lập công thức điền cột Xếp loại dựa vào Điểm TB (0.75 điểm):
+o Điểm TB >= 9.0: Xuất sắc.
+o Điểm TB >= 8.0: Giỏi.
+o Điểm TB >= 7.0: Khá.
+o Điểm TB >= 5.0: Trung bình.
+o Ngược lại: Yếu.
+5. Thống kê: Lập công thức điền thông tin cho BẢNG 3 (0.75 điểm).
+6. Sắp xếp: Sắp xếp dữ liệu BẢNG 1 theo chiều tăng của cột Điểm TB (0.5 điểm).
+7. Lọc dữ liệu: Sao chép dữ liệu sang sheet mới tên KQL. Lọc danh sách sinh viên có Điểm TB >= 5 từ niên khóa 19 trở về sau (0.5 điểm).
+Câu 3: Phần Microsoft Powerpoint (2.5 điểm)
+1. Tạo và lưu file: Theo cấu trúc IDSV Họ và tên Lớp Mã đề.pptx (0.25 điểm).
+2. Thiết kế slide: Thiết kế 6 slide, nhập dữ liệu, định dạng và trang trí (1.0 điểm).
+o Slide 1: Bài thi Chuẩn đầu ra Tin học (Họ tên, Ngày thi).
+o Slide 2: Thông tin thí sinh (Lớp, Ngành, Sở thích, Mô tả ngành).
+o Slide 3: Nội dung (Phần Word, Excel, Powerpoint).
+o Slide 4: Chi tiết phần Word.
+o Slide 5: Chi tiết phần Excel.
+o Slide 6: Chi tiết phần Powerpoint.
+3. Hiệu ứng và Liên kết: (1.25 điểm)
+o Tạo hiệu ứng đối tượng và chuyển tiếp slide.
+o Tạo liên kết từ Slide 3 đến Slide 4, 5, 6 tương ứng.
+o Tạo Header & Footer (Họ tên, ngày tháng, số trang).
+o Thiết lập chế độ chạy lặp lại từ đầu.
+
+III. ĐÁP ÁN VÀ THANG ĐIỂM (ĐỀ SỐ 1)
+1. Phần Word (3.5 điểm)
+• Tên file: Đúng quy tắc (VD: 12345_NguyenVanAn…) (0.25đ).
+• Định dạng trang: Khổ A4, hướng đứng. Lề: Trên 2cm, Dưới 2cm, Trái 3cm (hoặc 2.5), Phải 2cm (0.25đ). Font Times New Roman, cỡ 13pt, dãn dòng single, Before 0pt/After 6pt (0.5đ). Nội dung đầy đủ (0.5đ).
+• Bảng biểu: Tạo bảng đúng (0.25đ). Sao chép và chuyển thành văn bản đúng (0.25đ).
+• Định dạng văn bản: Numbering (1., 2…), Right Tab có leader, DropCap (2 dòng), Chia cột có dòng kẻ (0.75đ).
+• Mục lục: Sử dụng Heading 1, 2 và tạo mục lục tự động cho nội dung, bảng, hình (0.5đ).
+• Header & Footer: Có tên bên trái, số trang bên phải ở chân trang (0.25đ).
+2. Phần Excel (4.0 điểm)
+• Tên file: Đúng quy tắc (0.25đ).
+• Nhập liệu: Đầy đủ và đúng định dạng (0.25đ).
+• Công thức Niên khóa: Sử dụng kết hợp HLOOKUP, VALUE, MID (1.0đ).
+• Công thức Xếp loại: Sử dụng hàm IF lồng nhau (4 lần) (0.75đ).
+• Bảng 3: Dùng MAX, MIN, COUNTIF (0.75đ).
+• Sắp xếp: Dùng chức năng Sort tăng dần theo Điểm TB (0.5đ).
+• Lọc (Filter): Tại sheet KQL, lọc Điểm TB >= 5 và Niên khóa 2019-2023, 2020-2024 (0.5đ).
+3. Phần Powerpoint (2.5 điểm)
+• Tên file: Đúng quy tắc (0.25đ).
+• Thiết kế: Đủ 6 slide, đủ nội dung (0.5đ). Có sử dụng Diagram/SmartArt (0.25đ). Định dạng font/màu hợp lý (0.25đ).
+• Kỹ thuật:
+o Hiệu ứng chuyển slide (Transitions) (0.25đ).
+o Hiệu ứng đối tượng (Animations) (0.25đ).
+o Liên kết (Hyperlink) chính xác từ slide 3 đến 4, 5, 6 (0.25đ).
+o Header & Footer đầy đủ (0.25đ).
+o Thiết lập lặp lại (Loop continuously) (0.25đ).
+
+PHẦN 2: NGÂN HÀNG CÂU HỎI VÀ ĐÁP ÁN (TIẾP THEO)
+I. ĐỀ THI SỐ 02 (Trang 8 - 12)
+Nhận diện: Phần Word văn bản “Văn hóa tổ chức”, Phần Excel dữ liệu “Trương Thị Hoa - DD18A1”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 1: Tạo và lưu file theo cấu trúc IDSV Họ và tên Lớp Mã đề.docx.
+• Câu 2: Soạn thảo, định dạng lề, khổ giấy, kỹ thuật trình bày văn bản.
+• Câu 3: Soạn thảo, định dạng bảng. Sao chép thành bảng mới và chuyển thành văn bản.
+• Câu 4: Soạn thảo và định dạng văn bản sau: > “A. Văn hóa tổ chức; B. Hệ thống giá trị; C. Chuẩn mực hành động. Văn hoá tổ chức là hệ thống những giá trị niềm tin…”.
+• Câu 5: Thiết lập mục lục tự động (bao gồm Mục lục, Danh mục bảng, Danh mục hình).
+• Câu 6: Tạo Header & Footer: Họ tên, lớp (bên trái), số trang (bên phải) ở đầu trang.
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Gồm các sinh viên: Trương Thị Hoa (DD18A1), Lê Thanh Bình (DD19A1), Nguyễn Thị Hương (DD19A1)….
+• Yêu cầu:
+1. Điền cột Khóa: Dựa vào Tên lớp và Bảng 2.
+2. Điền cột Điểm quy đổi:
+• Điểm TB >= 8.5: A
+• Điểm TB >= 7.0: B
+• Điểm TB >= 5.5: C
+• Điểm TB >= 4.0: D
+• Còn lại: F.
+3. Điền Bảng 3: Điểm TB cao nhất, thấp nhất, Số SV có tên bắt đầu bằng ký tự H.
+4. Sắp xếp: Giảm dần theo cột Điểm TB.
+5. Lọc dữ liệu: Tại sheet mới (KQL), lọc SV có Điểm quy đổi là A và Khóa 19 trở về sau.
+3. Phần Powerpoint (2.5 điểm)
+• Thiết kế 6 slide với chủ đề “Chuẩn đầu ra Tin học”.
+• Yêu cầu kỹ thuật: Hiệu ứng chuyển tiếp, hiệu ứng đối tượng, liên kết slide (Slide 3 đến 4, 5, 6), Header/Footer, chế độ lặp lại.
+B. ĐÁP ÁN GỢI Ý (Đề 02)
+• Excel:
+o Cột Khóa: Dùng HLOOKUP, VALUE, MID.
+o Cột Điểm quy đổi: Dùng hàm IF lồng nhau.
+o Bảng 3: Dùng MAX, MIN, COUNTIF (đếm tên bắt đầu bằng “H*”).
+o Lọc: Sử dụng Filter, điều kiện “A” và Khóa “K19”, “K20”.
+
+II. ĐỀ THI SỐ 03 (Trang 14 - 18)
+Nhận diện: Phần Word văn bản “Văn hóa tổ chức” (giống đề 2 nhưng câu hỏi khác), Phần Excel dữ liệu “Trương Thị Lành - IT21A”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo bảng “Mã sản phẩm - Tên sản phẩm - Đơn giá”. Ví dụ: Ti vi Samsung (40,000,000), Tủ lạnh Panasonic (20,000,000).
+• Câu 4: Soạn thảo văn bản “Văn hóa tổ chức…” (Tạo DropCap thả xuống 2 dòng, chia cột có dòng kẻ giữa).
+• Câu 5: Mục lục tự động: Video hướng dẫn word, Bài tập thực hành word….
+• Câu 6: Header & Footer: Họ tên, lớp (trái), số trang (ở giữa, chân trang).
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Trương Thị Lành (IT21A), Lê Thanh Minh (DD22B), Nguyễn Thị Hạnh (KT22A)….
+• Yêu cầu:
+1. Điền cột Khóa: Dựa vào cột Lớp và Bảng 2.
+2. Điền cột Ngành học dựa vào cột Mã:
+• Mã IT: CNTT
+• Mã DD: Điều dưỡng
+• Mã KT: Kế toán
+• Mã LE: Luật
+• Còn lại: Ô tô.
+3. Điền Bảng 3: Thống kê Điểm TB cao/thấp nhất, Số SV họ Lê.
+4. Sắp xếp: Theo thứ tự A->Z dựa vào cột MÃ.
+5. Lọc dữ liệu: Lọc SV có Điểm TB >= 5 từ niên khóa 22 trở về sau.
+B. ĐÁP ÁN GỢI Ý (Đề 03)
+• Excel:
+o Cột Ngành học: Dùng hàm IF lồng nhau (4 lần).
+o Thống kê: Số SV họ Lê dùng COUNTIF (điều kiện “Lê*”).
+o Sắp xếp: Sort cột Mã từ A đến Z.
+o Lọc: Điều kiện Điểm TB >= 5 và Khóa là K22, K23.
+
+III. ĐỀ THI MÃ SỐ 04 (Trang 20 - 24)
+Nhận diện: Phần Word văn bản “Hành trình khởi nghiệp…”, Phần Excel dữ liệu “Xăng, Dầu, Nhớt”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo bảng “Mã hàng - Tên hàng - Đơn giá/lít - Thuế suất”. Dữ liệu mẫu: Xăng (20000, 4%), Dầu (15000, 3%), Nhớt (18000, 2%).
+• Câu 4: Soạn thảo văn bản “Hành trình khởi nghiệp với rong nho của 2 sinh viên CNTP-SH ĐH Đông Á…”.
+o Yêu cầu: Numbering (1), (2); Right Tab; DropCap (2 dòng); Chia cột.
+• Câu 5: Mục lục tự động: Lời mở đầu, Chương 1, Chương 2….
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Mã hàng (D40TN2, N06MO2, X89BP1…), Đơn giá, Số lượng.
+• Yêu cầu:
+1. Điền cột Tên hàng: Dựa vào ký tự đầu của Mã hàng và Bảng 2.
+2. Tính Thuế: = Đơn giá * Số lượng * Thuế suất.
+• Thuế suất: Nếu ký tự đầu là X (4%), D (3%), còn lại (2%).
+3. Điền Bảng 3: Tổng thuế theo từng loại mặt hàng (Xăng, Dầu, Nhớt).
+4. Sắp xếp: Tăng dần theo cột ĐƠN GIÁ.
+5. Lọc dữ liệu: Mã hàng bắt đầu bằng chữ N và có Số lượng từ 3000 đến 5000.
+B. ĐÁP ÁN GỢI Ý (Mã đề 04)
+• Excel:
+o Tên hàng: Dùng VLOOKUP kết hợp LEFT.
+o Thuế: Dùng hàm IF lồng nhau để xác định thuế suất.
+o Bảng 3: Dùng hàm SUMIF để tính tổng thuế.
+o Lọc: Cột Mã hàng (Begin with “N”), Cột Số lượng (Between 3000 and 5000).
+PHẦN 3: NGÂN HÀNG CÂU HỎI VÀ ĐÁP ÁN (TIẾP THEO)
+IV. ĐỀ THI MÃ SỐ 05 (Trang 27 - 31)
+Nhận diện: Phần Word chủ đề “Chương trình hội thảo”, Phần Excel chủ đề “Kinh doanh Xăng Dầu (Mã hàng bắt đầu bằng số)”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo và định dạng bảng “CHƯƠNG TRÌNH HỘI THẢO” (STT, Thời gian, Nội dung, Ghi chú).
+• Câu 4: Soạn thảo văn bản “Ngày 6/9, hội thảo quốc tế chủ đề Trí tuệ nhân tạo…”.
+o Yêu cầu: Numbering (01), (02); Tab trái/phải; DropCap (thả xuống 2 dòng); Chia cột có dòng kẻ.
+• Câu 5: Mục lục tự động 3 cấp: Phần A, Phần B, Danh mục bảng, Danh mục hình.
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Mã hàng (2D40TN, 2N06MO…), Tên hàng, Đơn giá, Số lượng, Thuế.
+• Yêu cầu:
+1. Tên hàng: Dựa vào ký tự thứ 2 của Mã hàng và Bảng 2.
+2. Thuế: = Đơn giá * Số lượng * Thuế suất. Biết Thuế suất: Nếu ký tự bên trái của Mã hàng là 1 (4%), 2 (3%), còn lại (2%).
+3. Bảng 3: Thống kê Tổng số lượng theo mặt hàng.
+4. Sắp xếp: Tăng dần theo cột SỐ LƯỢNG.
+5. Lọc dữ liệu: Mã hàng bắt đầu bằng số 2 và có Số lượng từ 3000 đến 5000.
+B. ĐÁP ÁN GỢI Ý (Mã đề 05)
+• Excel:
+o Tên hàng: Dùng HLOOKUP kết hợp hàm MID (lấy ký tự thứ 2).
+o Thuế: Dùng hàm IF lồng nhau kết hợp LEFT.
+o Bảng 3: Dùng hàm SUMIF.
+o Lọc: Cột Mã hàng (Begin with “2”), Cột Số lượng (Between 3000 and 5000).
+
+V. ĐỀ THI MÃ SỐ 06 (Trang 34 - 38)
+Nhận diện: Phần Word chủ đề “Danh sách SV hội thảo”, Phần Excel chủ đề “Kinh doanh Xăng Dầu (Mã hàng bắt đầu bằng chữ)”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo bảng “TỔNG HỢP DANH SÁCH SV ĐĂNG KÝ THAM GIA HỘI THẢO” (Thông tin SV, ID, Lớp…).
+• Câu 4: Soạn thảo văn bản “ĐĂNG KÝ THAM DỰ HỘI THẢO…”.
+o Yêu cầu: Tab trái/giữa/trái; DropCap (2 dòng); Chia cột.
+• Câu 5: Mục lục tự động: Chương 1, Chương 2, Chương 3….
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Mã hàng (D01TN, N02MO…), Đơn giá, Số lượng.
+• Yêu cầu:
+1. Tên hàng: Nếu ký tự trái là N (Nhớt), X (Xăng), còn lại (Dầu).
+2. Thuế: = Đơn giá * Số lượng * Thuế suất. Thuế suất dựa vào ký tự thứ 2 và 3 của Mã hàng và Bảng 2.
+3. Bảng 3: Thống kê Tổng Thuế.
+4. Lọc dữ liệu: Mã hàng bắt đầu bằng chữ N hoặc X và có Số lượng \>= 2000.
+B. ĐÁP ÁN GỢI Ý (Mã đề 06)
+• Excel:
+o Tên hàng: Dùng IF lồng nhau kết hợp LEFT.
+o Thuế: Dùng HLOOKUP kết hợp MID (lấy ký tự 2 và 3).
+o Lọc: Dùng điều kiện “Begin with” (N or X) và “Greater than or Equal to” (2000).
+
+VI. ĐỀ THI MÃ SỐ 07 (Trang 41 - 45)
+Nhận diện: Phần Word chủ đề “Linh kiện máy tính”, Phần Excel chủ đề “Điểm sinh viên & Chuyên ngành”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo bảng “HÃNG SẢN XUẤT - GIGABYTE / INTEL” (Tên thiết bị, Giá USD/VND…).
+• Câu 4: Soạn thảo văn bản “PHIẾU DỰ THI… Nhằm kỷ niệm 80 năm thành lập Đoàn…”.
+o Yêu cầu: Căn giữa tiêu đề; Tab trái; DropCap (4 dòng); Chia cột.
+• Câu 5: Mục lục tự động: Chương 1 (Tổng quan), Chương 2 (Thực trạng)….
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Sinh viên (Lê Đức An - ST23A1, Trần Trà My - GD23A2…).
+• Yêu cầu:
+1. Chuyên ngành: Dựa vào cột Lớp và Bảng 2 (ST -> Công nghệ phần mềm, GD -> Thiết kế đồ họa…).
+2. Điểm quy đổi: Quy tắc A, B, C, D, F tương tự các đề trước.
+3. Bảng 3: Điểm TB cao/thấp nhất, Số SV có tên bắt đầu bằng ký tự M.
+4. Lọc dữ liệu: Điểm quy đổi là A và chuyên ngành Công nghệ phần mềm.
+B. ĐÁP ÁN GỢI Ý (Mã đề 07)
+• Excel:
+o Chuyên ngành: Dùng HLOOKUP kết hợp LEFT (lấy ký tự đầu của Lớp).
+o Thống kê tên SV: Dùng COUNTIF với điều kiện “M*”.
+o Lọc: Filter theo 2 cột: Điểm quy đổi (A) và Chuyên ngành (Công nghệ phần mềm).
+
+VII. ĐỀ THI MÃ SỐ 08 - Phiên bản 1 (Trang 55 - 59)
+Nhận diện: Phần Word chủ đề “Giấy giới thiệu thực tập”, Phần Excel chủ đề “Linh kiện Chip/RAM”.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo bảng “MỘT SỐ PHÍM DÙNG TRONG TABLE WORD” (Tab, Shift-Tab, Enter…).
+• Câu 4: Soạn thảo văn bản “GIẤY GIỚI THIỆU THỰC TẬP… Lập trình viên ngành công nghệ thông tin…”.
+o Yêu cầu: Căn giữa tiêu đề; Tab trái; DropCap (4 dòng); Chia cột.
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: Mã hàng (5CHD95, 6CPK45…), Tên hàng, Đơn giá, Số lượng.
+• Yêu cầu:
+1. Tên hàng: Dựa vào ký tự thứ 2 và 3 của Mã hàng và Bảng 2 (CH->Chip, CP->Bộ xử lý…).
+2. Thuế: Tương tự đề 05 (Ký tự trái 1->4%, 2->3%…).
+3. Bảng 3: Thống kê Tổng số lượng theo Tên hàng.
+4. Lọc dữ liệu: Mã hàng bắt đầu bằng 5 và có Số lượng từ 90 đến 200.
+B. ĐÁP ÁN GỢI Ý (Mã đề 08 - PB1)
+• Excel:
+o Tên hàng: Dùng HLOOKUP kết hợp MID.
+o Lọc: Điều kiện “Begin with 5” và “Between 90 and 200”.
+PHẦN 4: CÁC ĐỀ THI CÒN LẠI (BIẾN THỂ KHÁC)
+Trong tài liệu còn xuất hiện 2 đề thi nữa với nội dung khác biệt hoàn toàn so với các đề trước. Dựa vào nội dung, tôi sẽ đặt tên theo chủ đề để bạn dễ phân biệt.
+VIII. ĐỀ THI CHỦ ĐỀ “CÁCH MẠNG CÔNG NGHIỆP & BĂNG ĐĨA” (Trang 69 - 73)
+Nội dung: Word về lịch sử các cuộc cách mạng công nghiệp, Excel về quản lý thuê băng đĩa.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo và định dạng bảng “CÁCH MẠNG CÔNG NGHIỆP” (Cột: Thời điểm, STT, Các cuộc cách mạng công nghiệp).
+o Dữ liệu mẫu: Cuối thế kỷ 18 - Cách mạng công nghiệp lần thứ 1; Thập niên 70 thế kỷ 20 - Cách mạng công nghiệp lần thứ 3…
+• Câu 4: Soạn thảo và định dạng văn bản:
+o Nội dung: “1. Cách mạng công nghiệp lần thứ 1… 4. Cách mạng công nghiệp lần thứ 4… Cách mạng công nghiệp lần thứ tư được gọi là Công nghiệp 4.0…”.
+o Yêu cầu kỹ thuật: DropCap (chữ C thả xuống), chia cột văn bản.
+• Câu 5: Thiết lập Mục lục 2 cấp (Chương 1, 1.1, 1.2…).
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: DANH MỤC CHO THUÊ BĂNG ĐĨA (Mã KH, Ngày thuê, Ngày trả, Họ tên KH…).
+o Ví dụ Mã KH: 3CG1B, NS2L, HS9B…
+• Yêu cầu tính toán:
+1. Số ngày thuê: Nếu Ngày thuê trùng Ngày trả thì = 1, ngược lại = Ngày trả - Ngày thuê.
+2. Thể loại: Dựa vào ký tự đầu của Mã KH và tra ở Bảng 2 (C=Cải lương, N=Ca nhạc, T=Tình cảm, H=Hình sự, V=Võ thuật).
+3. Loại Phim: Dựa vào ký tự cuối của Mã KH (L = “Phim lẻ”, B = “Phim Bộ”).
+4. Đơn giá: Dựa vào Mã KH và Bảng 2. Nếu ký tự thứ 2 là G thì lấy giá “Đĩa gốc”, nếu là S thì lấy giá “Đĩa sao”.
+5. Tiền thuê: = Số ngày thuê * Đơn giá * Số đĩa thuê. (Biết Số đĩa thuê là ký tự thứ 3 của Mã KH đổi sang trị số).
+3. Phần Microsoft Powerpoint (2.5 điểm)
+• Chủ đề: INTERNET OF THING (IoT).
+• Thiết kế: 3 Slide (Slide 1: Tiêu đề; Slide 2: Các thuật ngữ IoT; Slide 3: Khả năng tích hợp).
+• Yêu cầu kỹ thuật:
+o Hiệu ứng chuyển tiếp tự động sau 4 giây.
+o Header & Footer: Chủ đề, ngày tháng, số trang.
+o Hiệu ứng Smart Art: Điều chỉnh hoạt động cho từng Shape.
+o Chế độ trình chiếu: Lặp lại từ đầu khi hết slide cuối.
+B. ĐÁP ÁN GỢI Ý
+• Excel:
+o Số ngày thuê: =IF(Ngày_thuê=Ngày_trả, 1, Ngày_trả-Ngày_thuê).
+o Đơn giá: Sử dụng VLOOKUP kết hợp IF và MID để chọn cột giá Gốc hoặc Sao.
+o Tiền thuê: Dùng hàm VALUE(MID(..., 3, 1)) để lấy số lượng đĩa.
+
+IX. ĐỀ THI CHỦ ĐỀ “QUẢN LÝ CÔNG VIỆC & SÁCH GIÁO KHOA” (Trang 75 - 79)
+Nội dung: Word về kỹ năng quản lý thời gian, Excel về bán sách giáo khoa.
+A. CÂU HỎI
+1. Phần Microsoft Word (3.5 điểm)
+• Câu 3: Soạn thảo bảng “KỸ NĂNG QUẢN LÝ CÔNG VIỆC HIỆU QUẢ” (Cột: STT, Mức độ ưu tiên, Nội dung).
+o Dữ liệu mẫu: Ưu tiên 1 - Những công việc quan trọng và cần gấp…
+• Câu 4: Soạn thảo văn bản:
+o Nội dung: “1. Ưu tiên 1… Thời gian của mỗi con người trong chúng ta là giống như nhau…”.
+o Yêu cầu: DropCap (chữ T), chia cột văn bản.
+• Câu 5: Thiết lập Mục lục 2 cấp (Chương 1, 1.1, 1.2…).
+2. Phần Microsoft Excel (4.0 điểm)
+• Dữ liệu Bảng 1: BÁN SÁCH GIÁO KHOA NĂM HỌC 2022-2023 (Mã số, Tên sách, Số lượng, Đơn giá, Thành tiền).
+o Ví dụ Mã số: VL30T1, SH35T1, TO40T1…
+• Yêu cầu tính toán:
+1. Tên sách: Căn cứ vào 2 ký tự đầu của Mã số và tra ở Bảng 2 (VL=Sách vật lý, SH=Sách sinh học…).
+2. Số lượng: Là ký tự thứ 3 và 4 trong mã số (đổi sang giá trị số).
+3. Đơn giá: Quy định ở Bảng 2 và tùy thuộc vào 2 ký tự cuối của Mã số (T1=Tập 1, T2=Tập 2… hoặc Tùy thuộc vào cột Tập 1/Tập 2 trong bảng giá).
+4. Thành tiền: = Số lượng * Đơn giá. Nếu Số lượng > 35 thì giảm 5%, ngược lại không giảm.
+5. Sắp xếp: Tăng dần theo cột Số lượng.
+3. Phần Microsoft Powerpoint (2.5 điểm)
+• Chủ đề: CÁCH MẠNG CÔNG NGHIỆP 4.0.
+• Thiết kế: 3 Slide (Slide 1: Tiêu đề; Slide 2: Các cuộc cách mạng công nghiệp; Slide 3: Các lĩnh vực của CMCN 4.0).
+• Yêu cầu kỹ thuật:
+o Hiệu ứng chuyển tiếp tự động sau 4 giây.
+o Header & Footer đầy đủ.
+o Hiệu ứng Smart Art từng phần.
+o Chế độ lặp lại khi trình chiếu.
+B. ĐÁP ÁN GỢI Ý
+• Excel:
+o Số lượng: =VALUE(MID(Mã_số, 3, 2)).
+o Đơn giá: Dùng VLOOKUP kết hợp IF (kiểm tra 2 ký tự cuối là T1 hay T2 để lấy cột giá tương ứng).
+o Thành tiền: =Số_lượng * Đơn_giá * IF(Số_lượng>35, 95%, 100%).

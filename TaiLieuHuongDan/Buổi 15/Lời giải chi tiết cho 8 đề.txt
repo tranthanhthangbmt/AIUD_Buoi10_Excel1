@@ -1,0 +1,668 @@
+﻿Đề số 01 dựa trên dữ liệu từ ngân hàng câu hỏi mà chúng ta đã trích xuất. Đây là một đề thi mẫu rất sát với thực tế, bao phủ đầy đủ các kỹ năng Word, Excel và PowerPoint.
+Dưới đây là hướng dẫn từng bước:
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu (Câu 1 & 2)
+• Lưu file: Nhấn F12 (hoặc File > Save As), đặt tên đúng cấu trúc: IDSV_HoVaTen_Lop_01.docx.
+• Khổ giấy & Lề:
+o Vào tab Layout > Size > Chọn A4.
+o Vào Margins > Custom Margins:
+• Top (Trên): 2 cm
+• Bottom (Dưới): 2 cm
+• Left (Trái): 3 cm (hoặc 2.5cm tùy máy, đề yêu cầu 2.5cm/3cm).
+• Right (Phải): 2 cm.
+• Font chữ: Nhấn Ctrl + A (chọn hết), vào tab Home, chọn font Times New Roman, cỡ chữ 13, giãn dòng (Line Spacing) chọn Single.
+2. Xử lý Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table, tạo bảng gồm 3 cột, 4 dòng. Nhập nội dung: STT, Phần, Trọng số….
+• Sao chép và chuyển đổi:
+o Bôi đen bảng vừa tạo > Ctrl + C > Đặt con trỏ xuống dưới > Ctrl + V.
+o Bôi đen bảng mới dán > Vào tab Layout (của Table Tools) > Chọn Convert to Text > Chọn dấu phân cách (thường là Tabs hoặc Commas) > OK.
+3. Soạn thảo văn bản nâng cao (Câu 4)
+• Numbering (Đánh số):
+o Gõ “Văn hóa đọc”, “Ứng xử đọc”…
+o Bôi đen 3 dòng này > Tab Home > Chọn biểu tượng Numbering (1., 2., 3.).
+• Right Tab (Tab phải có dấu chấm):
+o Với các dòng mục lục trong văn bản (ví dụ: “1. Văn hóa đọc………..”), đặt một dấu Tab phải (Right Tab) trên thước kẻ ở vị trí cuối dòng (sát lề phải).
+o Kích đúp vào dấu Tab trên thước > Chọn kiểu Leader là dấu chấm (2) > Nhấn Set > OK.
+o Khi gõ, nhấn phím Tab để tạo dòng chấm.
+• Drop Cap & Chia cột:
+o Gõ đoạn văn “Văn hoá đọc là ứng xử đọc…”.
+o Bôi đen đoạn văn > Tab Layout > Columns > Two (Hai cột). Lưu ý: Để chia cột đều, hãy ngắt đoạn (Enter) xuống dòng cuối cùng trước khi chia. Để có đường kẻ giữa: Chọn More Columns > Tích vào Line between.
+o Bôi đen chữ cái đầu “V” > Tab Insert > Drop Cap > Dropped. Vào Drop Cap Options để chỉnh “Lines to drop” xuống 2 dòng.
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o Bôi đen các tiêu đề lớn (ví dụ: CÂU 1. PHẦN WORD…) > Tab References > Add Text > Level 1 (hoặc dùng Heading 1).
+o Bôi đen các tiêu đề nhỏ (ví dụ: 1.1. Soạn thảo…) > Add Text > Level 2 (hoặc dùng Heading 2).
+• Xuất mục lục: Đặt con trỏ tại nơi cần chèn > Tab References > Table of Contents > Chọn mẫu có sẵn hoặc Custom Table of Contents.
+5. Header & Footer (Câu 6)
+• Vào Insert > Footer > Edit Footer.
+• Gõ Họ tên, Lớp vào bên trái. Nhấn phím Tab 2 lần để con trỏ nhảy sang lề phải.
+• Vào Page Number > Current Position > Chọn mẫu số trang đơn giản.
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử dữ liệu bắt đầu từ dòng 3 (tiêu đề cột), dữ liệu sinh viên từ dòng 4.
+1. Điền cột Niên khóa (Câu 3)
+• Phân tích: Tên lớp là “DD18A1”. “18” là khóa. Cần lấy số “18” để tra trong Bảng 2.
+o MID(D4, 3, 2): Lấy 2 ký tự từ vị trí thứ 3 của ô Tên lớp (D4). Kết quả là chuỗi “18”.
+o VALUE(...): Chuyển chuỗi “18” thành số 18 để so khớp với Bảng 2 (vì dòng đầu Bảng 2 là số).
+o HLOOKUP(...): Tìm số 18 trong Bảng 2 và lấy giá trị ở dòng 2 (năm học).
+• Công thức: =HLOOKUP(VALUE(MID(D4, 3, 2)), $B$14:$E$15, 2, 0) (Lưu ý: B 14: E 15 là vùng Bảng 2, cần nhấn F4 để cố định).
+2. Điền cột Xếp loại (Câu 4)
+• Yêu cầu: >=9 Xuất sắc, >=8 Giỏi, >=7 Khá, >=5 Trung bình, còn lại Yếu.
+• Công thức (dùng IF lồng nhau): =IF(H4>=9, "Xuất sắc", IF(H4>=8, "Giỏi", IF(H4>=7, "Khá", IF(H4>=5, "Trung bình", "Yếu")))) (Trong đó H4 là ô Điểm TB).
+3. Thống kê Bảng 3 (Câu 5)
+• Điểm TB cao nhất: =MAX(H4:H10).
+• Điểm TB thấp nhất: =MIN(H4:H10).
+• Số SV có điểm thi >= 5: =COUNTIF(G4:G10, ">=5") (Trong đó G4:G10 là cột Điểm Thi).
+4. Sắp xếp & Lọc (Câu 6 & 7)
+• Sắp xếp: Bôi đen toàn bộ bảng dữ liệu (cả tiêu đề) > Tab Data > Sort > Sort by: Điểm TB > Order: Smallest to Largest (Tăng dần).
+• Lọc (Filter):
+o Copy bảng sang sheet mới tên KQL.
+o Bôi đen bảng > Tab Data > Filter (hình cái phễu).
+o Cột Điểm TB: Bấm mũi tên lọc, chọn Number Filters > Greater Than Or Equal To > Gõ 5.
+o Cột Niên khóa: Bấm mũi tên lọc, bỏ chọn các năm cũ, chỉ chọn 2019-2023 và 2020-2024 (tức là khóa 19 trở về sau: 19, 20).
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo đủ 6 slide. Nhập nội dung văn bản thô cho từng slide như đề bài yêu cầu (Slide 1: Bài thi; Slide 2: Thông tin thí sinh…).
+• Chèn SmartArt (Insert > SmartArt) ở Slide 2 hoặc 3 để trình bày đẹp hơn (ví dụ sơ đồ tư duy cho phần Nội dung).
+2. Tạo Liên kết (Hyperlink) (Câu 3 - Ý 3)
+• Tại Slide 3 (Nội dung):
+o Bôi đen dòng “Phần Word” > Chuột phải > Link (hoặc Hyperlink).
+o Chọn Place in This Document.
+o Chọn Slide 4 (nơi chứa nội dung Word).
+o Làm tương tự cho Excel (đến Slide 5) và PowerPoint (đến Slide 6).
+3. Hiệu ứng (Câu 3 - Ý 1, 2)
+• Transitions (Chuyển slide): Chọn slide > Tab Transitions > Chọn 1 hiệu ứng (ví dụ: Fade, Push). Bấm “Apply to All” để áp dụng cho hết 6 slide.
+• Animations (Hiệu ứng đối tượng): Chọn các dòng văn bản/hình ảnh trong slide > Tab Animations > Chọn hiệu ứng (ví dụ: Fly In).
+4. Cài đặt trình chiếu lặp lại (Câu 3 - Ý 5)
+• Vào Tab Slide Show > Set Up Slide Show.
+• Tích vào ô Loop continuously until ‘Esc’ > OK.
+5. Header & Footer (Câu 3 - Ý 4)
+• Vào Insert > Header & Footer.
+• Tích vào Slide number (Số trang).
+• Tích vào Footer và gõ Họ tên, Ngày thi.
+• Bấm Apply to All.
+
+Mẹo nhỏ cho bạn:
+• Với Excel, hãy chú ý dấu phân cách trong công thức là dấu phẩy , hay chấm phẩy ; tùy theo cài đặt máy tính của phòng thi.
+• Với Word, nhớ làm mục lục cuối cùng sau khi đã hoàn thiện nội dung để số trang được chính xác.
+Đề thi số 02 (được trích xuất từ trang 8 - 12 của tài liệu).
+Đề này có cấu trúc tương tự Đề 01 nhưng yêu cầu về công thức Excel và định dạng Word có thay đổi. Bạn lưu ý các điểm khác biệt (ví dụ: Header nằm ở đầu trang thay vì chân trang).
+
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập & Lưu file (Câu 1)
+• Lưu file: Tên file theo cấu trúc IDSV_HoVaTen_Lop_02.docx.
+• Định dạng trang: Khổ A4, hướng đứng. Lề: Trên 2cm, Dưới 2cm, Trái 3cm (hoặc 2.5), Phải 2cm.
+2. Soạn thảo & Định dạng Văn bản (Câu 4)
+• Nội dung: Gõ đoạn văn bản bắt đầu bằng “A. Văn hóa tổ chức…”.
+• Numbering (A, B, C):
+o Gõ các dòng tiêu đề: “Văn hóa tổ chức”, “Hệ thống giá trị”, “Chuẩn mực hành động”.
+o Bôi đen > Chọn biểu tượng Numbering > Chọn kiểu A., B., C..
+• Chia cột & Drop Cap:
+o Gõ đoạn nội dung chi tiết: “Văn hoá tổ chức là hệ thống những giá trị…”.
+o Chia cột: Bôi đen đoạn văn > Tab Layout > Columns > Two (Hai cột). Chọn More Columns > Tích vào Line between để có đường kẻ giữa.
+o Drop Cap: Bôi đen chữ cái đầu “V” > Tab Insert > Drop Cap > Dropped (chỉnh Lines to drop = 2).
+3. Mục lục tự động (Câu 5)
+• Đề bài yêu cầu mục lục gồm: CÂU 1. PHẦN WORD, 1.1…, CÂU 2. PHẦN EXCEL, 2.1…
+• Gán Level:
+o Bôi đen “CÂU 1. PHẦN WORD” > Tab References > Add Text > Level 1.
+o Bôi đen “1.1. Hướng dẫn word” > Add Text > Level 2.
+o Làm tương tự cho các mục Excel và Powerpoint.
+• Chèn Mục lục: Đặt con trỏ tại vị trí cần chèn > Tab References > Table of Contents.
+4. Header & Footer (Câu 6) - Lưu ý khác Đề 1
+• Đề yêu cầu tạo Header (Đầu trang).
+• Vào Insert > Header > Edit Header.
+• Nhập Họ tên - Lớp nằm bên trái.
+• Nhấn phím Tab (2 lần) để sang lề phải > Chèn số trang (Page Number > Current Position).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử Bảng 1 bắt đầu từ dòng 3. Cột Tên lớp là cột F (ví dụ “DD18A1”).
+1. Điền cột Khóa (Câu 3)
+• Phân tích: Cần lấy số “18” từ “DD18A1” để tra cứu.
+• Hàm sử dụng: HLOOKUP kết hợp VALUE và MID.
+• Công thức gợi ý: =HLOOKUP(VALUE(MID(F4, 3, 2)), $Vung_Bang_2, 2, 0) (Giải thích: MID(F4,3,2) lấy số 18. VALUE chuyển thành số để dò tìm trong Bảng 2).
+2. Điền cột Điểm quy đổi (Câu 4)
+• Yêu cầu: >=8.5 (A), >=7.0 (B), >=5.5 (C), >=4.0 (D), còn lại (F).
+• Công thức (IF lồng nhau): =IF(J4>=8.5, "A", IF(J4>=7, "B", IF(J4>=5.5, "C", IF(J4>=4, "D", "F")))) (Giả sử J4 là ô Điểm TB).
+3. Thống kê Bảng 3 (Câu 5)
+• Điểm TB cao nhất: =MAX(Cot_Diem_TB).
+• Điểm TB thấp nhất: =MIN(Cot_Diem_TB).
+• Số sinh viên có tên bắt đầu bằng ký tự H:
+o Dùng hàm COUNTIF.
+o Công thức: =COUNTIF(Cot_Ten, "H*").
+o (Lưu ý: Dấu * là ký tự đại diện cho các ký tự phía sau).
+4. Sắp xếp (Câu 6)
+• Bôi đen bảng > Tab Data > Sort.
+• Sắp xếp theo cột Điểm TB.
+• Thứ tự (Order): Largest to Smallest (Giảm dần - Khác đề 1 là tăng dần).
+5. Lọc dữ liệu (Câu 7)
+• Copy dữ liệu sang sheet KQL.
+• Bật bộ lọc (Filter).
+• Cột Điểm quy đổi: Chọn “A”.
+• Cột Khóa: Chọn các khóa 19, 20, … (Đề yêu cầu “Khóa 19 trở về sau”, tức là các khóa mới hơn hoặc bằng 19).
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 Slide theo mẫu.
+• Slide 1: Nhập Họ tên, Ngày thi.
+• Slide 2: Thông tin thí sinh. Sử dụng Bullets để liệt kê Lớp, Ngành học, Sở thích.
+• Sử dụng SmartArt: Đề yêu cầu có Diagram/SmartArt (thường dùng ở Slide 3 liệt kê Word/Excel/PPT).
+2. Hiệu ứng & Liên kết (Câu 3)
+• Liên kết (Hyperlink):
+o Tại Slide 3: Chọn chữ “Phần Word” -> Link tới Slide 4.
+o Chọn chữ “Phần Excel” -> Link tới Slide 5.
+o Chọn chữ “Phần Powerpoint” -> Link tới Slide 6.
+• Hiệu ứng:
+o Transition: Hiệu ứng chuyển cảnh giữa các slide.
+o Animation: Hiệu ứng bay vào cho các dòng chữ trong slide.
+• Header & Footer: Vào Insert > Header & Footer > Tích chọn Slide number, Footer (điền thông tin) > Apply to All.
+• Chạy lặp lại: Tab Slide Show > Set Up Slide Show > Tích ô Loop continuously until ‘Esc’.
+
+Đề thi số 03 (được trích xuất từ trang 14 - 18 của tài liệu).
+Đây là đề thi có một số điểm đặc biệt ở phần Excel (hàm đếm có điều kiện ký tự đại diện) và phần Word (định dạng cột báo). Dưới đây là hướng dẫn giải chi tiết từng bước.
+
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu & Lưu file (Câu 1 & 2)
+• Lưu file: Nhấn F12, đặt tên theo cấu trúc: IDSV_HoVaTen_Lop_03.docx.
+• Định dạng trang:
+o Tab Layout > Size > A4.
+o Tab Layout > Margins > Custom Margins: Top (2cm), Bottom (2cm), Left (3cm hoặc 2.5cm), Right (2cm).
+• Font chữ: Ctrl + A > Tab Home > Font Times New Roman, Size 13, Line Spacing Single, Spacing After 6pt.
+2. Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table, tạo bảng 3 cột chứa: Mã sản phẩm, Tên sản phẩm, Đơn giá.
+• Nhập liệu: Nhập các dòng như Ti vi Samsung (40,000,000), Tủ lạnh Panasonic (20,000,000).
+• Sao chép & Chuyển đổi:
+o Bôi đen bảng > Copy (Ctrl+C) > Paste (Ctrl+V) xuống dưới.
+o Chọn bảng mới dán > Tab Layout (Table Tools) > Convert to Text > Chọn dấu phân cách (Tabs) > OK.
+3. Soạn thảo & Định dạng văn bản (Câu 4)
+• Văn bản: Gõ đoạn “Văn hóa tổ chức… Hệ thống giá trị… Chuẩn mực hành động…”.
+• Drop Cap (Chữ thả):
+o Bôi đen chữ cái đầu “V” của đoạn văn.
+o Tab Insert > Drop Cap > Drop Cap Options > Chọn Dropped, chỉnh Lines to drop là 2.
+• Chia cột (Columns):
+o Bôi đen đoạn văn bản.
+o Tab Layout > Columns > More Columns > Chọn Two (Hai cột) và tích vào ô Line between (Có đường kẻ giữa).
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o Các mục lớn (CÂU 1, CÂU 2…): Tab References > Add Text > Level 1.
+o Các mục nhỏ (1.1 Video hướng dẫn…, 1.2 Bài tập…): Tab References > Add Text > Level 2.
+• Xuất mục lục: Tab References > Table of Contents > Custom Table of Contents.
+5. Header & Footer (Câu 6)
+• Vào Insert > Footer > Edit Footer.
+• Nhập Họ tên - Lớp bên lề trái.
+• Số trang ở giữa: Nhấn phím Tab một lần để con trỏ nhảy ra giữa dòng > Vào Page Number > Current Position > Chọn số.
+o Lưu ý: Đề này yêu cầu số trang ở giữa, khác với đề 1 (phải).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử dữ liệu bắt đầu từ dòng 3. Cột Lớp là cột E (“IT21A”), Cột Mã là cột F (“IT”).
+1. Điền cột Khóa (Câu 3)
+• Yêu cầu: Dựa vào cột Lớp và Bảng 2.
+• Phân tích: Lớp “IT21A” chứa số “21”. Cần lấy “21” tra trong Bảng 2 để ra “K21”.
+• Công thức: =HLOOKUP(VALUE(MID(E4, 3, 2)), $Vung_Bang_2, 2, 0)
+o MID(E4, 3, 2): Lấy 2 ký tự từ vị trí thứ 3 (số 21).
+o VALUE(...): Chuyển chuỗi “21” thành số 21 để tìm được trong Bảng 2.
+o $Vung_Bang_2: Quét bảng tham chiếu (nhớ nhấn F4).
+2. Điền cột Ngành học (Câu 4)
+• Yêu cầu: Dựa vào cột Mã.
+o IT: CNTT
+o DD: Điều dưỡng
+o KT: Kế toán
+o LE: Luật
+o Còn lại: Ô tô
+• Công thức (IF lồng nhau): =IF(F4="IT", "CNTT", IF(F4="DD", "Điều dưỡng", IF(F4="KT", "Kế toán", IF(F4="LE", "Luật", "Ô tô"))))
+o Mẹo: Nhớ để các chữ cái mã (IT, DD…) trong dấu ngoặc kép "".
+3. Thống kê Bảng 3 (Câu 5)
+• Điểm TB cao nhất: =MAX(Cot_Diem_TB).
+• Điểm TB thấp nhất: =MIN(Cot_Diem_TB).
+• Số sinh viên họ Lê:
+o Yêu cầu: Đếm sinh viên có họ “Lê” (tên bắt đầu bằng chữ Lê).
+o Công thức: =COUNTIF(Cot_Ho_Lot, "Lê*").
+o Lưu ý: Dấu * là ký tự đại diện, nghĩa là “bắt đầu bằng Lê và theo sau là bất cứ gì”.
+4. Sắp xếp (Câu 6)
+• Bôi đen bảng dữ liệu.
+• Tab Data > Sort > Sort by Mã > Order A to Z (Tăng dần bảng chữ cái).
+5. Lọc dữ liệu (Câu 7)
+• Sao chép dữ liệu sang sheet KQL.
+• Bật Filter.
+• Cột Điểm TB: Chọn Number Filters > Greater Than Or Equal To > Gõ 5.
+• Cột Khóa: Chọn K22 và K23 (Vì đề yêu cầu “từ khóa 22 trở về sau”, tức là các khóa mới hơn 22).
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 slide.
+• Slide 1: BÀI THI CHUẨN ĐẦU RA TIN HỌC (Họ tên, Ngày thi).
+• Slide 2: THÔNG TIN THÍ SINH (Lớp, Ngành, Sở thích…).
+• Slide 3: NỘI DUNG (Danh sách: Phần Word, Phần Excel, Phần Powerpoint).
+• Sử dụng SmartArt: Tại Slide 3, bạn nên chuyển danh sách 3 phần thành SmartArt (Insert > SmartArt) để đạt điểm tối đa phần trang trí.
+2. Kỹ thuật nâng cao (Câu 3)
+• Liên kết (Hyperlink):
+o Tại Slide 3: Chọn “Phần Word” > Insert > Link > Chọn Slide 4 (Slide chứa nội dung Word).
+o Làm tương tự cho Excel (Slide 5) và Powerpoint (Slide 6).
+• Hiệu ứng (Transitions/Animations):
+o Chọn hiệu ứng chuyển slide cho tất cả các slide.
+o Chọn hiệu ứng xuất hiện cho các đối tượng văn bản bên trong slide.
+• Header & Footer:
+o Insert > Header & Footer > Chọn Date/Time, Slide Number, Footer (Họ tên SV). Apply to All.
+• Lặp lại (Loop):
+o Tab Slide Show > Set Up Slide Show.
+o Tích chọn Loop continuously until ‘Esc’.
+
+Đề thi Mã số 04 (được trích xuất từ trang 20 - 24 của tài liệu).
+Đề thi này có điểm nhấn ở phần Excel là xử lý điều kiện “Thuế” lồng ghép và lọc dữ liệu nâng cao (Custom Filter). Dưới đây là các bước thực hiện:
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu (Câu 1 & 2)
+• Lưu file: Nhấn F12, đặt tên theo cấu trúc: IDSV_HoVaTen_Lop_04.docx.
+• Định dạng trang:
+o Tab Layout > Size > A4.
+o Tab Layout > Margins > Custom Margins: Top (2cm), Bottom (2cm), Left (2.5cm hoặc 3cm), Right (2cm).
+• Font chữ: Ctrl + A > Font Times New Roman, Cỡ 13, Giãn dòng Single, Spacing After 6pt.
+2. Xử lý Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table (4 dòng, 4 cột). Nhập tiêu đề: STT, Mã hàng, Tên hàng, Đơn giá/lít, Thuế xuất.
+• Nhập liệu: Nhập dữ liệu mẫu (ví dụ: 01, X, Xăng, 20000, 4%…).
+• Sao chép & Chuyển đổi:
+o Copy bảng này dán xuống phía dưới.
+o Chọn bảng mới dán > Tab Layout (Table Tools) > Convert to Text > Chọn dấu phân cách (Tabs) > OK.
+3. Soạn thảo văn bản nâng cao (Câu 4)
+• Numbering:
+o Gõ: “(1). ID:”, “(2). Email”.
+o Bôi đen > Chọn Numbering để tự động đánh số nếu cần, hoặc gõ thủ công và dùng Tab nếu đề yêu cầu định dạng Tab. Theo đáp án gợi ý, ý này là thiết lập Numbering dạng (1)., (2).
+• Right Tab (Tab phải):
+o Tại dòng “Họ và tên SV: … Điện thoại:”, đặt một Tab phải sát lề phải.
+o Vào Tab settings (kích đúp vào thước), chọn Leader là dấu chấm ....... > Set > OK.
+• Drop Cap & Chia cột:
+o Đoạn văn “Nhận thấy được hiệu quả kinh tế cao…”.
+o Chia cột: Bôi đen đoạn văn > Layout > Columns > Two > Tích Line between.
+o Drop Cap: Bôi đen chữ “N” > Insert > Drop Cap > Dropped (chỉnh xuống 2 dòng).
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o LỜI MỞ ĐẦU, CHƯƠNG 1, CHƯƠNG 2… gán Level 1.
+o 1.1, 1.2, 2.1, 2.2… gán Level 2.
+o 2.2.1, 2.2.2… gán Level 3.
+• Xuất mục lục: Tab References > Table of Contents > Custom Table of Contents.
+5. Header & Footer (Câu 6)
+• Vào Insert > Footer (Chân trang).
+• Nhập Họ tên - Lớp bên trái.
+• Nhấn Tab 2 lần để sang lề phải > Chèn số trang (Page Number > Current Position).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử Bảng 1 dữ liệu từ dòng 4. Cột Mã hàng là cột C (“D40TN2”).
+1. Điền cột Tên hàng (Câu 3)
+• Yêu cầu: Dựa vào ký tự đầu của Mã hàng và Bảng 2.
+• Phân tích: Ký tự đầu là LEFT(C4,1). Bảng 2 (Source 457) trình bày dạng cột dọc (Mã hàng - Tên hàng), nên dùng VLOOKUP.
+• Công thức: =VLOOKUP(LEFT(C4,1), $Bang_2, 2, 0). (Nếu Bảng 2 trình bày ngang thì dùng HLOOKUP, nhưng theo hình ảnh mô tả ở Source 457 thì là VLOOKUP).
+2. Tính cột Thuế (Câu 4)
+• Công thức: = Đơn giá * Số lượng * Thuế suất.
+• Xác định Thuế suất:
+o Nếu ký tự đầu là “X” -> 4%.
+o Nếu ký tự đầu là “D” -> 3%.
+o Còn lại -> 2%.
+• Công thức đầy đủ: = [O_DonGia] * [O_SoLuong] * IF(LEFT(C4,1)="X", 4%, IF(LEFT(C4,1)="D", 3%, 2%)). (Bạn có thể gõ trực tiếp 4% hoặc 0.04).
+3. Thống kê Bảng 3 (Câu 5)
+• Yêu cầu: Tính Tổng thuế cho từng mặt hàng (Xăng, Dầu, Nhớt).
+• Công thức: Dùng hàm SUMIF. =SUMIF($Cot_Ten_Hang_Bang_1, O_Ten_Hang_Bang_3, $Cot_Thue_Bang_1). Ví dụ: =SUMIF($D$4:$D$10, "Xăng", $G$4:$G$10).
+4. Sắp xếp (Câu 6)
+• Bôi đen Bảng 1 (cả tiêu đề).
+• Tab Data > Sort.
+• Sort by: Đơn giá > Order: Smallest to Largest (Tăng dần - Chiều tăng).
+5. Lọc dữ liệu (Câu 7) - Chú ý kỹ
+• Yêu cầu: Mã hàng bắt đầu bằng chữ N VÀ Số lượng từ 3000 đến 5000.
+• Thao tác:
+1. Copy dữ liệu sang sheet KQL.
+2. Bật Filter.
+3. Cột Mã hàng: Text Filters > Begins With… > Gõ chữ N.
+4. Cột Số lượng: Number Filters > Between… > Nhập 3000 và 5000.
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 slide theo cấu trúc đề bài.
+o Slide 1: Tiêu đề Bài thi.
+o Slide 2: Thông tin thí sinh (Lớp, Ngành, Sở thích).
+o Slide 3: Nội dung (Word, Excel, PPT).
+o Slide 4, 5, 6: Chi tiết từng phần.
+• Lưu ý: Slide 3 nên dùng SmartArt (Insert > SmartArt > List) để liệt kê 3 phần Word/Excel/PPT.
+2. Hiệu ứng & Liên kết (Câu 3)
+• Liên kết: Tại Slide 3, bôi đen chữ “Phần Excel” > Insert Link > Chọn Slide 5 (Slide chứa nội dung Excel). Làm tương tự cho Word và PPT.
+• Hiệu ứng:
+o Transitions: Chọn hiệu ứng chuyển trang (VD: Push) > Apply to All.
+o Animations: Chọn đối tượng văn bản > Chọn hiệu ứng (VD: Float In).
+3. Cài đặt khác
+• Loop (Lặp lại): Slide Show > Set Up Slide Show > Tích Loop continuously until ‘Esc’.
+• Header & Footer: Insert > Header & Footer > Tích Slide Number, Footer (Họ tên, Ngày thi) > Apply to All.
+
+Đề thi Mã số 05 (được trích xuất từ trang 27 - 31 của tài liệu).
+Đề thi này có điểm nhấn ở phần Excel là sử dụng hàm HLOOKUP kết hợp với hàm xử lý chuỗi MID (lấy ký tự ở giữa), và phần Word yêu cầu định dạng Numbering đặc biệt (01), (02).
+Dưới đây là hướng dẫn giải chi tiết:
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu (Câu 1 & 2)
+• Lưu file: Nhấn F12, đặt tên theo cấu trúc: IDSV_HoVaTen_Lop_05.docx.
+• Định dạng trang:
+o Tab Layout > Size > A4.
+o Tab Layout > Margins > Custom Margins: Top (2cm), Bottom (2cm), Left (3cm hoặc 2.5cm), Right (2cm).
+• Font chữ: Ctrl + A > Font Times New Roman, Cỡ 13, Giãn dòng Single, Spacing After 6pt.
+2. Xử lý Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table (4 dòng, 4 cột). Nhập tiêu đề: STT, Thời gian, Nội dung Chương trình, Ghi chú.
+• Nhập liệu: Nhập dữ liệu mẫu (ví dụ: 01, 8h15-8h30, Đón tiếp đại biểu, Lễ tân).
+• Chuyển đổi bảng thành văn bản:
+o Sao chép bảng vừa nhập xuống phía dưới.
+o Bôi đen bảng mới dán > Tab Layout (Table Tools) > Convert to Text > Chọn dấu phân cách (thường là Tabs) > OK.
+3. Soạn thảo văn bản nâng cao (Câu 4)
+• Numbering dạng (01), (02):
+o Gõ nội dung: “8h15-8h30 - Đón tiếp đại biểu”, “8h30-8h45…”.
+o Bôi đen các dòng này > Tab Home > Numbering > Define New Number Format.
+o Trong ô Number format, gõ thêm dấu ngoặc và số 0: (01). > OK.
+• Tab (Tab trái/phải):
+o Theo mẫu đề bài, bạn đặt các dấu Tab trên thước kẻ để căn chỉnh thời gian và người phụ trách thẳng hàng.
+• Drop Cap & Chia cột:
+o Gõ đoạn văn “Ngày 6/9, hội thảo quốc tế…”.
+o Chia cột: Bôi đen đoạn văn > Layout > Columns > Two > Tích Line between.
+o Drop Cap: Bôi đen chữ “N” > Insert > Drop Cap > Dropped (chỉnh xuống 2 dòng).
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o Các mục lớn (PHẦN A, PHẦN B…): Gán Level 1 (hoặc Heading 1).
+o Các mục con (A.1, A.2, B.1…): Gán Level 2 (hoặc Heading 2).
+o Các mục nhỏ hơn (B.2.1, B.2.2…): Gán Level 3 (hoặc Heading 3).
+• Xuất mục lục: Tab References > Table of Contents > Custom Table of Contents.
+5. Header & Footer (Câu 6)
+• Vào Insert > Footer (Chân trang).
+• Nhập Họ tên - Lớp bên trái.
+• Nhấn Tab 2 lần để sang lề phải > Chèn số trang (Page Number > Current Position).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử dữ liệu Bảng 1 bắt đầu từ dòng 4. Cột Mã hàng là cột C (ví dụ “2D40TN”).
+1. Điền cột Tên hàng (Câu 3)
+• Yêu cầu: Dựa vào ký tự thứ 2 của Mã hàng và Bảng 2.
+• Phân tích:
+o Ký tự thứ 2: Dùng hàm MID(C4, 2, 1). Ví dụ mã “2D40TN” lấy được chữ “D”.
+o Bảng 2 bố trí theo hàng ngang (Mã hàng dòng trên, Tên hàng dòng dưới) -> Dùng HLOOKUP.
+• Công thức: =HLOOKUP(MID(C4, 2, 1), $Vung_Bang_2, 2, 0) (Lưu ý: Quét vùng Bảng 2 và nhấn F4 để cố định).
+2. Tính cột Thuế (Câu 4)
+• Yêu cầu: = Đơn giá * Số lượng * Thuế suất.
+• Xác định Thuế suất:
+o Nếu ký tự bên trái là “1” -> 4%.
+o Nếu ký tự bên trái là “2” -> 3%.
+o Còn lại -> 2%.
+• Công thức: = [O_DonGia] * [O_SoLuong] * IF(LEFT(C4,1)="1", 4%, IF(LEFT(C4,1)="2", 3%, 2%)) (Lưu ý: Hàm LEFT trả về chuỗi văn bản, nên số 1 và 2 phải để trong ngoặc kép "1", "2").
+3. Thống kê Bảng 3 (Câu 5)
+• Yêu cầu: Tính Tổng Số lượng cho từng mặt hàng (Xăng, Dầu, Nhớt).
+• Công thức: Dùng hàm SUMIF. =SUMIF($Cot_Ten_Hang_Bang_1, O_Ten_Hang_Bang_3, $Cot_So_Luong_Bang_1) Ví dụ: =SUMIF($D$4:$D$10, "Xăng", $E$4:$E$10).
+4. Sắp xếp (Câu 6)
+• Bôi đen Bảng 1.
+• Tab Data > Sort.
+• Sort by: Số lượng > Order: Smallest to Largest (Tăng dần).
+5. Lọc dữ liệu (Câu 7)
+• Yêu cầu: Mã hàng bắt đầu bằng số 2 VÀ Số lượng từ 3000 đến 5000.
+• Thao tác:
+1. Copy dữ liệu sang sheet KQL.
+2. Bật Filter.
+3. Cột Mã hàng: Text Filters > Begins With… > Gõ số 2.
+4. Cột Số lượng: Number Filters > Between… > Nhập 3000 và 5000.
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 slide theo cấu trúc đề bài .
+o Slide 1: BÀI THI CHUẨN ĐẦU RA TIN HỌC.
+o Slide 2: Thông tin thí sinh (Lớp, Ngành, Sở thích…).
+o Slide 3: NỘI DUNG (Phần Word, Phần Excel, Phần Powerpoint).
+o Slide 4, 5, 6: Chi tiết từng phần.
+• Mẹo: Tại Slide 3, nên sử dụng SmartArt để liệt kê danh sách 3 phần thi cho đẹp mắt và đúng đáp án gợi ý (Source 639).
+2. Hiệu ứng & Liên kết (Câu 3)
+• Liên kết (Hyperlink): Tại Slide 3, tạo liên kết từ chữ “Phần Word” đến Slide 4, “Phần Excel” đến Slide 5, “Phần Powerpoint” đến Slide 6.
+• Hiệu ứng:
+o Transitions: Chuyển cảnh giữa các slide (VD: Fade, Push).
+o Animations: Hiệu ứng xuất hiện cho văn bản/hình ảnh trong slide.
+• Cài đặt lặp lại: Tab Slide Show > Set Up Slide Show > Tích Loop continuously until ‘Esc’.
+• Header & Footer: Insert > Header & Footer > Tích Slide Number, Footer (Họ tên, ngày thi) > Apply to All.
+
+Đề thi Mã số 06 (được trích xuất từ trang 34 - 38 của tài liệu).
+Đề thi này có điểm đặc biệt ở phần Word là yêu cầu sử dụng Tab Giữa (Center Tab) kết hợp, và phần Excel yêu cầu lọc dữ liệu với điều kiện HOẶC (OR).
+Dưới đây là hướng dẫn giải chi tiết:
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu (Câu 1 & 2)
+• Lưu file: Nhấn F12, đặt tên theo cấu trúc: IDSV_HoVaTen_Lop_06.docx.
+• Định dạng trang:
+o Tab Layout > Size > A4.
+o Tab Layout > Margins > Custom Margins: Top (2cm), Bottom (2cm), Left (3cm hoặc 2.5cm), Right (2cm).
+• Font chữ: Ctrl + A > Font Times New Roman, Cỡ 13, Giãn dòng Single, Spacing After 6pt.
+2. Xử lý Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table (4 dòng, 4 cột). Nhập tiêu đề: STT, Thông tin SV, ID, Lớp, Điện thoại. (Lưu ý bảng này có các ô gộp, bạn cần dùng chức năng Merge Cells để tạo dòng tiêu đề lớn “TỔNG HỢP DANH SÁCH…”).
+• Nhập liệu: Nhập dữ liệu mẫu vào bảng.
+• Chuyển đổi:
+o Sao chép bảng xuống dưới.
+o Bôi đen bảng > Tab Layout (Table Tools) > Convert to Text > Chọn dấu phân cách (Tabs) > OK.
+3. Soạn thảo văn bản nâng cao (Câu 4)
+• Tab (Trái/Giữa/Trái):
+o Đề yêu cầu: “(1). ID: … (2). Lớp … Họ và tên SV: … Điện thoại: …”.
+o Thao tác:
+1. Đặt 1 Tab Trái (Left Tab) cho vị trí đầu (ID).
+2. Đặt 1 Tab Giữa (Center Tab) ở giữa thước kẻ cho “Họ và tên SV”.
+3. Đặt 1 Tab Trái (Left Tab) (hoặc Phải tùy ý đồ trình bày) cho phần sau.
+4. Gõ phím Tab để di chuyển con trỏ đến đúng vị trí và nhập liệu.
+• Drop Cap & Chia cột:
+o Gõ đoạn văn “Ngày 6/9, hội thảo…”.
+o Chia cột: Bôi đen đoạn văn > Layout > Columns > Two > Tích Line between.
+o Drop Cap: Bôi đen chữ “N” > Insert > Drop Cap > Dropped (chỉnh xuống 2 dòng).
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o CHƯƠNG 1, CHƯƠNG 2… gán Level 1.
+o 1.1, 1.2, 2.1… gán Level 2.
+o 2.2.1, 2.2.2… gán Level 3.
+• Xuất mục lục: Tab References > Table of Contents > Custom Table of Contents.
+5. Header & Footer (Câu 6)
+• Vào Insert > Footer (Chân trang).
+• Nhập Họ tên - Lớp bên trái.
+• Nhấn Tab 2 lần để sang lề phải > Chèn số trang (Page Number > Current Position).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử dữ liệu Bảng 1 bắt đầu từ dòng 4. Cột Mã hàng là cột C (ví dụ “D01TN”).
+1. Điền cột Tên hàng (Câu 3)
+• Yêu cầu: Nếu ký tự trái là N -> Nhớt, X -> Xăng, còn lại -> Dầu.
+• Công thức (IF lồng nhau): =IF(LEFT(C4, 1)="N", "Nhớt", IF(LEFT(C4, 1)="X", "Xăng", "Dầu"))
+2. Tính cột Thuế (Câu 4)
+• Yêu cầu: = Đơn giá * Số lượng * Thuế suất.
+• Xác định Thuế suất: Dựa vào ký tự thứ 2 và 3 của Mã hàng (ví dụ “01” trong “D01TN”) và tra trong Bảng 2.
+• Phân tích:
+o Lấy ký tự thứ 2 và 3: MID(C4, 2, 2).
+o Tra bảng 2 (cột dọc): Dùng HLOOKUP (nếu bảng nằm ngang) hoặc VLOOKUP (nếu bảng nằm dọc). Lưu ý: Trong hình ảnh (Source 700), Bảng 2 có tiêu đề hàng ngang (01, 02, 03) nên dùng HLOOKUP.
+• Công thức: = [O_DonGia] * [O_SoLuong] * HLOOKUP(MID(C4, 2, 2), $Vung_Bang_2, 2, 0)
+3. Thống kê Bảng 3 (Câu 5)
+• Yêu cầu: Tính Tổng Thuế cho từng mặt hàng.
+• Công thức: Dùng hàm SUMIF. =SUMIF($Cot_Ten_Hang_Bang_1, O_Ten_Hang_Bang_3, $Cot_Thue_Bang_1)
+4. Sắp xếp (Câu 6)
+• Bôi đen Bảng 1.
+• Tab Data > Sort.
+• Sort by: Số lượng > Order: Smallest to Largest (Tăng dần).
+5. Lọc dữ liệu (Câu 7) - Đặc biệt
+• Yêu cầu: Mã hàng bắt đầu bằng chữ N HOẶC X (N or X) VÀ Số lượng \>= 2000.
+• Thao tác:
+1. Copy dữ liệu sang sheet KQL.
+2. Bật Filter.
+3. Cột Mã hàng:
+• Chọn Text Filters > Custom Filter… (hoặc Begins With).
+• Dòng 1: chọn Begins with > gõ N.
+• Tích vào nút Or (Hoặc).
+• Dòng 2: chọn Begins with > gõ X.
+• Nhấn OK.
+4. Cột Số lượng: Number Filters > Greater Than Or Equal To… > Nhập 2000.
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 slide theo cấu trúc.
+• Slide 1: BÀI THI CHUẨN ĐẦU RA TIN HỌC.
+• Slide 2: Thông tin thí sinh.
+• Slide 3: NỘI DUNG (Phần Word, Excel, Powerpoint).
+• Mẹo: Đề bài yêu cầu sử dụng Diagram hoặc SmartArt, bạn nên vẽ sơ đồ ở Slide 3.
+2. Hiệu ứng & Liên kết (Câu 3)
+• Liên kết: Slide 3 liên kết đến các Slide 4, 5, 6 tương ứng.
+• Hiệu ứng:
+o Transition: Chuyển cảnh (Fade, Wipe…).
+o Animation: Hiệu ứng bay vào cho chữ/hình.
+• Header & Footer: Thêm Số trang, Họ tên, Ngày thi vào Footer.
+• Lặp lại: Slide Show > Set Up Slide Show > Loop continuously until ‘Esc’.
+
+Đề thi Mã số 07 (được trích xuất từ trang 41 - 46 của tài liệu).
+Đề thi này có điểm cần lưu ý ở phần Word là yêu cầu đặt Header ở đầu trang (khác với các đề trước thường ở chân trang) và phần Excel yêu cầu đếm theo điều kiện ký tự đại diện.
+Dưới đây là hướng dẫn giải chi tiết:
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu (Câu 1 & 2)
+• Lưu file: Nhấn F12, đặt tên theo cấu trúc: IDSV_HoVaTen_Lop_07.docx.
+• Định dạng trang:
+o Tab Layout > Size > A4.
+o Tab Layout > Margins > Custom Margins: Top (2cm), Bottom (2cm), Left (3cm hoặc 2.5cm), Right (2cm).
+• Font chữ: Ctrl + A > Font Times New Roman, Cỡ 13, Giãn dòng Single, Spacing After 6pt.
+2. Xử lý Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table. Tạo bảng mô phỏng danh sách linh kiện máy tính (Hãng sản xuất, Tên thiết bị, Giá, Xuất xứ, Ghi chú).
+• Nhập liệu: Nhập dữ liệu như: GIGABYTE, Mainboard, 40 USD…
+• Sao chép & Chuyển đổi:
+o Sao chép bảng vừa tạo xuống phía dưới.
+o Bôi đen bảng mới > Tab Layout (Table Tools) > Convert to Text > Chọn dấu phân cách (Tabs) > OK.
+3. Soạn thảo văn bản nâng cao (Câu 4)
+• Định dạng “PHIẾU DỰ THI”:
+o Gõ các dòng: Họ và tên, Địa chỉ, Tỉnh/TP…
+o Căn giữa: Bôi đen dòng “PHIẾU DỰ THI” > Nhấn Ctrl + E.
+o Tab chấm: Đặt 1 Tab Trái (Left Tab) ở khoảng giữa hoặc cuối dòng. Vào thiết lập Tab chọn Leader là dấu chấm .... để tạo dòng kẻ chấm cho người điền thông tin.
+• Drop Cap & Chia cột:
+o Gõ đoạn văn: “Nhằm kỷ niệm 80 năm thành lập Đoàn…”.
+o Chia cột: Bôi đen đoạn văn > Layout > Columns > Two > Tích Line between.
+o Drop Cap: Bôi đen chữ “N” > Insert > Drop Cap > Dropped (chỉnh xuống 4 dòng theo yêu cầu đề bài ).
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o CHƯƠNG 1, CHƯƠNG 2… gán Level 1.
+o 1.1, 1.2, 2.1… gán Level 2.
+o DANH MỤC HÌNH ẢNH, DANH MỤC BẢNG BIỂU gán Level 1.
+• Xuất mục lục: Tab References > Table of Contents > Custom Table of Contents.
+5. Header & Footer (Câu 6) - Lưu ý quan trọng
+• Đề yêu cầu tạo Header (Đầu trang), không phải chân trang.
+• Vào Insert > Header > Edit Header.
+• Nhập Họ tên - Lớp bên trái.
+• Nhấn Tab 2 lần để sang lề phải > Chèn số trang (Page Number > Current Position).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử dữ liệu Bảng 1 bắt đầu từ dòng 4. Cột Lớp là cột C (ví dụ “ST23A1”), Cột Điểm TB là cột H.
+1. Điền cột Chuyên ngành (Câu 3)
+• Yêu cầu: Dựa vào Lớp và Bảng 2.
+• Phân tích:
+o Lớp “ST23A1” có 2 ký tự đầu là “ST”.
+o Bảng 2 (Source 854) có mã ST tương ứng với “Công nghệ phần mềm”. Bảng này trình bày hàng ngang -> Dùng HLOOKUP.
+• Công thức: =HLOOKUP(LEFT(C4, 2), $Vung_Bang_2, 2, 0) (Lưu ý: Dùng LEFT(C4, 2) để lấy 2 ký tự đầu).
+2. Điền cột Điểm quy đổi (Câu 4)
+• Yêu cầu: >=8.5 (A), >=7.0 (B), >=5.5 (C), >=4.0 (D), còn lại (F).
+• Công thức (IF lồng nhau): =IF(H4>=8.5, "A", IF(H4>=7, "B", IF(H4>=5.5, "C", IF(H4>=4, "D", "F"))))
+3. Thống kê Bảng 3 (Câu 5)
+• Điểm TB cao nhất: =MAX(Cot_Diem_TB).
+• Điểm TB thấp nhất: =MIN(Cot_Diem_TB).
+• Số sinh viên có tên bắt đầu bằng ký tự M:
+o Yêu cầu: Đếm sinh viên có tên (cột Tên) bắt đầu bằng chữ M.
+o Công thức: =COUNTIF(Cot_Tên, "M*").
+o (Ví dụ: Tên “Minh”, “My” sẽ được đếm).
+4. Sắp xếp (Câu 6)
+• Bôi đen Bảng 1.
+• Tab Data > Sort.
+• Sort by: Điểm TB > Order: Largest to Smallest (Giảm dần - Chú ý đề yêu cầu giảm dần).
+5. Lọc dữ liệu (Câu 7)
+• Yêu cầu: Điểm quy đổi là A VÀ Chuyên ngành là Công nghệ phần mềm.
+• Thao tác:
+1. Copy dữ liệu sang sheet KQL.
+2. Bật Filter.
+3. Cột Điểm quy đổi: Chọn A.
+4. Cột Chuyên ngành: Chọn Công nghệ phần mềm.
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 slide theo cấu trúc đề bài.
+• Slide 1: BÀI THI CHUẨN ĐẦU RA TIN HỌC (Họ tên, Ngày thi).
+• Slide 2: THÔNG TIN THÍ SINH (Lớp, Ngành, Sở thích…).
+• Slide 3: NỘI DUNG (Phần Word, Excel, Powerpoint).
+• Mẹo: Sử dụng SmartArt cho danh sách nội dung ở Slide 3 để đạt điểm phần “Sử dụng Diagram hoặc SmartArt”.
+2. Hiệu ứng & Liên kết (Câu 3)
+• Liên kết: Slide 3 liên kết đến Slide 4 (Word), Slide 5 (Excel), Slide 6 (PowerPoint).
+• Hiệu ứng:
+o Transition: Chuyển cảnh giữa các slide.
+o Animation: Hiệu ứng cho từng đối tượng trên slide.
+• Header & Footer: Thêm Số trang, Họ tên, Ngày thi vào Footer.
+• Lặp lại: Slide Show > Set Up Slide Show > Loop continuously until ‘Esc’.
+
+Đề thi Mã số 08 (phiên bản Chip/RAM/Giấy giới thiệu thực tập, được trích xuất từ trang 55 - 60 và 62 - 67 của tài liệu).
+Đề thi này có điểm nhấn ở phần Word là kỹ thuật Drop Cap xuống 4 dòng (các đề trước thường là 2 dòng) và phần Excel sử dụng hàm xử lý chuỗi ở giữa (MID) để tra cứu bảng.
+Dưới đây là hướng dẫn giải chi tiết từng bước:
+PHẦN 1: MICROSOFT WORD (3.5 ĐIỂM)
+1. Thiết lập ban đầu (Câu 1 & 2)
+• Lưu file: Nhấn F12, đặt tên theo cấu trúc: IDSV_HoVaTen_Lop_08.docx.
+• Định dạng trang:
+o Tab Layout > Size > A4.
+o Tab Layout > Margins > Custom Margins: Top (2cm), Bottom (2cm), Left (3cm hoặc 2.5cm), Right (2cm).
+• Font chữ: Ctrl + A > Font Times New Roman, Cỡ 13, Giãn dòng Single, Spacing After 6pt.
+2. Xử lý Bảng biểu (Câu 3)
+• Tạo bảng: Vào Insert > Table. Nhập nội dung về các phím tắt (Tab, Shift-Tab, Enter…).
+• Chuyển đổi bảng thành văn bản:
+o Sao chép bảng vừa tạo xuống phía dưới.
+o Bôi đen bảng mới > Tab Layout (Table Tools) > Convert to Text > Chọn dấu phân cách (Tabs) > OK.
+3. Soạn thảo văn bản nâng cao (Câu 4)
+• Định dạng “GIẤY GIỚI THIỆU THỰC TẬP”:
+o Gõ các dòng: Sinh viên, Lớp, IDSV…
+o Căn giữa: Bôi đen tiêu đề “GIẤY GIỚI THIỆU THỰC TẬP” > Nhấn Ctrl + E.
+o Tab chấm: Tại các dòng thông tin (Sinh viên: …), đặt một Tab Trái (Left Tab) ở khoảng giữa thước kẻ. Vào thiết lập Tab chọn Leader là dấu chấm .... để tạo dòng kẻ chấm điền thông tin.
+• Drop Cap & Chia cột:
+o Gõ đoạn văn: “Lập trình viên ngành công nghệ thông tin là một trong những…”.
+o Chia cột: Bôi đen đoạn văn > Layout > Columns > Two > Tích Line between.
+o Drop Cap (Đặc biệt): Bôi đen chữ “L” đầu tiên > Insert > Drop Cap > Drop Cap Options > Chọn Dropped > Chỉnh Lines to drop thành 4 (xuống 4 dòng).
+4. Mục lục tự động (Câu 5)
+• Gán cấp độ (Level):
+o PHẦN 1, PHẦN 2, KẾT LUẬN… gán Level 1.
+o 1.1, 1.2, 2.1, 2.2… gán Level 2.
+• Xuất mục lục: Tab References > Table of Contents > Custom Table of Contents.
+5. Header & Footer (Câu 6)
+• Vào Insert > Footer (Chân trang).
+• Nhập Họ tên - Lớp bên trái.
+• Nhấn Tab 2 lần để sang lề phải > Chèn số trang (Page Number > Current Position).
+
+PHẦN 2: MICROSOFT EXCEL (4.0 ĐIỂM)
+Giả sử dữ liệu Bảng 1 bắt đầu từ dòng 4. Cột Mã hàng là cột C (ví dụ “5CHD95”).
+1. Điền cột Tên hàng (Câu 3)
+• Yêu cầu: Dựa vào ký tự thứ 2 và thứ 3 của Mã hàng và Bảng 2.
+• Phân tích:
+o Lấy ký tự thứ 2 và 3: Dùng hàm MID(C4, 2, 2). Ví dụ mã “5CHD95” sẽ lấy được “CH”.
+o Bảng 2 (Source 1215) trình bày hàng ngang (CH, CP, RA nằm trên; Chip, Bộ xử lý, Ram nằm dưới) -> Dùng HLOOKUP.
+• Công thức: =HLOOKUP(MID(C4, 2, 2), $Vung_Bang_2, 2, 0)
+2. Tính cột Thuế (Câu 4)
+• Yêu cầu: = Đơn giá * Số lượng * Thuế suất.
+• Xác định Thuế suất:
+o Nếu ký tự bên trái là “1” -> 4%.
+o Nếu ký tự bên trái là “2” -> 3%.
+o Còn lại -> 2%.
+• Công thức: = [O_DonGia] * [O_SoLuong] * IF(LEFT(C4,1)="1", 4%, IF(LEFT(C4,1)="2", 3%, 2%))
+3. Thống kê Bảng 3 (Câu 5)
+• Yêu cầu: Tính Tổng Số lượng cho từng mặt hàng (Chip, Bộ xử lý, RAM).
+• Công thức: Dùng hàm SUMIF. =SUMIF($Cot_Ten_Hang_Bang_1, O_Ten_Hang_Bang_3, $Cot_So_Luong_Bang_1)
+4. Sắp xếp (Câu 6)
+• Bôi đen Bảng 1.
+• Tab Data > Sort.
+• Sort by: Số lượng > Order: Smallest to Largest (Tăng dần).
+5. Lọc dữ liệu (Câu 7)
+• Yêu cầu: Mã hàng bắt đầu bằng số 5 VÀ Số lượng từ 90 đến 200.
+• Thao tác:
+1. Copy dữ liệu sang sheet KQL.
+2. Bật Filter.
+3. Cột Mã hàng: Text Filters > Begins With… > Gõ số 5.
+4. Cột Số lượng: Number Filters > Between… > Nhập 90 và 200.
+
+PHẦN 3: MICROSOFT POWERPOINT (2.5 ĐIỂM)
+1. Thiết kế Slide (Câu 2)
+• Tạo 6 slide theo cấu trúc đề bài:
+o Slide 1: BÀI THI CHUẨN ĐẦU RA TIN HỌC.
+o Slide 2: THÔNG TIN THÍ SINH (Lớp, Ngành, Sở thích…).
+o Slide 3: NỘI DUNG (Word, Excel, PowerPoint).
+• Lưu ý: Slide 3 cần sử dụng Diagram hoặc SmartArt để liệt kê 3 phần thi.
+2. Hiệu ứng & Liên kết (Câu 3)
+• Liên kết (Hyperlink):
+o Slide 3 liên kết đến Slide 4 (Word), Slide 5 (Excel), Slide 6 (PowerPoint).
+• Hiệu ứng:
+o Transition: Chuyển cảnh giữa các slide.
+o Animation: Hiệu ứng xuất hiện cho văn bản/hình ảnh.
+• Header & Footer:
+o Insert > Header & Footer > Tích Slide Number, Footer (Họ tên, Ngày thi) > Apply to All.
+• Lặp lại:
+o Tab Slide Show > Set Up Slide Show > Tích Loop continuously until ‘Esc’.
+
+Vậy là tôi đã hướng dẫn chi tiết giải toàn bộ các mã đề chính (01 đến 08) có trong tài liệu của bạn. Bạn có muốn tôi tổng hợp lại các công thức Excel quan trọng nhất cần nhớ cho kỳ thi này không?
+
+Powered by Gemini Exporter
