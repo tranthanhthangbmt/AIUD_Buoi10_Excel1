@@ -1316,91 +1316,126 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Cẩm nang ôn tập (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Chiến lược làm bài và nội dung ôn tập.docx" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Chiến lược làm bài (90 phút)",
-                        content: "**Giai đoạn 1: Khởi động (5p)**\n- Tạo và lưu file ngay lập tức (IDSV_Ten_Lop_Made).\n- Nguyên tắc: Làm xong 1 câu nhấn Ctrl + S.\n\n**Giai đoạn 2: PowerPoint (15-20p) - 'Ăn chắc'**\n- Làm trước vì dễ, ít lỗi logic.\n- Mục tiêu: 2.5 điểm trọn vẹn.\n- Đừng tốn thời gian chọn màu đẹp, chỉ cần đủ nội dung, hiệu ứng, liên kết, loop.\n\n**Giai đoạn 3: Word (25-30p)**\n- Nhập thô -> Bảng biểu -> Định dạng (Font, Tab) -> Chia cột/Drop Cap -> Mục lục -> Header/Footer.\n\n**Giai đoạn 4: Excel (35-40p)**\n- Nhập liệu & Khung (0.5đ).\n- Sort & Filter (dữ liệu thô).\n- Hàm thống kê (MAX, MIN, COUNTIF).\n- Cuối cùng: VLOOKUP, IF lồng nhau.\n\n**Giai đoạn 5: Rà soát (5p)**\n- Update mục lục Word, kiểm tra Loop PPT, tên file.",
-                        icon: "fa-chess-queen"
+                        title: "1. Chiến lược chung (90 phút)",
+                        steps: [
+                            {
+                                title: "Chiến lược làm bài",
+                                content: "**Giai đoạn 1: Khởi động (5p)**\n- Tạo và lưu file ngay lập tức (IDSV_Ten_Lop_Made).\n- Nguyên tắc: Làm xong 1 câu nhấn Ctrl + S.\n\n**Giai đoạn 2: PowerPoint (15-20p) - 'Ăn chắc'**\n- Làm trước vì dễ, ít lỗi logic.\n- Mục tiêu: 2.5 điểm trọn vẹn.\n- Đừng tốn thời gian chọn màu đẹp, chỉ cần đủ nội dung, hiệu ứng, liên kết, loop.\n\n**Giai đoạn 3: Word (25-30p)**\n- Nhập thô -> Bảng biểu -> Định dạng (Font, Tab) -> Chia cột/Drop Cap -> Mục lục -> Header/Footer.\n\n**Giai đoạn 4: Excel (35-40p)**\n- Nhập liệu & Khung (0.5đ).\n- Sort & Filter (dữ liệu thô).\n- Hàm thống kê (MAX, MIN, COUNTIF).\n- Cuối cùng: VLOOKUP, IF lồng nhau.\n\n**Giai đoạn 5: Rà soát (5p)**\n- Update mục lục Word, kiểm tra Loop PPT, tên file.",
+                                icon: "fa-chess-queen"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Word: Thiết lập & Lưu file (Bước 1)",
-                        content: "**Quy trình chuẩn (0.25đ):**\n\n1.  **Lưu file ngay lập tức:**\n    -   Nhấn `F12` (hoặc File > Save As).\n    -   Đặt tên cấu trúc: `IDSV_Hovaten_Lop_Made.docx`.\n2.  **Thiết lập trang (Page Setup):**\n    -   Tab **Layout** > **Size** > `A4`.\n    -   **Margins** > Custom Margins: Top: `2cm`, Bottom: `2cm`, Left: `3cm` (hoặc 2.5), Right: `2cm`.\n3.  **Font chuẩn:**\n    -   `Ctrl + A` > Tab **Home** > **Times New Roman**, size `13`.\n    -   Paragraph Settings: Line spacing `Single`, Before `0pt`, Spacing After `6pt`.",
-                        icon: "fa-save"
+                        title: "2. Tổng hợp kiến thức Word (3.5 điểm)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Kỹ năng trọng tâm (3.5đ)",
+                                content: "**Các phần 'ăn điểm' cần nhớ:**\n\n1.  **Thiết lập (Page Setup):** Luôn kiểm tra A4, Lề (2-2-3-2), Font Times New Roman 13.\n2.  **Tab & Numbering:** Dùng Right Tab + Leader (...) cho các dòng điền thông tin.\n3.  **Chia cột & Drop Cap:** Quy tắc vàng \"Gõ thô -> Chia cột -> Drop Cap\". Làm ngược là mất điểm.\n4.  **Bảng biểu:** Kỹ năng \"Convert Table to Text\" là câu cho điểm dế nhất.\n5.  **Mục lục & Header:** Phân biệt Header (Đầu) vs Footer (Chân).",
+                                icon: "fa-star"
+                            },
+                            {
+                                title: "Thiết lập & Lưu file (Bước 1)",
+                                content: "**Quy trình chuẩn (0.25đ):**\n\n1.  **Lưu file ngay lập tức:**\n    -   Nhấn `F12` (hoặc File > Save As).\n    -   Đặt tên cấu trúc: `IDSV_Hovaten_Lop_Made.docx`.\n2.  **Thiết lập trang (Page Setup):**\n    -   Tab **Layout** > **Size** > `A4`.\n    -   **Margins** > Custom Margins: Top: `2cm`, Bottom: `2cm`, Left: `3cm` (hoặc 2.5), Right: `2cm`.\n3.  **Font chuẩn:**\n    -   `Ctrl + A` > Tab **Home** > **Times New Roman**, size `13`.\n    -   Paragraph Settings: Line spacing `Single`, Before `0pt`, Spacing After `6pt`.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Bảng biểu & Convert (Bước 2)",
+                                content: "**Quy trình 'ăn điểm' dễ nhất (0.5đ):**\n\n1.  **Tạo bảng gốc:**\n    -   **Insert** > **Table** > Nhập nội dung thô.\n2.  **Sao chép & Chuyển đổi:**\n    -   Bôi đen bảng > `Ctrl + C` > Đặt con trỏ xuống dưới > `Ctrl + V`.\n    -   **Thao tác quan trọng:** Chọn bảng mới > Tab **Layout** (Table Tools) > **Convert to Text** > Tích chọn **Tabs** > OK.\n\n> **Mẹo:** Nên làm bước này ngay sau khi thiết lập file để lấy điểm trọn vẹn phần này trước.",
+                                icon: "fa-table"
+                            },
+                            {
+                                title: "Soạn thảo nâng cao (Bước 3)",
+                                content: "**Tab, Chia cột & Drop Cap (1.25đ):**\n\n1.  **Kỹ thuật Tab (Điền thông tin):**\n    -   Đặt **Left Tab** đầu dòng, **Right Tab** cuối dòng.\n    -   Kích đúp dấu Tab trên thước > Chọn **Leader (2.....)** > Set.\n2.  **Chia cột (Columns):**\n    -   Gõ hết văn bản thô -> Bôi đen (tránh dòng trắng cuối) -> **Layout** > **Columns** > **Two**.\n    -   Tích **Line between** để có đường kẻ giữa.\n3.  **Drop Cap (Chữ cái lớn):**\n    -   **Chỉ làm sau khi đã chia cột.**\n    -   Insert > Drop Cap > Dropped.\n    -   **Lưu ý:** Đề 1-6 chỉnh `Lines to drop = 2`. Riêng **Đề 7, 8** chỉnh `Lines to drop = 4`.",
+                                icon: "fa-paragraph"
+                            },
+                            {
+                                title: "Mục lục tự động (Bước 4)",
+                                content: "**Quy trình 2 bước (0.5đ):**\n\n1.  **Gán cấp độ (Level):**\n    -   Bôi đen tiêu đề lớn (CÂU 1...) > **References** > **Add Text** > **Level 1**.\n    -   Bôi đen tiêu đề nhỏ (1.1...) > **Level 2**.\n2.  **Chèn danh mục:**\n    -   Đặt con trỏ tại trang đích.\n    -   **References** > **Table of Contents** > **Custom Table of Contents**.\n\n> **Mẹo:** Nếu không làm được tự động, hãy gõ thủ công dùng Right Tab chấm (...) để vớt vát điểm trình bày.",
+                                icon: "fa-list-ol"
+                            },
+                            {
+                                title: "Header & Footer (Bước 5)",
+                                content: "**Lưu ý vị trí (0.25đ):**\n\n1.  **Xác định yêu cầu:**\n    -   **Footer (Chân trang):** Đa số các đề (1, 2, 3, 4, 5, 6).\n    -   **Header (Đầu trang):** Đề 7, 8 (Rất hay sai!).\n2.  **Thực hiện:**\n    -   **Insert** > Header/Footer.\n    -   Gõ Họ tên bên trái.\n    -   Nhấn `Tab` 2 lần sang phải (hoặc 1 lần ra giữa).\n    -   **Page Number** > **Current Position** > Chọn số.",
+                                icon: "fa-border-style"
+                            }
+                        ]
                     },
                     {
-                        title: "3. Word: Bảng biểu & Convert (Bước 2)",
-                        content: "**Quy trình 'ăn điểm' dễ nhất (0.5đ):**\n\n1.  **Tạo bảng gốc:**\n    -   **Insert** > **Table** > Nhập nội dung thô.\n2.  **Sao chép & Chuyển đổi:**\n    -   Bôi đen bảng > `Ctrl + C` > Đặt con trỏ xuống dưới > `Ctrl + V`.\n    -   **Thao tác quan trọng:** Chọn bảng mới > Tab **Layout** (Table Tools) > **Convert to Text** > Tích chọn **Tabs** > OK.\n\n> **Mẹo:** Nên làm bước này ngay sau khi thiết lập file để lấy điểm trọn vẹn phần này trước.",
-                        icon: "fa-table"
+                        title: "3. Tổng hợp kiến thức Excel (4.0 điểm)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Tư duy Logic & Hàm (4.0đ)",
+                                content: "**Tránh lỗi #N/A và mất điểm oan:**\n\n1.  **Xử lý chuỗi:** Hầu hết phải dùng `VALUE()` khi tách số từ chuỗi kí tự.\n2.  **Hàm dò tìm:** Xác định đúng `VLOOKUP` (cột dọc) hay `HLOOKUP` (hàng ngang).\n3.  **Hàm IF:** Nguyên tắc \"bóc vỏ hành\", xử lý từ điều kiện cao nhất đến thấp nhất.\n4.  **Thống kê:** `SUMIF` và `COUNTIF` thường dễ lấy điểm hơn IF lồng nhau.\n5.  **Công cụ:** Nhớ copy ra sheet mới trước khi `Sort` (Sắp xếp) và `Filter` (Lọc).",
+                                icon: "fa-star"
+                            },
+                            {
+                                title: "Nhập liệu & Định dạng (Bước 1)",
+                                content: "**Khởi động (0.5đ):**\n\n1.  **Lưu file:** `IDSV_Hovaten_Lop_Made.xlsx`.\n2.  **Nhập liệu:**\n    -   Nhập chính xác các Mã (VD: `DD18A1`).\n    -   **Tuyệt đối không** nhập dư khoảng trắng (dấu cách) ở cuối mã -> gây lỗi hàm dò tìm.\n3.  **Định dạng:**\n    -   Kẻ khung bảng tính (All Borders).\n    -   Định dạng số tiền (Commas) nếu cần.",
+                                icon: "fa-keyboard"
+                            },
+                            {
+                                title: "Xử lý Chuỗi (Bước 2 - Core)",
+                                content: "**Kỹ năng sống còn - Sai bước này là sai hết:**\n\n1.  **Hàm cắt chuỗi:** `LEFT`, `RIGHT`, `MID`.\n2.  **Hàm VALUE (Quan trọng nhất):**\n    -   Khi lấy **SỐ** ra khỏi chuỗi văn bản (VD: lấy '18' từ 'DD18A1').\n    -   BẮT BUỘC dùng `VALUE` bọc bên ngoài thì mới tra cứu được trong bảng số.\n    -   VD: `=VALUE(MID(A3, 3, 2))`.",
+                                icon: "fa-cut"
+                            },
+                            {
+                                title: "Hàm dò tìm (Bước 3)",
+                                content: "**Ăn điểm tuyệt đối (1.0đ):**\n\n1.  **Chọn hàm:**\n    -   Bảng phụ nằm **Dọc** -> `VLOOKUP`.\n    -   Bảng phụ nằm **Ngang** -> `HLOOKUP`.\n2.  **Công thức:**\n    -   `=HLOOKUP(Trị_dò, Bảng_dò, Dòng_lấy_KQ, 0)`\n    -   **Trị dò:** Thường là kết quả Bước 2.\n    -   **Bảng dò:** Nhớ nhấn `F4` để cố định ($).",
+                                icon: "fa-search"
+                            },
+                            {
+                                title: "Hàm điều kiện (Bước 4)",
+                                content: "**IF lồng nhau (0.75 - 1.0đ):**\n\n1.  **Nguyên tắc 'Bóc vỏ hành':**\n    -   Xử lý từ điều kiện cao nhất xuống thấp nhất.\n    -   Nếu có N trường hợp -> Dùng N-1 hàm IF.\n2.  **Ví dụ Xếp loại:**\n    -   `=IF(ĐTB>=9, \"Xuất sắc\", IF(ĐTB>=8, \"Giỏi\", ...))`\n    -   Mở bao nhiêu ngoặc thì đóng bấy nhiêu ở cuối.",
+                                icon: "fa-code-branch"
+                            },
+                            {
+                                title: "Hàm thống kê (Bước 5)",
+                                content: "**SUMIF & COUNTIF (0.75đ):**\n\n1.  **Tính tổng có điều kiện (SUMIF):**\n    -   Tổng tiền theo Tên hàng: `=SUMIF(Cột_Tên, \"Xăng\", Cột_Tiền)`.\n2.  **Đếm có điều kiện (COUNTIF):**\n    -   Đếm >= 5: `=COUNTIF(Cột_Điểm, \">=5\")`.\n    -   Đếm họ Lê: `=COUNTIF(Cột_Tên, \"Lê*\")` (* là ký tự đại diện).",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Sắp xếp & Lọc (Bước 6)",
+                                content: "**Dễ nhưng hay quên (1.0đ):**\n\n1.  **Sao chép:** Copy bảng dữ liệu sang sheet mới tên `KQL` trước khi lọc.\n2.  **Sắp xếp (Sort):** Data > Sort > Chọn cột & Tăng/Giảm.\n3.  **Lọc (Filter):**\n    -   **Số:** Number Filters > Between / Greater Than.\n    -   **Chữ:** Text Filters > Begins With.\n    -   **Điều kiện OR (Đề 6):** Custom Filter > Chọn OR.",
+                                icon: "fa-filter"
+                            }
+                        ]
                     },
                     {
-                        title: "4. Word: Soạn thảo nâng cao (Bước 3)",
-                        content: "**Tab, Chia cột & Drop Cap (1.25đ):**\n\n1.  **Kỹ thuật Tab (Điền thông tin):**\n    -   Đặt **Left Tab** đầu dòng, **Right Tab** cuối dòng.\n    -   Kích đúp dấu Tab trên thước > Chọn **Leader (2.....)** > Set.\n2.  **Chia cột (Columns):**\n    -   Gõ hết văn bản thô -> Bôi đen (tránh dòng trắng cuối) -> **Layout** > **Columns** > **Two**.\n    -   Tích **Line between** để có đường kẻ giữa.\n3.  **Drop Cap (Chữ cái lớn):**\n    -   **Chỉ làm sau khi đã chia cột.**\n    -   Insert > Drop Cap > Dropped.\n    -   **Lưu ý:** Đề 1-6 chỉnh `Lines to drop = 2`. Riêng **Đề 7, 8** chỉnh `Lines to drop = 4`.",
-                        icon: "fa-paragraph"
-                    },
-                    {
-                        title: "5. Word: Mục lục tự động (Bước 4)",
-                        content: "**Quy trình 2 bước (0.5đ):**\n\n1.  **Gán cấp độ (Level):**\n    -   Bôi đen tiêu đề lớn (CÂU 1...) > **References** > **Add Text** > **Level 1**.\n    -   Bôi đen tiêu đề nhỏ (1.1...) > **Level 2**.\n2.  **Chèn danh mục:**\n    -   Đặt con trỏ tại trang đích.\n    -   **References** > **Table of Contents** > **Custom Table of Contents**.\n\n> **Mẹo:** Nếu không làm được tự động, hãy gõ thủ công dùng Right Tab chấm (...) để vớt vát điểm trình bày.",
-                        icon: "fa-list-ol"
-                    },
-                    {
-                        title: "6. Word: Header & Footer (Bước 5)",
-                        content: "**Lưu ý vị trí (0.25đ):**\n\n1.  **Xác định yêu cầu:**\n    -   **Footer (Chân trang):** Đa số các đề (1, 2, 3, 4, 5, 6).\n    -   **Header (Đầu trang):** Đề 7, 8 (Rất hay sai!).\n2.  **Thực hiện:**\n    -   **Insert** > Header/Footer.\n    -   Gõ Họ tên bên trái.\n    -   Nhấn `Tab` 2 lần sang phải (hoặc 1 lần ra giữa).\n    -   **Page Number** > **Current Position** > Chọn số.",
-                        icon: "fa-border-style"
-                    },
-                    {
-                        title: "7. Excel: Nhập liệu & Định dạng (Bước 1)",
-                        content: "**Khởi động (0.5đ):**\n\n1.  **Lưu file:** `IDSV_Hovaten_Lop_Made.xlsx`.\n2.  **Nhập liệu:**\n    -   Nhập chính xác các Mã (VD: `DD18A1`).\n    -   **Tuyệt đối không** nhập dư khoảng trắng (dấu cách) ở cuối mã -> gây lỗi hàm dò tìm.\n3.  **Định dạng:**\n    -   Kẻ khung bảng tính (All Borders).\n    -   Định dạng số tiền (Commas) nếu cần.",
-                        icon: "fa-keyboard"
-                    },
-                    {
-                        title: "8. Excel: Xử lý Chuỗi (Bước 2 - Core)",
-                        content: "**Kỹ năng sống còn - Sai bước này là sai hết:**\n\n1.  **Hàm cắt chuỗi:** `LEFT`, `RIGHT`, `MID`.\n2.  **Hàm VALUE (Quan trọng nhất):**\n    -   Khi lấy **SỐ** ra khỏi chuỗi văn bản (VD: lấy '18' từ 'DD18A1').\n    -   BẮT BUỘC dùng `VALUE` bọc bên ngoài thì mới tra cứu được trong bảng số.\n    -   VD: `=VALUE(MID(A3, 3, 2))`.",
-                        icon: "fa-cut"
-                    },
-                    {
-                        title: "9. Excel: Hàm dò tìm (Bước 3)",
-                        content: "**Ăn điểm tuyệt đối (1.0đ):**\n\n1.  **Chọn hàm:**\n    -   Bảng phụ nằm **Dọc** -> `VLOOKUP`.\n    -   Bảng phụ nằm **Ngang** -> `HLOOKUP`.\n2.  **Công thức:**\n    -   `=HLOOKUP(Trị_dò, Bảng_dò, Dòng_lấy_KQ, 0)`\n    -   **Trị dò:** Thường là kết quả Bước 2.\n    -   **Bảng dò:** Nhớ nhấn `F4` để cố định ($).",
-                        icon: "fa-search"
-                    },
-                    {
-                        title: "10. Excel: Hàm điều kiện (Bước 4)",
-                        content: "**IF lồng nhau (0.75 - 1.0đ):**\n\n1.  **Nguyên tắc 'Bóc vỏ hành':**\n    -   Xử lý từ điều kiện cao nhất xuống thấp nhất.\n    -   Nếu có N trường hợp -> Dùng N-1 hàm IF.\n2.  **Ví dụ Xếp loại:**\n    -   `=IF(ĐTB>=9, \"Xuất sắc\", IF(ĐTB>=8, \"Giỏi\", ...))`\n    -   Mở bao nhiêu ngoặc thì đóng bấy nhiêu ở cuối.",
-                        icon: "fa-code-branch"
-                    },
-                    {
-                        title: "11. Excel: Hàm thống kê (Bước 5)",
-                        content: "**SUMIF & COUNTIF (0.75đ):**\n\n1.  **Tính tổng có điều kiện (SUMIF):**\n    -   Tổng tiền theo Tên hàng: `=SUMIF(Cột_Tên, \"Xăng\", Cột_Tiền)`.\n2.  **Đếm có điều kiện (COUNTIF):**\n    -   Đếm >= 5: `=COUNTIF(Cột_Điểm, \">=5\")`.\n    -   Đếm họ Lê: `=COUNTIF(Cột_Tên, \"Lê*\")` (* là ký tự đại diện).",
-                        icon: "fa-calculator"
-                    },
-                    {
-                        title: "12. Excel: Sắp xếp & Lọc (Bước 6)",
-                        content: "**Dễ nhưng hay quên (1.0đ):**\n\n1.  **Sao chép:** Copy bảng dữ liệu sang sheet mới tên `KQL` trước khi lọc.\n2.  **Sắp xếp (Sort):** Data > Sort > Chọn cột & Tăng/Giảm.\n3.  **Lọc (Filter):**\n    -   **Số:** Number Filters > Between / Greater Than.\n    -   **Chữ:** Text Filters > Begins With.\n    -   **Điều kiện OR (Đề 6):** Custom Filter > Chọn OR.",
-                        icon: "fa-filter"
-                    },
-                    {
-                        title: "13. PPT: Khởi tạo & Nhập liệu (Bước 1)",
-                        content: "**Quy trình chuẩn (1.0đ):**\n\n1.  **Tạo 6 Slide:**\n    -   Home > New Slide.\n2.  **Nhập nội dung thô:**\n    -   **Slide 1:** Tiêu đề, Họ tên, Ngày thi.\n    -   **Slide 2:** Thông tin thí sinh (Lớp, Ngành, Sở thích - dùng Bullets).\n    -   **Slide 3:** NỘI DUNG (Word, Excel, PowerPoint).\n    -   **Slide 4, 5, 6:** Chi tiết từng phần (Copy từ đề).",
-                        icon: "fa-plus-square"
-                    },
-                    {
-                        title: "14. PPT: SmartArt & Diagram (Bước 2)",
-                        content: "**Yêu cầu bắt buộc:**\n\n1.  **Vị trí:** Thường ở Slide 2 hoặc Slide 3 (Mục lục).\n2.  **Thao tác:**\n    -   **Insert** > **SmartArt** > Chọn dạng List hoặc Process.\n    -   Nhập nội dung vào các ô.\n\n> **Lưu ý:** Nếu không vẽ SmartArt mà chỉ gõ text thường sẽ bị trừ điểm phần trang trí.",
-                        icon: "fa-project-diagram"
-                    },
-                    {
-                        title: "15. PPT: Liên kết Hyperlink (Bước 3)",
-                        content: "**Điều hướng thông minh (0.5đ):**\n\n1.  **Tại Slide 3 (Mục lục):**\n    -   Chọn chữ \"Phần Word\" -> **Insert** > **Link** -> Chọn **Slide 4**.\n    -   Chọn chữ \"Phần Excel\" -> **Insert** > **Link** -> Chọn **Slide 5**.\n    -   Chọn chữ \"Phần PowerPoint\" -> **Insert** > **Link** -> Chọn **Slide 6**.",
-                        icon: "fa-link"
-                    },
-                    {
-                        title: "16. PPT: Hiệu ứng (Bước 4)",
-                        content: "**Không cần làm quá nhiều (0.5đ):**\n\n1.  **Transitions (Chuyển trang):**\n    -   Chọn 1 hiệu ứng (Fade/Push) -> Nhấn **Apply to All**.\n2.  **Animations (Đối tượng):**\n    -   Chọn văn bản/hình ảnh -> Chọn hiệu ứng màu xanh (Fly In).\n    -   **Mẹo:** Chỉ cần làm tượng trưng cho Slide 1 và 2 là đủ điểm, không cần làm hết 6 slide để tiết kiệm thời gian.",
-                        icon: "fa-magic"
-                    },
-                    {
-                        title: "17. PPT: Setting & Loop (Bước 5)",
-                        content: "**Lỗi hay quên nhất (0.5đ):**\n\n1.  **Header & Footer:**\n    -   **Insert** > Header/Footer > Tích **Slide number** & **Footer** (Họ tên).\n    -   Nhấn **Apply to All**.\n2.  **Loop (Lặp lại):**\n    -   Tab **Slide Show** > **Set Up Slide Show**.\n    -   Tích ô **Loop continuously until 'Esc'** > OK.",
-                        icon: "fa-sync-alt"
+                        title: "4. Tổng hợp kiến thức PowerPoint (2.5 điểm)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu cốt lõi (2.5đ)",
+                                content: "**Dễ nhưng không được chủ quan:**\n\n1.  **Cấu trúc:** Bắt buộc đủ 6 slide (Slide 3 là mục lục).\n2.  **SmartArt:** Phải chuyển danh sách ở Slide 3 (hoặc 2) thành SmartArt.\n3.  **Hyperlink:** Liên kết từ Mục lục đến các slide chi tiết.\n4.  **Setting:** Đừng quên chế độ \"Loop continuously\" (Lặp lại liên tục).\n5.  **Thao tác:** Đừng mất thời gian trang trí đẹp, đủ nội dung và hiệu ứng là có điểm.",
+                                icon: "fa-star"
+                            },
+                            {
+                                title: "PPT: Khởi tạo & Nhập liệu (Bước 1)",
+                                content: "**Quy trình chuẩn (1.0đ):**\n\n1.  **Tạo 6 Slide:**\n    -   Home > New Slide.\n2.  **Nhập nội dung thô:**\n    -   **Slide 1:** Tiêu đề, Họ tên, Ngày thi.\n    -   **Slide 2:** Thông tin thí sinh (Lớp, Ngành, Sở thích - dùng Bullets).\n    -   **Slide 3:** NỘI DUNG (Word, Excel, PowerPoint).\n    -   **Slide 4, 5, 6:** Chi tiết từng phần (Copy từ đề).",
+                                icon: "fa-plus-square"
+                            },
+                            {
+                                title: "PPT: SmartArt & Diagram (Bước 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Vị trí:** Thường ở Slide 2 hoặc Slide 3 (Mục lục).\n2.  **Thao tác:**\n    -   **Insert** > **SmartArt** > Chọn dạng List hoặc Process.\n    -   Nhập nội dung vào các ô.\n\n> **Lưu ý:** Nếu không vẽ SmartArt mà chỉ gõ text thường sẽ bị trừ điểm phần trang trí.",
+                                icon: "fa-project-diagram"
+                            },
+                            {
+                                title: "PPT: Liên kết Hyperlink (Bước 3)",
+                                content: "**Điều hướng thông minh (0.5đ):**\n\n1.  **Tại Slide 3 (Mục lục):**\n    -   Chọn chữ \"Phần Word\" -> **Insert** > **Link** -> Chọn **Slide 4**.\n    -   Chọn chữ \"Phần Excel\" -> **Insert** > **Link** -> Chọn **Slide 5**.\n    -   Chọn chữ \"Phần PowerPoint\" -> **Insert** > **Link** -> Chọn **Slide 6**.",
+                                icon: "fa-link"
+                            },
+                            {
+                                title: "PPT: Hiệu ứng (Bước 4)",
+                                content: "**Không cần làm quá nhiều (0.5đ):**\n\n1.  **Transitions (Chuyển trang):**\n    -   Chọn 1 hiệu ứng (Fade/Push) -> Nhấn **Apply to All**.\n2.  **Animations (Đối tượng):**\n    -   Chọn văn bản/hình ảnh -> Chọn hiệu ứng màu xanh (Fly In).\n    -   **Mẹo:** Chỉ cần làm tượng trưng cho Slide 1 và 2 là đủ điểm, không cần làm hết 6 slide để tiết kiệm thời gian.",
+                                icon: "fa-magic"
+                            },
+                            {
+                                title: "PPT: Setting & Loop (Bước 5)",
+                                content: "**Lỗi hay quên nhất (0.5đ):**\n\n1.  **Header & Footer:**\n    -   **Insert** > Header/Footer > Tích **Slide number** & **Footer** (Họ tên).\n    -   Nhấn **Apply to All**.\n2.  **Loop (Lặp lại):**\n    -   Tab **Slide Show** > **Set Up Slide Show**.\n    -   Tích ô **Loop continuously until 'Esc'** > OK.",
+                                icon: "fa-sync-alt"
+                            }
+                        ]
                     }
                 ]
             },
