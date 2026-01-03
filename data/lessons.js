@@ -1542,7 +1542,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 02: Văn hóa tổ chức",
                 description: "Luyện tập Đề số 02: Word Cột báo, Excel HLOOKUP & Lọc điều kiện ký tự.",
                 docs: [
-                    { name: "Đề số 02 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 2.pdf" }
+                    { name: "Đề số 02 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 2.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_2.docx" }
                 ],
                 sections: [
                     {
@@ -1593,7 +1594,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 03: Kinh doanh điện máy",
                 description: "Luyện tập Đề số 03: Excel đếm theo họ và Word số trang ở giữa.",
                 docs: [
-                    { name: "Đề số 03 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 3.pdf" }
+                    { name: "Đề số 03 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 3.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_3.docx" }
                 ],
                 sections: [
                     {
@@ -1644,7 +1646,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 04: Xăng Dầu Nhớt (VLOOKUP)",
                 description: "Luyện tập Đề số 04: VLOOKUP tra tên hàng và Lọc nâng cao (Custom Filter).",
                 docs: [
-                    { name: "Đề số 04 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 4.pdf" }
+                    { name: "Đề số 04 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 4.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_4.docx" }
                 ],
                 sections: [
                     {
@@ -1695,7 +1698,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 05: Hội thảo & Xăng dầu (HLOOKUP)",
                 description: "Luyện tập Đề số 05: HLOOKUP tra tên hàng và Định dạng Numbering (01).",
                 docs: [
-                    { name: "Đề số 05 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 5.pdf" }
+                    { name: "Đề số 05 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 5.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_5.docx" }
                 ],
                 sections: [
                     {
@@ -1746,7 +1750,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 06: Lọc điều kiện HOẶC (OR)",
                 description: "Luyện tập Đề số 06: Tab Giữa trong Word và Filter điều kiện N hoặc X.",
                 docs: [
-                    { name: "Đề số 06 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 6.pdf" }
+                    { name: "Đề số 06 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 6.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_6.docx" }
                 ],
                 sections: [
                     {
@@ -1797,7 +1802,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 07: Linh kiện máy tính & Header đầu trang",
                 description: "Luyện tập Đề số 07: Header đầu trang và đếm ký tự đại diện.",
                 docs: [
-                    { name: "Đề số 07 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 7.pdf" }
+                    { name: "Đề số 07 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 7.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_7.docx" }
                 ],
                 sections: [
                     {
@@ -1848,7 +1854,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 08: Chip/RAM (Drop Cap 4 dòng)",
                 description: "Luyện tập Đề số 08: Drop Cap lớn và Tra cứu HLOOKUP ký tự giữa.",
                 docs: [
-                    { name: "Đề số 08 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 8.pdf" }
+                    { name: "Đề số 08 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 8.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_8.docx" }
                 ],
                 sections: [
                     {
