@@ -1445,7 +1445,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 title: "Đề số 01: Chuẩn đầu ra Tin học",
                 description: "Luyện tập Đề số 01: Định dạng Word, Bảng biểu, Hàm HLOOKUP/IF, và PowerPoint cơ bản.",
                 docs: [
-                    { name: "Đề số 01 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 1.pdf" }
+                    { name: "Đề số 01 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 1.pdf" },
+                    { name: "Dữ liệu thực hành (Word)", file: "../TaiLieuHuongDan/Buổi 15/Text_Đề_1.docx" }
                 ],
                 sections: [
                     {
