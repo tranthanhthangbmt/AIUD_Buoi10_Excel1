@@ -1270,4 +1270,286 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
             }
         ]
     },
+    {
+        id: 14,
+        title: "Buổi 14: AI cho PowerPoint",
+        description: "Ứng dụng trí tuệ nhân tạo để tối ưu hóa quy trình thiết kế slide, từ lên ý tưởng đến tạo nội dung chi tiết.",
+        totalLessons: 1,
+        lessons: [
+            {
+                id: 141,
+                sessionId: 14,
+                title: "Bài 1: Ứng dụng AI trong thiết kế Slide",
+                description: "Sử dụng các công cụ AI để tạo dàn ý, viết nội dung và gợi ý thiết kế cho bài thuyết trình.",
+                tasks: [],
+                steps: [
+                    {
+                        title: "1. Lên ý tưởng và Dàn ý với AI",
+                        content: "**Quy trình:**\n- Sử dụng ChatGPT/Gemini để brainstorm ý tưởng.\n- Yêu cầu AI tạo dàn ý chi tiết cho bài thuyết trình (Title, Outline).\n- Ví dụ prompt: 'Hãy đóng vai chuyên gia, đề xuất cho tôi 5 ý tưởng chủ đề thuyết trình về [Lĩnh vực] và dàn ý chi tiết cho ý tưởng hay nhất.'",
+                        icon: "fa-lightbulb"
+                    },
+                    {
+                        title: "2. Tạo nội dung chi tiết",
+                        content: "**Quy trình:**\n- Dựa trên dàn ý, yêu cầu AI viết nội dung cho từng slide.\n- Yêu cầu AI tóm tắt nội dung thành các gạch đầu dòng ngắn gọn (Quy tắc 6x6).",
+                        icon: "fa-list-alt"
+                    },
+                    {
+                        title: "3. Gợi ý hình ảnh và Bố cục",
+                        content: "**Quy trình:**\n- Yêu cầu AI mô tả hình ảnh minh họa phù hợp cho từng slide.\n- Sử dụng các công cụ tạo ảnh AI (nếu cần) hoặc tìm kiếm ảnh theo từ khóa gợi ý.",
+                        icon: "fa-image"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 15,
+        title: "Buổi 15: Ôn tập",
+        description: "Tổng hợp kiến thức, giải đề thi thử và ôn tập chuẩn bị cho kỳ thi kết thúc học phần.",
+        totalLessons: 12,
+        lessons: [
+            {
+                id: 1501,
+                sessionId: 15,
+                title: "Đề số 01: Chuẩn đầu ra Tin học",
+                description: "Luyện tập Đề số 01: Định dạng Word, Bảng biểu, Hàm HLOOKUP/IF, và PowerPoint cơ bản.",
+                docs: [
+                    { name: "Đề số 01 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 1.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word: Thiết lập & Định dạng",
+                        content: "**Yêu cầu:**\n- Lưu file: IDSV_HoVaTen_Lop_01.docx.\n- Khổ giấy A4, Lề: Trên/Dưới/Phải 2cm, Trái 3cm.\n- Font Times New Roman, cỡ 13.\n\n**Hướng dẫn:**\n- Chuyển bảng thành văn bản: Layout > Convert to Text.\n- Numbering & Tab: Dùng Right Tab có Leader dấu chấm (...) cho mục lục thủ công.\n- Drop Cap: Chữ V thả xuống 2 dòng.\n- Mục lục tự động: Gán Level 1, 2 cho tiêu đề và dùng References > Table of Contents.\n- Header/Footer: Họ tên bên trái, Số trang bên phải (Footer).",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel: Hàm & Thống kê",
+                        content: "**Công thức quan trọng:**\n- **Niên khóa:** `=HLOOKUP(VALUE(MID(D4, 3, 2)), $B$14:$E$15, 2, 0)`\n  *(Logic: Lấy số 18 từ DD18A1, chuyển thành số để dò bảng)*\n- **Xếp loại:** `=IF(H4>=9, \"Xuất sắc\", IF(H4>=8, \"Giỏi\", IF(H4>=7, \"Khá\", IF(H4>=5, \"Trung bình\", \"Yếu\"))))`\n- **Thống kê:** Dùng `MAX`, `MIN`, `COUNTIF`.\n- **Lọc:** Filter > Number Filters > >=5 VÀ Niên khóa 2019-2024.",
+                        icon: "fa-file-excel"
+                    },
+                    {
+                        title: "3. Phần PowerPoint: Slide & Liên kết",
+                        content: "**Yêu cầu:**\n- Thiết kế 6 slide, dùng SmartArt ở Slide 2 hoặc 3.\n- **Liên kết:** Tạo Hyperlink từ Slide 3 đến Slide 4, 5, 6.\n- **Hiệu ứng:** Transition (Chuyển slide) và Animation (Bay vào).\n- **Loop:** Slide Show > Set Up > Loop continuously.",
+                        icon: "fa-file-powerpoint"
+                    }
+                ]
+            },
+            {
+                id: 1502,
+                sessionId: 15,
+                title: "Đề số 02: Văn hóa tổ chức",
+                description: "Luyện tập Đề số 02: Word Cột báo, Excel HLOOKUP & Lọc điều kiện ký tự.",
+                docs: [
+                    { name: "Đề số 02 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 2.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Điểm khác biệt:**\n- Numbering dạng A., B., C.\n- **Header (Đầu trang):** Họ tên bên trái, Số trang bên phải (khác Đề 1 là Footer).\n- Chia cột văn bản có đường kẻ giữa.",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức gợi ý:**\n- **Khóa:** Dùng `HLOOKUP` kết hợp `VALUE` và `MID`.\n- **Điểm quy đổi:** IF lồng nhau (>=8.5 là A, >=7 là B...).\n- **Đếm tên bắt đầu bằng H:** `=COUNTIF(Vung_Ten, \"H*\")`.\n- **Sắp xếp:** Giảm dần theo Điểm TB.\n- **Lọc:** Điểm là A và Khóa >= 19.",
+                        icon: "fa-file-excel"
+                    },
+                    {
+                        title: "3. Phần PowerPoint",
+                        content: "Tương tự Đề 1: 6 slide, Hyperlink, SmartArt, Loop.",
+                        icon: "fa-file-powerpoint"
+                    }
+                ]
+            },
+            {
+                id: 1503,
+                sessionId: 15,
+                title: "Đề số 03: Kinh doanh điện máy",
+                description: "Luyện tập Đề số 03: Excel đếm theo họ và Word số trang ở giữa.",
+                docs: [
+                    { name: "Đề số 03 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 3.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Lưu ý:**\n- Drop Cap thả xuống 2 dòng.\n- **Số trang:** Đặt ở **giữa** (Center) chân trang.\n- Mục lục: Level 1 (Câu lớn), Level 2 (Mục nhỏ).",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức:**\n- **Khóa:** `=HLOOKUP(VALUE(MID(E4, 3, 2)), $Vung_Bang_2, 2, 0)`\n- **Ngành học:** `=IF(F4=\"IT\", \"CNTT\", IF(F4=\"DD\", \"Điều dưỡng\"...))`\n- **Đếm SV họ Lê:** `=COUNTIF(Cot_Ho, \"Lê*\")`\n- **Sắp xếp:** Tăng dần theo Mã (A-Z).",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1504,
+                sessionId: 15,
+                title: "Đề số 04: Xăng Dầu Nhớt (VLOOKUP)",
+                description: "Luyện tập Đề số 04: VLOOKUP tra tên hàng và Lọc nâng cao (Custom Filter).",
+                docs: [
+                    { name: "Đề số 04 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 4.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Yêu cầu:**\n- Right Tab có Leader chấm (.......).\n- Drop Cap chữ N xuống 2 dòng.\n- Header chân trang: Họ tên trái, Số trang phải.",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức:**\n- **Tên hàng:** `=VLOOKUP(LEFT(C4,1), $Bang_2, 2, 0)`\n  *(Dùng VLOOKUP vì bảng 2 xếp dọc)*\n- **Thuế:** `=DonGia * SoLuong * IF(LEFT(C4,1)=\"X\", 4%, ...)`\n- **Tổng thuế (SUMIF):** `=SUMIF($Cot_Ten, \"Xăng\", $Cot_Thue)`\n- **Lọc:** Mã bắt đầu bằng N **VÀ** Số lượng 3000-5000.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1505,
+                sessionId: 15,
+                title: "Đề số 05: Hội thảo & Xăng dầu (HLOOKUP)",
+                description: "Luyện tập Đề số 05: HLOOKUP tra tên hàng và Định dạng Numbering (01).",
+                docs: [
+                    { name: "Đề số 05 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 5.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Đặc biệt:**\n- **Numbering (01):** Define New Number Format > Gõ `(0)`.\n- Drop Cap xuống 2 dòng.\n- Tab trái/phải căn chỉnh thời gian.",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức:**\n- **Tên hàng:** `=HLOOKUP(MID(C4, 2, 1), $Bang_2, 2, 0)`\n  *(Lấy ký tự thứ 2 để tra)*\n- **Thuế:** Dựa vào ký tự đầu (1 hoặc 2).\n- **Lọc:** Mã bắt đầu bằng `2` VÀ Số lượng 3000-5000.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1506,
+                sessionId: 15,
+                title: "Đề số 06: Lọc điều kiện HOẶC (OR)",
+                description: "Luyện tập Đề số 06: Tab Giữa trong Word và Filter điều kiện N hoặc X.",
+                docs: [
+                    { name: "Đề số 06 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 6.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Yêu cầu:**\n- Dùng **Center Tab** để căn giữa \"Họ và tên SV\".\n- Convert Table to Text.\n- Drop Cap xuống 2 dòng.",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức:**\n- **Tên hàng:** `=IF(LEFT(C4,1)=\"N\", \"Nhớt\", ...)`\n- **Thuế:** Dùng `HLOOKUP` với `MID(C4,2,2)` (lấy 2 ký tự 01, 02).\n- **Lọc khó:** Mã bắt đầu bằng N **HOẶC** X.\n  *(Dùng Custom Filter > Begins with N OR Begins with X)*.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1507,
+                sessionId: 15,
+                title: "Đề số 07: Linh kiện máy tính & Header đầu trang",
+                description: "Luyện tập Đề số 07: Header đầu trang và đếm ký tự đại diện.",
+                docs: [
+                    { name: "Đề số 07 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 7.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Lưu ý:**\n- **Header:** Đặt ở **Đầu trang** (Top).\n- Phiếu dự thi: Dùng Tab Leader chấm (...) để tạo dòng kẻ.\n- Drop Cap xuống **4 dòng**.",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức:**\n- **Chuyên ngành:** `=HLOOKUP(LEFT(C4,2), $Bang, 2, 0)`\n- **Đếm tên M:** `=COUNTIF(Cot_Ten, \"M*\")`.\n- **Sắp xếp:** Giảm dần theo Điểm TB.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1508,
+                sessionId: 15,
+                title: "Đề số 08: Chip/RAM (Drop Cap 4 dòng)",
+                description: "Luyện tập Đề số 08: Drop Cap lớn và Tra cứu HLOOKUP ký tự giữa.",
+                docs: [
+                    { name: "Đề số 08 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 8.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Word",
+                        content: "**Yêu cầu:**\n- **Drop Cap:** Thả xuống **4 dòng**.\n- Giấy giới thiệu: Căn giữa tiêu đề, dùng Tab chấm.\n- Bảng phím tắt: Convert to Text.",
+                        icon: "fa-file-word"
+                    },
+                    {
+                        title: "2. Phần Excel",
+                        content: "**Công thức:**\n- **Tên hàng:** `=HLOOKUP(MID(C4,2,2), ...)`\n  *(Lấy 2 ký tự giữa để tra)*\n- **Lọc:** Mã bắt đầu bằng 5 và Số lượng 90-200.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1509,
+                sessionId: 15,
+                title: "Đề số 09: Cách mạng CN & Băng đĩa",
+                description: "Luyện tập Đề số 09: Tính ngày thuê băng đĩa và Slide về IoT.",
+                docs: [
+                    { name: "Đề số 09 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 9.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Excel: Thuê băng đĩa",
+                        content: "**Công thức:**\n- **Số ngày thuê:** `=IF(NgayTra=NgayThue, 1, NgayTra-NgayThue)`\n- **Tiền thuê:** `=SoNgay * DonGia * SoLuong`\n- **Số lượng:** Dùng `VALUE(MID(...))` để lấy số từ mã.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1510,
+                sessionId: 15,
+                title: "Đề số 10: Quản lý công việc & Sách GK",
+                description: "Luyện tập Đề số 10: Xử lý sách giáo khoa và Slide CMCN 4.0.",
+                docs: [
+                    { name: "Đề số 10 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 10.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "1. Phần Excel",
+                        content: "**Công thức:**\n- **Thành tiền:** Giảm giá 5% nếu Số lượng > 35.\n  `=SoLuong * DonGia * IF(SoLuong>35, 95%, 1)`\n- **Đơn giá:** Tra T1/T2 dựa vào 2 ký tự cuối.",
+                        icon: "fa-file-excel"
+                    }
+                ]
+            },
+            {
+                id: 1511,
+                sessionId: 15,
+                title: "Đề số 11: Ôn tập tổng hợp 1",
+                description: "Đề luyện tập tổng hợp kỹ năng Word, Excel, PowerPoint.",
+                docs: [
+                    { name: "Đề số 11 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 11.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Tự luyện tập",
+                        content: "Sinh viên mở file PDF đề bài và tự thực hiện trong 90 phút để kiểm tra kiến thức.",
+                        icon: "fa-clock"
+                    }
+                ]
+            },
+            {
+                id: 1512,
+                sessionId: 15,
+                title: "Đề số 12: Ôn tập tổng hợp 2",
+                description: "Đề luyện tập tổng hợp kỹ năng Word, Excel, PowerPoint.",
+                docs: [
+                    { name: "Đề số 12 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 12.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Tự luyện tập",
+                        content: "Sinh viên mở file PDF đề bài và tự thực hiện trong 90 phút để kiểm tra kiến thức.",
+                        icon: "fa-clock"
+                    }
+                ]
+            }
+        ]
+    }
 ];
