@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${lesson.description}</p>
                 <div class="card-footer">
                     <span><i class="fas fa-play-circle"></i> Xem hướng dẫn</span>
-                    <span>${lesson.steps.length} bước</span>
+                    <span>${lesson.steps ? lesson.steps.length : (lesson.sections ? lesson.sections.reduce((acc, sec) => acc + sec.steps.length, 0) : 0)} bước</span>
                 </div>
             </a>
         `).join('');
@@ -189,7 +189,49 @@ document.addEventListener('DOMContentLoaded', () => {
             // Steps
             const stepList = document.getElementById('step-list');
             if (stepList) {
-                if (!lesson.steps || lesson.steps.length === 0) {
+                const renderStepItem = (step) => `
+                    <div class="step-item">
+                        <div class="step-header">
+                            <div class="step-title-wrapper">
+                                ${step.icon ? `<i class="fas ${step.icon} step-icon-visual"></i>` : '<i class="fas fa-circle step-icon-visual" style="font-size: 0.5rem;"></i>'}
+                                <span>${step.title}</span>
+                            </div>
+                            <i class="fas fa-chevron-down step-toggle-icon"></i>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-text">${formatContent(step.content)}</div>
+                            ${step.slideImage ? `
+                                <div class="step-slide-container">
+                                    <span class="slide-label"><i class="fas fa-image"></i> Minh họa (Nhấn để phóng to):</span>
+                                    <img src="${step.slideImage}" alt="${step.title}" class="step-slide-img" loading="lazy">
+                                </div>
+                            ` : ''}
+                            ${step.videoUrl ? `
+                                <div class="step-video-container" style="margin-top: 1rem;">
+                                    <span class="slide-label"><i class="fas fa-video"></i> Video hướng dẫn:</span>
+                                    <div class="video-wrapper" style="margin: 0.5rem 0;">
+                                        <iframe src="${step.videoUrl}" allow="autoplay" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+
+                if (lesson.sections && lesson.sections.length > 0) {
+                    // Render with Sections
+                    stepList.innerHTML = lesson.sections.map(section => `
+                        <div class="lesson-section" style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--accent-color); margin: 1.5rem 0 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-folder-open" style="margin-right: 10px;"></i> 
+                                ${section.title}
+                            </h3>
+                            <div class="section-steps">
+                                ${section.steps.map(step => renderStepItem(step)).join('')}
+                            </div>
+                        </div>
+                    `).join('');
+                } else if (!lesson.steps || lesson.steps.length === 0) {
                     stepList.innerHTML = `
                     <div class="step-item active">
                         <div class="step-header">
@@ -203,34 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>`;
                 } else {
-                    stepList.innerHTML = lesson.steps.map((step, index) => `
-                        <div class="step-item">
-                            <div class="step-header">
-                                <div class="step-title-wrapper">
-                                    ${step.icon ? `<i class="fas ${step.icon} step-icon-visual"></i>` : '<i class="fas fa-circle step-icon-visual" style="font-size: 0.5rem;"></i>'}
-                                    <span>${step.title}</span>
-                                </div>
-                                <i class="fas fa-chevron-down step-toggle-icon"></i>
-                            </div>
-                            <div class="step-content">
-                                <div class="step-text">${formatContent(step.content)}</div>
-                                ${step.slideImage ? `
-                                    <div class="step-slide-container">
-                                        <span class="slide-label"><i class="fas fa-image"></i> Minh họa (Nhấn để phóng to):</span>
-                                        <img src="${step.slideImage}" alt="${step.title}" class="step-slide-img" loading="lazy">
-                                    </div>
-                                ` : ''}
-                                ${step.videoUrl ? `
-                                    <div class="step-video-container" style="margin-top: 1rem;">
-                                        <span class="slide-label"><i class="fas fa-video"></i> Video hướng dẫn:</span>
-                                        <div class="video-wrapper" style="margin: 0.5rem 0;">
-                                            <iframe src="${step.videoUrl}" allow="autoplay" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                ` : ''}
-                            </div>
-                        </div>
-                    `).join('');
+                    // Render flat list (backward compatibility)
+                    stepList.innerHTML = lesson.steps.map(step => renderStepItem(step)).join('');
                 }
 
                 // Accordion functionality
