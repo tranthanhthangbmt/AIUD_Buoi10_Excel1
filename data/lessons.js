@@ -1543,21 +1543,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 02 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 2.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Điểm khác biệt:**\n- Numbering dạng A., B., C.\n- **Header (Đầu trang):** Họ tên bên trái, Số trang bên phải (khác Đề 1 là Footer).\n- Chia cột văn bản có đường kẻ giữa.",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 02",
+                                content: "**Khác biệt so với Đề 01:**\n\n1.  **Header (Đầu trang):** Chú ý vị trí ở trên cùng (Top).\n2.  **Numbering:** Kiểu A., B., C.\n3.  **Chia cột:** Có đường kẻ giữa (Line between).",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Soạn thảo & Định dạng",
+                                content: "**Chi tiết:**\n- **Numbering:** Chọn kiểu A, B, C cho các tiêu đề lớn.\n- **Chia cột:** Layout > Columns > Two > Tích Line between.\n- **Drop Cap:** Chữ cái đầu (V) xuống 2 dòng.\n- **Header:** Insert > Header > Chọn kiểu 3 cột hoặc Blank rồi dùng Tab.",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức gợi ý:**\n- **Khóa:** Dùng `HLOOKUP` kết hợp `VALUE` và `MID`.\n- **Điểm quy đổi:** IF lồng nhau (>=8.5 là A, >=7 là B...).\n- **Đếm tên bắt đầu bằng H:** `=COUNTIF(Vung_Ten, \"H*\")`.\n- **Sắp xếp:** Giảm dần theo Điểm TB.\n- **Lọc:** Điểm là A và Khóa >= 19.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 02",
+                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Tra Khóa (lấy 2 ký tự giữa).\n2.  **IF lồng nhau:** Điểm quy đổi (A, B, C, D, F).\n3.  **COUNTIF:** Đếm tên bắt đầu bằng H (`\"H*\"`).\n4.  **Sắp xếp:** Giảm dần (Largest to Smallest).",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Khóa:** `=HLOOKUP(VALUE(MID(F4, 3, 2)), $Bang_2, 2, 0)`\n- **Quy đổi:** `=IF(J4>=8.5, \"A\", IF(J4>=7, \"B\", IF(J4>=5.5, \"C\", IF(J4>=4, \"D\", \"F\"))))`\n- **Đếm \"H*\":** `=COUNTIF(Cot_Ten, \"H*\")`.",
+                                icon: "fa-code"
+                            }
+                        ]
                     },
                     {
-                        title: "3. Phần PowerPoint",
-                        content: "Tương tự Đề 1: 6 slide, Hyperlink, SmartArt, Loop.",
-                        icon: "fa-file-powerpoint"
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- **Slide 1:** Tiêu đề, Họ tên.\n- **Slide 2:** Thông tin (Bullets).\n- **Slide 3:** Mục lục (SmartArt) -> Link tới 4, 5, 6.\n- **Setting:** Loop continuously, Footer (Số trang).",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1569,16 +1594,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 03 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 3.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Lưu ý:**\n- Drop Cap thả xuống 2 dòng.\n- **Số trang:** Đặt ở **giữa** (Center) chân trang.\n- Mục lục: Level 1 (Câu lớn), Level 2 (Mục nhỏ).",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 03",
+                                content: "**Lưu ý đặc biệt:**\n\n1.  **Số trang:** Ở giữa (Center) chân trang.\n2.  **Drop Cap:** 2 dòng.\n3.  **Mục lục:** Cấp độ 1 (Câu lớn), Cấp độ 2 (Mục nhỏ).",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Thực hiện chi tiết",
+                                content: "- **Footer:** Insert > Footer > Bấm Tab 1 lần để ra giữa > Page Number > Current Position.\n- **Bảng biểu:** Convert Table to Text (Separator: Tabs).",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức:**\n- **Khóa:** `=HLOOKUP(VALUE(MID(E4, 3, 2)), $Vung_Bang_2, 2, 0)`\n- **Ngành học:** `=IF(F4=\"IT\", \"CNTT\", IF(F4=\"DD\", \"Điều dưỡng\"...))`\n- **Đếm SV họ Lê:** `=COUNTIF(Cot_Ho, \"Lê*\")`\n- **Sắp xếp:** Tăng dần theo Mã (A-Z).",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 03",
+                                content: "**Điểm nhấn:**\n\n1.  **Ngành học:** IF lồng nhau so sánh chuỗi (`\"IT\"`, `\"DD\"`...).\n2.  **COUNTIF:** Đếm họ Lê (`\"Lê*\"`).\n3.  **Sắp xếp:** Tăng dần theo Mã (A-Z).",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Khóa:** `=HLOOKUP(VALUE(MID(E4, 3, 2)), $Bang_2, 2, 0)`\n- **Ngành:** `=IF(F4=\"IT\", \"CNTT\", IF(F4=\"DD\", \"Điều dưỡng\"...))`\n- **Đếm họ Lê:** `=COUNTIF(Cot_Ho, \"Lê*\")`",
+                                icon: "fa-code"
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- Tương tự các đề khác: 6 slide, SmartArt slide 3, Hyperlink, Loop, Footer.",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1590,16 +1645,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 04 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 4.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Yêu cầu:**\n- Right Tab có Leader chấm (.......).\n- Drop Cap chữ N xuống 2 dòng.\n- Header chân trang: Họ tên trái, Số trang phải.",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 04",
+                                content: "**Lưu ý đặc biệt:**\n\n1.  **Numbering:** Dạng `(1).`\n2.  **Right Tab:** Có Leader chấm (.......).\n3.  **Drop Cap:** Chữ N xuống 2 dòng.",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Thực hiện chi tiết",
+                                content: "- **Tab:** Set Right Tab, chọn Leader số 2 (...).\n- **Header:** Chân trang, Họ tên (Trái) - Số trang (Phải).\n- **Mục lục:** 3 Cấp độ (Level 1, 2, 3).",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức:**\n- **Tên hàng:** `=VLOOKUP(LEFT(C4,1), $Bang_2, 2, 0)`\n  *(Dùng VLOOKUP vì bảng 2 xếp dọc)*\n- **Thuế:** `=DonGia * SoLuong * IF(LEFT(C4,1)=\"X\", 4%, ...)`\n- **Tổng thuế (SUMIF):** `=SUMIF($Cot_Ten, \"Xăng\", $Cot_Thue)`\n- **Lọc:** Mã bắt đầu bằng N **VÀ** Số lượng 3000-5000.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 04",
+                                content: "**Điểm nhấn:**\n\n1.  **VLOOKUP:** Do Bảng 2 xếp dọc (Mã cột 1, Tên cột 2).\n2.  **IF Thuế:** Lồng ghép tính %.\n3.  **SUMIF:** Tính tổng thuế cho \"Xăng\".\n4.  **Filter:** N và SL 3000-5000.",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Tên hàng:** `=VLOOKUP(LEFT(C4,1), $Bang_2, 2, 0)`\n- **Thuế:** `=Gia * SL * IF(LEFT(C4,1)=\"X\", 4%, IF(LEFT(C4,1)=\"D\", 3%, 2%))`\n- **Tổng thuế Xăng:** `=SUMIF(Cot_Ten, \"Xăng\", Cot_Thue)`",
+                                icon: "fa-code"
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- Slide 3 dùng SmartArt liệt kê Word, Excel, PPT.\n- Hyperlink từ SmartArt đến các slide chi tiết.",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1611,16 +1696,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 05 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 5.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Đặc biệt:**\n- **Numbering (01):** Define New Number Format > Gõ `(0)`.\n- Drop Cap xuống 2 dòng.\n- Tab trái/phải căn chỉnh thời gian.",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 05",
+                                content: "**Khó nhất là Numbering:**\n\n1.  **Format (01):** Phải Define New Number Format -> Gõ `(0)`.\n2.  **Tab:** Căn chỉnh thời gian dùng Tab Trái + Phải.\n3.  **Drop Cap:** 2 dòng.",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Thực hiện chi tiết",
+                                content: "- **Tạo (01), (02):** Numbering > Define New Number Format > Number style: 1, 2, 3... > Number format: Gõ thêm `(0` trước số 1 -> `(01)`.\n- **Mục lục:** 3 cấp độ (Level 1, 2, 3).",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức:**\n- **Tên hàng:** `=HLOOKUP(MID(C4, 2, 1), $Bang_2, 2, 0)`\n  *(Lấy ký tự thứ 2 để tra)*\n- **Thuế:** Dựa vào ký tự đầu (1 hoặc 2).\n- **Lọc:** Mã bắt đầu bằng `2` VÀ Số lượng 3000-5000.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 05",
+                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Lấy ký tự thứ 2 (`MID(...,2,1)`) để tra.\n2.  **IF:** Ký tự đầu là \"1\" hoặc \"2\".\n3.  **Lọc:** Mã bắt đầu bằng 2 VÀ Số lượng 3000-5000.",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Tên hàng:** `=HLOOKUP(MID(C4, 2, 1), $Bang_2, 2, 0)`\n- **Thuế:** `=Dongia * SL * IF(LEFT(C4,1)=\"1\", 4%, IF(LEFT(C4,1)=\"2\", 3%, 2%))`\n- **Tổng SL Xăng:** `=SUMIF(Cot_Ten, \"Xăng\", Cot_SL)`",
+                                icon: "fa-code"
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- Slide 3 dùng SmartArt.\n- Hyperlink, Transition, Animation, Loop.\n- Footer: Ngày thi, Họ tên.",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1632,16 +1747,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 06 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 6.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Yêu cầu:**\n- Dùng **Center Tab** để căn giữa \"Họ và tên SV\".\n- Convert Table to Text.\n- Drop Cap xuống 2 dòng.",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 06",
+                                content: "**Điểm lạ:**\n\n1.  **Tab Giữa (Center Tab):** Dùng để căn giữa \"Họ và tên SV\".\n2.  **Numbering:** (1). ID - (2). Lớp.\n3.  **Drop Cap:** 2 dòng.",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Thực hiện chi tiết",
+                                content: "- **Tab Giữa:** Chọn biểu tượng Tab Center (hình T ngược) trên góc trái thước -> Đặt lên thước.\n- **Bảng:** Convert Table to Text.",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức:**\n- **Tên hàng:** `=IF(LEFT(C4,1)=\"N\", \"Nhớt\", ...)`\n- **Thuế:** Dùng `HLOOKUP` với `MID(C4,2,2)` (lấy 2 ký tự 01, 02).\n- **Lọc khó:** Mã bắt đầu bằng N **HOẶC** X.\n  *(Dùng Custom Filter > Begins with N OR Begins with X)*.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 06",
+                                content: "**Điểm nhấn:**\n\n1.  **IF lồng nhau:** Xác định Tên hàng.\n2.  **Custom Filter:** Điều kiện OR (N hoặc X).",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Tên hàng:** `=IF(LEFT(C4,1)=\"N\", \"Nhớt\", IF(LEFT(C4,1)=\"X\", \"Xăng\", \"Dầu\"))`\n- **Lọc Mở Rộng:**\n    -   Begins with N **OR** Begins with X.\n    -   **AND** Số lượng >= 2000.",
+                                icon: "fa-code"
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- Tương tự các đề khác. Chú ý Slide 3 dùng SmartArt liệt kê nội dung.",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1653,16 +1798,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 07 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 7.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Lưu ý:**\n- **Header:** Đặt ở **Đầu trang** (Top).\n- Phiếu dự thi: Dùng Tab Leader chấm (...) để tạo dòng kẻ.\n- Drop Cap xuống **4 dòng**.",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 07",
+                                content: "**Lưu ý quan trọng:**\n\n1.  **Header:** Ở ĐẦU TRANG (Top).\n2.  **Drop Cap:** Xuống **4 dòng**.\n3.  **Tab Leader:** Dùng dấu chấm (...) cho Phiếu dự thi.",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Thực hiện chi tiết",
+                                content: "- **Header:** Insert > Header (không phải Footer).\n- **Drop Cap:** Insert > Drop Cap > Drop Cap Options > Lines to drop: 4.",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức:**\n- **Chuyên ngành:** `=HLOOKUP(LEFT(C4,2), $Bang, 2, 0)`\n- **Đếm tên M:** `=COUNTIF(Cot_Ten, \"M*\")`.\n- **Sắp xếp:** Giảm dần theo Điểm TB.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 07",
+                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Lấy 2 ký tự đầu `LEFT(...,2)`.\n2.  **COUNTIF:** Tên bắt đầu M (`\"M*\"`).\n3.  **Sort:** Giảm dần (Largest to Smallest).",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Chuyên ngành:** `=HLOOKUP(LEFT(C4,2), $Bang, 2, 0)`\n- **Quy đổi:** `=IF(H4>=8.5, \"A\", ...)`\n- **Đếm M:** `=COUNTIF(Cot_Ten, \"M*\")`.",
+                                icon: "fa-code"
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- Hyperlink, SmartArt, Loop, Footer đầy đủ.",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1674,16 +1849,46 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 08 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 8.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word",
-                        content: "**Yêu cầu:**\n- **Drop Cap:** Thả xuống **4 dòng**.\n- Giấy giới thiệu: Căn giữa tiêu đề, dùng Tab chấm.\n- Bảng phím tắt: Convert to Text.",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 08",
+                                content: "**Tương tự đề 07:**\n\n1.  **Drop Cap:** Xuống **4 dòng**.\n2.  **Giấy giới thiệu:** Căn giữa tiêu đề, dùng Tab Leader chấm.\n3.  **Bảng:** Convert to Text.",
+                                icon: "fa-exclamation-circle"
+                            },
+                            {
+                                title: "Thực hiện chi tiết",
+                                content: "- **Drop Cap:** Lines to drop = 4.\n- **Mục lục:** Level 1 (Phần 1, 2), Level 2 (1.1, 1.2...).",
+                                icon: "fa-file-word"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel",
-                        content: "**Công thức:**\n- **Tên hàng:** `=HLOOKUP(MID(C4,2,2), ...)`\n  *(Lấy 2 ký tự giữa để tra)*\n- **Lọc:** Mã bắt đầu bằng 5 và Số lượng 90-200.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 08",
+                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Tra ký tự giữa `MID(...,2,2)`.\n2.  **IF Thuế:** 1->4%, 2->3%, còn lại 2%.\n3.  **Lọc:** Mã 5 VÀ SL 90-200.",
+                                icon: "fa-calculator"
+                            },
+                            {
+                                title: "Các hàm cụ thể",
+                                content: "- **Tên hàng:** `=HLOOKUP(MID(C4, 2, 2), $Bang_2, 2, 0)`\n- **Thuế:** `=Gia * SL * IF(LEFT(C4,1)=\"1\", 4%...)`\n- **Tổng Chip:** `=SUMIF(Cot_Ten, \"Chip\", Cot_SL)`",
+                                icon: "fa-code"
+                            }
+                        ]
+                    },
+                    {
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan & Thực hiện",
+                                content: "**Chuẩn 6 Slide:**\n- Slide 3 dùng SmartArt.\n- Footer (Ngày, Tên), Loop, Hyperlink.",
+                                icon: "fa-tv"
+                            }
+                        ]
                     }
                 ]
             },
