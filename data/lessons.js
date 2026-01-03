@@ -1629,32 +1629,57 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 ],
                 sections: [
                     {
-                        title: "1. Phần Word (3.5đ)",
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Yêu cầu đề 03",
-                                content: "**Lưu ý đặc biệt:**\n\n1.  **Số trang:** Ở giữa (Center) chân trang.\n2.  **Drop Cap:** 2 dòng.\n3.  **Mục lục:** Cấp độ 1 (Câu lớn), Cấp độ 2 (Mục nhỏ).",
+                                content: "**Khác biệt cần nhớ:**\n\n1.  **Số trang:** Ở giữa (Center) chân trang.\n2.  **Drop Cap:** 2 dòng.\n3.  **Mục lục:** Cấp độ 1 (Câu lớn), Cấp độ 2 (Mục nhỏ).",
                                 icon: "fa-exclamation-circle"
                             },
                             {
-                                title: "Thực hiện chi tiết",
-                                content: "- **Footer:** Insert > Footer > Bấm Tab 1 lần để ra giữa > Page Number > Current Position.\n- **Bảng biểu:** Convert Table to Text (Separator: Tabs).",
-                                icon: "fa-file-word"
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_03.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Size: **A4**.\n    -   Margins: Top 2cm, Bottom 2cm, Left 3cm, Right 2cm.\n3.  **Font:** Times New Roman, 13, Single spacing.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Bảng biểu & Soạn thảo (Câu 3 & 4)",
+                                content: "**Kỹ thuật chi tiết:**\n\n1.  **Convert Table:** Nhập bảng -> Layout -> Convert to Text -> Tabs.\n2.  **Drop Cap:** Insert > Drop Cap > Dropped (Lines: 2).\n3.  **Chia cột:** Layout > Columns > Two > **Line between**.",
+                                icon: "fa-table"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện:**\n\n1.  **Footer (Chân trang):** Họ tên bên trái.\n    -   **Số trang:** Bấm Tab 1 lần để ra GIỮA -> Insert Page Number > Current Position.\n2.  **Mục lục:** References > Table of Contents.",
+                                icon: "fa-list-alt"
                             }
                         ]
                     },
                     {
-                        title: "2. Phần Excel (4.0đ)",
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Logic đề 03",
-                                content: "**Điểm nhấn:**\n\n1.  **Ngành học:** IF lồng nhau so sánh chuỗi (`\"IT\"`, `\"DD\"`...).\n2.  **COUNTIF:** Đếm họ Lê (`\"Lê*\"`).\n3.  **Sắp xếp:** Tăng dần theo Mã (A-Z).",
+                                content: "**Điểm nhấn:**\n\n1.  **Ngành học:** IF lồng nhau nhiều cấp (`\"IT\"`, `\"DD\"`...).\n2.  **COUNTIF:** Đếm họ Lê (`\"Lê*\"`).\n3.  **Sắp xếp:** Tăng dần theo Mã (A-Z).\n4.  **Lọc:** Khóa 22 trở về sau.",
                                 icon: "fa-calculator"
                             },
                             {
-                                title: "Các hàm cụ thể",
-                                content: "- **Khóa:** `=HLOOKUP(VALUE(MID(E4, 3, 2)), $Bang_2, 2, 0)`\n- **Ngành:** `=IF(F4=\"IT\", \"CNTT\", IF(F4=\"DD\", \"Điều dưỡng\"...))`\n- **Đếm họ Lê:** `=COUNTIF(Cot_Ho, \"Lê*\")`",
-                                icon: "fa-code"
+                                title: "Hàm HLOOKUP - Khóa (Câu 3)",
+                                content: "**Công thức:**\n`=HLOOKUP(VALUE(MID(E4, 3, 2)), $Vung_Bang_2, 2, 0)`\n\n-   **MID(E4, 3, 2):** Lấy số \"21\".\n-   **$Vung_Bang_2:** Quét bảng K19, K20... (Nhớ F4).",
+                                icon: "fa-key"
+                            },
+                            {
+                                title: "Hàm IF - Ngành học (Câu 4)",
+                                content: "**Xử lý 5 trường hợp:**\n`=IF(F4=\"IT\", \"CNTT\", IF(F4=\"DD\", \"Điều dưỡng\", IF(F4=\"KT\", \"Kế toán\", IF(F4=\"LE\", \"Luật\", \"Ô tô\"))))`\n\n> **Mẹo:** Các mã chữ cái (IT, DD...) phải để trong ngoặc kép.",
+                                icon: "fa-code-branch"
+                            },
+                            {
+                                title: "Thống kê & Sắp xếp (Câu 5 & 6)",
+                                content: "-   **Đếm Họ Lê:** `=COUNTIF(Cot_Ho_Lot, \"Lê*\")`.\n-   **Sắp xếp:** Data > Sort > Chọn cột Mã > Order: **A to Z** (Tăng dần).",
+                                icon: "fa-sort-alpha-down"
+                            },
+                            {
+                                title: "Lọc dữ liệu (Câu 7)",
+                                content: "**Filter:**\n1.  **Điểm TB:** >= 5.\n2.  **Khóa:** Chọn K22, K23... (Bỏ K21) -> \"Khóa 22 trở về sau\".",
+                                icon: "fa-filter"
                             }
                         ]
                     },
@@ -1663,7 +1688,7 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         steps: [
                             {
                                 title: "Tổng quan & Thực hiện",
-                                content: "**Chuẩn 6 Slide:**\n- Tương tự các đề khác: 6 slide, SmartArt slide 3, Hyperlink, Loop, Footer.",
+                                content: "**Chuẩn 6 Slide:**\n-   **Slide 1:** Tiêu đề.\n-   **Slide 3 (Mục lục):** Bắt buộc dùng **SmartArt** -> Link tới 4, 5, 6.\n-   **Setting:** Loop continuously.\n-   **Footer:** Date/Time + Slide Number + Tên.",
                                 icon: "fa-tv"
                             }
                         ]
@@ -1681,32 +1706,52 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 ],
                 sections: [
                     {
-                        title: "1. Phần Word (3.5đ)",
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Yêu cầu đề 04",
-                                content: "**Lưu ý đặc biệt:**\n\n1.  **Numbering:** Dạng `(1).`\n2.  **Right Tab:** Có Leader chấm (.......).\n3.  **Drop Cap:** Chữ N xuống 2 dòng.",
+                                content: "**Khác biệt cần nhớ:**\n\n1.  **Numbering:** Dạng `(1).`, `(2).`\n2.  **Right Tab:** Có Leader chấm (.......).\n3.  **Drop Cap:** Chữ N xuống 2 dòng.\n4.  **Mục lục:** 3 Cấp độ (Level 1, 2, 3).",
                                 icon: "fa-exclamation-circle"
                             },
                             {
-                                title: "Thực hiện chi tiết",
-                                content: "- **Tab:** Set Right Tab, chọn Leader số 2 (...).\n- **Header:** Chân trang, Họ tên (Trái) - Số trang (Phải).\n- **Mục lục:** 3 Cấp độ (Level 1, 2, 3).",
-                                icon: "fa-file-word"
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_04.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Size: **A4**.\n    -   Margins: Top 2cm, Bottom 2cm, Left 3cm (hoặc 2.5), Right 2cm.\n3.  **Font:** Times New Roman, 13, Single spacing.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Soạn thảo & Tabs (Câu 3 & 4)",
+                                content: "**Chi tiết kỹ thuật:**\n\n1.  **Numbering:** Gõ `(1).` rồi cách ra để tự động nhận dạng hoặc dùng menu Numbering.\n2.  **Right Tab:** Đặt tab phải cuối dòng -> Chọn Leader số 2 (...) -> Set -> OK.\n3.  **Drop Cap:** Insert > Drop Cap > Dropped (2 dòng).",
+                                icon: "fa-indent"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện:**\n\n1.  **Footer (Chân trang):** Họ tên (Trái) - Số trang (Phải).\n2.  **Mục lục:** Gán Level 1, 2, 3 -> References > Table of Contents.",
+                                icon: "fa-list-alt"
                             }
                         ]
                     },
                     {
-                        title: "2. Phần Excel (4.0đ)",
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Logic đề 04",
-                                content: "**Điểm nhấn:**\n\n1.  **VLOOKUP:** Do Bảng 2 xếp dọc (Mã cột 1, Tên cột 2).\n2.  **IF Thuế:** Lồng ghép tính %.\n3.  **SUMIF:** Tính tổng thuế cho \"Xăng\".\n4.  **Filter:** N và SL 3000-5000.",
+                                content: "**Điểm nhấn:**\n\n1.  **VLOOKUP:** Do Bảng 2 xếp CỘT DỌC (khác các đề trước là HLOOKUP).\n2.  **IF Thuế:** Lồng ghép tính %.\n3.  **SUMIF:** Tính tổng thuế cho \"Xăng\".\n4.  **Filter:** N và SL 3000-5000.",
                                 icon: "fa-calculator"
                             },
                             {
-                                title: "Các hàm cụ thể",
-                                content: "- **Tên hàng:** `=VLOOKUP(LEFT(C4,1), $Bang_2, 2, 0)`\n- **Thuế:** `=Gia * SL * IF(LEFT(C4,1)=\"X\", 4%, IF(LEFT(C4,1)=\"D\", 3%, 2%))`\n- **Tổng thuế Xăng:** `=SUMIF(Cot_Ten, \"Xăng\", Cot_Thue)`",
-                                icon: "fa-code"
+                                title: "Hàm VLOOKUP - Tên hàng (Câu 3)",
+                                content: "**Công thức:**\n`=VLOOKUP(LEFT(C4,1), $Bang_2, 2, 0)`\n\n-   **LEFT(C4,1):** Lấy ký tự đầu.\n-   **VLOOKUP:** Tra bảng dọc (Vertical).",
+                                icon: "fa-key"
+                            },
+                            {
+                                title: "Hàm IF - Thuế (Câu 4)",
+                                content: "**Tính toán kết hợp:**\n`=DonGia * SL * IF(LEFT(C4,1)=\"X\", 4%, IF(LEFT(C4,1)=\"D\", 3%, 2%))`\n\n-   Tự động nhân đơn giá và số lượng rồi nhân với % thuế.",
+                                icon: "fa-file-invoice-dollar"
+                            },
+                            {
+                                title: "Thống kê & Lọc (Câu 5, 6, 7)",
+                                content: "-   **Tổng thuế Xăng:** `=SUMIF(Cot_Ten, \"Xăng\", Cot_Thue)`\n-   **Sắp xếp:** Tăng dần theo Số lượng.\n-   **Lọc (Khó):** Begins with \"N\" **AND** Between 3000 and 5000.",
+                                icon: "fa-filter"
                             }
                         ]
                     },
@@ -1715,7 +1760,7 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         steps: [
                             {
                                 title: "Tổng quan & Thực hiện",
-                                content: "**Chuẩn 6 Slide:**\n- Slide 3 dùng SmartArt liệt kê Word, Excel, PPT.\n- Hyperlink từ SmartArt đến các slide chi tiết.",
+                                content: "**Chuẩn 6 Slide:**\n-   **Slide 3:** SmartArt liệt kê nội dung -> Hyperlink.\n-   **Footer:** Số trang, Họ tên.\n-   **Setting:** Loop continuously.",
                                 icon: "fa-tv"
                             }
                         ]
@@ -1733,22 +1778,32 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 ],
                 sections: [
                     {
-                        title: "1. Phần Word (3.5đ)",
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Yêu cầu đề 05",
-                                content: "**Khó nhất là Numbering:**\n\n1.  **Format (01):** Phải Define New Number Format -> Gõ `(0)`.\n2.  **Tab:** Căn chỉnh thời gian dùng Tab Trái + Phải.\n3.  **Drop Cap:** 2 dòng.",
+                                content: "**Khác biệt (Khó):**\n\n1.  **Format (01):** Phải Define New Number Format -> Gõ `(0)` trước số 1.\n2.  **Tab:** Căn chỉnh thời gian dùng Tab Trái + Phải.\n3.  **Drop Cap:** 2 dòng.\n4.  **Mục lục:** Cấp độ 1, 2, 3.",
                                 icon: "fa-exclamation-circle"
                             },
                             {
-                                title: "Thực hiện chi tiết",
-                                content: "- **Tạo (01), (02):** Numbering > Define New Number Format > Number style: 1, 2, 3... > Number format: Gõ thêm `(0` trước số 1 -> `(01)`.\n- **Mục lục:** 3 cấp độ (Level 1, 2, 3).",
-                                icon: "fa-file-word"
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_05.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Size: **A4**.\n    -   Margins: Top 2, Bottom 2, Left 3 (hoặc 2.5), Right 2cm.\n3.  **Font:** Times New Roman, 13, Single spacing.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Soạn thảo & Numbering (Câu 3 & 4)",
+                                content: "**Kỹ thuật chi tiết:**\n\n1.  **Tạo số (01), (02):** Numbering > Define New Number Format > Number style: 1, 2, 3... > Khung Number format: Gõ thêm `(0` để thành `(01)`.\n2.  **Tab:** Đặt Tab Trái cho giờ, Tab Phải cho người phụ trách.\n3.  **Drop Cap:** Lines to drop: 2.",
+                                icon: "fa-list-ol"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện:**\n\n1.  **Footer (Chân trang):** Họ tên (Trái) - Số trang (Phải).\n2.  **Mục lục:** Gán Level 1 (Phần A), Level 2 (A.1), Level 3 (A.1.1) -> Xuất mục lục.",
+                                icon: "fa-list-alt"
                             }
                         ]
                     },
                     {
-                        title: "2. Phần Excel (4.0đ)",
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Logic đề 05",
@@ -1756,9 +1811,19 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                                 icon: "fa-calculator"
                             },
                             {
-                                title: "Các hàm cụ thể",
-                                content: "- **Tên hàng:** `=HLOOKUP(MID(C4, 2, 1), $Bang_2, 2, 0)`\n- **Thuế:** `=Dongia * SL * IF(LEFT(C4,1)=\"1\", 4%, IF(LEFT(C4,1)=\"2\", 3%, 2%))`\n- **Tổng SL Xăng:** `=SUMIF(Cot_Ten, \"Xăng\", Cot_SL)`",
-                                icon: "fa-code"
+                                title: "Hàm HLOOKUP - Tên hàng (Câu 3)",
+                                content: "**Công thức:**\n`=HLOOKUP(MID(C4, 2, 1), $Bang_2, 2, 0)`\n\n-   **MID(C4, 2, 1):** Lấy 1 ký tự từ vị trí số 2 (Ví dụ `A1B` lấy `1`).\n-   Tra bảng ngang (Horizontal).",
+                                icon: "fa-key"
+                            },
+                            {
+                                title: "Hàm IF - Thuế (Câu 4)",
+                                content: "**Xử lý ký tự Text:**\n`=DonGia * SL * IF(LEFT(C4,1)=\"1\", 4%, IF(LEFT(C4,1)=\"2\", 3%, 2%))`\n\n> **Lưu ý:** \"1\" và \"2\" phải để trong ngoặc kép vì hàm LEFT trả về chuỗi văn bản.",
+                                icon: "fa-file-invoice-dollar"
+                            },
+                            {
+                                title: "Thống kê & Lọc (Câu 5, 6, 7)",
+                                content: "-   **Tổng SL Xăng:** `=SUMIF(Cot_Ten, \"Xăng\", Cot_SL)`\n-   **Sắp xếp:** Tăng dần theo Số lượng.\n-   **Lọc:** Begins with \"2\" **AND** Between 3000 and 5000.",
+                                icon: "fa-filter"
                             }
                         ]
                     },
@@ -1767,7 +1832,7 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         steps: [
                             {
                                 title: "Tổng quan & Thực hiện",
-                                content: "**Chuẩn 6 Slide:**\n- Slide 3 dùng SmartArt.\n- Hyperlink, Transition, Animation, Loop.\n- Footer: Ngày thi, Họ tên.",
+                                content: "**Chuẩn 6 Slide:**\n-   **Slide 3:** SmartArt sơ đồ tư duy.\n-   **Hyperlink:** Kết nối các slide.\n-   **Setting:** Loop continuously, Footer đầy đủ.",
                                 icon: "fa-tv"
                             }
                         ]
@@ -1785,32 +1850,52 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 ],
                 sections: [
                     {
-                        title: "1. Phần Word (3.5đ)",
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Yêu cầu đề 06",
-                                content: "**Điểm lạ:**\n\n1.  **Tab Giữa (Center Tab):** Dùng để căn giữa \"Họ và tên SV\".\n2.  **Numbering:** (1). ID - (2). Lớp.\n3.  **Drop Cap:** 2 dòng.",
+                                content: "**Khác biệt cần nhớ:**\n\n1.  **Tab:** Sử dụng Tab Giữa (Center Tab) cho Họ tên.\n2.  **Drop Cap:** 2 dòng.\n3.  **Mục lục:** Cấp độ 1, 2, 3.",
                                 icon: "fa-exclamation-circle"
                             },
                             {
-                                title: "Thực hiện chi tiết",
-                                content: "- **Tab Giữa:** Chọn biểu tượng Tab Center (hình T ngược) trên góc trái thước -> Đặt lên thước.\n- **Bảng:** Convert Table to Text.",
-                                icon: "fa-file-word"
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_06.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Size: **A4**.\n    -   Margins: Top 2, Bottom 2, Left 3 (hoặc 2.5), Right 2cm.\n3.  **Font:** Times New Roman, 13, Single spacing.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Soạn thảo & Tab Giữa (Câu 3 & 4)",
+                                content: "**Kỹ thuật chi tiết:**\n\n1.  **Tab Giữa (Center Tab):** Đặt Tab Trái (ID) -> Đặt **Tab Giữa** (Cho Họ Tên) -> Đặt Tab Trái/Phải (Điện thoại).\n2.  **Drop Cap:** Insert > Drop Cap > Dropped (2 dòng).\n3.  **Chia cột:** Layout > Columns > Two > **Line between**.",
+                                icon: "fa-indent"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện:**\n\n1.  **Footer (Chân trang):** Họ tên (Trái) - Số trang (Phải).\n2.  **Mục lục:** Gán Level 1, 2, 3 -> References > Table of Contents.",
+                                icon: "fa-list-alt"
                             }
                         ]
                     },
                     {
-                        title: "2. Phần Excel (4.0đ)",
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Logic đề 06",
-                                content: "**Điểm nhấn:**\n\n1.  **IF lồng nhau:** Xác định Tên hàng.\n2.  **Custom Filter:** Điều kiện OR (N hoặc X).",
+                                content: "**Điểm nhấn:**\n\n1.  **IF lồng nhau:** 3 trường hợp (N -> Nhớt, X -> Xăng, Dầu).\n2.  **HLOOKUP:** Lấy 2 ký tự GIỮA (`MID(..., 2, 2)`).\n3.  **Lọc (Khó):** Điều kiện **HOẶC (OR)**.",
                                 icon: "fa-calculator"
                             },
                             {
-                                title: "Các hàm cụ thể",
-                                content: "- **Tên hàng:** `=IF(LEFT(C4,1)=\"N\", \"Nhớt\", IF(LEFT(C4,1)=\"X\", \"Xăng\", \"Dầu\"))`\n- **Lọc Mở Rộng:**\n    -   Begins with N **OR** Begins with X.\n    -   **AND** Số lượng >= 2000.",
-                                icon: "fa-code"
+                                title: "Hàm IF - Tên hàng (Câu 3)",
+                                content: "**Xử lý 3 trường hợp:**\n`=IF(LEFT(C4,1)=\"N\", \"Nhớt\", IF(LEFT(C4,1)=\"X\", \"Xăng\", \"Dầu\"))`\n\n-   Lưu ý thứ tự ưu tiên trong hàm IF.",
+                                icon: "fa-code-branch"
+                            },
+                            {
+                                title: "Hàm HLOOKUP - Thuế (Câu 4)",
+                                content: "**Tra cứu ký tự giữa:**\n`=DonGia * SL * HLOOKUP(MID(C4, 2, 2), $Vung_Bang_2, 2, 0)`\n\n-   **MID(C4, 2, 2):** Lấy 2 ký tự từ vị trí số 2 (Ví dụ `D01TN` lấy `01`).",
+                                icon: "fa-search-dollar"
+                            },
+                            {
+                                title: "Thống kê & Lọc OR (Câu 5, 6, 7)",
+                                content: "-   **Tổng Thuế:** `=SUMIF(Cot_Ten_Hang, \"Xăng\", Cot_Thue)`\n-   **Lọc OR (Quan trọng):**\n    1.  Cột Mã hàng > Text Filters > **Custom Filter**.\n    2.  Dòng 1: Begins with \"N\" -> Chọn **OR** -> Dòng 2: Begins with \"X\".\n    3.  Sau đó Lọc tiếp Số lượng >= 2000.",
+                                icon: "fa-filter"
                             }
                         ]
                     },
@@ -1819,7 +1904,7 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         steps: [
                             {
                                 title: "Tổng quan & Thực hiện",
-                                content: "**Chuẩn 6 Slide:**\n- Tương tự các đề khác. Chú ý Slide 3 dùng SmartArt liệt kê nội dung.",
+                                content: "**Chuẩn 6 Slide:**\n-   **Slide 3:** Vẽ sơ đồ SmartArt liệt kê nội dung.\n-   **Hyperlink:** Link tới các phần chi tiết.\n-   **Setting:** Loop continuously.",
                                 icon: "fa-tv"
                             }
                         ]
@@ -1837,32 +1922,57 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 ],
                 sections: [
                     {
-                        title: "1. Phần Word (3.5đ)",
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Yêu cầu đề 07",
-                                content: "**Lưu ý quan trọng:**\n\n1.  **Header:** Ở ĐẦU TRANG (Top).\n2.  **Drop Cap:** Xuống **4 dòng**.\n3.  **Tab Leader:** Dùng dấu chấm (...) cho Phiếu dự thi.",
+                                content: "**Khác biệt cần nhớ:**\n\n1.  **Header (Đầu trang):** Đặt ở Top (không phải Footer).\n2.  **Drop Cap:** Xuống **4 dòng** (các đề khác thường là 2).\n3.  **Tab Chấm:** Tạo dòng kẻ chấm `......` cho Phiếu dự thi.",
                                 icon: "fa-exclamation-circle"
                             },
                             {
-                                title: "Thực hiện chi tiết",
-                                content: "- **Header:** Insert > Header (không phải Footer).\n- **Drop Cap:** Insert > Drop Cap > Drop Cap Options > Lines to drop: 4.",
-                                icon: "fa-file-word"
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_07.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Size: **A4**.\n    -   Margins: Top 2, Bottom 2, Left 3 (hoặc 2.5), Right 2cm.\n3.  **Font:** Times New Roman, 13, Single spacing.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Soạn thảo & Tab Chấm (Câu 3 & 4)",
+                                content: "**Kỹ thuật chi tiết:**\n\n1.  **Tab Chấm:** Đặt Tab Trái cuối dòng -> Chọn Leader số 2 `...` -> Set -> OK (Dùng để làm dòng kẻ điền thông tin).\n2.  **Drop Cap:** Options -> Lines to drop: **4**.\n3.  **Convert Table:** Bảng -> Text.",
+                                icon: "fa-indent"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện:**\n\n1.  **Header (Đầu trang):** Insert > Header (Không phải Footer).\n    -   Trái: Họ tên. Phải: Số trang.\n2.  **Mục lục:** Cấp độ 1, 2.",
+                                icon: "fa-heading"
                             }
                         ]
                     },
                     {
-                        title: "2. Phần Excel (4.0đ)",
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Logic đề 07",
-                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Lấy 2 ký tự đầu `LEFT(...,2)`.\n2.  **COUNTIF:** Tên bắt đầu M (`\"M*\"`).\n3.  **Sort:** Giảm dần (Largest to Smallest).",
+                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Lấy 2 ký tự TRÁI (`LEFT(..., 2)`).\n2.  **Sắp xếp:** GIẢM DẦN (Largest to Smallest) -> Ngược với các đề trước.\n3.  **Đếm:** Tên bắt đầu bằng M (`\"M*\"`).",
                                 icon: "fa-calculator"
                             },
                             {
-                                title: "Các hàm cụ thể",
-                                content: "- **Chuyên ngành:** `=HLOOKUP(LEFT(C4,2), $Bang, 2, 0)`\n- **Quy đổi:** `=IF(H4>=8.5, \"A\", ...)`\n- **Đếm M:** `=COUNTIF(Cot_Ten, \"M*\")`.",
-                                icon: "fa-code"
+                                title: "Hàm HLOOKUP - Chuyên ngành (Câu 3)",
+                                content: "**Tra cứu ký tự đầu:**\n`=HLOOKUP(LEFT(C4, 2), $Bang_2, 2, 0)`\n\n-   **LEFT(C4, 2):** Lấy 2 ký tự từ vị trí đầu (Ví dụ `ST23` lấy `ST`).",
+                                icon: "fa-search"
+                            },
+                            {
+                                title: "Hàm IF - Quy đổi (Câu 4)",
+                                content: "**Xếp loại điểm:**\n`=IF(H4>=8.5, \"A\", IF(H4>=7, \"B\", IF(H4>=5.5, \"C\", IF(H4>=4, \"D\", \"F\"))))`\n\n-   Lồng ghép 4 hàm IF.",
+                                icon: "fa-code-branch"
+                            },
+                            {
+                                title: "Thống kê & Sắp xếp (Câu 5 & 6)",
+                                content: "-   **Đếm tên M:** `=COUNTIF(Cot_Ten, \"M*\")`\n-   **Sắp xếp (Chú ý):** Data > Sort > Điểm TB > Order: **Largest to Smallest** (Giảm dần).",
+                                icon: "fa-sort-numeric-down-alt"
+                            },
+                            {
+                                title: "Lọc dữ liệu (Câu 7)",
+                                content: "**Filter:**\n1.  **Điểm quy đổi:** Chọn \"A\".\n2.  **Chuyên ngành:** Chọn \"Công nghệ phần mềm\".",
+                                icon: "fa-filter"
                             }
                         ]
                     },
@@ -1871,7 +1981,7 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         steps: [
                             {
                                 title: "Tổng quan & Thực hiện",
-                                content: "**Chuẩn 6 Slide:**\n- Hyperlink, SmartArt, Loop, Footer đầy đủ.",
+                                content: "**Chuẩn 6 Slide:**\n-   **Slide 3:** SmartArt sơ đồ tư duy.\n-   **Hyperlink:** Link tới 4, 5, 6.\n-   **Setting:** Loop continuously.",
                                 icon: "fa-tv"
                             }
                         ]
