@@ -1447,21 +1447,91 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 docs: [
                     { name: "Đề số 01 (PDF)", file: "../TaiLieuHuongDan/Buổi 15/Đề 1.pdf" }
                 ],
-                steps: [
+                sections: [
                     {
-                        title: "1. Phần Word: Thiết lập & Định dạng",
-                        content: "**Yêu cầu:**\n- Lưu file: IDSV_HoVaTen_Lop_01.docx.\n- Khổ giấy A4, Lề: Trên/Dưới/Phải 2cm, Trái 3cm.\n- Font Times New Roman, cỡ 13.\n\n**Hướng dẫn:**\n- Chuyển bảng thành văn bản: Layout > Convert to Text.\n- Numbering & Tab: Dùng Right Tab có Leader dấu chấm (...) cho mục lục thủ công.\n- Drop Cap: Chữ V thả xuống 2 dòng.\n- Mục lục tự động: Gán Level 1, 2 cho tiêu đề và dùng References > Table of Contents.\n- Header/Footer: Họ tên bên trái, Số trang bên phải (Footer).",
-                        icon: "fa-file-word"
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 01 (3.5đ)",
+                                content: "**Checklist nhanh:**\n\n1.  **Khổ giấy:** A4, Lề 2-2-3-2.\n2.  **Định dạng:** Font Times 13, Line Spacing Single.\n3.  **Kỹ thuật:** Convert Table, Tabs (Leader...), Columns, Drop Cap (2 dòng).\n4.  **Mục lục:** Tự động (Level 1, Level 2).\n5.  **Footer:** Họ tên (Trái) - Số trang (Phải).",
+                                icon: "fa-clipboard-check"
+                            },
+                            {
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_01.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Layout > Size > **A4**.\n    -   Margins: Top **2cm**, Bottom **2cm**, Left **3cm** (hoặc 2.5), Right **2cm**.\n3.  **Font chữ:**\n    -   Times New Roman, cỡ **13**.\n    -   Line Spacing: **Single**.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Bảng biểu & Chuyển đổi (Câu 3)",
+                                content: "**Convert Table to Text:**\n\n1.  **Tạo bảng:** Insert > Table (3 cột, 4 dòng).\n2.  **Sao chép:** Copy bảng xuống dưới.\n3.  **Chuyển đổi:**\n    -   Chọn bảng mới > **Layout** (Table Tools) > **Convert to Text**.\n    -   Chọn **Tabs** hoặc **Commas** > OK.",
+                                icon: "fa-table"
+                            },
+                            {
+                                title: "Soạn thảo nâng cao (Câu 4)",
+                                content: "**Kỹ thuật Tab, Drop Cap & Chia cột:**\n\n1.  **Numbering:** Đánh số tự động (1., 2., 3.) cho các dòng tiêu đề.\n2.  **Right Tab:**\n    -   Đặt Tab phải ở cuối dòng.\n    -   Chọn Leader dấu chấm (...) để làm dòng kẻ ngang.\n3.  **Chia cột & Drop Cap:**\n    -   Chia 2 cột (Line between).\n    -   Drop Cap chữ đầu tiên (Lines to drop: 2).",
+                                icon: "fa-paragraph"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện văn bản:**\n\n1.  **Mục lục tự động:**\n    -   Gán **Level 1** cho tiêu đề lớn, **Level 2** cho tiêu đề nhỏ.\n    -   Insert > Table of Contents.\n2.  **Header & Footer:**\n    -   **Footer (Chân trang):** Họ tên bên trái, Số trang bên phải.\n    -   Dùng phím **Tab** để căn chỉnh vị trí.",
+                                icon: "fa-list-alt"
+                            }
+                        ]
                     },
                     {
-                        title: "2. Phần Excel: Hàm & Thống kê",
-                        content: "**Công thức quan trọng:**\n- **Niên khóa:** `=HLOOKUP(VALUE(MID(D4, 3, 2)), $B$14:$E$15, 2, 0)`\n  *(Logic: Lấy số 18 từ DD18A1, chuyển thành số để dò bảng)*\n- **Xếp loại:** `=IF(H4>=9, \"Xuất sắc\", IF(H4>=8, \"Giỏi\", IF(H4>=7, \"Khá\", IF(H4>=5, \"Trung bình\", \"Yếu\"))))`\n- **Thống kê:** Dùng `MAX`, `MIN`, `COUNTIF`.\n- **Lọc:** Filter > Number Filters > >=5 VÀ Niên khóa 2019-2024.",
-                        icon: "fa-file-excel"
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Logic đề 01 (4.0đ)",
+                                content: "**Điểm mấu chốt:**\n\n1.  **HLOOKUP:** Dò tìm theo dòng (do Bảng phụ nằm ngang).\n2.  **VALUE+MID:** Lấy số 18 từ chuỗi \"DD18A1\" để dò tìm.\n3.  **COUNTIF:** Đếm có điều kiện (>=5).\n4.  **Filter:** Lọc 2 điều kiện (Điểm & Niên khóa).",
+                                icon: "fa-clipboard-check"
+                            },
+                            {
+                                title: "Hàm Niên khóa (Câu 3)",
+                                content: "**Kết hợp HLOOKUP, MID, VALUE:**\n\n`=HLOOKUP(VALUE(MID(D4, 3, 2)), $B$14:$E$15, 2, 0)`\n\n-   **MID(D4, 3, 2):** Lấy chuỗi \"18\" từ \"DD18A1\".\n-   **VALUE(...):** Chuyển \"18\" thành số 18 để dò tìm.\n-   **HLOOKUP:** Dò tìm trong dòng 1, lấy kết quả dòng 2.",
+                                icon: "fa-key"
+                            },
+                            {
+                                title: "Hàm Xếp loại (Câu 4)",
+                                content: "**IF lồng nhau (5 cấp):**\n\n`=IF(H4>=9, \"Xuất sắc\", IF(H4>=8, \"Giỏi\", IF(H4>=7, \"Khá\", IF(H4>=5, \"Trung bình\", \"Yếu\"))))`\n\n> **Lưu ý:** Mở bao nhiêu ngoặc thì phải đóng bấy nhiêu ngoặc ở cuối.",
+                                icon: "fa-code-branch"
+                            },
+                            {
+                                title: "Thống kê & Sắp xếp (Câu 5 & 6)",
+                                content: "**Các hàm cơ bản:**\n\n1.  **Thống kê:**\n    -   Cao nhất: `=MAX(...)`\n    -   Thấp nhất: `=MIN(...)`\n    -   Đếm điểm >= 5: `=COUNTIF(G4:G10, \">=5\")`\n2.  **Sắp xếp:**\n    -   Tăng dần (Smallest to Largest) theo **Điểm TB**.",
+                                icon: "fa-chart-bar"
+                            },
+                            {
+                                title: "Lọc dữ liệu (Câu 7)",
+                                content: "**Filter (Bộ lọc):**\n\n1.  **Chuẩn bị:** Copy bảng sang sheet `KQL`.\n2.  **Thực hiện:**\n    -   **Điểm TB:** >= 5.\n    -   **Niên khóa:** Chọn 2019-2023 và 2020-2024 (Khóa 19 trở về sau).",
+                                icon: "fa-filter"
+                            }
+                        ]
                     },
                     {
-                        title: "3. Phần PowerPoint: Slide & Liên kết",
-                        content: "**Yêu cầu:**\n- Thiết kế 6 slide, dùng SmartArt ở Slide 2 hoặc 3.\n- **Liên kết:** Tạo Hyperlink từ Slide 3 đến Slide 4, 5, 6.\n- **Hiệu ứng:** Transition (Chuyển slide) và Animation (Bay vào).\n- **Loop:** Slide Show > Set Up > Loop continuously.",
-                        icon: "fa-file-powerpoint"
+                        title: "3. Phần PowerPoint (2.5đ)",
+                        steps: [
+                            {
+                                title: "Tổng quan: Yêu cầu đề 01 (2.5đ)",
+                                content: "**Không được quên:**\n\n1.  **SmartArt:** Sơ đồ mục lục ở Slide 3.\n2.  **Hyperlink:** Link từ mục lục đến các slide chi tiết.\n3.  **Loop:** Lặp lại liên tục.\n4.  **Footer:** Số trang & Tên.",
+                                icon: "fa-clipboard-check"
+                            },
+                            {
+                                title: "Thiết kế & SmartArt (Câu 1 & 2)",
+                                content: "**Cấu trúc Slide:**\n\n1.  **Số lượng:** 6 Slide.\n2.  **Slide 1:** Tiêu đề, Họ tên.\n3.  **Slide 2:** Thông tin cá nhân (Bullets).\n4.  **Slide 3:** Mục lục (Dùng **SmartArt** dạng List) -> **Bắt buộc!**.",
+                                icon: "fa-layer-group"
+                            },
+                            {
+                                title: "Liên kết & Hiệu ứng (Câu 3)",
+                                content: "**Yêu cầu kỹ thuật:**\n\n1.  **Hyperlink:** Từ SmartArt (Slide 3) link đến Slide 4, 5, 6.\n2.  **Transition:** Hiệu ứng chuyển slide (Apply to All).\n3.  **Animation:** Hiệu ứng bay vào cho đôi tượng slide 1, 2.",
+                                icon: "fa-magic"
+                            },
+                            {
+                                title: "Cài đặt nâng cao (Câu 3)",
+                                content: "**Đừng quên:**\n\n1.  **Loop:** Slide Show > Set Up > Loop continuously until 'Esc'.\n2.  **Header/Footer:** Giống Word, chèn Số trang và Tên vào Footer (Apply to All).",
+                                icon: "fa-cog"
+                            }
+                        ]
                     }
                 ]
             },
