@@ -1547,32 +1547,57 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 ],
                 sections: [
                     {
-                        title: "1. Phần Word (3.5đ)",
+                        title: "1. Phần Word: Thiết lập & Định dạng (3.5đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Yêu cầu đề 02",
-                                content: "**Khác biệt so với Đề 01:**\n\n1.  **Header (Đầu trang):** Chú ý vị trí ở trên cùng (Top).\n2.  **Numbering:** Kiểu A., B., C.\n3.  **Chia cột:** Có đường kẻ giữa (Line between).",
+                                content: "**Khác biệt so với Đề 01:**\n\n1.  **Header (Đầu trang):** Chú ý vị trí ở trên cùng (Top).\n2.  **Numbering:** Kiểu A., B., C.\n3.  **Chia cột:** Có đường kẻ giữa (Line between).\n4.  **Mục lục:** Yêu cầu hiện thị cả phần Word, Excel, PowerPoint.",
                                 icon: "fa-exclamation-circle"
                             },
                             {
-                                title: "Soạn thảo & Định dạng",
-                                content: "**Chi tiết:**\n- **Numbering:** Chọn kiểu A, B, C cho các tiêu đề lớn.\n- **Chia cột:** Layout > Columns > Two > Tích Line between.\n- **Drop Cap:** Chữ cái đầu (V) xuống 2 dòng.\n- **Header:** Insert > Header > Chọn kiểu 3 cột hoặc Blank rồi dùng Tab.",
+                                title: "Thiết lập & Lưu file (Câu 1 & 2)",
+                                content: "**Yêu cầu bắt buộc:**\n\n1.  **Lưu file:** `IDSV_HoVaTen_Lop_02.docx`.\n2.  **Khổ giấy & Lề:**\n    -   Layout > Size > **A4**.\n    -   Margins: Top 2cm, Bottom 2cm, Left 3cm, Right 2cm.\n3.  **Font chữ:** Times New Roman, cỡ 13.",
+                                icon: "fa-save"
+                            },
+                            {
+                                title: "Soạn thảo & Định dạng (Câu 4)",
+                                content: "**Chi tiết kỹ thuật:**\n\n1.  **Numbering (A, B, C):** Chọn các tiêu đề lớn > Home > Numbering > Chọn kiểu A., B., C.\n2.  **Chia cột:** Bôi đen đoạn văn > Layout > Columns > Two > **Line between**.\n3.  **Drop Cap:** Insert > Drop Cap > Dropped (Lines to drop: 2).",
                                 icon: "fa-file-word"
+                            },
+                            {
+                                title: "Mục lục & Header (Câu 5 & 6)",
+                                content: "**Hoàn thiện văn bản:**\n\n1.  **Header (Đầu trang):** Insert > Header > Edit Header.\n    -   Gõ Họ tên bên trái.\n    -   Tab 2 lần sang phải > Chèn Page Number.\n2.  **Mục lục:** References > Table of Contents.",
+                                icon: "fa-list-alt"
                             }
                         ]
                     },
                     {
-                        title: "2. Phần Excel (4.0đ)",
+                        title: "2. Phần Excel: Hàm & Thống kê (4.0đ)",
                         steps: [
                             {
                                 title: "Tổng quan: Logic đề 02",
-                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Tra Khóa (lấy 2 ký tự giữa).\n2.  **IF lồng nhau:** Điểm quy đổi (A, B, C, D, F).\n3.  **COUNTIF:** Đếm tên bắt đầu bằng H (`\"H*\"`).\n4.  **Sắp xếp:** Giảm dần (Largest to Smallest).",
+                                content: "**Điểm nhấn:**\n\n1.  **HLOOKUP:** Tra Khóa (lấy 2 ký tự giữa).\n2.  **IF lồng nhau:** Điểm quy đổi (A, B, C, D, F).\n3.  **Sắp xếp:** Giảm dần (Largest to Smallest).\n4.  **Lọc:** Điều kiện Khóa >= 19.",
                                 icon: "fa-calculator"
                             },
                             {
-                                title: "Các hàm cụ thể",
-                                content: "- **Khóa:** `=HLOOKUP(VALUE(MID(F4, 3, 2)), $Bang_2, 2, 0)`\n- **Quy đổi:** `=IF(J4>=8.5, \"A\", IF(J4>=7, \"B\", IF(J4>=5.5, \"C\", IF(J4>=4, \"D\", \"F\"))))`\n- **Đếm \"H*\":** `=COUNTIF(Cot_Ten, \"H*\")`.",
-                                icon: "fa-code"
+                                title: "Hàm HLOOKUP - Khóa (Câu 3)",
+                                content: "**Công thức:**\n`=HLOOKUP(VALUE(MID(F4, 3, 2)), $B$15:$E$16, 2, 0)`\n\n-   **MID(F4, 3, 2):** Lấy \"18\" từ \"DD18A1\".\n-   **VALUE:** Chuyển \"18\" thành số 18.",
+                                icon: "fa-key"
+                            },
+                            {
+                                title: "Hàm IF - Quy đổi (Câu 4)",
+                                content: "**Xếp loại A, B, C, D, F:**\n`=IF(J4>=8.5, \"A\", IF(J4>=7, \"B\", IF(J4>=5.5, \"C\", IF(J4>=4, \"D\", \"F\"))))`\n\n> **Lưu ý:** Chú ý đóng đủ 4 ngoặc đơn ở cuối.",
+                                icon: "fa-code-branch"
+                            },
+                            {
+                                title: "Thống kê & Sắp xếp (Câu 5 & 6)",
+                                content: "-   **Đếm tên H:** `=COUNTIF(Cot_Ten, \"H*\")` (Dùng dấu * đại diện).\n-   **Sắp xếp:** Data > Sort > Chọn Điểm TB > Order: **Largest to Smallest** (Giảm dần).",
+                                icon: "fa-sort-amount-down"
+                            },
+                            {
+                                title: "Lọc dữ liệu (Câu 7)",
+                                content: "**Filter:**\n1.  **Điểm quy đổi:** Chọn \"A\".\n2.  **Khóa:** Chọn 19, 20... (Bỏ chọn 18) tương ứng \"Từ khóa 19 trở về sau\".",
+                                icon: "fa-filter"
                             }
                         ]
                     },
@@ -1580,9 +1605,14 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                         title: "3. Phần PowerPoint (2.5đ)",
                         steps: [
                             {
-                                title: "Tổng quan & Thực hiện",
-                                content: "**Chuẩn 6 Slide:**\n- **Slide 1:** Tiêu đề, Họ tên.\n- **Slide 2:** Thông tin (Bullets).\n- **Slide 3:** Mục lục (SmartArt) -> Link tới 4, 5, 6.\n- **Setting:** Loop continuously, Footer (Số trang).",
-                                icon: "fa-tv"
+                                title: "Tổng quan: Yêu cầu đề 02",
+                                content: "**Chuẩn 6 Slide:**\n-   **Slide 1:** Tiêu đề, Ngày thi.\n-   **Slide 2:** Thông tin (Bullets).\n-   **Slide 3:** Sơ đồ SmartArt (Bắt buộc) -> Link tới Slide 4, 5, 6.",
+                                icon: "fa-layer-group"
+                            },
+                            {
+                                title: "Cài đặt trình chiếu",
+                                content: "-   **Loop:** Slide Show > Set Up > Loop continuously.\n-   **Footer:** Insert > Header/Footer > Slide Number + Họ Tên.",
+                                icon: "fa-cog"
                             }
                         ]
                     }
