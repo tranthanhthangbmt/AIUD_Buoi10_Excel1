@@ -73,8 +73,39 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('session-title').textContent = session.title;
         document.getElementById('session-desc').textContent = session.description;
 
-        // Render lessons in this session
-        lessonGrid.innerHTML = session.lessons.map(lesson => `
+        // Slide
+        let slideHtml = '';
+        if (session.slide) {
+            const filePath = session.slide.startsWith('http') ? session.slide : 'TaiLieuHuongDan/Slide/' + session.slide;
+            slideHtml = `
+                <a href="${filePath}" class="lesson-card" target="_blank">
+                    <h2>Slide bài học</h2>
+                    <p>Xem slide bài học.</p>
+                    <div class="card-footer">
+                        <span><i class="fas fa-file-powerpoint"></i> Xem slide</span>
+                    </div>
+                </a>
+            `;
+        }
+
+        // Quizzes
+        let quizHtml = '';
+        if (session.quiz) {
+            const filePath = session.quiz.startsWith('http') ? session.quiz : 'data/quiz/' + session.quiz;
+            quizHtml = `
+                <a href="quiz.html?file=${encodeURIComponent(filePath)}&name=${encodeURIComponent(session.quiz)}&returnUrl=${encodeURIComponent(window.location.href)}" class="lesson-card">
+                    <h2>Trắc nghiệm</h2>
+                    <p>Bài tập trắc nghiệm ôn tập kiến thức cho bài học này.</p>
+                    <div class="card-footer">
+                        <span><i class="fas fa-pen-to-square"></i> Làm bài ngay</span>
+                        <span>20 câu hỏi</span>
+                    </div>
+                </a>`;
+        }
+
+        // Lessons
+        const lessonsHtml = session.lessons.map(lesson => {
+            return `
             <a href="lesson.html?sessionId=${session.id}&id=${lesson.id}" class="lesson-card">
                 <h2>${lesson.title}</h2>
                 <p>${lesson.description}</p>
@@ -82,8 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span><i class="fas fa-play-circle"></i> Xem hướng dẫn</span>
                     <span>${lesson.steps ? lesson.steps.length : (lesson.sections ? lesson.sections.reduce((acc, sec) => acc + sec.steps.length, 0) : 0)} bước</span>
                 </div>
-            </a>
-        `).join('');
+            </a>`;
+        }).join('');
+
+        lessonGrid.innerHTML = slideHtml + quizHtml + lessonsHtml;
     }
 
     function renderLessonDetail(lesson, session) {
@@ -133,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (resourceList) {
                 const tasks = lesson.tasks || [];
                 const docs = lesson.docs || [];
+                const quiz = lesson.quiz || [];
 
                 const tasksHtml = tasks.map(t => {
                     let href = t.file;

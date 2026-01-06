@@ -1,0 +1,21 @@
+ID,CourseContentId,IdContent,QuestionType,QuestionContent,AAnsver,BAnswer,CAnswer,DAnswer,Answer,ResultAnswer
+1,Excel 1-4,1,1,"Trong quy tắc Đặt tên vùng (Define Name), tên nào sau đây là KHÔNG hợp lệ?","Bang_Diem","BangDiem","Bang Diem (có dấu cách)","BangDiem1",C,"Bang Diem (có dấu cách)"
+2,Excel 1-4,1,1,"Công cụ Data Validation dùng để làm gì?","Định dạng màu sắc cho ô","Ràng buộc/Kiểm soát dữ liệu nhập vào","Vẽ biểu đồ","Tính tổng tự động",B,"Ràng buộc/Kiểm soát dữ liệu nhập vào"
+3,Excel 1-4,1,1,"Trong Data Validation, để thiết lập thông báo lỗi khi nhập sai, ta chọn thẻ (Tab) nào?",Settings,Input Message,Error Alert,Formula,C,Error Alert
+4,Excel 1-4,1,1,"Hàm =LEFT(""Excel 2022"", 2) trả về kết quả là gì?","Ex","el","20","Ec",A,Ex
+5,Excel 1-4,1,1,"Hàm =RIGHT(""Da Nang"", 4) trả về kết quả là gì?","Da N","Nang","Dang","a Na",B,Nang
+6,Excel 1-4,1,1,"Để lấy 3 ký tự ở giữa chuỗi văn bản, bắt đầu từ ký tự thứ 2, ta dùng hàm nào?",LEFT,RIGHT,MID,VLOOKUP,C,MID
+7,Excel 1-4,1,1,"Kết quả của hàm =IF(5>3, ""Đúng"", ""Sai"") là gì?",5,3,Đúng,Sai,C,Đúng
+8,Excel 1-4,1,1,"Hàm VALUE có tác dụng gì?","Chuyển đổi chữ hoa thành chữ thường","Chuyển đổi chuỗi ký tự số thành số","Đếm số ký tự","Nối chuỗi",B,"Chuyển đổi chuỗi ký tự số thành số"
+9,Excel 1-4,1,1,"Hàm VLOOKUP dùng để tìm kiếm dữ liệu theo chiều nào?","Chiều dọc (Cột)","Chiều ngang (Hàng)","Đường chéo","Tất cả các chiều",A,"Chiều dọc (Cột)"
+10,Excel 1-4,1,1,"Trong hàm VLOOKUP(Trị dò, Bảng dò, Cột lấy dữ liệu, Cách dò), giá trị 0 ở tham số cuối cùng có ý nghĩa gì?","Dò tìm tương đối","Dò tìm chính xác","Dò tìm ngẫu nhiên","Dò tìm theo hàng",B,"Dò tìm chính xác"
+11,Excel 1-4,1,1,"Hàm dùng để đếm số ô thỏa mãn một điều kiện cho trước là?",SUMIF,COUNTIF,IF,DSUM,B,COUNTIF
+12,Excel 1-4,1,1,"Hàm SUMIF(Range, Criteria, Sum_range) dùng để làm gì?","Đếm các ô","Tính trung bình","Tính tổng các ô thỏa mãn điều kiện","Tìm giá trị lớn nhất",C,"Tính tổng các ô thỏa mãn điều kiện"
+13,Excel 1-4,1,1,"Hàm WEEKDAY(Serial_number) trả về giá trị gì?","Ngày trong tháng","Tháng trong năm","Năm","Thứ trong tuần (dạng số)",D,"Thứ trong tuần (dạng số)"
+14,Excel 1-4,1,1,"Hàm SUMPRODUCT thực hiện phép tính nào?","Chỉ tính tổng","Chỉ tính tích","Tính tích của các phần tử tương ứng rồi cộng lại","Tính trung bình cộng",C,"Tính tích của các phần tử tương ứng rồi cộng lại"
+15,Excel 1-4,1,1,"Các hàm cơ sở dữ liệu như DSUM, DCOUNT bắt buộc phải có tham số đầu tiên là gì?","Vùng điều kiện (Criteria)","Cơ sở dữ liệu (Database - bao gồm tiêu đề)","Tên trường (Field)","Một ô trống",B,"Cơ sở dữ liệu (Database - bao gồm tiêu đề)"
+16,Excel 1-4,1,1,"Điều kiện (Criteria) sử dụng trong hàm DSUM, DCOUNT phải được trình bày như thế nào?","Viết trực tiếp vào công thức","Tạo một vùng riêng trên bảng tính gồm tiêu đề và điều kiện","Không cần tạo điều kiện","Viết vào ô bất kỳ",B,"Tạo một vùng riêng trên bảng tính gồm tiêu đề và điều kiện"
+17,Excel 1-4,1,1,"Hàm AND(Điều kiện 1, Điều kiện 2,...) trả về TRUE khi nào?","Khi tất cả các điều kiện đều Sai","Khi chỉ cần 1 điều kiện Đúng","Khi tất cả các điều kiện đều Đúng","Không bao giờ trả về TRUE",C,"Khi tất cả các điều kiện đều Đúng"
+18,Excel 1-4,1,1,"Hàm nào dùng để lấy ra phần NGÀY trong một ô chứa dữ liệu Ngày/Tháng/Năm?",YEAR,MONTH,DAY,DATE,C,DAY
+19,Excel 1-4,1,1,"Kết quả của hàm =MID(""A01B"", 2, 2) là gì?","A0","01","1B","01B",B,01
+20,Excel 1-4,1,1,"Để bắt đầu một công thức trong Excel, ta phải gõ ký tự nào đầu tiên?","@","#","=","+",C,"="

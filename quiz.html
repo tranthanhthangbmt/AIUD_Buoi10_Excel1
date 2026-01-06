@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Hệ Thống Trắc Nghiệm Sinh Viên</title>
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- FontAwesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- PapaParse -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+		<!-- Custom Config for Tailwind -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ["Inter", "sans-serif"],
+						},
+						colors: {
+							primary: "#4F46E5",
+							secondary: "#10B981",
+							accent: "#F59E0B",
+							danger: "#EF4444",
+							dark: "#1F2937",
+							light: "#F3F4F6",
+							gray: "#9CA3AF",
+						},
+					},
+				},
+			};
+		</script>
+
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+
+	<body class="bg-dark text-gray-800 font-sans min-h-screen flex flex-col">
+		<!-- Header -->
+		<header class="bg-dark shadow-md sticky top-0 z-50 text-light">
+			<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+				<div
+					class="flex items-center space-x-3 cursor-pointer"
+					onclick="app.goHome()"
+				>
+					<i class="fa-solid fa-arrow-left text-gray-600"></i>
+					<span class="text-lg font-semibold text-gray-800">Trang chủ</span>
+				</div>
+				<h1
+					id="header-title"
+					class="text-lg font-bold text-primary truncate max-w-xs sm:max-w-md"
+				>
+					Bài tập trắc nghiệm
+				</h1>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main class="bg-dark flex-grow container mx-auto px-4 py-8">
+			<!-- Loading Spinner -->
+			<div
+				id="loading"
+				class="hidden fixed inset-0 bg-white bg-opacity-80 z-50 flex justify-center items-center"
+			>
+				<div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-primary"></div>
+			</div>
+
+			<!-- View: Quiz Interface -->
+			<div
+				id="view-quiz"
+				class="bg-dark view-section hidden fade-in h-full"
+			>
+				<div class="flex flex-col lg:flex-row gap-6 h-full">
+					<!-- Left Column: Question Area -->
+					<div class="lg:w-3/4 flex flex-col">
+						<!-- Progress Bar -->
+						<div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+							<div
+								id="progress-bar"
+								class="bg-primary h-2.5 rounded-full transition-all duration-300"
+								style="width: 0%"
+							></div>
+						</div>
+
+						<!-- Question Card -->
+						<div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8 flex-grow relative overflow-hidden">
+							<div class="flex justify-between items-start mb-6">
+								<span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded"
+									>Câu <span id="current-question-number">1</span></span
+								>
+								<span
+									id="question-status"
+									class="text-sm font-medium text-gray-500"
+									>Chưa trả lời</span
+								>
+							</div>
+
+							<h3
+								id="question-text"
+								class="text-xl sm:text-2xl font-semibold text-gray-800 mb-8 leading-relaxed"
+							>
+								Nội dung câu hỏi sẽ hiển thị ở đây?
+							</h3>
+
+							<div
+								class="space-y-4"
+								id="options-container"
+							>
+								<!-- Options will be injected here -->
+							</div>
+
+							<!-- Feedback Area -->
+							<div
+								id="feedback-area"
+								class="mt-6 hidden p-4 rounded-lg border-l-4"
+							>
+								<p
+									id="feedback-text"
+									class="font-medium"
+								></p>
+							</div>
+
+							<!-- Navigation Buttons (Mobile mostly, but useful for all) -->
+							<div class="mt-8 flex justify-between">
+								<button
+									onclick="app.prevQuestion()"
+									class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors disabled:opacity-50"
+									id="btn-prev"
+								>
+									<i class="fa-solid fa-chevron-left mr-2"></i> Trước
+								</button>
+								<button
+									onclick="app.nextQuestion()"
+									class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md disabled:opacity-50"
+									id="btn-next"
+								>
+									Tiếp <i class="fa-solid fa-chevron-right ml-2"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Right Column: Question Palette (Calendar Style) -->
+					<div class="lg:w-1/4">
+						<div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
+							<h4 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2">Danh sách câu hỏi</h4>
+							<div
+								class="grid grid-cols-5 gap-2"
+								id="question-palette"
+							>
+								<!-- Question numbers will be injected here -->
+							</div>
+
+							<div class="mt-6 space-y-2 text-sm text-gray-600">
+								<div class="flex items-center">
+									<div class="w-3 h-3 rounded-full bg-gray-200 mr-2"></div>
+									Chưa làm
+								</div>
+								<div class="flex items-center">
+									<div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+									Đúng
+								</div>
+								<div class="flex items-center">
+									<div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+									Sai
+								</div>
+								<div class="flex items-center">
+									<div class="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
+									Đang chọn
+								</div>
+							</div>
+
+							<button
+								onclick="app.backToParts()"
+								class="w-full mt-6 py-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors"
+							>
+								<i class="fa-solid fa-list mr-2"></i> Chọn phần khác
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="scripts/quiz-script.js"></script>
+	</body>
+</html>

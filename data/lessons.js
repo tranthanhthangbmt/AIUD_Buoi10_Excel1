@@ -4,6 +4,8 @@ const sessionsData = [
         title: "Buổi 6: Định dạng (văn bản, bảng biểu, Tabstop, tạo ngắt trang)",
         description: "Làm quen với các thao tác cơ bản trong Microsoft Word: định dạng văn bản, tạo bảng, sử dụng tab stops và ngắt trang.",
         totalLessons: 4,
+        quiz: "TN_Buoi6.csv",
+        slide: "Slide_Word_Buoi6.pdf",
         lessons: [
             {
                 id: 1,
@@ -17,6 +19,7 @@ const sessionsData = [
                 docs: [
                     { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 1_ĐỊNH DẠNG VĂN BẢN.pdf" }
                 ],
+
                 steps: [
                     {
                         title: "Lý thuyết",
@@ -197,6 +200,8 @@ const sessionsData = [
         title: "Buổi 7: Mục lục (Multilevel List, caption, nội dung, hình ảnh, bảng biểu)",
         description: "Học các kỹ thuật nâng cao: Multilevel List, Header/Footer, Table of Contents và References.",
         totalLessons: 3,
+        quiz: "TN_Buoi7.csv",
+        slide: "Slide_Word_Buoi7.pdf",
         lessons: [
             {
                 id: 5,
@@ -361,6 +366,8 @@ const sessionsData = [
         title: "Buổi 10: Hàm trong Excel",
         description: "Làm chủ Excel từ nhập liệu sạch, xử lý chuỗi đến các hàm thống kê và tìm kiếm nâng cao.",
         totalLessons: 4,
+        quiz: "TN_Buoi10.csv",
+        slide: "Slide_Excel_Buoi10.pdf",
         lessons: [
             {
                 id: 101,
@@ -718,7 +725,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
         title: "Buổi 11: Tổ chức dữ liệu trong Excel",
         description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
         totalLessons: 2,
-        // image: "images/Buổi_11/Bài_5/5.1.png",
+        quiz: "TN_Buoi11.csv",
+        slide: "Slide_Excel_Buoi11.pdf",
         lessons: [
             {
                 "id": 105,
@@ -1077,6 +1085,8 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
         title: "Buổi 13: Soạn thảo slide trình chiếu",
         description: "Thiết kế tài liệu đẹp mắt với SmartArt, Charts, Images và Page Layout.",
         totalLessons: 6,
+        quiz: "TN_Buoi13.csv",
+        slide: "Slide_PPT_Buoi13.pdf",
         lessons: [
             {
                 id: 131,

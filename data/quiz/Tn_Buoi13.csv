@@ -1,0 +1,21 @@
+ID,CourseContentId,IdContent,QuestionType,QuestionContent,AAnsver,BAnswer,CAnswer,DAnswer,Answer,ResultAnswer
+1,PowerPoint,1,1,"Để mở chế độ Slide Master (Slide mẫu), bạn vào thẻ (Tab) nào?",Home,Insert,View,Design,C,View
+2,PowerPoint,1,1,"Tác dụng chính của Slide Master là gì?","Chỉnh sửa nội dung từng slide","Định dạng chung (logo, font, màu sắc) cho toàn bộ slide cùng lúc","Tạo hiệu ứng động","Kiểm tra lỗi chính tả",B,"Định dạng chung (logo, font, màu sắc) cho toàn bộ slide cùng lúc"
+3,PowerPoint,1,1,"Sau khi chỉnh sửa xong trong Slide Master, làm sao để quay về chế độ soạn thảo bình thường?","Nhấn phím Delete","Chọn thẻ Slide Master > Close Master View","Tắt phần mềm đi mở lại","Nhấn phím F5",B,"Chọn thẻ Slide Master > Close Master View"
+4,PowerPoint,1,1,"Phím tắt để mở hộp thoại chèn liên kết (Hyperlink) là gì?",Ctrl + K,Ctrl + H,Ctrl + L,Ctrl + M,A,Ctrl + K
+5,PowerPoint,1,1,"Để tạo nút bấm chuyển slide nhanh (Action Button), bạn vào Insert > Shapes và tìm ở đâu?","Nhóm Lines","Nhóm Basic Shapes","Dưới cùng danh sách (Action Buttons)","Nhóm Stars and Banners",C,"Dưới cùng danh sách (Action Buttons)"
+6,PowerPoint,1,1,"Muốn liên kết một đối tượng đến Slide số 5 trong cùng một bài, bạn chọn mục nào trong hộp thoại Hyperlink?","Existing File or Web Page","Place in This Document","Create New Document","E-mail Address",B,"Place in This Document"
+7,PowerPoint,1,1,"Để xóa bỏ một liên kết (Hyperlink) đã tạo, bạn làm thế nào?","Nhấn phím Backspace","Click chuột phải vào đối tượng chọn Remove Hyperlink","Vào thẻ View chọn Delete","Không thể xóa được",B,"Click chuột phải vào đối tượng chọn Remove Hyperlink"
+8,PowerPoint,1,1,"Hiệu ứng chuyển cảnh GIỮA CÁC SLIDE (khi chuyển từ slide 1 sang slide 2) nằm ở thẻ nào?",Animations,Transitions,Design,View,B,Transitions
+9,PowerPoint,1,1,"Hiệu ứng chuyển động CHO CÁC ĐỐI TƯỢNG (hình ảnh, văn bản) nằm trên slide thuộc thẻ nào?",Animations,Transitions,Slide Show,Format,A,Animations
+10,PowerPoint,1,1,"Để xem danh sách thứ tự các hiệu ứng đang có trên slide, bạn cần bật bảng nào?","Selection Pane","Animation Pane","Slide Master","Format Pane",B,"Animation Pane"
+11,PowerPoint,1,1,"Công cụ nào giúp sao chép hiệu ứng từ đối tượng này sang đối tượng khác nhanh chóng?","Format Painter","Animation Painter","Copy & Paste","Duplicate",B,"Animation Painter"
+12,PowerPoint,1,1,"Để một hiệu ứng tự động chạy cùng lúc với hiệu ứng trước đó, bạn chọn chế độ Start là gì?","On Click","With Previous","After Previous","Duration",B,"With Previous"
+13,PowerPoint,1,1,"Phím tắt để bắt đầu trình chiếu từ slide ĐẦU TIÊN là gì?",F5,Shift + F5,F1,Esc,A,F5
+14,PowerPoint,1,1,"Phím tắt để bắt đầu trình chiếu từ slide HIỆN TẠI đang chọn là gì?",F5,Shift + F5,Ctrl + F5,Alt + F5,B,Shift + F5
+15,PowerPoint,1,1,"Khi đang trình chiếu, muốn thoát khỏi chế độ trình chiếu để về màn hình soạn thảo, bạn nhấn phím nào?",Enter,Space (Cách),Esc,Tab,C,Esc
+16,PowerPoint,1,1,"Khi đang trình chiếu, muốn màn hình tạm thời chuyển sang màu ĐEN để người xem tập trung vào diễn giả, bạn nhấn phím gì?","Phím B (Black)","Phím W (White)","Phím E (End)","Phím S (Stop)",A,"Phím B (Black)"
+17,PowerPoint,1,1,"Để biến con trỏ chuột thành bút Laser màu đỏ khi đang trình chiếu, bạn giữ phím Ctrl và nhấn chuột trái, hoặc dùng tổ hợp phím nào?",Ctrl + L,Ctrl + P,Ctrl + A,Ctrl + H,A,Ctrl + L
+18,PowerPoint,1,1,"Tính năng 'Trigger' trong thẻ Animations dùng để làm gì?","Tự động chuyển slide","Đặt kích hoạt: click vào đối tượng A thì đối tượng B mới chạy hiệu ứng","Tạo mục lục tự động","Chèn nhạc nền",B,"Đặt kích hoạt: click vào đối tượng A thì đối tượng B mới chạy hiệu ứng"
+19,PowerPoint,1,1,"Để thiết lập thời gian tự động chuyển slide (không cần click chuột), bạn chỉnh ở mục nào trong thẻ Transitions?","Duration","Sound","Advance Slide > After","On Mouse Click",C,"Advance Slide > After"
+20,PowerPoint,1,1,"Để lặp lại bài thuyết trình liên tục (khi hết slide cuối sẽ quay lại slide đầu), bạn vào Slide Show > Set Up Slide Show và tích chọn gì?","Loop continuously until 'Esc'","Show without narration","Show without animation","Browsed by an individual",A,"Loop continuously until 'Esc'"

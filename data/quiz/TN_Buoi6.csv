@@ -1,0 +1,21 @@
+ID,CourseContentId,IdContent,QuestionType,QuestionContent,AAnsver,BAnswer,CAnswer,DAnswer,Answer,ResultAnswer
+1,Bài 1. Định dạng văn bản,1,1,"Để hiển thị thanh thước kẻ (Ruler) nhằm hỗ trợ canh chỉnh lề, ta thực hiện thao tác nào?",Vào thẻ View > tích chọn Ruler,Vào thẻ Home > tích chọn Ruler,Vào thẻ Page Layout > tích chọn Ruler,Vào thẻ Insert > tích chọn Ruler,A,Vào thẻ View > tích chọn Ruler
+2,Bài 1. Định dạng văn bản,1,1,"Theo hướng dẫn, lề chuẩn (Margins) cho văn bản hành chính được thiết lập là bao nhiêu?","Top 2cm, Bottom 2cm, Left 3cm, Right 2cm","Top 2cm, Bottom 2cm, Left 2cm, Right 2cm","Top 2.5cm, Bottom 2.5cm, Left 3cm, Right 2cm","Top 1cm, Bottom 1cm, Left 3cm, Right 1.5cm",A,"Top 2cm, Bottom 2cm, Left 3cm, Right 2cm"
+3,Bài 1. Định dạng văn bản,1,1,"Phím tắt để canh đều hai bên (Justify) cho đoạn văn bản là gì?",Ctrl + L,Ctrl + R,Ctrl + E,Ctrl + J,D,Ctrl + J
+4,Bài 1. Định dạng văn bản,1,1,"Để thiết lập khoảng cách giữa các dòng là 1.5, ta chọn mục nào trong hộp thoại Paragraph?",Single,1.5 lines,Double,Multiple,B,1.5 lines
+5,Bài 1. Định dạng văn bản,1,1,"Font chữ và cỡ chữ tiêu chuẩn thường được sử dụng trong các bài thực hành là gì?","Arial, 12","Times New Roman, 13","Calibri, 13","Verdana, 11",B,"Times New Roman, 13"
+6,Bài 2. Table (Bảng),2,1,"Để gộp nhiều ô thành một ô trong bảng, ta chọn các ô cần gộp -> Layout, chọn lệnh nào?",Split Cells,Merge Cells,Split Table,AutoFit,B,Merge Cells
+7,Bài 2. Table (Bảng),2,1,"Muốn chia một ô thành nhiều ô nhỏ, ta sử dụng lệnh nào trong thẻ Layout?",Merge Cells,Split Cells,Insert Above,Distribute Rows,B,Split Cells
+8,Bài 2. Table (Bảng),2,1,"Để thay đổi hướng văn bản (xoay ngang, dọc) trong ô của bảng, ta dùng lệnh nào?",Text Direction,Cell Margins,Sort,Align Center,A,Text Direction
+9,Bài 2. Table (Bảng),2,1,"Để xóa đường viền của bảng nhưng vẫn giữ lại nội dung, ta chọn bảng và vào Border, chọn mục nào?",All Borders,Outside Borders,No Border,Inside Borders,C,No Border
+10,Bài 2. Table (Bảng),2,1,"Khi muốn tính toán đơn giản trong bảng (ví dụ tính tổng), ta dùng tính năng Formula nằm trong thẻ nào?",Insert,Design,Layout,View,C,Layout
+11,Bài 3. Tabs,3,1,"Để mở hộp thoại Tab Stop cài đặt điểm dừng, ta có thể thực hiện nhanh bằng cách nào?",Double click vào thanh thước (Ruler),Nhấn chuột phải chọn Tabs,Vào Insert > Tabs,Vào View > Tabs,A,Double click vào thanh thước (Ruler)
+12,Bài 3. Tabs,3,1,"Loại Tab nào được sử dụng để canh thẳng hàng các số thập phân (dấu phẩy/chấm)?",Left Tab,Center Tab,Right Tab,Decimal Tab,D,Decimal Tab
+13,Bài 3. Tabs,3,1,"Để tạo các dấu chấm (....) dẫn từ nội dung này đến nội dung kia (Leader), ta phải thiết lập trong hộp thoại nào?",Paragraph,Font,Page Setup,Tabs,D,Tabs
+14,Bài 3. Tabs,3,1,"Sau khi nhập vị trí Tab và chọn loại Leader, ta PHẢI nhấn nút nào để lưu thiết lập trước khi nhấn OK?",Set,Clear,Clear All,Default,A,Set
+15,Bài 3. Tabs,3,1,"Để xóa tất cả các điểm dừng Tab đã thiết lập trên dòng hiện tại, ta chọn nút nào trong hộp thoại Tabs?",Remove,Delete,Clear All,Reset,C,Clear All
+16,Bài 4. Tạo ngắt & Cột,4,1,"Để chia văn bản thành nhiều cột (như dạng bài báo), ta vào thẻ Page Layout và chọn lệnh nào?",Size,Orientation,Columns,Breaks,C,Columns
+17,Bài 4. Tạo ngắt & Cột,4,1,"Để tạo chữ cái lớn đầu đoạn văn (Drop Cap), ta vào thẻ nào?",Home,Insert,Page Layout,Design,B,Insert
+18,Bài 4. Tạo ngắt & Cột,4,1,"Khi chia cột, muốn có đường kẻ ngăn cách giữa các cột, ta tích chọn mục nào trong hộp thoại Columns?",Line between,Equal column width,Right line,Colum border,A,Line between
+19,Bài 4. Tạo ngắt & Cột,4,1,"Để ngắt trang sang trang mới (Page Break) bằng phím tắt, ta nhấn tổ hợp phím nào?",Ctrl + Enter,Shift + Enter,Alt + Enter,Ctrl + Shift + Enter,A,Ctrl + Enter
+20,Bài 4. Tạo ngắt & Cột,4,1,"Lệnh 'Breaks > Continuous' trong Page Layout có tác dụng gì?","Ngắt trang sang trang mới","Ngắt vùng (Section) nhưng vẫn ở cùng trang hiện tại","Ngắt cột văn bản","Ngắt dòng nhưng không ngắt đoạn",B,"Ngắt vùng (Section) nhưng vẫn ở cùng trang hiện tại"
