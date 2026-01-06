@@ -1,0 +1,21 @@
+ID,CourseContentId,IdContent,QuestionType,QuestionContent,AAnsver,BAnswer,CAnswer,DAnswer,Answer,ResultAnswer
+1,Excel 5-8,1,1,"Hàm VLOOKUP dùng để dò tìm dữ liệu theo chiều nào?","Chiều ngang (theo hàng)","Chiều dọc (theo cột)","Đường chéo","Bất kỳ chiều nào",B,"Chiều dọc (theo cột)"
+2,Excel 5-8,1,1,"Hàm HLOOKUP dùng để dò tìm dữ liệu theo chiều nào?","Chiều ngang (theo hàng)","Chiều dọc (theo cột)","Từ dưới lên trên","Hình xoắn ốc",A,"Chiều ngang (theo hàng)"
+3,Excel 5-8,1,1,"Trong hàm VLOOKUP(Trị dò, Bảng dò, Cột lấy dữ liệu, Cách dò), tham số thứ 3 là gì?","Dòng lấy dữ liệu","Bảng chứa dữ liệu","Cột lấy dữ liệu","Điều kiện dò",C,"Cột lấy dữ liệu"
+4,Excel 5-8,1,1,"Trong hàm HLOOKUP, tham số thứ 3 dùng để xác định yếu tố nào?","Số thứ tự Cột cần lấy dữ liệu","Số thứ tự Dòng cần lấy dữ liệu","Tên bảng dữ liệu","Giá trị cần tìm",B,"Số thứ tự Dòng cần lấy dữ liệu"
+5,Excel 5-8,1,1,"Khi dùng VLOOKUP hoặc HLOOKUP, để dò tìm chính xác tuyệt đối, ta dùng giá trị nào cho tham số cuối cùng?",1,0,"TRUE","Không cần điền",B,0
+6,Excel 5-8,1,1,"Nếu hàm VLOOKUP không tìm thấy giá trị cần tìm, nó sẽ trả về lỗi gì?",#VALUE!,#NAME?,#N/A,#DIV/0!,C,#N/A
+7,Excel 5-8,1,1,"Để sắp xếp dữ liệu (Sort) từ A đến Z hoặc từ Nhỏ đến Lớn, ta vào thẻ Data và chọn biểu tượng nào?","Sort Z to A","Sort A to Z","Filter","Advanced",B,"Sort A to Z"
+8,Excel 5-8,1,1,"Công cụ Filter (Lọc) nằm trong thẻ (Tab) nào của Excel?",Home,Insert,Data,View,C,Data
+9,Excel 5-8,1,1,"Chức năng Advanced Filter (Lọc nâng cao) khác với lọc thường ở điểm nào?","Có thể lọc tại chỗ hoặc trích xuất dữ liệu ra vùng khác","Chỉ lọc được số","Không cần vùng điều kiện","Tự động xóa dữ liệu gốc",A,"Có thể lọc tại chỗ hoặc trích xuất dữ liệu ra vùng khác"
+10,Excel 5-8,1,1,"Để sử dụng chức năng Subtotal (tính tổng phụ theo nhóm), điều kiện bắt buộc trước tiên là gì?","Phải tô màu bảng","Phải sắp xếp (Sort) dữ liệu theo nhóm cần tính","Phải dùng hàm IF","Phải xóa tiêu đề",B,"Phải sắp xếp (Sort) dữ liệu theo nhóm cần tính"
+11,Excel 5-8,1,1,"Công cụ PivotTable dùng để làm gì?","Vẽ hình ảnh","Soạn thảo văn bản","Tổng hợp, phân tích và báo cáo dữ liệu linh hoạt","Quét virus",C,"Tổng hợp, phân tích và báo cáo dữ liệu linh hoạt"
+12,Excel 5-8,1,1,"Để chèn một PivotTable, ta vào thẻ nào?",Data,Formulas,Insert,Page Layout,C,Insert
+13,Excel 5-8,1,1,"Chức năng Remove Duplicates trong thẻ Data dùng để làm gì?","Xóa toàn bộ bảng","Xóa các dòng chứa dữ liệu trùng lặp","Xóa định dạng ô","Xóa công thức",B,"Xóa các dòng chứa dữ liệu trùng lặp"
+14,Excel 5-8,1,1,"Để tô màu các ô theo mức độ giá trị (ví dụ: số lớn màu đậm, số nhỏ màu nhạt), ta dùng tính năng nào?",Format as Table,Cell Styles,Conditional Formatting -> Color Scales,Sort & Filter,C,Conditional Formatting -> Color Scales
+15,Excel 5-8,1,1,"Trong Conditional Formatting, kiểu 'Data Bars' hiển thị dữ liệu dưới dạng nào?","Biểu đồ hình tròn","Thanh màu có độ dài tương ứng với giá trị số","Chữ in đậm","Đường kẻ khung",B,"Thanh màu có độ dài tương ứng với giá trị số"
+16,Excel 5-8,1,1,"Để gộp dữ liệu từ nhiều bảng tính có cấu trúc giống nhau thành một bảng tổng hợp, ta dùng công cụ gì?",Subtotal,Consolidate,Group,Validation,B,Consolidate
+17,Excel 5-8,1,1,"Trong PivotTable, để thống kê dữ liệu theo hàng, ta kéo trường (Field) vào vùng nào?","Columns","Rows","Values","Filters",B,"Rows"
+18,Excel 5-8,1,1,"Trong PivotTable, vùng 'Values' thường dùng để chứa dữ liệu kiểu gì?","Dữ liệu số để tính toán (Tổng, Đếm...)","Dữ liệu ngày tháng","Dữ liệu văn bản","Hình ảnh",A,"Dữ liệu số để tính toán (Tổng, Đếm...)"
+19,Excel 5-8,1,1,"Khi bảng dữ liệu nguồn thay đổi, để cập nhật lại PivotTable, ta làm thế nào?","Tự nó cập nhật ngay lập tức","Phải xóa đi làm lại","Click chuột phải vào PivotTable chọn Refresh","Tắt file mở lại",C,"Click chuột phải vào PivotTable chọn Refresh"
+20,Excel 5-8,1,1,"Để chuyển một vùng dữ liệu thường thành bảng (Table) có khả năng tự động mở rộng công thức, ta chọn lệnh nào?","Insert -> Table","Data -> Sort","Home -> Find","View -> Zoom",A,"Insert -> Table"

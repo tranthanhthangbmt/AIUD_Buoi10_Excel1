@@ -1,0 +1,21 @@
+ID,CourseContentId,IdContent,QuestionType,QuestionContent,AAnsver,BAnswer,CAnswer,DAnswer,Answer,ResultAnswer
+1,Bài 5. Multilevel List,5,1,"Để tạo danh sách đa cấp (ví dụ: 1., 1.1, 1.1.1), bạn click vào thẻ (Tab) nào trên thanh công cụ?",Insert (Chèn),Home (Trang chủ),View (Hiển thị),Design (Thiết kế),B,Home (Trang chủ)
+2,Bài 5. Multilevel List,5,1,"Biểu tượng của tính năng Multilevel List nằm trong nhóm nào của thẻ Home?",Font,Paragraph,Clipboard,Styles,B,Paragraph
+3,Bài 5. Multilevel List,5,1,"Để tự thiết lập danh sách theo ý muốn (gắn với Heading), bạn chọn dòng nào trong menu Multilevel List?",Define New Multilevel List,Change List Level,Define New Bullet,Set Numbering Value,A,Define New Multilevel List
+4,Bài 5. Multilevel List,5,1,"Trong hộp thoại thiết lập list, muốn Level 1 gắn với Heading 1, bạn chỉnh ở mục nào?",Start at,Font,Link level to style,Follow number with,C,Link level to style
+5,Bài 5. Multilevel List,5,1,"Nếu muốn số thứ tự tự động có dấu chấm phía sau (ví dụ: '1.'), bạn nhập dấu chấm vào ô nào?",Enter formatting for number,Text indent at,Aligned at,Start at,A,Enter formatting for number
+6,Bài 5. Multilevel List,5,1,"Để khoảng cách giữa số thứ tự và nội dung là một khoảng trắng (Space) thay vì Tab, bạn chỉnh ở mục nào?",Number style,Follow number with,Position,Bullet character,B,Follow number with
+7,Bài 6. Caption,6,1,"Để chèn chú thích (Caption) cho hình ảnh, bạn vào thẻ (Tab) nào?",Home,Insert,Layout,References,D,References
+8,Bài 6. Caption,6,1,"Cách nhanh nhất dùng chuột để mở hộp thoại Caption cho một hình ảnh là gì?",Click đúp vào hình,Click chuột phải vào hình chọn Insert Caption,Click chuột trái vào hình,Kéo thả hình ảnh,B,Click chuột phải vào hình chọn Insert Caption
+9,Bài 6. Caption,6,1,"Nếu muốn tạo nhãn mới là tiếng Việt (ví dụ: 'Bảng' thay vì 'Table'), bạn click vào nút nào?",New Label,Delete Label,Numbering,AutoCaption,A,New Label
+10,Bài 6. Caption,6,1,"Để chú thích nằm phía dưới hình ảnh, tại mục Position bạn chọn giá trị nào?",Above selected item,Below selected item,Left of item,Right of item,B,Below selected item
+11,Bài 6. Caption,6,1,"Muốn xóa một nhãn (Label) đã tạo sai, bạn chọn nhãn đó rồi nhấn nút nào?",New Label,Delete Label,Exclude label,Numbering,B,Delete Label
+12,Bài 6. Caption,6,1,"Để đánh số hình ảnh kèm theo số chương (ví dụ: Hình 1-1), bạn click vào nút nào trong hộp thoại Caption?",New Label,Numbering,AutoCaption,Options,B,Numbering
+13,Bài 7. Mục lục,7,1,"Để chèn Mục lục tự động, bạn vào thẻ References và click vào nút nào?",Insert Citation,Table of Contents,Insert Caption,Index,B,Table of Contents
+14,Bài 7. Mục lục,7,1,"Muốn mục lục hiện ra các dấu chấm (....) dẫn đến số trang, bạn cần kiểm tra mục nào trong hộp thoại?",Tab leader,Formats,Show levels,Web Preview,A,Tab leader
+15,Bài 7. Mục lục,7,1,"Khi vừa sửa lại tên các chương trong bài, để mục lục cập nhật theo, bạn nhấn vào nút nào?",Add Text,Update Table,Insert Footnote,Next Footnote,B,Update Table
+16,Bài 7. Mục lục,7,1,"Nếu bạn chỉ muốn cập nhật lại số trang (do nội dung bị đẩy xuống), bạn chọn tùy chọn nào cho nhanh?",Update page numbers only,Update entire table,Delete table,Insert table,A,Update page numbers only
+17,Bài 7. Mục lục,7,1,"Để tạo Danh mục các hình ảnh (sau khi đã tạo Caption), bạn chọn nút nào trong thẻ References?",Insert Table of Figures,Insert Table of Contents,Cross-reference,Insert Index,A,Insert Table of Figures
+18,Bài 7. Mục lục,7,1,"Trong hộp thoại Table of Figures, để chọn danh mục cho 'Bảng' hay 'Hình', bạn thay đổi ở mục nào?",Tab leader,Caption Label,Formats,Show page numbers,B,Caption Label
+19,Bài 7. Mục lục,7,1,"Để xóa bỏ Mục lục tự động, bạn làm thế nào?",Chọn mục lục rồi nhấn Delete,Vào Table of Contents chọn Remove Table of Contents,Vào View tắt Ruler,Không thể xóa được,B,Vào Table of Contents chọn Remove Table of Contents
+20,Bài 7. Mục lục,7,1,"Muốn đi nhanh đến trang nội dung từ Mục lục trong Word, bạn nhấn giữ phím nào và click chuột?",Shift,Alt,Ctrl,Tab,C,Ctrl
