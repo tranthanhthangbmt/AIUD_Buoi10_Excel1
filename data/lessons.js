@@ -1281,22 +1281,47 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
                 sessionId: 14,
                 title: "Bài 1: Ứng dụng AI trong thiết kế Slide",
                 description: "Sử dụng các công cụ AI để tạo dàn ý, viết nội dung và gợi ý thiết kế cho bài thuyết trình.",
+                docs: [
+                    { name: "Slide bài giảng (PDF)", file: "TaiLieuHuongDan/Buổi 14/slide AI_Workflow_Data_to_Deck.pdf" },
+                    { name: "Hướng dẫn sử dụng AI (PDF)", file: "TaiLieuHuongDan/Buổi 14/Hướng dẫn sử dụng AI thiết kế slide.pdf" },
+                    { name: "Tài liệu tổng hợp (Zip)", file: "TaiLieuHuongDan/Buổi 14/Hướng dẫn Word_Excel_PowerPoint.zip" }
+                ],
                 tasks: [],
                 steps: [
                     {
-                        title: "1. Lên ý tưởng và Dàn ý với AI",
-                        content: "**Quy trình:**\n- Sử dụng ChatGPT/Gemini để brainstorm ý tưởng.\n- Yêu cầu AI tạo dàn ý chi tiết cho bài thuyết trình (Title, Outline).\n- Ví dụ prompt: 'Hãy đóng vai chuyên gia, đề xuất cho tôi 5 ý tưởng chủ đề thuyết trình về [Lĩnh vực] và dàn ý chi tiết cho ý tưởng hay nhất.'",
-                        icon: "fa-lightbulb"
+                        title: "1. Khởi tạo & Nạp dữ liệu (NotebookLM)",
+                        content: "**Mục tiêu:** Xây dựng 'bộ não' kiến thức cho bài thuyết trình.\n\n**1. Tạo Sổ tay (Notebook):**\n- Truy cập notebooklm.google.com -> Tạo sổ tay mới -> Đặt tên theo chủ đề.\n\n**2. Tải tài liệu nguồn (Sources):**\n- **File học liệu:** Upload PDF, Word, Text, Markdown.\n- **Link:** Dán link Website hoặc Video YouTube (có phụ đề).\n- **Audio:** Upload file ghi âm bài giảng (MP3).\n*Lưu ý: NotebookLM hỗ trợ tối đa 50 nguồn/sổ tay.*",
+                        icon: "fa-upload"
                     },
                     {
-                        title: "2. Tạo nội dung chi tiết",
-                        content: "**Quy trình:**\n- Dựa trên dàn ý, yêu cầu AI viết nội dung cho từng slide.\n- Yêu cầu AI tóm tắt nội dung thành các gạch đầu dòng ngắn gọn (Quy tắc 6x6).",
-                        icon: "fa-list-alt"
+                        title: "2. Xử lý & Brainstorm ý tưởng",
+                        content: "**1. Thấu hiểu dữ liệu:**\n- Dùng **Audio Overview** để nghe tóm tắt dạng Podcast (giúp cảm nhận dòng chảy nội dung).\n- Xem **Key Topics** để nắm các từ khóa cốt lõi.\n\n**2. Tìm kiếm nguyên liệu phong phú:**\n- **Case Study:** 'Dựa trên tài liệu, tìm 3 ví dụ thực tế/Case study minh họa cho vấn đề [X].'\n- **Mini-game:** 'Đề xuất 2 ý tưởng Quiz vui để ôn lại kiến thức [Y].'\n- **Tranh luận:** 'Đưa ra một chủ đề gây tranh luận để thảo luận nhóm.'",
+                        icon: "fa-brain"
                     },
                     {
-                        title: "3. Gợi ý hình ảnh và Bố cục",
-                        content: "**Quy trình:**\n- Yêu cầu AI mô tả hình ảnh minh họa phù hợp cho từng slide.\n- Sử dụng các công cụ tạo ảnh AI (nếu cần) hoặc tìm kiếm ảnh theo từ khóa gợi ý.",
-                        icon: "fa-image"
+                        title: "3. Xây dựng Kịch bản Slide (Chia để trị)",
+                        content: "**Chiến lược:** Chia bài thuyết trình thành các Module nhỏ (tối đa 15 slide/lần tạo).\n\n**1. Phân chia cấu trúc:**\n- Prompt: 'Chia nội dung thành 3 phần chính (Lý thuyết, Ứng dụng, Tổng kết). Lập dàn ý chi tiết cho từng phần.'\n\n**2. Viết kịch bản chi tiết:**\n- Prompt: 'Viết nội dung cho Phần 1 (10 slide). Mỗi slide gồm: Tiêu đề, Nội dung chính (bullet points), Hình ảnh minh họa, Ghi chú diễn giả (Speaker notes).'\n\n**3. Kiểm tra:** Click vào số trích dẫn (VD: [1]) để xác thực thông tin từ nguồn gốc.",
+                        icon: "fa-list-ol"
+                    },
+                    {
+                        title: "4. Tạo Slide (Cách 1: Từ NotebookLM)",
+                        content: "**Dành cho bài làm nhanh, tập trung cấu trúc:**\n\n1. **Tạo nội dung:**\n- Prompt: 'Viết kịch bản chi tiết cho 10 slide...'\n2. **Xuất kết quả:**\n- Chọn nội dung -> Ghim vào Ghi chú (Pin to Note).\n- Copy toàn bộ.\n3. **Tạo Slide:**\n- Paste vào PowerPoint hoặc Google Slides.\n- Hoặc dùng tính năng 'Help me visualize' của Google Slides (nếu có) để AI tự vẽ slide từ text.",
+                        icon: "fa-bolt"
+                    },
+                    {
+                        title: "5. Tạo Slide (Cách 2: Với Gemini Canvas)",
+                        content: "**Tối ưu hóa quy trình thiết kế:**\n\n1. **Chuẩn bị:** Copy nội dung tổng hợp từ NotebookLM.\n2. **Tại Gemini (gemini.google.com):**\n- Chọn chế độ **Canvas** (hoặc dán vào khung chat).\n- Paste nội dung vào.\n- Prompt: 'Đóng vai trò chuyên gia, hãy cấu trúc nội dung này thành file trình chiếu 10-12 slide. Viết rõ Tiêu đề, Nội dung chính và Gợi ý hình ảnh.'\n3. **Xuất:** Chọn nút **Share & Export** -> **Export to Google Slides**.",
+                        icon: "fa-project-diagram"
+                    },
+                    {
+                        title: "6. Chỉnh sửa & Làm đẹp (Phân nhánh)",
+                        content: "**Nhánh A: Tài khoản Education/Advanced (Có AI trong Slides)**\n- Dùng **Ask Gemini** (ngôi sao) để: 'Create image' (Tạo ảnh minh họa), 'Rewrite' (Viết lại văn phong), 'Summarize' (Tóm tắt).\n\n**Nhánh B: Tài khoản Miễn phí**\n- **Tại Canvas:** Bôi đen đoạn văn -> Chọn 'Shorten' (Rút gọn) hoặc 'Rewrite'. Chat để sửa bố cục ('Tách slide 3 thành 2 slide').\n- **Tại Google Slides:** Dùng tính năng **Explore** (Khám phá) để dàn trang đẹp mắt.",
+                        icon: "fa-magic"
+                    },
+                    {
+                        title: "7. Luyện tập & Hoàn thiện",
+                        content: "**1. Ôn tập:**\n- Quay lại NotebookLM, dùng tính năng **Suggested Questions** để ôn luyện.\n- Yêu cầu tạo Flashcards/Quiz tự kiểm tra.\n\n**2. Rà soát:**\n- Kiểm tra lại nguồn trích dẫn và tính xác thực của số liệu.",
+                        icon: "fa-check-double"
                     }
                 ]
             }
