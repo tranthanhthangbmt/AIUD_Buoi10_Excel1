@@ -1,0 +1,319 @@
+Chào bạn, là một giảng viên CNTT, tôi hiểu bạn muốn hướng dẫn sinh viên tận dụng
+tối đa sức mạnh của AI để tối ưu hóa quy trình làm bài thuyết trình. Dựa trên các tài
+liệu bạn cung cấp về NotebookLM và Gemini, tôi xin phác thảo Dàn ý Hướng dẫn
+(Outline) cho sinh viên như sau.
+
+Dàn ý này được thiết kế theo luồng công việc (workflow) thực tế: Từ thu thập dữ liệu
+thô $\rightarrow$ Xử lý nội dung $\rightarrow$ Tạo đầu ra thuyết trình.
+
+HƯỚNG DẪN: XÂY DỰNG BÀI THUYẾT TRÌNH VỚI NOTEBOOKLM & GEMINI
+CANVAS
+
+Mục tiêu: Giúp sinh viên chuyển đổi tài liệu nghiên cứu (PDF, Web, Audio) thành
+slide thuyết trình chất lượng cao, có trích dẫn nguồn gốc rõ ràng.
+
+PHẦN 1: KHỞI TẠO & NẠP DỮ LIỆU (TẠI NOTEBOOKLM)
+
+Bước này giúp sinh viên xây dựng "bộ não" kiến thức cho bài thuyết trình.
+
+1. Tạo Sổ tay (Notebook) mới:
+
+o Truy cập notebooklm.google.com.
+
+o Tạo sổ tay mới và đặt tên theo chủ đề bài tập/đồ án1.
+
+2. Tải tài liệu nguồn (Sources):
+
+o Hướng dẫn sinh viên tải lên đa dạng nguồn để có cái nhìn toàn diện:
+
+▪  File học liệu: Upload PDF, file Text, file Markdown2.
+
+▪  Tài liệu đám mây: Kết nối trực tiếp Google Drive, Google
+Slides3.
+
+▪  Thông tin trực tuyến: Dán link Website hoặc link Video
+YouTube (có phụ đề)4444.
+
+▪  File âm thanh: Upload file ghi âm bài giảng (MP3)5.
+
+o Lưu ý: NotebookLM hỗ trợ tối đa 50 nguồn cho mỗi sổ tay6.
+
+PHẦN 2: XỬ LÝ & TỔNG HỢP NỘI DUNG (TẠI NOTEBOOKLM)
+
+Mục tiêu: Biến dữ liệu thô thành một kịch bản thuyết trình hấp dẫn, đa dạng hoạt
+động (lý thuyết kết hợp thực hành) và được chia thành các module nhỏ để tối ưu
+hóa việc tạo slide sau này.
+
+BƯỚC 1: THẤU HIỂU TOÀN DIỆN DỮ LIỆU
+
+Trước khi ra lệnh tạo nội dung, sinh viên cần hiểu rõ mình đang có gì trong tay.
+
+
+•  Quét nhanh ý chính: Sử dụng tính năng Key Topics (Chủ đề chính) để xem
+các từ khóa và khái niệm cốt lõi mà NotebookLM đã tự động trích xuất từ tài
+liệu tải lên.
+
+•  Nghe để cảm nhận dòng chảy: Bật tính năng Audio Overview (Tổng quan
+âm thanh). Việc nghe cuộc hội thoại dạng Podcast giữa 2 AI sẽ giúp sinh
+viên hình dung cách dẫn dắt câu chuyện một cách tự nhiên, không khô khan
+như đọc văn bản thuần túy.
+
+BƯỚC 2: "BRAINSTORM" CÁC NGUYÊN LIỆU PHONG PHÚ
+
+Thay vì chỉ tóm tắt lý thuyết, hãy yêu cầu NotebookLM "đào sâu" tìm các chất liệu
+đắt giá để bài thuyết trình sinh động hơn.
+
+Sinh viên sử dụng khung chat để yêu cầu các nguyên liệu cụ thể sau:
+
+1. Tìm Case Study & Ví dụ thực tế:
+
+o Prompt: "Dựa trên các tài liệu đã tải lên, hãy tìm cho tôi 3 ví dụ thực tế
+hoặc Case study điển hình minh họa cho vấn đề [X]. Phân tích ngắn
+gọn bối cảnh, giải pháp và kết quả."
+
+2. Thiết kế Hoạt động tương tác (Game/Mini-quiz):
+
+o Prompt: "Hãy đề xuất 2 ý tưởng Mini-game hoặc câu hỏi trắc nghiệm
+vui để tôi tổ chức cho lớp học nhằm ôn lại phần kiến thức [Y]. Kèm
+
+theo đáp án và giải thích." (NotebookLM có khả năng tạo Quiz tự động
+rất tốt ).
+
+3. Gợi ý kịch bản tranh luận (Critical Thinking):
+
+o Prompt: "Hãy đưa ra một chủ đề gây tranh luận hoặc một câu hỏi mở
+liên quan đến tài liệu này để tôi yêu cầu lớp thảo luận nhóm."
+
+BƯỚC 3: XÂY DỰNG KỊCH BẢN SLIDE CHI TIẾT (CHIẾN LƯỢC CHIA ĐỂ TRỊ)
+
+Vì giới hạn tạo slide tự động thường không quá 15 slide/lần, sinh viên cần tư duy
+chia bài thuyết trình thành các PHẦN (MODULE) riêng biệt. Ví dụ: Bài 45 slide sẽ
+chia làm 3 lần tạo.
+
+Giai đoạn 3.1: Phân chia cấu trúc Sinh viên yêu cầu NotebookLM lên dàn ý tổng
+quát trước:
+
+•  Prompt: "Tôi cần làm một bài thuyết trình dài khoảng 30-40 slide về chủ đề
+này. Hãy chia nội dung thành 3 phần chính (Phần 1: Cơ sở lý thuyết, Phần 2:
+
+Ứng dụng & Case Study, Phần 3: Bài tập & Tổng kết). Hãy liệt kê dàn ý chi
+tiết cho từng phần."
+
+Giai đoạn 3.2: Ra lệnh viết kịch bản chi tiết cho từng phần (Tối đa 15 slide/lần)
+
+•  Lần 1: Tạo nội dung Phần 1 (Lý thuyết)
+
+
+o Prompt mẫu:
+
+"Dựa trên dàn ý đã duyệt, hãy viết nội dung chi tiết cho Phần 1 (khoảng 10-12
+slide). Yêu cầu định dạng cho mỗi slide gồm:
+
+1. Tiêu đề slide (ngắn gọn, ấn tượng).
+
+2. Nội dung chính (dạng gạch đầu dòng, có trích dẫn nguồn [số]).
+
+3. Hình ảnh minh họa gợi ý.
+
+4. Note cho diễn giả (Speaker notes)."
+
+•  Lần 2: Tạo nội dung Phần 2 (Case Study & Ứng dụng)
+
+o Prompt mẫu:
+
+"Tiếp tục viết nội dung cho Phần 2 (khoảng 10-12 slide) tập trung vào Case study
+và                                                ví dụ thực tế. Yêu cầu:
+
+▪  Slide giới thiệu tình huống (Case study).
+
+▪  Slide phân tích vấn đề.
+
+▪  Slide bài học kinh nghiệm.
+
+▪  Lồng ghép 1 câu hỏi tương tác cho người nghe."
+
+•  Lần 3: Tạo nội dung Phần 3 (Game, Quiz & Kết luận)
+
+o Prompt mẫu:
+
+"Viết nội dung cho Phần 3 (khoảng 8-10 slide). Bao gồm:
+
+▪  Các slide câu hỏi trắc nghiệm (Quiz) với hiệu ứng xuất hiện đáp
+án.
+
+▪  Slide tổng kết bài học (Key takeaways).
+
+▪  Slide kêu gọi hành động (Call to action) và Q&A."
+
+BƯỚC 4: KIỂM TRA ĐỘ CHÍNH XÁC
+
+•  Xác thực nguồn: Với mỗi thông tin quan trọng được đưa vào kịch bản slide,
+sinh viên phải nhấp vào số trích dẫn (ví dụ [1], [2]) để NotebookLM dẫn về
+
+đoạn văn gốc trong tài liệu, đảm bảo AI không "bịa" số liệu.
+
+Kết quả đầu ra của Phần 2: Sinh viên sẽ có trong tay 3 đoạn văn bản kịch bản
+(Script)                                              tương ứng với 3 phần của bài thuyết trình. 
+Đây là nguyên liệu hoàn hảo để
+đưa sang Gemini Canvas thực hiện việc thiết kế slide ở bước tiếp theo.
+
+
+PHẦN 3: TẠO SLIDE THUYẾT TRÌNH (2 CÁCH)
+
+CÁCH 1: TẠO DÀN Ý SLIDE TRỰC TIẾP TRONG NOTEBOOKLM
+
+Dành cho bài thuyết trình nhanh, tập trung vào cấu trúc nội dung.
+
+1. Sử dụng Prompt tạo cấu trúc:
+
+o Nhập lệnh vào ô chat: "Dựa trên các nguồn đã chọn, hãy viết kịch bản
+chi tiết cho một bài thuyết trình 10 slide. Với mỗi slide, hãy bao gồm:
+Tiêu đề slide, 3-4 gạch đầu dòng nội dung chính, và ghi chú cho người
+thuyết trình (speaker notes)."11111111.
+
+2. Xuất nội dung:
+
+o NotebookLM sẽ trả về nội dung dạng văn bản có cấu trúc.
+
+o Sinh viên chọn tất cả nội dung $\rightarrow$ Chọn biểu tượng Ghim
+vào Ghi chú (Pin to Note) để lưu lại12.
+
+o Sao chép nội dung này dán vào PowerPoint hoặc Google Slides (hoặc
+dùng                                        tính năng "Help me visualize" của Google Slides để AI 
+tự vẽ slide
+từ text này)13.
+
+CÁCH 2 (CẬP NHẬT): TỐI ƯU HÓA VỚI GEMINI CANVAS & XỬ LÝ PHÂN
+NHÁNH
+
+Phương pháp này tập trung vào việc dùng AI để thiết kế cấu trúc bài nói hoàn chỉnh
+trước khi chuyển sang định dạng Slide.
+
+BƯỚC 1: CHUẨN BỊ "NGUYÊN LIỆU" TỪ NOTEBOOKLM
+
+1. Tại NotebookLM, chọn các nguồn tài liệu liên quan.
+
+2. Dùng câu lệnh (Prompt): "Dựa trên các tài liệu đã chọn, hãy tổng hợp nội
+dung chi tiết cho một bài thuyết trình. Bao gồm các phần: Mở đầu, 3 luận
+điểm chính, Dẫn chứng số liệu và Kết luận/Kêu gọi hành động."
+
+3. Sao chép toàn bộ nội dung văn bản mà NotebookLM tạo ra.
+
+BƯỚC 2: THIẾT KẾ CẤU TRÚC SLIDE TRÊN GEMINI CANVAS
+
+1. Truy cập gemini.google.com. Nếu có biểu tượng Canvas (Giao diện soạn
+
+thảo chuyên sâu), hãy chọn chế độ này (hoặc dán trực tiếp vào khung chat).
+
+2. Dán nội dung từ NotebookLM vào.
+
+3. Ra lệnh thiết kế (Prompt): "Đóng vai trò là chuyên gia thiết kế Presentation.
+Từ nội dung này, hãy cấu trúc thành một file trình chiếu 10-12 slide. Với mỗi
+slide, hãy viết rõ Tiêu đề, Nội dung chính (dạng bullet points ngắn gọn) và Gợi
+ý hình ảnh minh họa."
+
+
+4. Xuất sang Google Slides:
+
+o Sau khi Gemini tạo xong bảng cấu trúc, tìm nút Chia sẻ & Xuất (Share
+& Export).
+
+o Chọn Export to Google Slides (Xuất sang Google Trang trình bày).
+
+o Lưu ý: Hệ thống sẽ tạo một file Google Slides mới với nội dung văn
+bản đã được phân chia vào các slide (thường là layout cơ bản).
+
+BƯỚC 3: CHỈNH SỬA VÀ LÀM ĐẸP (PHÂN NHÁNH THEO TÀI KHOẢN)
+
+Hướng dẫn sinh viên xác định loại tài khoản và thực hiện theo 1 trong 2 nhánh sau:
+
+⬛A NHÁNH A: DÀNH CHO TÀI KHOẢN GEMINI ADVANCED/EDUCATION (CÓ AI
+
+TRONG SLIDES) Dành cho sinh viên có gói Google Workspace for Education hoặc
+gói AI Premium.
+
+1. Mở file Google Slides vừa xuất.
+
+2. Nhấp vào biểu tượng Hỏi Gemini (Ask Gemini) hình ngôi sao trên thanh
+công cụ bên phải.
+
+3. Thực hiện các lệnh nâng cao trực tiếp trong Slides:
+
+o Tạo hình ảnh: Tại các slide cần minh họa, mở khung Gemini, chọn
+"Create image" (Tạo hình ảnh) và nhập mô tả để AI vẽ hình chèn vào
+slide.
+
+o Tạo slide mới bổ sung: Gõ lệnh "Tạo một slide giới thiệu về [chủ đề
+X]", Gemini sẽ tự động tạo slide mới kèm nội dung và hình ảnh phù
+hợp.
+
+o Viết lại nội dung: Bôi đen các đoạn văn bản khô khan trên slide, dùng
+Gemini để "Rewrite" (Viết lại) cho hấp dẫn hơn hoặc "Summarize"
+(Tóm tắt) nếu nội dung quá dài.
+
+⬛B NHÁNH B: DÀNH CHO TÀI KHOẢN MIỄN PHÍ (KHÔNG CÓ AI TRONG
+
+SLIDES) Dành cho sinh viên sử dụng Gmail cá nhân miễn phí. Các bạn sẽ tận dụng
+sức mạnh của giao diện Canvas để sửa kỹ nội dung trước hoặc sau khi xuất.
+
+1. Chỉnh sửa trực tiếp trên màn hình Gemini Canvas (Trước khi xuất hoặc
+sửa lại):
+
+o Hướng dẫn sinh viên không vội xuất ngay nếu nội dung chưa ưng ý.
+
+o Sử dụng tính năng bôi đen của Canvas: Bôi đen một đoạn văn
+bản/một                                      slide trong giao diện Canvas, Gemini sẽ hiện thanh 
+công cụ
+nhỏ. Sinh viên có thể chọn:
+
+▪  Rút gọn (Shorten): Nếu bullet points quá dài.
+
+
+▪  Viết lại (Rewrite): Để đổi giọng văn chuyên nghiệp hơn.
+
+o Yêu cầu sửa bố cục: Chat với Gemini ngay trong Canvas: "Hãy tách
+slide số 3 thành 2 slide riêng biệt vì quá nhiều chữ" hoặc "Thêm phần
+ghi chú diễn giả (Speaker notes) cho slide số 5".
+
+2. Làm đẹp thủ công (Sau khi xuất):
+
+o Sau khi nội dung đã hoàn hảo ở Canvas, thực hiện xuất sang Google
+Slides.
+
+o Sử dụng tính năng Khám phá (Explore) hoặc Themes có sẵn của
+Google Slides để dàn trang lại cho đẹp mắt (vì tài khoản miễn phí
+không có nút "Create slide/image" bằng AI trực tiếp bên trong).
+
+Ghi chú cho Giảng viên:
+
+•  Cách làm ở Nhánh B giúp sinh viên hiểu rằng dù không có công cụ trả phí, kỹ
+năng "Prompting" (ra lệnh) và tư duy tinh chỉnh nội dung trên Canvas vẫn
+giúp  họ tiết kiệm 80% thời gian soạn thảo so với làm thủ công từ đầu.
+
+•  Nhánh A nhấn mạnh vào việc AI đóng vai trò là "Người đồng sáng tạo" (Co-
+pilot) ngay trong quá trình thiết kế visual.
+
+PHẦN 4: LUYỆN TẬP & HOÀN THIỆN
+
+Bước cuối cùng để sinh viên làm chủ bài nói.
+
+1. Ôn tập kiến thức:
+
+o Quay lại NotebookLM, sử dụng tính năng Hỏi đáp (Suggested
+
+Questions) hoặc tự tạo Flashcards/Quiz từ tài liệu để ôn luyện trước
+khi lên thuyết trình18181818.
+
+2. Kiểm tra đạo văn & Trích dẫn:
+
+o Nhắc nhở sinh viên: AI là công cụ hỗ trợ, không thay thế tư duy phản
+biện. Luôn kiểm tra lại nguồn trích dẫn mà NotebookLM cung cấp19.
+
+Gợi ý bước tiếp theo cho Giảng viên:
+
+Thầy có muốn tôi viết chi tiết các mẫu câu lệnh (Prompts) cụ thể cho từng bước
+
+trong dàn ý trên (ví dụ: Prompt để NotebookLM tóm tắt, Prompt để Gemini Canvas
+chia                                             slide) để Thầy gửi kèm cho sinh viên không?
+
+
